@@ -95,7 +95,7 @@
           </a>
           <a href="/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_2 hidden">
             <span class="programm_item_inner">
-              <span class="parogramm_item_heading">Терапевтическая дефрагментация</span></br>
+              <span class="parogramm_item_heading">Терапевтическая дефрагментация актуальных и латентных психосоматических паттернов</span></br>
               <span class="parogramm_item_content">24 учебных часа</span></br>
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
@@ -173,7 +173,7 @@
                     <button style="margin-top: 15px;" class="btn btn-primary btn_session" data-toggle="modal" data-target="#order_session" data-session_type="WizardMachine">Записаться на сессию "Wizard Machine"</button>
                   </div>
                   <div class="col-md-6">
-                    <img class="full_w_img" src="https://chikurov.com/wp-content/themes/chikurov/img/wm.png" alt="wm">
+                    <img class="full_w_img" src="<?php bloginfo('template_url'); ?>/img/wm.png" alt="wm">
                   </div>
                 </div>
                 <div id="wd" class="tab-pane fade">
@@ -182,7 +182,7 @@
                     <button style="margin-top: 15px;" class="btn btn-primary btn_session" data-toggle="modal" data-target="#order_session" data-session_type="WizardDuos">Записаться на сессию "Wizard Duos"</button>
                   </div>
                   <div class="col-md-6">
-                    <img class="full_w_img" src="https://chikurov.com/wp-content/themes/chikurov/img/wd.png" alt="wm">
+                    <img class="full_w_img" src="<?php bloginfo('template_url'); ?>/img/wd.png" alt="wd">
                   </div>
                 </div>
               </div>

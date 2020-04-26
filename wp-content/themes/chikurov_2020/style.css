@@ -899,12 +899,12 @@ body section
 {
     overflow-x: hidden;
 }
-.doctor p, .seminar_content
+.doctor p, .seminar_content, .seminar_content span
 {
-    font-size: 18px;
+    font-size: 18px!important;
     text-align: justify;
     /*font-style: italic;*/
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif!important;
 }
 .seminar_content div 
 {
