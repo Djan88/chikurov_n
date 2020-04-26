@@ -153,6 +153,7 @@ ul.nav {
     transition: all .7s ease 0s;
     padding: 14px 0 7px 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 .header_contacts
 {
@@ -175,7 +176,7 @@ ul.nav {
     font-weight: 600;
     color: #ff206d;
 }
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:hover, .consult:hover {
     color: #0094e1;
 }
 .navbar-default .navbar-toggle .icon-bar {
