@@ -65,7 +65,7 @@
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
           </a>
-          <a href="/esteticheskoe-manualnoe-modelirovanie-lica/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_1">
+          <a href="/esteticheskoe-manualnoe-modelirovanie-lica-page/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_1">
             <span class="programm_item_inner">
               <span class="parogramm_item_heading">Эстетическое мануальное моделирование лица</span></br>
               <span class="parogramm_item_content">16 учебных часов</span></br>
