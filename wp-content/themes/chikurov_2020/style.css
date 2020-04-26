@@ -912,6 +912,10 @@ body section
     margin-bottom: 5px;
     text-align: left;
 }
+.order_seminar
+{
+    text-align: center;
+}
 p b
 {
     font-weight: 600;
