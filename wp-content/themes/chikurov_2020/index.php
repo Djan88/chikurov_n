@@ -202,7 +202,7 @@
                 endwhile;
                 wp_reset_postdata();
               ?>
-            <?php else if (is_page(6889)) { ?>
+            <?php } else if (is_page(6889)) { ?>
               <?php
                 $wp_query = new WP_Query( array(
                     'category_name' => 'seminary',
