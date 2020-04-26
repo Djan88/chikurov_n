@@ -144,7 +144,7 @@
       </div>
     </div>
   </section>
-<?php } else if (is_page(6923) || is_page(6885) || is_page(6889) || is_page(6891) || is_page(6893) || is_page(6895) || is_page(6899) || is_page(6901) || is_page(6906) || is_page(6908) || is_page(6915) || is_page(6917) || is_page(6919) || is_page(6921)) { ?>
+<?php } else if (is_page(6923) || is_page(6885) || is_page(6889) || is_page(6891) || is_page(6893) || is_page(6895) || is_page(6899) || is_page(6901) || is_page(6906) || is_page(6908) || is_page(6915) || is_page(6917) || is_page(6919) || is_page(6921) || is_page(6942)) { ?>
   <section class="seminar text-center" id="seminar">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <div class="container">
@@ -209,6 +209,366 @@
                     'order' => 'ASC',
                     'post_type' => 'post',
                     'title' => 'MARAKATA – Мастер реальности',
+                    'orderby' => 'meta_value',
+                    'meta_key' => 'seminar_start',
+                    'meta_query' => array(
+                        array(
+                            'key' => 'seminar_end',
+                            'value' => date('Y-m-d'),
+                            'compare' => '>=',
+                            'type' => 'DATE'
+                        ),
+                        array(
+                            'key' => 'autor',
+                            'value' => 'Юрий Чикуров',
+                            'compare' => '=',
+                            'type' => 'CHAR'
+                        )
+                    )
+                ));
+                $cur_month = 0;
+                while ($wp_query->have_posts()) : $wp_query->the_post();
+                    get_template_part( 'seminar');
+                endwhile;
+                wp_reset_postdata();
+              ?>
+            <?php } else if (is_page(6891)) { ?>
+              <?php
+                $wp_query = new WP_Query( array(
+                    'category_name' => 'seminary',
+                    'order' => 'ASC',
+                    'post_type' => 'post',
+                    'title' => 'БЦ1. Базовый семинар по биологическому центрированию',
+                    'orderby' => 'meta_value',
+                    'meta_key' => 'seminar_start',
+                    'meta_query' => array(
+                        array(
+                            'key' => 'seminar_end',
+                            'value' => date('Y-m-d'),
+                            'compare' => '>=',
+                            'type' => 'DATE'
+                        ),
+                        array(
+                            'key' => 'autor',
+                            'value' => 'Юрий Чикуров',
+                            'compare' => '=',
+                            'type' => 'CHAR'
+                        )
+                    )
+                ));
+                $cur_month = 0;
+                while ($wp_query->have_posts()) : $wp_query->the_post();
+                    get_template_part( 'seminar');
+                endwhile;
+                wp_reset_postdata();
+              ?>
+            <?php } else if (is_page(6893)) { ?>
+              <?php
+                $wp_query = new WP_Query( array(
+                    'category_name' => 'seminary',
+                    'order' => 'ASC',
+                    'post_type' => 'post',
+                    'title' => 'Развитие перцептивных навыков чувствования и движения',
+                    'orderby' => 'meta_value',
+                    'meta_key' => 'seminar_start',
+                    'meta_query' => array(
+                        array(
+                            'key' => 'seminar_end',
+                            'value' => date('Y-m-d'),
+                            'compare' => '>=',
+                            'type' => 'DATE'
+                        ),
+                        array(
+                            'key' => 'autor',
+                            'value' => 'Юрий Чикуров',
+                            'compare' => '=',
+                            'type' => 'CHAR'
+                        )
+                    )
+                ));
+                $cur_month = 0;
+                while ($wp_query->have_posts()) : $wp_query->the_post();
+                    get_template_part( 'seminar');
+                endwhile;
+                wp_reset_postdata();
+              ?>
+            <?php } else if (is_page(6895)) { ?>
+              <?php
+                $wp_query = new WP_Query( array(
+                    'category_name' => 'seminary',
+                    'order' => 'ASC',
+                    'post_type' => 'post',
+                    'title' => 'Коррекция висцеральных систем',
+                    'orderby' => 'meta_value',
+                    'meta_key' => 'seminar_start',
+                    'meta_query' => array(
+                        array(
+                            'key' => 'seminar_end',
+                            'value' => date('Y-m-d'),
+                            'compare' => '>=',
+                            'type' => 'DATE'
+                        ),
+                        array(
+                            'key' => 'autor',
+                            'value' => 'Юрий Чикуров',
+                            'compare' => '=',
+                            'type' => 'CHAR'
+                        )
+                    )
+                ));
+                $cur_month = 0;
+                while ($wp_query->have_posts()) : $wp_query->the_post();
+                    get_template_part( 'seminar');
+                endwhile;
+                wp_reset_postdata();
+              ?>
+            <?php } else if (is_page(6899)) { ?>
+              <?php
+                $wp_query = new WP_Query( array(
+                    'category_name' => 'seminary',
+                    'order' => 'ASC',
+                    'post_type' => 'post',
+                    'title' => 'Краниосакральная терапия, избранные техники',
+                    'orderby' => 'meta_value',
+                    'meta_key' => 'seminar_start',
+                    'meta_query' => array(
+                        array(
+                            'key' => 'seminar_end',
+                            'value' => date('Y-m-d'),
+                            'compare' => '>=',
+                            'type' => 'DATE'
+                        ),
+                        array(
+                            'key' => 'autor',
+                            'value' => 'Юрий Чикуров',
+                            'compare' => '=',
+                            'type' => 'CHAR'
+                        )
+                    )
+                ));
+                $cur_month = 0;
+                while ($wp_query->have_posts()) : $wp_query->the_post();
+                    get_template_part( 'seminar');
+                endwhile;
+                wp_reset_postdata();
+              ?>
+            <?php } else if (is_page(6901)) { ?>
+              <?php
+                $wp_query = new WP_Query( array(
+                    'category_name' => 'seminary',
+                    'order' => 'ASC',
+                    'post_type' => 'post',
+                    'title' => 'Мягкие мануальные техники',
+                    'orderby' => 'meta_value',
+                    'meta_key' => 'seminar_start',
+                    'meta_query' => array(
+                        array(
+                            'key' => 'seminar_end',
+                            'value' => date('Y-m-d'),
+                            'compare' => '>=',
+                            'type' => 'DATE'
+                        ),
+                        array(
+                            'key' => 'autor',
+                            'value' => 'Юрий Чикуров',
+                            'compare' => '=',
+                            'type' => 'CHAR'
+                        )
+                    )
+                ));
+                $cur_month = 0;
+                while ($wp_query->have_posts()) : $wp_query->the_post();
+                    get_template_part( 'seminar');
+                endwhile;
+                wp_reset_postdata();
+              ?>
+            <?php } else if (is_page(6906)) { ?>
+              <?php
+                $wp_query = new WP_Query( array(
+                    'category_name' => 'seminary',
+                    'order' => 'ASC',
+                    'post_type' => 'post',
+                    'title' => 'Терапевтическая дефрагментация актуальных и латентных психосоматических паттернов',
+                    'orderby' => 'meta_value',
+                    'meta_key' => 'seminar_start',
+                    'meta_query' => array(
+                        array(
+                            'key' => 'seminar_end',
+                            'value' => date('Y-m-d'),
+                            'compare' => '>=',
+                            'type' => 'DATE'
+                        ),
+                        array(
+                            'key' => 'autor',
+                            'value' => 'Юрий Чикуров',
+                            'compare' => '=',
+                            'type' => 'CHAR'
+                        )
+                    )
+                ));
+                $cur_month = 0;
+                while ($wp_query->have_posts()) : $wp_query->the_post();
+                    get_template_part( 'seminar');
+                endwhile;
+                wp_reset_postdata();
+              ?>
+            <?php } else if (is_page(6908)) { ?>
+              <?php
+                $wp_query = new WP_Query( array(
+                    'category_name' => 'seminary',
+                    'order' => 'ASC',
+                    'post_type' => 'post',
+                    'title' => 'Эстетическая мануальная коррекция лица, избранные техники',
+                    'orderby' => 'meta_value',
+                    'meta_key' => 'seminar_start',
+                    'meta_query' => array(
+                        array(
+                            'key' => 'seminar_end',
+                            'value' => date('Y-m-d'),
+                            'compare' => '>=',
+                            'type' => 'DATE'
+                        ),
+                        array(
+                            'key' => 'autor',
+                            'value' => 'Юрий Чикуров',
+                            'compare' => '=',
+                            'type' => 'CHAR'
+                        )
+                    )
+                ));
+                $cur_month = 0;
+                while ($wp_query->have_posts()) : $wp_query->the_post();
+                    get_template_part( 'seminar');
+                endwhile;
+                wp_reset_postdata();
+              ?>
+            <?php } else if (is_page(6915)) { ?>
+              <?php
+                $wp_query = new WP_Query( array(
+                    'category_name' => 'seminary',
+                    'order' => 'ASC',
+                    'post_type' => 'post',
+                    'title' => 'БЦ тейпирование',
+                    'orderby' => 'meta_value',
+                    'meta_key' => 'seminar_start',
+                    'meta_query' => array(
+                        array(
+                            'key' => 'seminar_end',
+                            'value' => date('Y-m-d'),
+                            'compare' => '>=',
+                            'type' => 'DATE'
+                        ),
+                        array(
+                            'key' => 'autor',
+                            'value' => 'Юрий Чикуров',
+                            'compare' => '=',
+                            'type' => 'CHAR'
+                        )
+                    )
+                ));
+                $cur_month = 0;
+                while ($wp_query->have_posts()) : $wp_query->the_post();
+                    get_template_part( 'seminar');
+                endwhile;
+                wp_reset_postdata();
+              ?>
+            <?php } else if (is_page(6917)) { ?>
+              <?php
+                $wp_query = new WP_Query( array(
+                    'category_name' => 'seminary',
+                    'order' => 'ASC',
+                    'post_type' => 'post',
+                    'title' => 'Лечебные ножи — современные шаманские техники',
+                    'orderby' => 'meta_value',
+                    'meta_key' => 'seminar_start',
+                    'meta_query' => array(
+                        array(
+                            'key' => 'seminar_end',
+                            'value' => date('Y-m-d'),
+                            'compare' => '>=',
+                            'type' => 'DATE'
+                        ),
+                        array(
+                            'key' => 'autor',
+                            'value' => 'Юрий Чикуров',
+                            'compare' => '=',
+                            'type' => 'CHAR'
+                        )
+                    )
+                ));
+                $cur_month = 0;
+                while ($wp_query->have_posts()) : $wp_query->the_post();
+                    get_template_part( 'seminar');
+                endwhile;
+                wp_reset_postdata();
+              ?>
+            <?php } else if (is_page(6919)) { ?>
+              <?php
+                $wp_query = new WP_Query( array(
+                    'category_name' => 'seminary',
+                    'order' => 'ASC',
+                    'post_type' => 'post',
+                    'title' => 'Коррекция внутрикостных дисфункций',
+                    'orderby' => 'meta_value',
+                    'meta_key' => 'seminar_start',
+                    'meta_query' => array(
+                        array(
+                            'key' => 'seminar_end',
+                            'value' => date('Y-m-d'),
+                            'compare' => '>=',
+                            'type' => 'DATE'
+                        ),
+                        array(
+                            'key' => 'autor',
+                            'value' => 'Юрий Чикуров',
+                            'compare' => '=',
+                            'type' => 'CHAR'
+                        )
+                    )
+                ));
+                $cur_month = 0;
+                while ($wp_query->have_posts()) : $wp_query->the_post();
+                    get_template_part( 'seminar');
+                endwhile;
+                wp_reset_postdata();
+              ?>
+            <?php } else if (is_page(6921)) { ?>
+              <?php
+                $wp_query = new WP_Query( array(
+                    'category_name' => 'seminary',
+                    'order' => 'ASC',
+                    'post_type' => 'post',
+                    'title' => 'Tarot психосоматика',
+                    'orderby' => 'meta_value',
+                    'meta_key' => 'seminar_start',
+                    'meta_query' => array(
+                        array(
+                            'key' => 'seminar_end',
+                            'value' => date('Y-m-d'),
+                            'compare' => '>=',
+                            'type' => 'DATE'
+                        ),
+                        array(
+                            'key' => 'autor',
+                            'value' => 'Юрий Чикуров',
+                            'compare' => '=',
+                            'type' => 'CHAR'
+                        )
+                    )
+                ));
+                $cur_month = 0;
+                while ($wp_query->have_posts()) : $wp_query->the_post();
+                    get_template_part( 'seminar');
+                endwhile;
+                wp_reset_postdata();
+              ?>
+            <?php } else if (is_page(6942)) { ?>
+              <?php
+                $wp_query = new WP_Query( array(
+                    'category_name' => 'seminary',
+                    'order' => 'ASC',
+                    'post_type' => 'post',
+                    'title' => 'Коррекция кармических отношений (в подарок "WizardDuos" машина)',
                     'orderby' => 'meta_value',
                     'meta_key' => 'seminar_start',
                     'meta_query' => array(
