@@ -131,15 +131,15 @@
             });
     </script>
   <?php } ?>
-  <div class="modal fade" id="videoCours" tabindex="-1" role="dialog" aria-labelledby="videoCoursLabel" aria-hidden="true">
+  <div class="modal fade" id="consult" tabindex="-1" role="dialog" aria-labelledby="videoCoursLabel" aria-hidden="true">
       <div class="modal-dialog modal-sm">
           <div class="modal-content">
               <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                  <h4 class="modal-title" id="videoCoursLabel">Заказать видеокурс</h4>
+                  <h4 class="modal-title" id="videoCoursLabel">Заявка на консультацию</h4>
               </div>
               <div class="modal-body">
-                  <?php echo do_shortcode('[contact-form-7 id="159" title="Заказ видео курса"]')?>
+                  <?php echo do_shortcode('[contact-form-7 id="6950" title="Заявка на консультацию"]')?>
               </div>
           </div>
       </div>

@@ -109,7 +109,7 @@
                       </li> -->
                       <!-- <li><a class="menu" href="/kniga">Книги</a></li> -->
                       <li><a target="_blank" class="menu" href="https://shop-bc.com/">Магазин БЦ</a></li>
-                      <li><a class="menu" href="/kniga">Консультации Ю.Чикурова</a></li>
+                      <li><span class="menu consult">Консультации Ю.Чикурова</span></li>
                     </ul>
                   </div><!-- /navbar-collapse -->
                 </div><!-- / .container-fluid -->

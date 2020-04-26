@@ -219,6 +219,10 @@ jQuery(document).ready(function () {
       jQuery('.oferta_wrap').removeClass('oferta_wrap_styled');
     },2000);
   });
+
+  jQuery('.consult').on('click', function(event) {
+    jQuery('#consult').modal('show');
+  });
   
   jQuery('.chi_masters').slick({
     centerMode: true,
