@@ -61,14 +61,14 @@
           <a href="/korrekciya-funkcionalnogo-sostoyaniya-organizma-myagkimi-manualnymi-texnikami/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_1">
             <span class="programm_item_inner">
               <span class="parogramm_item_heading">Мягкие мануальные техники</span></br>
-              <span class="parogramm_item_content">16 учебных часов</span></br>
+              <span class="parogramm_item_content">24 учебных часа</span></br>
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
           </a>
           <a href="/esteticheskoe-manualnoe-modelirovanie-lica-page/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_1">
             <span class="programm_item_inner">
               <span class="parogramm_item_heading">Эстетическое мануальное моделирование лица</span></br>
-              <span class="parogramm_item_content">16 учебных часов</span></br>
+              <span class="parogramm_item_content">24 учебных часа</span></br>
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
           </a>
@@ -215,9 +215,9 @@
           <!-- <button class="btn btn-primary btn-lg down_book" data-toggle="modal" data-target="#book_down">Скачать книгу бесплатно</button> -->
         </div>
         <div class="col-md-5 col-sm-5 text-center books_title_wrap">
-          <img class="books_item books_item_bc" src="/wp-content/themes/chikurov/img/oblojka_min.jpg" alt="">
-          <img class="books_item books_item_ps" src="/wp-content/themes/chikurov/img/psichosomatics_rus.png" alt="">
-          <img class="books_item books_item_tr" src="/wp-content/themes/chikurov/img/tarot.png" alt="">
+          <img class="books_item books_item_bc" src="<?php bloginfo('template_url'); ?>/img/oblojka_min.jpg" alt="">
+          <img class="books_item books_item_ps" src="<?php bloginfo('template_url'); ?>/img/psichosomatics_rus.png" alt="">
+          <img class="books_item books_item_tr" src="<?php bloginfo('template_url'); ?>/img/tarot.png" alt="">
         </div>
       </div>
     </div>
