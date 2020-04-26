@@ -86,7 +86,7 @@
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
           </a>
-          <a href="/tarot-psixosomatika/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_2 hidden">
+          <a href="/tarot-psixosomatika-page/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_2 hidden">
             <span class="programm_item_inner">
               <span class="parogramm_item_heading">Tarot психосоматика</span></br>
               <span class="parogramm_item_content">16 учебных часов</span></br>
