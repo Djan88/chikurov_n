@@ -147,7 +147,7 @@ ul.nav {
     margin: 0;
     padding: 0;
 }
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav>li>a, .consult {
     font-size: 20px;
     color: #413e66;
     transition: all .7s ease 0s;
