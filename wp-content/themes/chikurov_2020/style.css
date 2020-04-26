@@ -912,7 +912,7 @@ body section
     margin-bottom: 5px;
     text-align: left;
 }
-.order_seminar
+.order_seminar, .order_seminar div
 {
     text-align: center;
 }
