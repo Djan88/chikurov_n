@@ -154,7 +154,7 @@
           <h2><?php the_title(); ?></h2>
         </div>
         <div class="col-md-6 seminar_type"><i class="fa fa-bookmark" aria-hidden="true"> </i> <?php the_field('seminar_type'); ?> <span class="seminar_timing">
-          <?php if (get_field('online_course')){ ?>
+          <?php if (is_page(6998)){ ?>
             <i class="fa fa-calendar" aria-hidden="true"> </i> 
           <?php } else { ?>
             <i class="fa fa-clock-o" aria-hidden="true"> </i> 
