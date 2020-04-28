@@ -180,11 +180,7 @@
                   <div class="order_open">
                     <span class="fa fa-pencil-square-o"></span> Запись открыта
                   </div>
-                  <?php if (get_field('seminar_online')) { ?>
-                    <a target="_blank" href="<?php the_field('online_link'); ?>" class="seminar_order btn btn-primary">Перейти на сайт "Онлайн Школы"</a>
-                  <?php } else { ?>
-                    <a href="#order" class="seminar_order btn btn-success">Записаться</a>
-                  <?php } ?>
+                  <a href="#order" class="seminar_order btn btn-success">Записаться</a>
                 </div>
               <?php } ?>
             </div>
@@ -197,20 +193,13 @@
             edit_post_link(__('Edit This'));
             ?>
             <?php $city = get_field('city');?>
-            <?php if ($autor == 'Юрий Чикуров' && get_field('seminar_online')) { ?>
-              <h4 class="order_online_bottom">Подать заявку на участие Вы можете со <a target="_blank" href="<?php the_field('online_link'); ?>">страницы курса на сайте "Онлайн Школы"</a></h4>
-          </div>
-          <?php } else if ($autor == 'Юрий Чикуров') { ?>
+            <?php if ($autor == 'Юрий Чикуров') { ?>
             <div class="col-md-12" style="padding: 0;">
               <h5 class="age">Внимание! Семинар рассчитан на аудиторию достигшую возраста 18 лет</h5>
             </div>
           <?php } ?>
           <div class="col-md-12 order_seminar">
-            <?php if (get_field('seminar_online')) { ?>
-              <h4 class="content_center order_online" id="order">Что такое Онлайн "Школа Доктора Чикурова"?</h4>
-            <?php } else { ?>
-              <h4 class="content_center" id="order">Запись на семинар</h4>
-            <?php } ?>
+            <h4 class="content_center" id="order">Запись на семинар</h4>
             <div class="row">
               <?php if (get_field('order_closed')) { ?>
                 <div class="order_closed_text">
@@ -219,44 +208,34 @@
                   <a href="#seminars_else" class="else_seminars_link">Показать даты</a>
                 </div>
               <?php } else { ?>
-                <?php if (get_field('seminar_online')) { ?>
-                  <div class="col-md-6 online_school_text">
-                    <p>"Онлайн школа" — это возможность освоить <b>"Биологическое центрирование"</b> не отрываясь от работы/учебы, не тратя деньги на билеты и гостинницу, в уютной, домашней атмосфере!</p>
-                    <p>Вы сможете учиться в удобном для Вас графике. Онлайн курс разбит на небольшие уроки. Каждый урок завершается выполнением домашнего задания. Выполнив задание Вы получаете доступ к следующиему уроку. Учебный процесс проходит легко и интересно.</p>
-                    <p>В каждой группе присутствует куратор который всегда готов ответить на возникший вопрос</p>
-                    <p>Более подробно узнать о том как проходит учебный процесс, а так же ознакомиться с расписанием всех онлайн курсов Вы можете на сайте <a target="_blank" href="https://school-bc.ru/#">Онлайн "Школы Доктора Чикурова"</a></p>
-                  </div>
-                  <div class="col-md-6 online_school_logo"><a class="online_school" target="_blank" href="https://school-bc.ru/#"><img src="<?php bloginfo('template_url'); ?>/img/logo_online_.png" alt="online school"></a></div>
-                <?php } else { ?>
-                  <?php if ($autor == 'Юрий Чикуров' && $city == 'Санкт-Петербург') {?>
-                    <?php echo do_shortcode('[contact-form-7 id="1209" title="Запись на семинар_Илья"]'); ?>
-                  <?php } else if ($autor == 'Юрий Чикуров') { ?>
-                    <?php echo do_shortcode('[contact-form-7 id="4" title="Запись на семинар"]'); ?>
-                  <?php } else if ($autor == 'Ирина Иванова' && $city == 'Москва') { ?>
-                    <?php echo do_shortcode('[contact-form-7 id="3941" title="Запись на семинар_Иванова_Москва"]'); ?>
-                  <?php }  else if ($autor == 'Ирина Иванова') { ?>
-                    <?php echo do_shortcode('[contact-form-7 id="170" title="Запись на семинар_Иванова"]'); ?>
-                  <?php } else if ($autor == 'Василий Киселев') { ?>
-                    <?php echo do_shortcode('[contact-form-7 id="632" title="Запись на семинар_Киселев"]'); ?>
-                  <?php } else if ($autor == 'Елена Зукуле') { ?>
-                    <?php echo do_shortcode('[contact-form-7 id="1059" title="Запись на семинар_Зукуле"]'); ?>
-                  <?php } else if ($autor == 'Марина Салехова') { ?>
-                    <?php echo do_shortcode('[contact-form-7 id="2711" title="Запись на семинар_Салехова"]'); ?>
-                  <?php } else if ($autor == 'Никита Истомин' && $city == 'Москва') { ?>
-                    <?php echo do_shortcode('[contact-form-7 id="3818" title="Запись на семинар_Истомин_Москва"]'); ?>
-                  <?php } else if ($autor == 'Никита Истомин' && $city == 'Санкт-Петербург') { ?>
-                    <?php echo do_shortcode('[contact-form-7 id="4131" title="Запись на семинар_Истомин_Питер"]'); ?>
-                  <?php } else if ($autor == 'Никита Истомин') { ?>
-                    <?php echo do_shortcode('[contact-form-7 id="3765" title="Запись на семинар_Истомин"]'); ?>
-                  <?php } else if ($autor == 'Сергей Стеканов' && $city == 'Москва') { ?>
-                    <?php echo do_shortcode('[contact-form-7 id="4642" title="Запись на семинар_Стеканов_Москва"]'); ?>
-                  <?php } else if ($autor == 'Олег Плотников' && $city == 'Москва') { ?>
-                    <?php echo do_shortcode('[contact-form-7 id="4918" title="Запись на семинар_Плотников_Москва"]'); ?>
-                  <?php } else if ($autor == 'Галина Москаленко') { ?>
-                    <?php echo do_shortcode('[contact-form-7 id="4978" title="Запись на семинар_Москаленко"]'); ?>
-                  <?php } else if ($autor == 'Вячеслав Павленок') { ?>
-                    <?php echo do_shortcode('[contact-form-7 id="5968" title="Запись на семинар_Павленок_Москва"]'); ?>
-                  <?php } ?>
+                <?php if ($autor == 'Юрий Чикуров' && $city == 'Санкт-Петербург') {?>
+                  <?php echo do_shortcode('[contact-form-7 id="1209" title="Запись на семинар_Илья"]'); ?>
+                <?php } else if ($autor == 'Юрий Чикуров') { ?>
+                  <?php echo do_shortcode('[contact-form-7 id="4" title="Запись на семинар"]'); ?>
+                <?php } else if ($autor == 'Ирина Иванова' && $city == 'Москва') { ?>
+                  <?php echo do_shortcode('[contact-form-7 id="3941" title="Запись на семинар_Иванова_Москва"]'); ?>
+                <?php }  else if ($autor == 'Ирина Иванова') { ?>
+                  <?php echo do_shortcode('[contact-form-7 id="170" title="Запись на семинар_Иванова"]'); ?>
+                <?php } else if ($autor == 'Василий Киселев') { ?>
+                  <?php echo do_shortcode('[contact-form-7 id="632" title="Запись на семинар_Киселев"]'); ?>
+                <?php } else if ($autor == 'Елена Зукуле') { ?>
+                  <?php echo do_shortcode('[contact-form-7 id="1059" title="Запись на семинар_Зукуле"]'); ?>
+                <?php } else if ($autor == 'Марина Салехова') { ?>
+                  <?php echo do_shortcode('[contact-form-7 id="2711" title="Запись на семинар_Салехова"]'); ?>
+                <?php } else if ($autor == 'Никита Истомин' && $city == 'Москва') { ?>
+                  <?php echo do_shortcode('[contact-form-7 id="3818" title="Запись на семинар_Истомин_Москва"]'); ?>
+                <?php } else if ($autor == 'Никита Истомин' && $city == 'Санкт-Петербург') { ?>
+                  <?php echo do_shortcode('[contact-form-7 id="4131" title="Запись на семинар_Истомин_Питер"]'); ?>
+                <?php } else if ($autor == 'Никита Истомин') { ?>
+                  <?php echo do_shortcode('[contact-form-7 id="3765" title="Запись на семинар_Истомин"]'); ?>
+                <?php } else if ($autor == 'Сергей Стеканов' && $city == 'Москва') { ?>
+                  <?php echo do_shortcode('[contact-form-7 id="4642" title="Запись на семинар_Стеканов_Москва"]'); ?>
+                <?php } else if ($autor == 'Олег Плотников' && $city == 'Москва') { ?>
+                  <?php echo do_shortcode('[contact-form-7 id="4918" title="Запись на семинар_Плотников_Москва"]'); ?>
+                <?php } else if ($autor == 'Галина Москаленко') { ?>
+                  <?php echo do_shortcode('[contact-form-7 id="4978" title="Запись на семинар_Москаленко"]'); ?>
+                <?php } else if ($autor == 'Вячеслав Павленок') { ?>
+                  <?php echo do_shortcode('[contact-form-7 id="5968" title="Запись на семинар_Павленок_Москва"]'); ?>
                 <?php } ?>
               <?php } ?>
             </div>
