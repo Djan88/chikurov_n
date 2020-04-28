@@ -2140,6 +2140,12 @@ ul#myTab
     color: #ff206d!important;
     font-weight: bold;
 }
+.online_event 
+{
+    color: #0094e1;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 /******************************
 responsive area
 ********************************/
