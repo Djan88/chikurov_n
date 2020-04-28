@@ -27,6 +27,7 @@
           <div class="programm_menu_item programm_menu_item_1 active">Сертификационные</div>
           <div class="programm_menu_item programm_menu_item_2">Дополнительные</div>
           <div class="programm_menu_item programm_menu_item_3">Мастер - классы</div>
+          <div class="programm_menu_item programm_menu_item_4">Онлайн</div>
           <div class="programm_menu_item programm_menu_item_all">Все</div>
         </div>
         <div class="col-md-12 programm_items">
@@ -132,6 +133,13 @@
             <span class="programm_item_inner">
               <span class="parogramm_item_heading">Эстетическая мануальная коррекция лица, избранные техники</span></br>
               <span class="parogramm_item_content">8 учебных часов</span></br>
+              <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
+            </span>
+          </a>
+          <a href="/biologicheskoe-centrirovanie-sistema-zdorovya-page/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
+            <span class="programm_item_inner">
+              <span class="parogramm_item_heading">Биологическое Центрирование — система Здоровья</span></br>
+              <div class="parogramm_item_content">30 календарных дней<span class="pull-right online_event">Онлайн курс</span></div></br>
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
           </a>
