@@ -136,7 +136,7 @@
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
           </a>
-          <a href="/lechebnoe-tarot-izbrannye-texniki/page/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
+          <a href="/lechebnoe-tarot-izbrannye-texniki-page/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
             <span class="programm_item_inner">
               <span class="parogramm_item_heading">Лечебное Tarot. Избранные техники</span></br>
               <div class="parogramm_item_content">6 учебных часов<span class="pull-right online_event">Онлайн семинар</span></div></br>
