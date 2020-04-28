@@ -157,6 +157,7 @@
           <?php if (is_page(6998)){ ?>
             <i class="fa fa-calendar" aria-hidden="true"> </i> 
           <?php } else { ?>
+            <?php the_field('online_course'); ?>
             <i class="fa fa-clock-o" aria-hidden="true"> </i> 
           <?php } ?>
           <?php the_field('seminar_hours'); ?></span>
