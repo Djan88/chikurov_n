@@ -2134,6 +2134,11 @@ ul#myTab
 {
     background: #eef2f8;
 }
+.more-link 
+{
+    color: #ff206d;
+    font-weight: bold;
+}
 /******************************
 responsive area
 ********************************/
