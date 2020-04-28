@@ -2146,6 +2146,17 @@ ul#myTab
     font-weight: 600;
     text-transform: uppercase;
 }
+.online_course_special
+{
+    text-align: left;
+    font-size: 18px!important;
+}
+.online_course_heading
+{
+    padding: 10px;
+    background: #eef2f8;
+    border-radius: 6px;
+}
 /******************************
 responsive area
 ********************************/
