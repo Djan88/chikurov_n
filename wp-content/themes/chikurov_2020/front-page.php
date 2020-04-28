@@ -27,7 +27,7 @@
           <div class="programm_menu_item programm_menu_item_1 active">Сертификационные</div>
           <div class="programm_menu_item programm_menu_item_2">Дополнительные</div>
           <div class="programm_menu_item programm_menu_item_3">Мастер - классы</div>
-          <div class="programm_menu_item programm_menu_item_4">Онлайн</div>
+          <div class="programm_menu_item programm_menu_item_4">Онлайн курсы и семинары</div>
           <div class="programm_menu_item programm_menu_item_all">Все</div>
         </div>
         <div class="col-md-12 programm_items">

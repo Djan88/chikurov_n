@@ -210,6 +210,8 @@ jQuery(document).ready(function () {
       jQuery('.programm_item_3').removeClass('hidden');
     } else if (jQuery(this).hasClass('programm_menu_item_all')) {
       jQuery('.programm_item').removeClass('hidden');
+    } else if (jQuery(this).hasClass('programm_menu_item_4')) {
+      jQuery('.programm_item_4').removeClass('hidden');
     }
   });
 
