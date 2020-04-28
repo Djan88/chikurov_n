@@ -1618,8 +1618,8 @@ a.online_school img
 .online
 {
     padding: 10px;
-    /*background: #ddeff7;*/
-    border: 1px solid #0094e1;
+    margin: 10px 0;
+    background: #eef2f8;
     border-radius: 6px;
     min-height: 115px;
 }
@@ -1637,26 +1637,6 @@ a.online_school img
     position: absolute;
     border-right: 1px solid #0094e1;
 }
-.online .col-md-6:after
-{
-    content: '';
-    display: block;
-    top: 0;
-    right: 0;
-    height: 100%;
-    position: absolute;
-    border-right: 1px solid #0094e1;
-}
-.online .col-md-6:before
-{
-    content: '';
-    display: block;
-    top: 0;
-    left: 0;
-    height: 100%;
-    position: absolute;
-    border-left: 1px solid #0094e1;
-}
 .online .col-md-4:last-child:after
 {
     border-color: transparent; 
@@ -1664,12 +1644,6 @@ a.online_school img
 .online_body
 {
     font-size: 17px;
-}
-.online_heading
-{
-    background: #ddeff7;
-    border: 1px solid #0094e1;
-    border-radius: 6px;
 }
 .online_body_heading
 {
