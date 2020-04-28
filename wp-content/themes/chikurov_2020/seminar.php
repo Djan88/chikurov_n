@@ -179,7 +179,7 @@ echo ' </div>';
 echo '<div class="seminar_date">';
 if (get_field('seminar_online')) {
   echo ' <span class="fa fa-globe"></span> ';
-  echo '<span class="seminar_online_title">ОНЛАЙН КУРС</span>';
+  echo '<span class="seminar_online_title">Онлайн семинар</span>';
 } else {
   echo ' <span class="fa fa-map-marker"></span>Город: ';
   echo '<span class="seminar_city_name">';
