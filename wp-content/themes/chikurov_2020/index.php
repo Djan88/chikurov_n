@@ -61,20 +61,20 @@
               <button type="button" data-filter_s="riga" class="btn btn-warning btn_seminar_filter">Рига</button>
               <button type="button" data-filter_s="online" class="btn btn-info btn_seminar_filter">Онлайн школа</button>
             </div> -->
-            <!-- <div class="autors col-md-12">
-              <button type="button" data-filter_s="ch" class="btn btn-warning btn_seminar_filter">Юрий Чикуров</button>
-              <button type="button" data-filter_s="iv" class="btn btn-warning btn_seminar_filter">Ирина Иванова</button>
-              <button type="button" data-filter_s="ks" class="btn btn-warning btn_seminar_filter">Василий Киселев</button>
-              <button type="button" data-filter_s="zk" class="btn btn-warning btn_seminar_filter">Елена Зукуле</button>
-              <button type="button" data-filter_s="sh" class="btn btn-warning btn_seminar_filter">Марина Салехова</button>
-              <button type="button" data-filter_s="pl" class="btn btn-warning btn_seminar_filter">Олег Плотников</button>
-              <button type="button" data-filter_s="st" class="btn btn-warning btn_seminar_filter">Сергей Стеканов</button>
-              <button type="button" data-filter_s="ms" class="btn btn-warning btn_seminar_filter">Галина Москаленко</button>
-              <button type="button" data-filter_s="pa" class="btn btn-warning btn_seminar_filter">Вячеслав Павленок</button>
-            </div> -->
           <?php } ?> 
           <?php if (is_page(630)) { ?>
             <h2>Расписание семинаров мастеров</h2>
+            <div class="autors col-md-12">
+              <!-- <button type="button" data-filter_s="ch" class="btn btn-warning btn_seminar_filter">Юрий Чикуров</button> -->
+              <button type="button" data-filter_s="iv" class="btn btn-warning btn_seminar_filter">Ирина Иванова</button>
+              <!-- <button type="button" data-filter_s="ks" class="btn btn-warning btn_seminar_filter">Василий Киселев</button> -->
+              <!-- <button type="button" data-filter_s="zk" class="btn btn-warning btn_seminar_filter">Елена Зукуле</button> -->
+              <button type="button" data-filter_s="sh" class="btn btn-warning btn_seminar_filter">Марина Салехова</button>
+              <!-- <button type="button" data-filter_s="pl" class="btn btn-warning btn_seminar_filter">Олег Плотников</button>
+              <button type="button" data-filter_s="st" class="btn btn-warning btn_seminar_filter">Сергей Стеканов</button>
+              <button type="button" data-filter_s="ms" class="btn btn-warning btn_seminar_filter">Галина Москаленко</button> -->
+              <button type="button" data-filter_s="pa" class="btn btn-warning btn_seminar_filter">Вячеслав Павленок</button>
+            </div>
           <?php } ?> 
         </div>
         <div class="col-md-12 seminar_wrap">
