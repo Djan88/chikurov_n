@@ -74,6 +74,7 @@
               <button type="button" data-filter_s="st" class="btn btn-warning btn_seminar_filter">Сергей Стеканов</button>
               <button type="button" data-filter_s="ms" class="btn btn-warning btn_seminar_filter">Галина Москаленко</button> -->
               <button type="button" data-filter_s="pa" class="btn btn-warning btn_seminar_filter">Вячеслав Павленок</button>
+              <button type="button" data-filter_s="all" class="btn btn-success btn_seminar_filter active">Все семинары</button>
             </div>
           <?php } ?> 
         </div>
