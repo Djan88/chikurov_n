@@ -2136,7 +2136,7 @@ ul#myTab
 }
 .more-link 
 {
-    color: #ff206d;
+    color: #ff206d!important;
     font-weight: bold;
 }
 /******************************
