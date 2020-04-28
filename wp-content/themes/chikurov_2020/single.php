@@ -103,7 +103,7 @@
                 </div>
                 <div class="params_content" style="margin-top: 10px; font-size: 16px;">
                   <?php if (get_field('seminar_online')) { ?>
-                    <span class="fa fa-globe"></span> <span class="place_info">ОНЛАЙН "ШКОЛА ДОКТОРА ЧИКУРОВА"</span>
+                    <span class="fa fa-globe"></span> <span class="place_info">Онлайн семинар</span>
                   <?php } else { ?>
                     <span class="fa fa-map-marker"></span> <span class="place_info"> <?php the_field('city'); ?>, <?php the_field('adres'); ?></span>
                   <?php } ?>
