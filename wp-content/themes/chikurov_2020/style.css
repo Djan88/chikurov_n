@@ -1457,7 +1457,7 @@ h3.seminar_heading
 }
 section#lectors 
 {
-    border-bottom: 1px solid #0094e1;
+    /*border-bottom: 1px solid #0094e1;*/
     padding-bottom: 15px;
 }
 .school-lector 
