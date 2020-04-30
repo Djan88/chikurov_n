@@ -205,26 +205,13 @@
           <h2>Визардмашины</h2>
         </div>
         <div class="col-md-12 wizard_links">
-          <div class="row">
-            <div class="col-md-2">
-              <a href="https://wizardmachine.ru/" target="_blank" class="btn btn-primary">WizardMachine</a>
-            </div>
-            <div class="col-md-2">
-              <a href="https://wizardduos.ru/" target="_blank" class="btn btn-primary">WizardDuos</a>
-            </div>
-            <div class="col-md-2">
-              <a href="https://tarotmachine.ru/" target="_blank" class="btn btn-primary">TarotMachine</a>
-            </div>
-            <div class="col-md-2">
-              <a href="https://wizard-lovushka.ru/" target="_blank" class="btn btn-primary">WizardLovushka</a>
-            </div>
-            <div class="col-md-2">
-              <a href="http://marakata.ru/" target="_blank" class="btn btn-primary">Marakata</a>
-            </div>
-            <div class="col-md-2">
-              <a href="http://braincleaner.ru/" target="_blank" class="btn btn-primary">Braincleaner</a>
-            </div>
-          </div>
+          <a href="https://wizardmachine.ru/" target="_blank" class="btn btn-primary">WizardMachine</a>
+          <a href="https://wizardduos.ru/" target="_blank" class="btn btn-primary">WizardDuos</a>
+          <a href="https://tarotmachine.ru/" target="_blank" class="btn btn-primary">TarotMachine</a>
+          <a href="https://wizard-lovushka.ru/" target="_blank" class="btn btn-primary">WizardLovushka</a>
+          <a href="http://marakata.ru/" target="_blank" class="btn btn-primary">Marakata</a>
+          <a href="http://braincleaner.ru/" target="_blank" class="btn btn-primary">Braincleaner</a>
+          <a href="https://deviatochka.ru/" target="_blank" class="btn btn-primary">Девяточка</a>
         </div>
         <div class="col-md-12" style="color: #26364b;">
           <p style="text-align: center; font-size: 18px;">Вы можете испытать на себе эффект <b>"Wizard Machine"</b> и <b>"Wizard Duos"</b>. Для этого оставьте заявку кликнув на кнопку ниже. Вам на почту поступит письмо от специалиста для согласования даты и времени проведения сессии.</p>

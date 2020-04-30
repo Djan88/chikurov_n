@@ -2135,8 +2135,13 @@ ul#myTab
 }
 .wizard_links
 {
-    margin-bottom: 15px;
     text-align: center;
+}
+.wizard_links a
+{
+    margin: 15px;
+    display: inline-block;
+
 }
 /******************************
 responsive area
