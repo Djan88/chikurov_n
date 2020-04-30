@@ -2136,10 +2136,11 @@ ul#myTab
 .wizard_links
 {
     text-align: center;
+    margin-bottom: 10;
 }
 .wizard_links a
 {
-    margin: 15px;
+    margin: 5px;
     display: inline-block;
 
 }
