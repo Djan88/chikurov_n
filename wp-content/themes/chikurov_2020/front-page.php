@@ -204,10 +204,25 @@
         <div class="col-md-12">
           <h2>Визардмашины</h2>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 wizard_links">
           <div class="row">
             <div class="col-md-2">
               <a href="https://wizardmachine.ru/" target="_blank" class="btn btn-primary">WizardMachine</a>
+            </div>
+            <div class="col-md-2">
+              <a href="https://wizardduos.ru/" target="_blank" class="btn btn-primary">WizardDuos</a>
+            </div>
+            <div class="col-md-2">
+              <a href="https://tarotmachine.ru/" target="_blank" class="btn btn-primary">TarotMachine</a>
+            </div>
+            <div class="col-md-2">
+              <a href="https://wizard-lovushka.ru/" target="_blank" class="btn btn-primary">WizardLovushka</a>
+            </div>
+            <div class="col-md-2">
+              <a href="http://marakata.ru/" target="_blank" class="btn btn-primary">Marakata</a>
+            </div>
+            <div class="col-md-2">
+              <a href="http://braincleaner.ru/" target="_blank" class="btn btn-primary">Braincleaner</a>
             </div>
           </div>
         </div>

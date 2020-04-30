@@ -2133,6 +2133,11 @@ ul#myTab
     border-radius: 6px;
     font-weight: 600;
 }
+.wizard_links
+{
+    margin-bottom: 15px;
+    text-align: center;
+}
 /******************************
 responsive area
 ********************************/
