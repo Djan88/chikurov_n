@@ -356,10 +356,10 @@
               <img src="<?php //bloginfo('template_url'); ?>/img/plotnikov.jpg" alt="">
               <div class="lector_name">Олег Плотников</div>
             </a> -->
-            <!-- <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/galina-63/">
-              <img src="<?php //bloginfo('template_url'); ?>/img/moskalenko.png" alt="">
+            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/galina-63/">
+              <img src="<?php bloginfo('template_url'); ?>/img/moskalenko.png" alt="">
               <div class="lector_name">Галина Москаленко</div>
-            </a> -->
+            </a>
             <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/paltus/">
               <img src="<?php bloginfo('template_url'); ?>/img/pavlenok.jpg" alt="">
               <div class="lector_name">Вячеслав Павленок</div>
