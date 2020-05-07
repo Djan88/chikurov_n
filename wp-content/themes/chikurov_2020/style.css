@@ -2160,7 +2160,8 @@ responsive area
     {
         font-size: 17px;
     }
-    .navbar-default .navbar-nav>li>a, .dropdown_menu {
+    .navbar-default .navbar-nav>li>a, .dropdown_menu, .consult
+    {
         font-size: 17px;
         padding: 14px 4px;
     }
@@ -2252,7 +2253,8 @@ responsive area
     {
         position: relative;
     }
-    .navbar-default .navbar-nav>li>a, .dropdown_menu {
+    .navbar-default .navbar-nav>li>a, .dropdown_menu, .consult
+    {
         font-size: 12px;
         padding: 14px 3px;
     }
@@ -2384,7 +2386,7 @@ responsive area
     {
         text-align: left;
     }
-    .navbar-default .navbar-nav>li>a, .dropdown_menu
+    .navbar-default .navbar-nav>li>a, .dropdown_menu, .consult
     {
         font-size: 25px;
         padding: 15px;
@@ -2630,7 +2632,7 @@ responsive area
     {
         text-align: left;
     }
-    .navbar-default .navbar-nav>li>a, .dropdown_menu
+    .navbar-default .navbar-nav>li>a, .dropdown_menu, .consult
     {
         font-size: 25px;
         padding: 15px;
@@ -2808,7 +2810,7 @@ responsive area
     {
         text-align: left;
     }
-    .navbar-default .navbar-nav>li>a, .dropdown_menu
+    .navbar-default .navbar-nav>li>a, .dropdown_menu, .consult
     {
         font-size: 25px;
         padding: 15px;
@@ -3097,7 +3099,7 @@ responsive area
     {
         text-align: left;
     }
-    .navbar-default .navbar-nav>li>a, .dropdown_menu
+    .navbar-default .navbar-nav>li>a, .dropdown_menu, .consult
     {
         font-size: 25px;
         padding: 15px;
