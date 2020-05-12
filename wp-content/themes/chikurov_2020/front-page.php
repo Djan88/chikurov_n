@@ -335,7 +335,7 @@
         </div>
         <div class="col-xs-10 col-xs-offset-1">
           <div class="row chi_masters">
-            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/irina_ivanova/">
+            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="/seminary-masterov/">
               <img src="<?php bloginfo('template_url'); ?>/img/ivanova.jpg" alt="">
               <div class="lector_name">Ирина Иванова</div>
             </a>
