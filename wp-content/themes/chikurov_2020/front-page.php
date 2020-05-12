@@ -351,7 +351,7 @@
               <img src="<?php //bloginfo('template_url'); ?>/img/stekanov.png" alt="">
               <div class="lector_name">Сергей Стеканов</div>
             </a> -->
-            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/salehova_marina/">
+            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="/seminary-masterov/">
               <img src="<?php bloginfo('template_url'); ?>/img/salechova.jpg" alt="">
               <div class="lector_name">Марина Салехова</div>
             </a>
@@ -359,11 +359,11 @@
               <img src="<?php //bloginfo('template_url'); ?>/img/plotnikov.jpg" alt="">
               <div class="lector_name">Олег Плотников</div>
             </a> -->
-            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/galina-63/">
+            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="/seminary-masterov/">
               <img src="<?php bloginfo('template_url'); ?>/img/moskalenko.png" alt="">
               <div class="lector_name">Галина Москаленко</div>
             </a>
-            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/paltus/">
+            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="/seminary-masterov/">
               <img src="<?php bloginfo('template_url'); ?>/img/pavlenok.jpg" alt="">
               <div class="lector_name">Вячеслав Павленок</div>
             </a>
