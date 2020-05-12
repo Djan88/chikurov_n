@@ -30,7 +30,7 @@
           <div class="programm_menu_item programm_menu_item_1 active">Сертификационные</div>
           <div class="programm_menu_item programm_menu_item_2">Дополнительные</div>
           <div class="programm_menu_item programm_menu_item_3">Мастер - классы</div>
-          <div class="programm_menu_item programm_menu_item_4">Онлайн курсы и семинары</div>
+          <div class="programm_menu_item programm_menu_item_4">Онлайн курсы</div>
           <div class="programm_menu_item programm_menu_item_all">Все</div>
         </div>
         <div class="col-md-12 programm_items">
@@ -92,7 +92,7 @@
           </a>
           <a href="/tarot-psixosomatika-page/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_2 hidden">
             <span class="programm_item_inner">
-              <span class="parogramm_item_heading">Tarot психосоматика</span></br>
+              <span class="parogramm_item_heading">Лечебное Tarot</span></br>
               <span class="parogramm_item_content">16 учебных часов</span></br>
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
@@ -139,13 +139,13 @@
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
           </a>
-          <a href="/lechebnoe-tarot-izbrannye-texniki-page/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
+          <!-- <a href="/lechebnoe-tarot-izbrannye-texniki-page/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
             <span class="programm_item_inner">
               <span class="parogramm_item_heading">Лечебное Tarot. Избранные техники</span></br>
               <div class="parogramm_item_content">6 учебных часов<span class="pull-right online_event">Онлайн семинар</span></div></br>
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
-          </a>
+          </a> -->
           <a href="/biologicheskoe-centrirovanie-sistema-zdorovya-page/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
             <span class="programm_item_inner">
               <span class="parogramm_item_heading">Биологическое Центрирование — система Здоровья</span></br>
