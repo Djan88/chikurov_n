@@ -355,10 +355,10 @@
               <img src="<?php bloginfo('template_url'); ?>/img/salechova.jpg" alt="">
               <div class="lector_name">Марина Салехова</div>
             </a>
-            <!-- <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/plotnikov/">
-              <img src="<?php //bloginfo('template_url'); ?>/img/plotnikov.jpg" alt="">
+            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="/seminary-masterov/">
+              <img src="<?php bloginfo('template_url'); ?>/img/plotnikov.jpg" alt="">
               <div class="lector_name">Олег Плотников</div>
-            </a> -->
+            </a>
             <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="/seminary-masterov/">
               <img src="<?php bloginfo('template_url'); ?>/img/moskalenko.png" alt="">
               <div class="lector_name">Галина Москаленко</div>
