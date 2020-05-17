@@ -27,8 +27,8 @@
   ============================================================= -->
   <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/loadmore.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/js/conversation.js"></script>  
-  <script src="<?php bloginfo('template_url'); ?>/js/peekobot.js"></script>
+  <!-- <script src="<?php //bloginfo('template_url'); ?>/js/conversation.js"></script>   -->
+  <!-- <script src="<?php //bloginfo('template_url'); ?>/js/peekobot.js"></script> -->
   <script src="<?php bloginfo('template_url'); ?>/js/slick.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
   <?php if (!is_front_page()) { ?>
@@ -155,7 +155,7 @@
                   <h4>"Биологическое центрирование. Практическое руководство"</h4>
                   <div class="clearfix">
                     <div class="col-md-4" style="text-align: center;">
-                      <img style="max-width: 100%;" class="img-responsive pull-left content_img colorbox-147" src="/wp-content/themes/chikurov/img/oblojka.png" alt="">
+                      <!-- <img style="max-width: 100%;" class="img-responsive pull-left content_img colorbox-147" src="/wp-content/themes/chikurov/img/oblojka.png" alt=""> -->
                     </div>
                     <div class="col-md-8">
                       <script id="8ef7af9574fa734129cd56c349d840febd4766c2" src="https://school-bc.ru/pl/lite/widget/script?id=24256&rand=adgaas"></script>
