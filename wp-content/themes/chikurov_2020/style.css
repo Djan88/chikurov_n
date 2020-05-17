@@ -1407,6 +1407,8 @@ h5.animated_block
     border-radius: 6px;
     animation: 10s linear 0s infinite normal both running cvowSz;
 }
+@-webkit-keyframes cvowSz{0%{background-position:0 center;}100%{background-position:100% center;}} 
+        @keyframes cvowSz{0%{background-position:0 center;}100%{background-position:100% center;}}
 .seminar_closed 
 {
     padding-left: 15px;
