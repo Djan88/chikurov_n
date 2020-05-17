@@ -1387,15 +1387,26 @@ h5.age
     font-size: 18px;
     color: #fff;
     font-weight: bold;
-    background: linear-gradient(225deg,#fa097c,#321575);
+    /*background: linear-gradient(225deg,#fa097c,#321575);*/
+    /*background-size: 500% 100%;*/
     text-align: center;
     padding: 20px;
     margin: 20px 0;
     border-radius: 6px;
-    animation: 10s linear 0s infinite normal both running cvowSz;
+    /*animation: 10s linear 0s infinite normal both running cvowSz;*/
+    background-color: red;
+    background-image: -webkit-linear-gradient(    left, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+    background-image:    -moz-linear-gradient(    left, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+    background-image:      -o-linear-gradient(    left, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+    background-image:         linear-gradient(to right, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
 }
-@-webkit-keyframes cvowSz{0%{background-position:0 center;}100%{background-position:100% center;}} 
-        @keyframes cvowSz{0%{background-position:0 center;}100%{background-position:100% center;}}
+/*@-webkit-keyframes cvowSz{0%{background-position:0 center;}100%{background-position:100% center;}} 
+        @keyframes cvowSz{0%{background-position:0 center;}100%{background-position:100% center;}}*/
+    -webkit-animation: 4s linear 0s infinite alternate move_eye;
+       -moz-animation: 4s linear 0s infinite alternate move_eye;
+         -o-animation: 4s linear 0s infinite alternate move_eye;
+            animation: 4s linear 0s infinite alternate move_eye;
+
 .seminar_closed 
 {
     padding-left: 15px;
