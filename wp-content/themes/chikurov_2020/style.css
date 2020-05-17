@@ -1392,6 +1392,7 @@ h5.age
     padding: 20px;
     margin: 20px 0;
     border-radius: 6px;
+    animation: 10s linear 0s infinite normal both running cvowSz;
 }
 .seminar_closed 
 {
