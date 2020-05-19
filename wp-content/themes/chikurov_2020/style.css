@@ -2120,7 +2120,7 @@ ul#myTab
 {
     transform: scale(1);
     display: inline-block;
-    transition: transform .5s ease;
+    transition: transform .2s ease;
 }
 .oferta_wrap_styled
 {
