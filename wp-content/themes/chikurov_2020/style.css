@@ -2116,10 +2116,20 @@ ul#myTab
 {
     padding-top: 15px;
 }
+.wpcf7-list-item
+{
+    transform: scale(1);
+    display: inline-block;
+    transition: transform .5s ease;
+}
 .oferta_wrap_styled
 {
     color: #ff206d;
     text-decoration: underline;
+}
+.oferta_wrap_styled .wpcf7-list-item
+{
+    transform: scale(1.5);
 }
 .order_seminar
 {
