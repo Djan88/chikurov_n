@@ -216,6 +216,9 @@
           <a href="http://braincleaner.ru/" target="_blank" class="btn btn-primary">Braincleaner</a>
           <a href="https://deviatochka.ru/" target="_blank" class="btn btn-primary">Девяточка</a>
         </div>
+        <div class="col-md-12">
+          <h5 class="animated_block">Доступна помесячная оплата доступа к "WizardMachine", "WizardDuos" и "TarotMachine"</h5>
+        </div>
         <div class="col-md-12" style="color: #26364b;">
           <p style="text-align: center; font-size: 18px;">Вы можете испытать на себе эффект <b>"Wizard Machine"</b> и <b>"Wizard Duos"</b>. Для этого оставьте заявку кликнув на кнопку ниже. Вам на почту поступит письмо от специалиста для согласования даты и времени проведения сессии.</p>
           <div class="row">
