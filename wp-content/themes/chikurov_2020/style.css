@@ -2170,6 +2170,30 @@ ul#myTab
     display: inline-block;
 
 }
+h3.pricing 
+{
+    display: inline-block;
+    border: 2px solid #0094e1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h3.pricing span
+{
+    color: #ff206d;
+}
+
+
+
+
+
+
+
+
+
+
+
 /******************************
 responsive area
 ********************************/
