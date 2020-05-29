@@ -20,7 +20,7 @@
   <section class="seminars seminars_dark programm" id="programm">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12" style="text-align: center">
           <h2>Программа обучения в школе</h2>
           <h3 class="pricing">Стоимость семинаров от <span>20000 руб.</span></h3>
         </div>
