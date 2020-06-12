@@ -101,7 +101,7 @@
                   <!-- <div id="bs-example-navbar-collapse-1"> -->
                     
                     <ul class="nav navbar-nav navbar-left">
-                      <li><a class="menu" href="/seminary">Расписание</a></li>
+                      <li><a class="menu" href="/seminary">Семинары</a></li>
                       <!-- <li><a class="menu" href="#about">Биологическое центрирование</a></li> -->
                       <li><a class="menu" href="http://school-bc.ru/" target="_blank">Онлайн Школа</a></li>
                       <!-- <li><a class="menu" target="_blank" href="http://www.yuchikurov.info/reestr/">Реестр специалистов</a></li> -->

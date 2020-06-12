@@ -291,7 +291,7 @@
                 'category_name' => 'seminary',
                 'order' => 'ASC',
                 'post_type' => 'post',
-                'title' => 'Развитие перцептивных навыков чувствования и движения',
+                'title' => 'Постановка перцепции',
                 'orderby' => 'meta_value',
                 'meta_key' => 'seminar_start',
                 'meta_query' => array(
