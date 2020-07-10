@@ -561,7 +561,7 @@
                 'category_name' => 'seminary',
                 'order' => 'ASC',
                 'post_type' => 'post',
-                'title' => 'Tarot психосоматика',
+                'title' => 'Лечебное Tarot',
                 'orderby' => 'meta_value',
                 'meta_key' => 'seminar_start',
                 'meta_query' => array(
