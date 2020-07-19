@@ -226,7 +226,7 @@
             <div class="col-md-12">
               <ul id="myTab" class="nav nav-tabs">
                 <li class="active">
-                  <a href="#wm" data-toggle="tab">Персональная</a>
+                  <a href="#wm" data-toggle="tab">Персональная сессия</a>
                 </li>
                 <li>
                   <a href="#wd" data-toggle="tab">Коррекция отношений</a>
