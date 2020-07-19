@@ -226,10 +226,13 @@
             <div class="col-md-12">
               <ul id="myTab" class="nav nav-tabs">
                 <li class="active">
-                  <a href="#wm" data-toggle="tab">WIZARD MACHINE</a>
+                  <a href="#wm" data-toggle="tab">Персональная</a>
                 </li>
                 <li>
-                  <a href="#wd" data-toggle="tab">WIZARD DUOS</a>
+                  <a href="#wd" data-toggle="tab">Коррекция отношений</a>
+                </li>
+                <li>
+                  <a href="#es" data-toggle="tab">Чистка помещения</a>
                 </li>
               </ul>
               <div class="tab-content">
@@ -249,6 +252,16 @@
                   </div>
                   <div class="col-md-6">
                     <img class="full_w_img" src="<?php bloginfo('template_url'); ?>/img/wd.png" alt="wd">
+                  </div>
+                </div>
+                <div id="es" class="tab-pane fade">
+                  <div class="col-md-6 myTab_content">
+                    Помещение, в котором человек живет или работает - это его продолжение. Если энергетика помещения не соотвествует человеку, то он начинает себя хуже чувствовать, хуже спать, начинается спад в делах. Энергетическая чистка помещения осуществляется по снимку плана помещения или его рисунку. Увидеть как выглядит процесс чистки можно по ссылке ниже</br>
+                    <a href="https://www.youtube.com/watch?v=7nQ50HcSgv0&t=11s" target="_blank" style="margin-top: 15px;" class="btn btn-success">Как проходит чистка?</a>
+                    <button style="margin-top: 15px;" class="btn btn-primary btn_session" data-toggle="modal" data-target="#order_session" data-session_type="EstateCleaning">Заказать "Чистку помещения"</button>
+                  </div>
+                  <div class="col-md-6">
+                    <img class="full_w_img" src="<?php bloginfo('template_url'); ?>/img/es.png" alt="es">
                   </div>
                 </div>
               </div>
