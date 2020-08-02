@@ -3139,6 +3139,11 @@ responsive area
     {
         width: 100%;
         text-align: center;
+        margin-bottom: 10px;
+    }
+    h3.pricing span
+    {
+        display: block;
     }
 }
 
@@ -3251,5 +3256,10 @@ responsive area
     {
         width: 100%;
         text-align: center;
+        margin-bottom: 10px;
+    }
+    h3.pricing span
+    {
+        display: block;
     }
 }
