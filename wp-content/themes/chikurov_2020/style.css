@@ -115,7 +115,7 @@ h2 {
     /*border-bottom: 1px solid #0094e1;*/
     position: fixed;
     box-shadow: 0 6px 16px rgba(26,61,107,.16);
-    z-index: 995;
+    z-index: 1000;
 }
 .header-backup {
     width: 20px;
@@ -1959,19 +1959,25 @@ ul#myTab
 .nav-tabs>li a
 {
     color: #26364b;
-    border: none;
+    border: 2px solid #0094e1;
+    padding: 10px;
+    border-radius: 5px;
 }
 .nav-tabs>li.active a
 {
-    border: none;
     background: none;
     color: #ff206d;
+    border: 2px solid #ff206d;
+    padding: 10px;
+    border-radius: 5px;
 }
 .nav-tabs>li a:hover, .nav-tabs>li.active a:hover, .nav-tabs>li.active a:focus
 {
-    border: none;
     background: none;
     color: #ff206d;
+    border: 2px solid #ff206d;
+    padding: 10px;
+    border-radius: 5px;
 }
 .books
 {
