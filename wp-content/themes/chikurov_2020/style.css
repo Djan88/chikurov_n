@@ -1960,7 +1960,7 @@ ul#myTab
 {
     color: #26364b;
     border: 2px solid #0094e1;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
 }
 .nav-tabs>li.active a
@@ -1968,7 +1968,7 @@ ul#myTab
     background: none;
     color: #ff206d;
     border: 2px solid #ff206d;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
 }
 .nav-tabs>li a:hover, .nav-tabs>li.active a:hover, .nav-tabs>li.active a:focus
@@ -1976,7 +1976,7 @@ ul#myTab
     background: none;
     color: #ff206d;
     border: 2px solid #ff206d;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
 }
 .books
@@ -2657,6 +2657,10 @@ responsive area
         display: inline-block;
         padding-left: 10px;
     }
+    .nav-tabs>li a, .nav-tabs>li.active a, .nav-tabs>li a:hover, .nav-tabs>li.active a:hover, .nav-tabs>li.active a:focus
+    {
+        font-size: 15px;
+    }
 
 }
 @media (max-width: 670px) {
@@ -2831,6 +2835,11 @@ responsive area
         display: inline-block;
         padding-left: 10px;
         padding-top: 0;
+    }
+    .nav-tabs>li a, .nav-tabs>li.active a, .nav-tabs>li a:hover, .nav-tabs>li.active a:hover, .nav-tabs>li.active a:focus
+    {
+        font-size: 15px;
+        padding: 5px;
     }
 
 }
@@ -3121,6 +3130,16 @@ responsive area
     {
         right: -35px;
     }
+    .nav-tabs>li a, .nav-tabs>li.active a, .nav-tabs>li a:hover, .nav-tabs>li.active a:hover, .nav-tabs>li.active a:focus
+    {
+        font-size: 15px;
+        padding: 5px;
+    }
+    .nav-tabs>li
+    {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 420px) {
@@ -3222,5 +3241,15 @@ responsive area
     {
         font-size: 17px;
         padding: 10px;
+    }
+    .nav-tabs>li a, .nav-tabs>li.active a, .nav-tabs>li a:hover, .nav-tabs>li.active a:hover, .nav-tabs>li.active a:focus
+    {
+        font-size: 15px;
+        padding: 5px;
+    }
+    .nav-tabs>li
+    {
+        width: 100%;
+        text-align: center;
     }
 }
