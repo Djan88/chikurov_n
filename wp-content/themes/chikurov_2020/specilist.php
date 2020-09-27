@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying seminars
+ * Template part for displaying specialists
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *

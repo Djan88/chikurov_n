@@ -154,11 +154,7 @@
         </div>
         <div class="col-md-12">
            <?php 
-            $wp_query_spec = new WP_Query( array(
-                'category_name' => 'specialisty',
-                'order' => 'ASC',
-                'orderby' => 'date'
-            ));
+            $wp_query_spec = new WP_Query('cat=23');
             while ($wp_query_spec->have_posts()) : $wp_query_spec->the_post();
                 get_template_part( 'specialist');
             endwhile;
