@@ -2194,6 +2194,20 @@ h3.pricing span
     z-index: 999;
 }
 
+.specilist_item
+{
+    border: 2px solid #0094e1;
+    padding: 10px;
+    border-radius: 5px;
+}
+.specilist_item a
+{
+    font-size: 17px;
+}
+.specilist_item h3
+{
+    color: #ff206d;
+}
 .specilist_item img
 {
     width: 100%;
