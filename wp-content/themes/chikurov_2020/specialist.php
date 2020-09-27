@@ -42,6 +42,9 @@ echo $specilist_email;
 echo '">';
 echo $specilist_email;
 echo '</a>';
+echo '<span class="specilist_item_content">';
+echo the_content();
+echo '</span">';
 echo '</div>';
 echo '</div>';
 ?>

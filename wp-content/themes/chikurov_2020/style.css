@@ -2200,9 +2200,17 @@ h3.pricing span
     padding: 10px;
     border-radius: 5px;
 }
+.specilist_item_content
+{
+    display: none;
+}
 .specilist_item a
 {
     font-size: 17px;
+}
+.specilist_item h3
+{
+    font-size: 25px;
 }
 .specilist_item h3, .specilist_tel
 {
