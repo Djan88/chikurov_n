@@ -145,6 +145,28 @@
       </div>
     </div>
   </section>
+<?php } else if (is_page(8258)) { ?>
+    <section class="seminars text-center" id="seminars">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <h2>Реестр специалистов</h2>
+        </div>
+        <div class="col-md-12">
+           <?php 
+            $wp_query = new WP_Query( array(
+                'category_name' => 'specialisty',
+                'order' => 'ASC'
+            ));
+            while ($wp_query->have_posts()) : $wp_query->the_post();
+                get_template_part( 'specialist');
+            endwhile;
+            wp_reset_postdata();
+           ?> 
+        </div>
+      </div>
+    </div>
+  </section>
 <?php } else if (is_page(6923) || is_page(6885) || is_page(6889) || is_page(6891) || is_page(6893) || is_page(6895) || is_page(6899) || is_page(6901) || is_page(6906) || is_page(6908) || is_page(6915) || is_page(6917) || is_page(6919) || is_page(6921) || is_page(6942) || is_page(6883) || is_page(6998) || is_page(7012) || is_page(7005) || is_page(7001) || is_page(7009) || is_page(7042)) { ?>
   <section class="seminar text-center" id="seminar">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
