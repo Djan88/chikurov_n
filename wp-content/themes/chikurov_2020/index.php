@@ -155,11 +155,12 @@
         <div class="col-md-12">
            <?php 
             $wp_query_spec = new WP_Query( array(
-                'category_name' => 'seminary',
-                'order' => 'ASC'
+                'category_name' => 'specialisty',
+                'order' => 'ASC',
+                'orderby' => 'date'
             ));
             while ($wp_query_spec->have_posts()) : $wp_query_spec->the_post();
-                get_template_part( 'seminary');
+                get_template_part( 'specialist');
             endwhile;
             wp_reset_postdata();
            ?> 
