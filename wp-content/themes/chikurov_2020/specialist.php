@@ -26,7 +26,7 @@ echo the_title();
 echo '</h2>';
 echo '<h3>';
 echo $specilist_country;
-echo '</h3>';\
+echo '</h3>';
 echo '<a class="specilist_tel" href="tel:';
 echo $specilist_phone_alt;
 echo '">';
