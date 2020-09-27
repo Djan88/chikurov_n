@@ -2194,7 +2194,7 @@ h3.pricing span
     z-index: 999;
 }
 
-.specilist_item
+.specilist_item_inner
 {
     border: 2px solid #0094e1;
     padding: 10px;
@@ -2204,7 +2204,7 @@ h3.pricing span
 {
     font-size: 17px;
 }
-.specilist_item h3
+.specilist_item h3, .specilist_tel
 {
     color: #ff206d;
 }
