@@ -2194,7 +2194,14 @@ h3.pricing span
     z-index: 999;
 }
 
-
+.specilist_item img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 6px 16px rgba(26,61,107,.16);
+    margin-bottom: 50px;
+}
 
 
 
