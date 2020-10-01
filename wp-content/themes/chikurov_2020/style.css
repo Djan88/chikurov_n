@@ -2225,13 +2225,17 @@ h3.pricing span
     font-size: 28px;
     transition: all .5s ease 0s;
 }
-.specilist_item h3, .specilist_tel
+.specilist_item h3, .specilist_tel, .modal_specialist_title
 {
     color: #ff206d;
 }
 .specilist_item:hover h3
 {
     color: #0094e1;
+}
+#specialist .close
+{
+    transform: scale(1.5);
 }
 .specilist_item img, .modal_specialist_foto
 {
@@ -2241,6 +2245,10 @@ h3.pricing span
     border-radius: 50%;
     box-shadow: 0 6px 16px rgba(26,61,107,.16);
     margin-bottom: 50px;
+}
+.modal_specialist_title
+{
+    text-align: center;
 }
 
 
