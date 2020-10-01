@@ -358,6 +358,16 @@
           </div>
       </div>
   </div>
+  <div class="modal fade modal_specialist" id="specialist" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal_menu">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div>test</div>
+              </div>
+          </div>
+      </div>
+  </div>
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript" >
       (function (d, w, c) {

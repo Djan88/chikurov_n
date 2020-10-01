@@ -118,6 +118,14 @@ jQuery(document).ready(function () {
   function openPopupTwo(){
     jQuery('#lovushka_down').modal('show');
   }
+  function popupSpecilist(){
+    jQuery('#specialist').modal('show');
+  }
+
+  // Модаль специалиста
+  jQuery('.specilist_item').on('click', function(event) {
+    popupSpecilist();
+  });
 
   // Рекланые баннеры
   function openPopupOne(){
