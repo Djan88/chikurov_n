@@ -131,7 +131,7 @@ jQuery(document).ready(function () {
     jQuery('.modal_specialist_contacts_adress').text(jQuery(this).find('.adress_specialist_combined').text());
     jQuery('.modal_specialist_contacts_tel').attr('href', jQuery(this).find('.specilist_tel').attr('href'));
     jQuery('.modal_specialist_contacts_tel span').text(jQuery(this).find('.specilist_tel').text());
-    jQuery('.modal_specialist_contacts_mail').attr('href', jQuery(this).find('.specilist_mail').attr('href'));
+    jQuery('.modal_specialist_contacts_mail').attr('href', jQuery(this).find('.specilist_email').attr('href'));
     jQuery('.modal_specialist_contacts_mail span').text(jQuery(this).find('.specilist_email').text());
   });
 
