@@ -138,9 +138,10 @@ jQuery(document).ready(function () {
     jQuery('.modal_specialist_contacts_mail').attr('href', jQuery(this).find('.specilist_email').attr('href'));
     jQuery('.modal_specialist_contacts_mail span').text(jQuery(this).find('.specilist_email').text());
     //text
-    // var test_g = jQuery(this).find('.specilist_item_content').clone();
-    // console.log(test_g);
-    jQuery(this).find('.specilist_item_content').html(('.modal_specialist_contacts_text').html());
+    var test_g = jQuery(this).find('.specilist_item_content').clone();
+    console.log(test_g);
+    jQuery('.modal_specialist_contacts_text').html(test_g);
+    // jQuery(this).find('.specilist_item_content').html(('.modal_specialist_contacts_text').html());
   });
 
   // Рекланые баннеры
