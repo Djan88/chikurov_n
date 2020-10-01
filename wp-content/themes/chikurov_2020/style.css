@@ -2227,6 +2227,10 @@ h3.pricing span
 }
 .specilist_item h3, .specilist_tel, .modal_specialist_title, .modal_specialist_contacts_mail
 {
+    color: #ff206d;
+}
+.modal_specialist_contacts_mail
+{
     color: #ff206d!important;
 }
 .specilist_item:hover h3
