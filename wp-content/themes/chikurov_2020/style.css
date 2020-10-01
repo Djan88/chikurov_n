@@ -2201,9 +2201,14 @@ h3.pricing span
 .specilist_item_inner
 {
     padding: 10px;
+    padding-bottom: 0;
     border-radius: 5px;
     background: #fff;
     box-shadow: 0 2px 16px rgba(26,61,107,.16);
+}
+.specilist_item_inner h4
+{
+    margin-bottom: 0;
 }
 .specilist_item_content
 {
