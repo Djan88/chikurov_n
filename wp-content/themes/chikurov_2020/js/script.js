@@ -132,6 +132,8 @@ jQuery(document).ready(function () {
     jQuery('.modal_specialist_contacts_tel span').text(jQuery(this).find('.specilist_tel').text());
     jQuery('.modal_specialist_contacts_mail').attr('href', jQuery(this).find('.specilist_email').attr('href'));
     jQuery('.modal_specialist_contacts_mail span').text(jQuery(this).find('.specilist_email').text());
+    var test_g = jQuery(this).find('.specilist_email').clone(true);
+    console.log(test_g);
     jQuery(this).find('.specilist_email').clone(true).unwrap().appendTo('.modal_specialist_contacts_text');
   });
 
