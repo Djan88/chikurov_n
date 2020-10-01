@@ -2250,7 +2250,7 @@ h3.pricing span
 {
     text-align: center;
 }
-.modal_specialist_contacts
+.modal_specialist_contacts, .modal_specialist_contacts_text
 {
     font-size: 20px;
 }
