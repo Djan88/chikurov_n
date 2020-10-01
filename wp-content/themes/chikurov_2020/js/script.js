@@ -140,7 +140,7 @@ jQuery(document).ready(function () {
     //text
     var test_g = jQuery(this).find('.specilist_item_content').clone(true);
     console.log(test_g);
-    jQuery(this).find('.specilist_item_content').clone(true).unwrap().appendTo('.modal_specialist_contacts_text');
+    jQuery(this).find('.specilist_item_content').clone(true).appendTo('.modal_specialist_contacts_text');
   });
 
   // Рекланые баннеры
