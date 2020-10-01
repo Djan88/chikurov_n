@@ -25,6 +25,7 @@
   <?php wp_footer(); ?>
   <!-- script tags
   ============================================================= -->
+  <script src="<?php bloginfo('template_url'); ?>/js/jquery.ui.touch-punch.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/loadmore.js"></script>
   <!-- <script src="<?php //bloginfo('template_url'); ?>/js/conversation.js"></script>   -->
