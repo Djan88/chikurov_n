@@ -127,6 +127,7 @@ jQuery(document).ready(function () {
     popupSpecilist();
 
     jQuery('.modal_specialist_title').text(jQuery(this).find('h3').text());
+    jQuery('.modal_specialist_foto').attr('src', jQuery(this).find('img').attr('src'));
   });
 
   // Рекланые баннеры
