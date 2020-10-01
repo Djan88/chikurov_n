@@ -125,16 +125,22 @@ jQuery(document).ready(function () {
   // Модаль специалиста
   jQuery('.specilist_item').on('click', function(event) {
     popupSpecilist();
+    //name
     jQuery('.modal_specialist_title').text(jQuery(this).find('h3').text());
+    //foto
     jQuery('.modal_specialist_foto').attr('src', jQuery(this).find('img').attr('src'));
+    //adress
     jQuery('.modal_specialist_contacts_adress').text(jQuery(this).find('.adress_specialist_combined').text());
+    //phone
     jQuery('.modal_specialist_contacts_tel').attr('href', jQuery(this).find('.specilist_tel').attr('href'));
     jQuery('.modal_specialist_contacts_tel span').text(jQuery(this).find('.specilist_tel').text());
+    //email
     jQuery('.modal_specialist_contacts_mail').attr('href', jQuery(this).find('.specilist_email').attr('href'));
     jQuery('.modal_specialist_contacts_mail span').text(jQuery(this).find('.specilist_email').text());
-    var test_g = jQuery(this).find('.specilist_email').clone(true);
+    //text
+    var test_g = jQuery(this).find('.specilist_item_content').clone(true);
     console.log(test_g);
-    jQuery(this).find('.specilist_email').clone(true).unwrap().appendTo('.modal_specialist_contacts_text');
+    jQuery(this).find('.specilist_item_content').clone(true).unwrap().appendTo('.modal_specialist_contacts_text');
   });
 
   // Рекланые баннеры
