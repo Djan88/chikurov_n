@@ -2258,7 +2258,10 @@ h3.pricing span
 {
     padding-right: 10px;
 }
-
+.modal_specialist_contacts_tel, .modal_specialist_contacts_mail
+{
+    display: block;
+}
 
 
 
