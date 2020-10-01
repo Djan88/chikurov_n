@@ -2325,6 +2325,10 @@ responsive area
     {
         font-size: 20px;
     }
+    .specilist_item_inner h4
+    {
+        min-height: 96px;
+    }
 }
 
 /* sm */
