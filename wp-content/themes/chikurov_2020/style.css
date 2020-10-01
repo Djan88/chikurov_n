@@ -2229,11 +2229,7 @@ h3.pricing span
 {
     color: #ff206d;
 }
-.specilist_item:hover
-{
-    transform: zoom(.3);
-}
-.specilist_item:hover .specilist_item h3
+.specilist_item:hover h3
 {
     color: #0094e1;
 }
