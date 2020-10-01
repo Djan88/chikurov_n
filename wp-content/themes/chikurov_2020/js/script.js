@@ -133,6 +133,7 @@ jQuery(document).ready(function () {
     jQuery('.modal_specialist_contacts_tel span').text(jQuery(this).find('.specilist_tel').text());
     jQuery('.modal_specialist_contacts_mail').attr('href', jQuery(this).find('.specilist_email').attr('href'));
     jQuery('.modal_specialist_contacts_mail span').text(jQuery(this).find('.specilist_email').text());
+    jQuery('.modal_specialist_contacts_text').text(jQuery(this).find('.specilist_item_content').text());
   });
 
   // Рекланые баннеры
