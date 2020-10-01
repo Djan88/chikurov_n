@@ -125,8 +125,6 @@ jQuery(document).ready(function () {
   // Модаль специалиста
   jQuery('.specilist_item').on('click', function(event) {
     popupSpecilist();
-    var inner_test = jQuery(this).find('.specilist_item_content').innerHTML;
-    console.log(inner_test);
     jQuery('.modal_specialist_title').text(jQuery(this).find('h3').text());
     jQuery('.modal_specialist_foto').attr('src', jQuery(this).find('img').attr('src'));
     jQuery('.modal_specialist_contacts_adress').text(jQuery(this).find('.adress_specialist_combined').text());
@@ -134,7 +132,7 @@ jQuery(document).ready(function () {
     jQuery('.modal_specialist_contacts_tel span').text(jQuery(this).find('.specilist_tel').text());
     jQuery('.modal_specialist_contacts_mail').attr('href', jQuery(this).find('.specilist_email').attr('href'));
     jQuery('.modal_specialist_contacts_mail span').text(jQuery(this).find('.specilist_email').text());
-    // jQuery('.modal_specialist_contacts_text').innerHTML = jQuery(this).find('.specilist_item_content').innerHTML;
+    jQuery('.modal_specialist_contacts_text').clone(true).unwrap().appendTo('.specilist_item_content');
   });
 
   // Рекланые баннеры
