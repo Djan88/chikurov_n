@@ -361,10 +361,13 @@
   <div class="modal fade modal_specialist" id="specialist" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog modal_menu">
           <div class="modal-content">
-              <div class="modal-body">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                  <div>test</div>
-              </div>
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title modal_specialist_title"></h4>
+            </div>
+            <div class="modal-body">
+              <div>test</div>
+            </div>
           </div>
       </div>
   </div>

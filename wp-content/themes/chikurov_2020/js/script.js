@@ -125,6 +125,9 @@ jQuery(document).ready(function () {
   // Модаль специалиста
   jQuery('.specilist_item').on('click', function(event) {
     popupSpecilist();
+    var spec_title = jQuery(this).find('h3').text();
+
+    jQuery('.modal_specialist_title').text(spec_title);
   });
 
   // Рекланые баннеры
