@@ -18,7 +18,7 @@ $specilist_email = get_field('specilist_email');
 $specilist_country = get_field('specilist_country');
 $specilist_city = get_field('specilist_city');
 
-echo '<div class="specilist_item col-md-3 col-sm-3 col-xs-12">';
+echo '<div class="specilist_item col-md-3 col-sm-2 col-xs-12">';
 echo '<div class="specilist_item_inner">';
 echo '<img src="';
 echo the_field('specilist_foto');
