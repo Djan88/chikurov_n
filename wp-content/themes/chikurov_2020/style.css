@@ -2197,6 +2197,8 @@ h3.pricing span
 {
     margin-bottom: 10px;
     margin-top: 10px;
+    cursor: pointer;
+    transition: all .5s ease 0s;
 }
 .specilist_item_inner
 {
@@ -2221,10 +2223,19 @@ h3.pricing span
 .specilist_item h3
 {
     font-size: 28px;
+    transition: all .5s ease 0s;
 }
 .specilist_item h3, .specilist_tel
 {
     color: #ff206d;
+}
+.specilist_item:hover
+{
+    transform: zoom(.3);
+}
+.specilist_item:hover .specilist_item h3
+{
+    color: #0094e1;
 }
 .specilist_item img
 {
