@@ -373,7 +373,7 @@
                 <div class="col-md-6 col-xs-12">
                   <h3 class="modal_specialist_title"></h3>
                   <div class="modal_specialist_contacts row">
-                    <div class="col-xs-1"><i class="fa fa-map-marker-alt"></i></div>
+                    <div class="col-xs-1"><i class="fa fa-map-marker"></i></div>
                     <div class="col-xs-11 modal_specialist_contacts_adress"></div>
                   </div>
                 </div>

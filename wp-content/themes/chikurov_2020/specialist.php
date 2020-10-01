@@ -33,7 +33,7 @@ echo $specilist_city;
 echo '</h4>';
 echo '<div class="adress_specialist_combined hidden">';
 echo $specilist_country;
-echo '; ';
+echo '</br>';
 echo $specilist_city;
 echo '</div>';
 echo '<a class="specilist_tel hidden" href="tel:';
