@@ -127,10 +127,10 @@ jQuery(document).ready(function () {
     popupSpecilist();
 
     jQuery('.modal_specialist_title').text(jQuery(this).find('h3').text());
-    jQuery('.modal_specialist_contacts_adress').text(jQuery(this).find('.adress_specialist_combined').text());
-    jQuery('.modal_specialist_foto').attr('href', jQuery(this).find('specilist_tel').attr('href'));
-    jQuery('.modal_specialist_contacts_tel').text(jQuery(this).find('.specilist_tel').text());
     jQuery('.modal_specialist_foto').attr('src', jQuery(this).find('img').attr('src'));
+    jQuery('.modal_specialist_contacts_adress').text(jQuery(this).find('.adress_specialist_combined').text());
+    jQuery('.modal_specialist_contacts_tel').attr('href', jQuery(this).find('specilist_tel').attr('href'));
+    jQuery('.modal_specialist_contacts_tel').text(jQuery(this).find('.specilist_tel').text());
   });
 
   // Рекланые баннеры
