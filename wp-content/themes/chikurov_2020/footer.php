@@ -366,11 +366,15 @@
               <h4 class="modal-title">Специалист по оздоровлению</h4>
             </div>
             <div class="modal-body">
-              <div class="col-md-6 col-xs-12">
-                <img src="" alt="" class="modal_specialist_foto">
-              </div>
-              <div class="col-md-6 col-xs-12">
-                <h3 class="modal_specialist_title"></h3>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 col-xs-12">
+                    <img src="" alt="" class="modal_specialist_foto">
+                  </div>
+                  <div class="col-md-6 col-xs-12">
+                    <h3 class="modal_specialist_title"></h3>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
