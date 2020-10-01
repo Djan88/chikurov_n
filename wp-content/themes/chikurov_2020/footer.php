@@ -375,6 +375,7 @@
                   <div class="modal_specialist_contacts">
                     <div class="modal_specialist_contacts_adress"></div>
                     <a class="modal_specialist_contacts_tel" href=""><i class="fa fa-phone"></i><span></span></a>
+                    <a class="modal_specialist_contacts_mail" href=""><i class="fa fa-envelope"></i><span></span></a>
                   </div>
                 </div>
               </div>
