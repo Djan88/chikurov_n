@@ -2225,11 +2225,11 @@ h3.pricing span
     font-size: 28px;
     transition: all .5s ease 0s;
 }
-.specilist_item h3, .specilist_tel, .modal_specialist_title
+.specilist_item h3, .specilist_tel, .modal_specialist_title, .modal_specialist_contacts_mail
 {
-    color: #ff206d;
+    color: #ff206d!important;
 }
-.specilist_item:hover h3, .modal_specialist_contacts_mail
+.specilist_item:hover h3
 {
     color: #0094e1;
 }
