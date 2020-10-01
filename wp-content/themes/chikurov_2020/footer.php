@@ -372,8 +372,10 @@
                 </div>
                 <div class="col-md-6 col-xs-12">
                   <h3 class="modal_specialist_title"></h3>
-                  <div class="modal_specialist_contacts_adress"></div>
-                  <a class="modal_specialist_contacts_tel" href=""></a>
+                  <div class="modal_specialist_contacts">
+                    <div class="modal_specialist_contacts_adress"></div>
+                    <a class="modal_specialist_contacts_tel" href=""></a>
+                  </div>
                 </div>
               </div>
             </div>
