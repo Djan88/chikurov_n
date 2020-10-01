@@ -2264,7 +2264,10 @@ h3.pricing span
     font-size: 18px;
     padding-top: 3px;
 }
-
+.modal_specialist_contacts_text .specilist_item_content
+{
+    display: block;
+}
 
 
 
