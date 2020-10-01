@@ -2233,7 +2233,7 @@ h3.pricing span
 {
     color: #0094e1;
 }
-.specilist_item img
+.specilist_item img, .modal_specialist_foto
 {
     width: 100%;
     height: auto;
