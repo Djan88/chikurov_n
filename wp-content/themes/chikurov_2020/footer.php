@@ -374,7 +374,7 @@
                   <h3 class="modal_specialist_title"></h3>
                   <div class="modal_specialist_contacts">
                     <div class="modal_specialist_contacts_adress"></div>
-                    <a class="modal_specialist_contacts_tel" href=""></a>
+                    <a class="modal_specialist_contacts_tel" href=""><i class="fa fa-phone"></i><span></span></a>
                   </div>
                 </div>
               </div>
