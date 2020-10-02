@@ -2276,7 +2276,12 @@ h3.pricing span
 {
     width: 90%;
 }
-
+.nanm_popover
+{
+    font-size: 17rem;
+    display: block;
+    color: #ff206d;
+}
 
 
 /******************************

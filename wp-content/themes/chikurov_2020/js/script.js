@@ -145,6 +145,13 @@ jQuery(document).ready(function () {
   });
 
   jQuery('[data-toggle="popover"]').popover();
+  var hideNote;
+  function hideNote() {
+    jQuery('.nanm_popover').popover('hide');
+  }
+  jQuery('.nanm_popover').on('click', function(event) {
+    setTimeout(hideNote, 5000);
+  });
 
   // Рекланые баннеры
   function openPopupOne(){

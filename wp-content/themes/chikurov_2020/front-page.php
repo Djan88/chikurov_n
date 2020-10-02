@@ -210,10 +210,10 @@
           <h2>Специалисты по оздоровлению</h2>
         </div>
         <div class="col-md-5 col-sm-5 text-center specilists_cover">
-          <i class="fas fa-user-md"></i>
+          <i class="fa fa-user-md"></i>
         </div>
         <div class="col-md-7 col-sm-7">
-          <h3>Реестр специалистов по оздоровлению, прошедших обучение в "Школе Доктора Чикурова" по программе согласованной с <span class="blue_text" data-toggle="popover" title="НАНМ" data-content="Национальная профессиональная ассоциация специалистов народной медицины и оздоровительных практик">НАНМ</span></h3>
+          <h3>Реестр специалистов по оздоровлению, прошедших обучение в "Школе Доктора Чикурова" по программе согласованной с <span class="blue_text nanm_popover" data-toggle="popover" data-placement="top" title="НАНМ" data-content="Национальная профессиональная ассоциация специалистов народной медицины и оздоровительных практик">НАНМ</span></h3>
           <div class="book_btns">
             <a target="_blank" href="/reestr/" class="btn btn-pink btn-lg">Перейти в Реестр</a>
           </div>
