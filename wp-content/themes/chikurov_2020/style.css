@@ -2019,6 +2019,10 @@ ul#myTab
     line-height: 1.3;
     margin-top: 0;
 }
+.specilists .popover-title h3
+{
+    font-size: 25px;
+}
 .kniga_el
 {
     margin-right: 30px;
