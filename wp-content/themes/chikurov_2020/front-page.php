@@ -213,7 +213,7 @@
           <i class="fa fa-user-md"></i>
         </div>
         <div class="col-md-7 col-sm-7">
-          <h3>Реестр специалистов по оздоровлению, прошедших обучение в <b>"Школе Доктора Чикурова"</b> по программе согласованной с НАНМ <span class="blue_text nanm_popover" data-toggle="popover" data-placement="top" title="НАНМ" data-content="Национальная профессиональная ассоциация специалистов народной медицины и оздоровительных практик"><i class="fa fa-question-circle"></i></span></h3>
+          <h3>Реестр специалистов по оздоровлению, прошедших обучение в <b>"Школе Доктора Чикурова"</b> по программе согласованной с НАНМ <span class="blue_text nanm_popover" data-toggle="popover" data-placement="left" title="НАНМ" data-content="Национальная профессиональная ассоциация специалистов народной медицины и оздоровительных практик"><i class="fa fa-question-circle"></i></span></h3>
           <div class="book_btns">
             <a target="_blank" href="/reestr/" class="btn btn-pink btn-lg">Перейти в Реестр</a>
           </div>
