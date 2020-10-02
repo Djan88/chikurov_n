@@ -2274,13 +2274,13 @@ h3.pricing span
 }
 .specilists_cover i:before
 {
-    width: 90%;
-}
-.nanm_popover
-{
     font-size: 17rem;
     display: block;
     color: #ff206d;
+}
+.nanm_popover
+{
+    cursor: pointer;
 }
 
 
