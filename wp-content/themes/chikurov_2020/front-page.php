@@ -202,7 +202,6 @@
       </div>
     </div>
   </section>
-  <?php if(current_user_can('administrator')){ ?>
   <section class="seminars seminars_dark specilists" id="specilists">
     <div class="container">
       <div class="row">
@@ -222,7 +221,6 @@
       </div>
     </div>
   </section>
-  <?php } ?>
   <section class="seminars seminars_light wizard" id="wizard">
     <div class="container">
       <div class="row">
