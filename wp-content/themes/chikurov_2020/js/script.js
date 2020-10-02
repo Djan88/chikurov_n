@@ -144,6 +144,8 @@ jQuery(document).ready(function () {
     // jQuery(this).find('.specilist_item_content').html(('.modal_specialist_contacts_text').html());
   });
 
+  jQuery('[data-toggle="popover"]').popover();
+
   // Рекланые баннеры
   function openPopupOne(){
     jQuery('#banner_one').modal('show');

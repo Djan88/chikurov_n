@@ -2272,6 +2272,10 @@ h3.pricing span
 {
     display: block;
 }
+.specilists_cover i:before
+{
+    width: 90%;
+}
 
 
 
