@@ -2245,7 +2245,7 @@ h3.pricing span
 {
     width: 100%;
     height: auto;
-    margin-bottom: 10px !important;
+    margin-bottom: 0!important;
     border-radius: 50%;
     box-shadow: 0 6px 16px rgba(26,61,107,.16);
     margin-bottom: 50px;

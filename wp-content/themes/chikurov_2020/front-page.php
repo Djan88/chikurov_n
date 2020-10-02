@@ -202,7 +202,28 @@
       </div>
     </div>
   </section>
-  <section class="seminars seminars_dark wizard" id="wizard">
+  <?php if(current_user_can('administrator')){ ?>
+  <section class="seminars seminars_dark specilists" id="specilists">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Специалисты по оздоровлению</h2>
+        </div>
+        <div class="col-md-5 col-sm-5 text-center specilists_cover">
+          <i class="fas fa-user-md"></i>
+        </div>
+        <div class="col-md-7 col-sm-7">
+          <h3>Реестр специалистов по оздоровлению, прошедших обучение в "Школе Доктора Чикурова" по программе согласованной с <span class="blue_text" data-toggle="popover" title="НАНМ" data-content="Национальная профессиональная ассоциация специалистов народной медицины и оздоровительных практик">НАНМ</span></h3>
+          <div class="book_btns">
+            <a target="_blank" href="/reestr/" class="btn btn-pink btn-lg">Перейти в Реестр</a>
+          </div>
+          <!-- <button class="btn btn-primary btn-lg down_book" data-toggle="modal" data-target="#book_down">Скачать книгу бесплатно</button> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <?php } ?>
+  <section class="seminars seminars_light wizard" id="wizard">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -271,7 +292,7 @@
       </div>
     </div>
   </section>
-  <section class="seminars seminars_light books" id="books">
+  <section class="seminars seminars_dark books" id="books">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -294,7 +315,7 @@
       </div>
     </div>
   </section>
-  <section class="seminars seminars_dark reviews" id="reviews">
+  <section class="seminars seminars_light reviews" id="reviews">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -344,7 +365,7 @@
       </div>
     </div>
   </section>
-  <section class="seminars seminars_light students" id="students">
+  <section class="seminars seminars_dark students" id="students">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
