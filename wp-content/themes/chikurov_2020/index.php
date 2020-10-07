@@ -67,7 +67,7 @@
             <div class="autors col-md-12">
               <!-- <button type="button" data-filter_s="ch" class="btn btn-warning btn_seminar_filter">Юрий Чикуров</button> -->
               <button type="button" data-filter_s="iv" class="btn btn-warning btn_seminar_filter">Ирина Иванова</button>
-              <!-- <button type="button" data-filter_s="ks" class="btn btn-warning btn_seminar_filter">Василий Киселев</button> -->
+              <button type="button" data-filter_s="ks" class="btn btn-warning btn_seminar_filter">Василий Киселев</button>
               <button type="button" data-filter_s="zk" class="btn btn-warning btn_seminar_filter">Елена Зукуле</button>
               <button type="button" data-filter_s="sh" class="btn btn-warning btn_seminar_filter">Марина Салехова</button>
               <button type="button" data-filter_s="pl" class="btn btn-warning btn_seminar_filter">Олег Плотников</button>

@@ -375,10 +375,10 @@
               <img src="<?php bloginfo('template_url'); ?>/img/ivanova.jpg" alt="">
               <div class="lector_name">Ирина Иванова</div>
             </a>
-            <!-- <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/Bazilevs/">
-              <img src="<?php //bloginfo('template_url'); ?>/img/kiselev.jpg" alt="">
+            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/Bazilevs/">
+              <img src="<?php bloginfo('template_url'); ?>/img/kiselev.jpg" alt="">
               <div class="lector_name">Василий Киселев</div>
-            </a> -->
+            </a>
             <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/zukule-elena/">
               <img src="<?php bloginfo('template_url'); ?>/img/zukule.jpeg" alt="">
               <div class="lector_name">Елена Зукуле</div>
