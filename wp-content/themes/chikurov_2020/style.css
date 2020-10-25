@@ -2278,7 +2278,7 @@ h3.pricing span
 }
 .specilists_cover i:before
 {
-    font-size: 19rem;
+    font-size: 30rem;
     display: block;
     color: #ff206d;
 }
@@ -2372,6 +2372,10 @@ responsive area
     .specilist_item_inner h4
     {
         min-height: 96px;
+    }
+    .specilists_cover i:before
+    {
+        font-size: 26rem;
     }
 }
 
@@ -2496,6 +2500,10 @@ responsive area
     .books .btn 
     {
         margin-top: 20px;
+    }
+    .specilists_cover i:before
+    {
+        font-size: 23rem;
     }
 }
 
@@ -2749,6 +2757,10 @@ responsive area
     {
         font-size: 15px;
     }
+    .specilists_cover i:before
+    {
+        font-size: 13rem;
+    }
 
 }
 @media (max-width: 670px) {
@@ -2928,6 +2940,10 @@ responsive area
     {
         font-size: 15px;
         padding: 5px;
+    }
+    .specilists_cover i:before
+    {
+        font-size: 13rem;
     }
 
 }
