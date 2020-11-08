@@ -82,6 +82,9 @@ jQuery(document).ready(function () {
     } else if (filter_param == 'iv') {
       jQuery('.seminar_in').addClass('hidden');
       jQuery('.seminar_item__iv').removeClass('hidden');
+    } else if (filter_param == 'an') {
+      jQuery('.seminar_in').addClass('hidden');
+      jQuery('.seminar_item__an').removeClass('hidden');
     } else if (filter_param == 'ks') {
       jQuery('.seminar_in').addClass('hidden');
       jQuery('.seminar_item__ks').removeClass('hidden');
