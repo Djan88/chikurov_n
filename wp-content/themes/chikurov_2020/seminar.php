@@ -113,6 +113,8 @@ if ($seminar_autor == 'Юрий Чикуров') {
   $seminar_filter_a = 'seminar_item__iv';
 } else if ($seminar_autor == 'Василий Киселев') {
   $seminar_filter_a = 'seminar_item__ks';
+} else if ($seminar_autor == 'Оксана Антонова') {
+  $seminar_filter_a = 'seminar_item__an';
 } else if ($seminar_autor == 'Елена Зукуле') {
   $seminar_filter_a = 'seminar_item__zk';
 } else if ($seminar_autor == 'Марина Салехова') {

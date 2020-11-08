@@ -136,6 +136,9 @@
                   <?php } else if ($autor == 'Василий Киселев') { ?>
                     <img src="<?php bloginfo('template_url'); ?>/img/kiselev.jpg" alt="">
                     <div class="params_author"><a target="_blank" href="http://www.yuchikurov.info/members/Bazilevs/"><?php the_field('autor'); ?></a></div>
+                  <?php } else if ($autor == 'Оксана Антонова') { ?>
+                    <img src="<?php bloginfo('template_url'); ?>/img/antonova.png" alt="">
+                    <div class="params_author"><a target="_blank" href="http://www.yuchikurov.info/members/oks331/"><?php the_field('autor'); ?></a></div>
                   <?php } else if ($autor == 'Елена Зукуле') { ?>
                     <img src="<?php bloginfo('template_url'); ?>/img/zukule.jpeg" alt="">
                     <div class="params_author"><a target="_blank" href="http://www.yuchikurov.info/members/zukule-elena/"><?php the_field('autor'); ?></a></div>
@@ -216,6 +219,8 @@
                   <?php echo do_shortcode('[contact-form-7 id="3941" title="Запись на семинар_Иванова_Москва"]'); ?>
                 <?php }  else if ($autor == 'Ирина Иванова') { ?>
                   <?php echo do_shortcode('[contact-form-7 id="170" title="Запись на семинар_Иванова"]'); ?>
+                <?php }  else if ($autor == 'Оксана Антонова') { ?>
+                  <?php echo do_shortcode('[contact-form-7 id="9084" title="Запись на семинар (Антонова)"]'); ?>
                 <?php } else if ($autor == 'Василий Киселев') { ?>
                   <?php echo do_shortcode('[contact-form-7 id="632" title="Запись на семинар_Киселев"]'); ?>
                 <?php } else if ($autor == 'Елена Зукуле') { ?>
