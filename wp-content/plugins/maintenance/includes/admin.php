@@ -104,7 +104,7 @@ function mtnc_admin_print_custom_styles()
 
   $meta = get_option('maintenance_meta', array());
   $isDialogDismiss = isset($meta['mtnc_dismiss_dialog']) ? $meta['mtnc_dismiss_dialog'] : 0;
-  //$isDialogDismiss = 0;
+  $isDialogDismiss = 1;
 
   wp_localize_script(
         'mtnc',

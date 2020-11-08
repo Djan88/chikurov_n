@@ -114,6 +114,15 @@ jQuery(window).ready(function($) {
     return false;
   });
 
+  $('#smush_support').on('click change', function(e) {
+    e.preventDefault();
+    $(this).prop("checked", false);
+
+    $('.smush-thickbox').first().trigger('click');
+
+    return false;
+  });
+
   // upsell dialog init
   $('#weglot-upsell-dialog').dialog({'dialogClass': 'wp-dialog weglot-upsell-dialog',
                               'modal': 1,
@@ -288,7 +297,7 @@ jQuery(window).ready(function($) {
       /*'Cancel': function() {
         dialogForNewInfo.dialog( "close" );
       },*/
-      
+
     },
     close: function() {
       dialogForNewInfoForm[ 0 ].reset();
@@ -347,6 +356,3 @@ function getTimestamp(strDate){
 function stopDialogInterval() {
   clearInterval(dialogCheckIntervalHandler);
 }
-
-
-

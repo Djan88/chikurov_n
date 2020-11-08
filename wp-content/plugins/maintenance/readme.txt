@@ -1,9 +1,9 @@
 === Maintenance ===
-Contributors: WebFactory, UnderConstructionPage, googlemapswidget, wpreset, securityninja
+Contributors: WebFactory
 Tags: maintenance, maintenance mode, maintenance page, coming soon, coming soon page, under construction, under construction page
 Requires at least: 4.0
 Tested up to: 5.5
-Stable tag: 3.96
+Stable tag: 3.97
 Requires PHP: 5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -86,6 +86,11 @@ Please post the question on the <a href="http://wordpress.org/support/plugin/mai
 
 
 == Changelog ==
+
+= v3.97 =
+- 2020/10/02
+- minor fixes
+- added promo for WP 301 Redirects
 
 = v3.96 =
 - 2020/08/19

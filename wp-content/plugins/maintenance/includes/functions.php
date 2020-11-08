@@ -110,7 +110,7 @@ function mtnc_generate_check_filed($title, $label, $id, $name, $value)
 {
   $out_filed  = '';
   $out_filed .= '<tr valign="top">';
-  $out_filed .= '<th scope="row">' . esc_attr($title) . '</th>';
+  $out_filed .= '<th scope="row"><label for="' . esc_attr($id) . '">' . esc_attr($title) . '</label></th>';
   $out_filed .= '<td>';
   $out_filed .= '<fieldset>';
   $out_filed .= '<label for=' . esc_attr($id) . '>';
@@ -342,19 +342,20 @@ function mtnc_add_data_fields($object, $box)
   <table class="form-table">
     <tbody>
       <?php
-        mtnc_generate_input_filed(__('Page title', 'maintenance'), 'page_title', 'page_title', $page_title);
+        mtnc_generate_input_filed(__('Page Title', 'maintenance'), 'page_title', 'page_title', $page_title);
         mtnc_generate_input_filed(__('Headline', 'maintenance'), 'heading', 'heading', $heading);
         mtnc_generate_tinymce_filed(__('Description', 'maintenance'), 'description', 'description', $description);
         mtnc_generate_input_filed(__('Footer Text', 'maintenance'), 'footer_text', 'footer_text', $footer_text);
         mtnc_weglot_option();
+        mtnc_smush_option();
         mtnc_generate_check_filed(__('Show Some Love', 'maintenance'), __('Show a small link in the footer to let others know you\'re using this awesome &amp; free plugin', 'maintenance'), 'show_some_love', 'show_some_love', !empty($mt_option['show_some_love']));
-        mtnc_generate_number_filed(__('Set Logo width', 'maintenance'), 'logo_width', 'logo_width', $logo_width);
-        mtnc_generate_number_filed(__('Set Logo height', 'maintenance'), 'logo_height', 'logo_height', $logo_height);
+        mtnc_generate_number_filed(__('Set Logo Width', 'maintenance'), 'logo_width', 'logo_width', $logo_width);
+        mtnc_generate_number_filed(__('Set Logo Height', 'maintenance'), 'logo_height', 'logo_height', $logo_height);
         mtnc_generate_image_filed(__('Logo', 'maintenance'), 'logo', 'logo', (int) $mt_option['logo'], 'boxes box-logo', __('Upload Logo', 'maintenance'), 'upload_logo upload_btn button');
-        mtnc_generate_image_filed(__('Retina logo', 'maintenance'), 'retina_logo', 'retina_logo', (int) $mt_option['retina_logo'], 'boxes box-logo', __('Upload Retina Logo', 'maintenance'), 'upload_logo upload_btn button');
+        mtnc_generate_image_filed(__('Retina Logo', 'maintenance'), 'retina_logo', 'retina_logo', (int) $mt_option['retina_logo'], 'boxes box-logo', __('Upload Retina Logo', 'maintenance'), 'upload_logo upload_btn button');
         do_action('mtnc_background_field');
-        mtnc_generate_image_filed(__('Background image (portrait mode)', 'maintenance'), 'bg_image_portrait', 'bg_image_portrait', isset($mt_option['bg_image_portrait']) ? (int) $mt_option['bg_image_portrait'] : '', 'boxes box-logo', __('Upload image for portrait device orientation', 'maintenance'), 'upload_logo upload_btn button');
-        mtnc_generate_image_filed(__('Page preloader image', 'maintenance'), 'preloader_img', 'preloader_img', isset($mt_option['preloader_img']) ? (int) $mt_option['preloader_img'] : '', 'boxes box-logo', __('Upload preloader', 'maintenance'), 'upload_logo upload_btn button');
+        mtnc_generate_image_filed(__('Background Image (portrait mode)', 'maintenance'), 'bg_image_portrait', 'bg_image_portrait', isset($mt_option['bg_image_portrait']) ? (int) $mt_option['bg_image_portrait'] : '', 'boxes box-logo', __('Upload image for portrait device orientation', 'maintenance'), 'upload_logo upload_btn button');
+        mtnc_generate_image_filed(__('Page Preloader Image', 'maintenance'), 'preloader_img', 'preloader_img', isset($mt_option['preloader_img']) ? (int) $mt_option['preloader_img'] : '', 'boxes box-logo', __('Upload preloader', 'maintenance'), 'upload_logo upload_btn button');
 
         do_action('mtnc_color_fields');
         do_action('mtnc_font_fields');
@@ -373,10 +374,10 @@ function mtnc_add_data_fields($object, $box)
           }
         }
 
-        mtnc_generate_check_filed(__('Apply background blur', 'maintenance'), '', 'is_blur', 'is_blur', $is_blur);
-        mtnc_generate_number_filed(__('Set blur intensity', 'maintenance'), 'blur_intensity', 'blur_intensity', (int) $mt_option['blur_intensity']);
+        mtnc_generate_check_filed(__('Apply Background Blur', 'maintenance'), 'Add blur effect to the background image', 'is_blur', 'is_blur', $is_blur);
+        mtnc_generate_number_filed(__('Set Blur Intensity', 'maintenance'), 'blur_intensity', 'blur_intensity', (int) $mt_option['blur_intensity']);
 
-        mtnc_generate_check_filed(__('Enable frontend login', 'maintenance'), '', 'is_login', 'is_login', isset($mt_option['is_login']));
+        mtnc_generate_check_filed(__('Enable Frontend Login', 'maintenance'), '', 'is_login', 'is_login', isset($mt_option['is_login']));
 
         echo '<tr><td colspan="2"><p><input type="submit" name="submit" id="submit" class="button button-primary" value="Save Changes"></p></td></tr>'
         ?>
@@ -411,6 +412,24 @@ function mtnc_create_select_options($options, $selected = null, $output = true) 
     return $out;
   }
 } // create_select_options
+
+function mtnc_smush_option() {
+  if (defined('WP_SMUSH_VERSION')) {
+    echo '<tr>';
+    echo '<th><label for="smush_support">Enable Image Compression</label></th>';
+    echo '<td style="line-height: 1.5;">';
+    echo 'Configure <a href="' . admin_url('admin.php?page=smush') . '">image compression options</a>.';
+    echo '</td>';
+    echo '</tr>';
+  } else {
+    echo '<tr>';
+    echo '<th><label for="smush_support">Enable Image Compression</label></th>';
+    echo '<td style="line-height: 1.5;">';
+    echo '<input type="checkbox" id="smush_support" type="checkbox" value="1" class="skip-save">The easiest way to speed up any site is to <b>compress images</b>. On an average page you can easily save a few megabytes. Doing it manually in Photoshop is a pain! That\'s why there are plugins like <a href="' . admin_url('plugin-install.php?fix-install-button=1&tab=plugin-information&plugin=wp-smushit&TB_iframe=true&width=600&height=550') . '" class="thickbox open-plugin-details-modal smush-thickbox">Smush</a> that specialize in compressing images. <a href="' . admin_url('plugin-install.php?fix-install-button=1&tab=plugin-information&plugin=wp-smushit&TB_iframe=true&width=600&height=550') . '" class="thickbox open-plugin-details-modal smush-thickbox">Install the free Smush plugin</a>. It has no limit on the amount of images you can compress, seamlessly integrates with WordPress, and is compatible with all plugins &amp; themes. And best of all - <b>it\'s used by over a million users just like you</b>.';
+    echo '</td>';
+    echo '</tr>';
+  }
+} // mtnc_smush_option
 
 function mtnc_weglot_option() {
   return;
@@ -513,7 +532,7 @@ function mtnc_add_themes_fields()
   $themes =
 
   array (
-    0 => 
+    0 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.005',
@@ -524,7 +543,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'aeroplane-company',
     ),
-    1 => 
+    1 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -535,7 +554,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'air-balloon',
     ),
-    2 => 
+    2 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -546,7 +565,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'animated-clock',
     ),
-    3 => 
+    3 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -557,7 +576,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'architecture-inc',
     ),
-    4 => 
+    4 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -568,7 +587,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'architecture',
     ),
-    5 => 
+    5 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -579,7 +598,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'art-gallery',
     ),
-    6 => 
+    6 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -590,7 +609,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'auto-service',
     ),
-    7 => 
+    7 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -601,7 +620,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'bakery',
     ),
-    8 => 
+    8 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -612,7 +631,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'banking-app',
     ),
-    9 => 
+    9 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -623,7 +642,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'beach',
     ),
-    10 => 
+    10 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.05',
@@ -634,7 +653,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'bicycle-race',
     ),
-    11 => 
+    11 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -645,7 +664,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'bike-shop',
     ),
-    12 => 
+    12 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.005',
@@ -656,7 +675,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'bitcoin-miners',
     ),
-    13 => 
+    13 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -667,7 +686,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'black-friday',
     ),
-    14 => 
+    14 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -678,7 +697,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'blogging',
     ),
-    15 => 
+    15 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -689,7 +708,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'blue-ocean',
     ),
-    16 => 
+    16 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -700,7 +719,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'body-transformation',
     ),
-    17 => 
+    17 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -711,7 +730,7 @@ function mtnc_add_themes_fields()
       'status' => 'extra',
       'name_clean' => 'bodybuilding',
     ),
-    18 => 
+    18 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.005',
@@ -722,7 +741,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'book-lovers',
     ),
-    19 => 
+    19 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -733,7 +752,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'business-company',
     ),
-    20 => 
+    20 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -744,7 +763,7 @@ function mtnc_add_themes_fields()
       'status' => 'extra',
       'name_clean' => 'business-consulting-video',
     ),
-    21 => 
+    21 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -755,7 +774,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'business-consulting',
     ),
-    22 => 
+    22 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -766,7 +785,7 @@ function mtnc_add_themes_fields()
       'status' => 'extra',
       'name_clean' => 'business-launch',
     ),
-    23 => 
+    23 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -777,7 +796,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'business-meeting-video',
     ),
-    24 => 
+    24 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -788,7 +807,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'business',
     ),
-    25 => 
+    25 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -799,7 +818,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'cafe',
     ),
-    26 => 
+    26 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -810,7 +829,7 @@ function mtnc_add_themes_fields()
       'status' => 'extra',
       'name_clean' => 'chatbot',
     ),
-    27 => 
+    27 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -821,7 +840,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'christmas-decor',
     ),
-    28 => 
+    28 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -832,7 +851,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'church',
     ),
-    29 => 
+    29 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -843,7 +862,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'city-nighttime',
     ),
-    30 => 
+    30 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -854,7 +873,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'cityscape',
     ),
-    31 => 
+    31 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -865,7 +884,7 @@ function mtnc_add_themes_fields()
       'status' => 'extra',
       'name_clean' => 'clothing-trends',
     ),
-    32 => 
+    32 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.14',
@@ -876,7 +895,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'clouds-screensaver-video',
     ),
-    33 => 
+    33 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.005',
@@ -887,7 +906,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'coffee-shop',
     ),
-    34 => 
+    34 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -898,7 +917,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'cold-lake',
     ),
-    35 => 
+    35 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -909,7 +928,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'computer-repair-service',
     ),
-    36 => 
+    36 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -920,7 +939,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'concert',
     ),
-    37 => 
+    37 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -931,7 +950,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'conference-event',
     ),
-    38 => 
+    38 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -942,7 +961,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'construction-company',
     ),
-    39 => 
+    39 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -953,7 +972,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'creative-design',
     ),
-    40 => 
+    40 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -964,7 +983,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'custom-decor',
     ),
-    41 => 
+    41 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -975,7 +994,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'cyber-security',
     ),
-    42 => 
+    42 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.005',
@@ -986,7 +1005,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'default',
     ),
-    43 => 
+    43 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -997,7 +1016,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'dental-clinic',
     ),
-    44 => 
+    44 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1008,7 +1027,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'digital-agency',
     ),
-    45 => 
+    45 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1019,7 +1038,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'dog-shelter',
     ),
-    46 => 
+    46 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.001',
@@ -1030,7 +1049,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'dog-training-and-behavior-consulting',
     ),
-    47 => 
+    47 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1041,7 +1060,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'donation',
     ),
-    48 => 
+    48 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1052,7 +1071,7 @@ function mtnc_add_themes_fields()
       'status' => 'extra',
       'name_clean' => 'ecommerce',
     ),
-    49 => 
+    49 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1063,7 +1082,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'employment',
     ),
-    50 => 
+    50 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1074,7 +1093,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'essay-writing-service',
     ),
-    51 => 
+    51 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1085,7 +1104,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'fall-video',
     ),
-    52 => 
+    52 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1096,7 +1115,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'fashion',
     ),
-    53 => 
+    53 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1107,7 +1126,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'financial-counselling',
     ),
-    54 => 
+    54 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1118,7 +1137,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'financial-district',
     ),
-    55 => 
+    55 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1129,7 +1148,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'fitness-e-shop',
     ),
-    56 => 
+    56 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1140,7 +1159,7 @@ function mtnc_add_themes_fields()
       'status' => 'extra',
       'name_clean' => 'florium',
     ),
-    57 => 
+    57 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.05',
@@ -1151,7 +1170,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'flower-shop',
     ),
-    58 => 
+    58 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1162,7 +1181,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'food-blog',
     ),
-    59 => 
+    59 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1173,7 +1192,7 @@ function mtnc_add_themes_fields()
       'status' => 'extra',
       'name_clean' => 'food-store',
     ),
-    60 => 
+    60 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1184,7 +1203,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'foodie',
     ),
-    61 => 
+    61 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1195,7 +1214,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'football',
     ),
-    62 => 
+    62 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1206,7 +1225,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'frozen-nature',
     ),
-    63 => 
+    63 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1217,7 +1236,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'future-technology',
     ),
-    64 => 
+    64 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1228,7 +1247,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'graphic-design',
     ),
-    65 => 
+    65 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1239,7 +1258,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'greenlife',
     ),
-    66 => 
+    66 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1250,7 +1269,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'halloween',
     ),
-    67 => 
+    67 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1261,7 +1280,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'healthy-eating',
     ),
-    68 => 
+    68 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1272,7 +1291,7 @@ function mtnc_add_themes_fields()
       'status' => 'extra',
       'name_clean' => 'hexagons-video',
     ),
-    69 => 
+    69 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1283,7 +1302,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'holiday-resort',
     ),
-    70 => 
+    70 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1294,7 +1313,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'home-design',
     ),
-    71 => 
+    71 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1305,7 +1324,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'homemade-chocolate-gifts',
     ),
-    72 => 
+    72 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1316,7 +1335,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'hosting',
     ),
-    73 => 
+    73 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1327,7 +1346,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'ice-cream-shop',
     ),
-    74 => 
+    74 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1338,7 +1357,7 @@ function mtnc_add_themes_fields()
       'status' => 'extra',
       'name_clean' => 'in-design',
     ),
-    75 => 
+    75 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1349,7 +1368,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'inspy-romance',
     ),
-    76 => 
+    76 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.05',
@@ -1360,7 +1379,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'interior-design',
     ),
-    77 => 
+    77 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1371,7 +1390,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'it-conference',
     ),
-    78 => 
+    78 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.14',
@@ -1382,7 +1401,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'journey-video',
     ),
-    79 => 
+    79 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1393,7 +1412,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'keyword-research',
     ),
-    80 => 
+    80 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1404,7 +1423,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'kids-center',
     ),
-    81 => 
+    81 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1415,7 +1434,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'kids-innovation-program',
     ),
-    82 => 
+    82 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1426,7 +1445,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'ladies-accessories',
     ),
-    83 => 
+    83 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1437,7 +1456,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'lego-bricks',
     ),
-    84 => 
+    84 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1448,7 +1467,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'loneliness',
     ),
-    85 => 
+    85 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1459,7 +1478,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'lonely-road',
     ),
-    86 => 
+    86 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1470,7 +1489,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'luxury-car',
     ),
-    87 => 
+    87 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.005',
@@ -1481,7 +1500,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'maintenance-mode',
     ),
-    88 => 
+    88 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.005',
@@ -1492,7 +1511,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'makeup-artist-training',
     ),
-    89 => 
+    89 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1503,7 +1522,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'marketing-webinar',
     ),
-    90 => 
+    90 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1514,7 +1533,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'metrics-video',
     ),
-    91 => 
+    91 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1525,7 +1544,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'misty-forest-video',
     ),
-    92 => 
+    92 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1536,7 +1555,7 @@ function mtnc_add_themes_fields()
       'status' => 'extra',
       'name_clean' => 'mobile-app',
     ),
-    93 => 
+    93 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1547,7 +1566,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'mobile-designer',
     ),
-    94 => 
+    94 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1558,7 +1577,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'mobile-meeting',
     ),
-    95 => 
+    95 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1569,7 +1588,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'modern-blog',
     ),
-    96 => 
+    96 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.05',
@@ -1580,7 +1599,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'modern-office',
     ),
-    97 => 
+    97 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1591,7 +1610,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'modern-recipes',
     ),
-    98 => 
+    98 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1602,7 +1621,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'mountain-slide',
     ),
-    99 => 
+    99 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.05',
@@ -1613,7 +1632,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'mountain',
     ),
-    100 => 
+    100 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1624,7 +1643,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'movie-trailer-video',
     ),
-    101 => 
+    101 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1635,7 +1654,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'music',
     ),
-    102 => 
+    102 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.05',
@@ -1646,7 +1665,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'nature',
     ),
-    103 => 
+    103 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1657,7 +1676,7 @@ function mtnc_add_themes_fields()
       'status' => 'extra',
       'name_clean' => 'non-profit-organization',
     ),
-    104 => 
+    104 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1668,7 +1687,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'nutritionist',
     ),
-    105 => 
+    105 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.14',
@@ -1679,7 +1698,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'office-meeting-video',
     ),
-    106 => 
+    106 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.05',
@@ -1690,7 +1709,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'office-theme',
     ),
-    107 => 
+    107 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1701,7 +1720,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'online-food-delivery',
     ),
-    108 => 
+    108 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.005',
@@ -1712,7 +1731,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'online-learning',
     ),
-    109 => 
+    109 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1723,7 +1742,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'online-shopping',
     ),
-    110 => 
+    110 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1734,7 +1753,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'organic-cosmetics',
     ),
-    111 => 
+    111 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1745,7 +1764,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'pancake-house',
     ),
-    112 => 
+    112 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1756,7 +1775,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'parenting',
     ),
-    113 => 
+    113 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1767,7 +1786,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'passage',
     ),
-    114 => 
+    114 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1778,7 +1797,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'peaceful-river',
     ),
-    115 => 
+    115 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1789,7 +1808,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'personal-trainer',
     ),
-    116 => 
+    116 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1800,7 +1819,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'photo-studio',
     ),
-    117 => 
+    117 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1811,7 +1830,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'photography',
     ),
-    118 => 
+    118 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1822,7 +1841,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'plumbing',
     ),
-    119 => 
+    119 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1833,7 +1852,7 @@ function mtnc_add_themes_fields()
       'status' => 'extra',
       'name_clean' => 'podcast',
     ),
-    120 => 
+    120 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1844,7 +1863,7 @@ function mtnc_add_themes_fields()
       'status' => 'extra',
       'name_clean' => 'portfolio',
     ),
-    121 => 
+    121 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1855,7 +1874,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'restaurant',
     ),
-    122 => 
+    122 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1866,7 +1885,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'romantic-travels',
     ),
-    123 => 
+    123 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1877,7 +1896,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'running-blog',
     ),
-    124 => 
+    124 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.14',
@@ -1888,7 +1907,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'running-video',
     ),
-    125 => 
+    125 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1899,7 +1918,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'scholar-university',
     ),
-    126 => 
+    126 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1910,7 +1929,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'seo-digital-marketing',
     ),
-    127 => 
+    127 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.005',
@@ -1921,7 +1940,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'shoes-store',
     ),
-    128 => 
+    128 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1932,7 +1951,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'simple-beige-design',
     ),
-    129 => 
+    129 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1943,7 +1962,7 @@ function mtnc_add_themes_fields()
       'status' => 'extra',
       'name_clean' => 'skin-care',
     ),
-    130 => 
+    130 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1954,7 +1973,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'skincare',
     ),
-    131 => 
+    131 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1965,7 +1984,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'snow-screensaver-video',
     ),
-    132 => 
+    132 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1976,7 +1995,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'snowboarding-blog',
     ),
-    133 => 
+    133 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -1987,7 +2006,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'snowy-mountain',
     ),
-    134 => 
+    134 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -1998,7 +2017,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'snowy-oasis',
     ),
-    135 => 
+    135 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -2009,7 +2028,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'social-media-service',
     ),
-    136 => 
+    136 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -2020,7 +2039,7 @@ function mtnc_add_themes_fields()
       'status' => 'extra',
       'name_clean' => 'social-media',
     ),
-    137 => 
+    137 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -2031,7 +2050,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'spa-beauty-studio',
     ),
-    138 => 
+    138 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -2042,7 +2061,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'spa',
     ),
-    139 => 
+    139 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -2053,7 +2072,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'spring-sale',
     ),
-    140 => 
+    140 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -2064,7 +2083,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'spring',
     ),
-    141 => 
+    141 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -2075,7 +2094,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'startup',
     ),
-    142 => 
+    142 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -2086,7 +2105,7 @@ function mtnc_add_themes_fields()
       'status' => 'extra',
       'name_clean' => 'statistics-survey',
     ),
-    143 => 
+    143 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -2097,7 +2116,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'studio-design',
     ),
-    144 => 
+    144 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -2108,7 +2127,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'stylish-workplace',
     ),
-    145 => 
+    145 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -2119,7 +2138,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'tattoo-studio',
     ),
-    146 => 
+    146 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -2130,7 +2149,7 @@ function mtnc_add_themes_fields()
       'status' => 'extra',
       'name_clean' => 'tech',
     ),
-    147 => 
+    147 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -2141,7 +2160,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'techexpo',
     ),
-    148 => 
+    148 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -2152,7 +2171,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'telecommunication',
     ),
-    149 => 
+    149 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -2163,7 +2182,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'the-big-city-newsletter',
     ),
-    150 => 
+    150 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.14',
@@ -2174,7 +2193,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'the-sunny-view',
     ),
-    151 => 
+    151 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -2185,7 +2204,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'theatre',
     ),
-    152 => 
+    152 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.001',
@@ -2196,7 +2215,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'travel-agency',
     ),
-    153 => 
+    153 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.05',
@@ -2207,7 +2226,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'travel-blog',
     ),
-    154 => 
+    154 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -2218,7 +2237,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'tulips',
     ),
-    155 => 
+    155 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -2229,7 +2248,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'valentines-day',
     ),
-    156 => 
+    156 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.001',
@@ -2240,7 +2259,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'video-production',
     ),
-    157 => 
+    157 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -2251,7 +2270,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'virtual-assistant-service',
     ),
-    158 => 
+    158 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -2262,7 +2281,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'virtual-reality',
     ),
-    159 => 
+    159 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -2273,7 +2292,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'walking-away-video',
     ),
-    160 => 
+    160 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -2284,7 +2303,7 @@ function mtnc_add_themes_fields()
       'status' => 'extra',
       'name_clean' => 'web-security',
     ),
-    161 => 
+    161 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.005',
@@ -2295,7 +2314,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'webinar',
     ),
-    162 => 
+    162 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.005',
@@ -2306,7 +2325,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'wedding-blog',
     ),
-    163 => 
+    163 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -2317,7 +2336,7 @@ function mtnc_add_themes_fields()
       'status' => 'extra',
       'name_clean' => 'wedding',
     ),
-    164 => 
+    164 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -2328,7 +2347,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'white-orchids',
     ),
-    165 => 
+    165 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.17',
@@ -2339,7 +2358,7 @@ function mtnc_add_themes_fields()
       'status' => 'pro',
       'name_clean' => 'winter-sale',
     ),
-    166 => 
+    166 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '5.14',
@@ -2350,7 +2369,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'working-out',
     ),
-    167 => 
+    167 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '15.05',
@@ -2361,7 +2380,7 @@ function mtnc_add_themes_fields()
       'status' => 'agency',
       'name_clean' => 'workplace',
     ),
-    168 => 
+    168 =>
     array (
       'type' => 'CSMM PRO',
       'version' => '6.00',
@@ -2512,16 +2531,16 @@ function mtnc_add_exclude_pages_fields()
 function mtnc_get_background_fileds_action()
 {
   $mt_option = mtnc_get_plugin_options(true);
-  mtnc_generate_image_filed(__('Background image', 'maintenance'), 'body_bg', 'body_bg', esc_attr($mt_option['body_bg']), 'boxes box-bg', __('Upload Background', 'maintenance'), 'upload_background upload_btn button');
+  mtnc_generate_image_filed(__('Background Image', 'maintenance'), 'body_bg', 'body_bg', esc_attr($mt_option['body_bg']), 'boxes box-bg', __('Upload Background', 'maintenance'), 'upload_background upload_btn button');
 }
 add_action('mtnc_background_field', 'mtnc_get_background_fileds_action', 10);
 
 function mtnc_get_color_fileds_action()
 {
   $mt_option = mtnc_get_plugin_options(true);
-  mtnc_get_color_field(__('Background color', 'maintenance'), 'body_bg_color', 'body_bg_color', esc_attr($mt_option['body_bg_color']), '#111111');
-  mtnc_get_color_field(__('Font color', 'maintenance'), 'font_color', 'font_color', esc_attr($mt_option['font_color']), '#ffffff');
-  mtnc_get_color_field(__('Login block background color', 'maintenance'), 'controls_bg_color', 'controls_bg_color', isset($mt_option['controls_bg_color']) ? esc_attr($mt_option['controls_bg_color']) : '', '#000000');
+  mtnc_get_color_field(__('Background Color', 'maintenance'), 'body_bg_color', 'body_bg_color', esc_attr($mt_option['body_bg_color']), '#111111');
+  mtnc_get_color_field(__('Font Color', 'maintenance'), 'font_color', 'font_color', esc_attr($mt_option['font_color']), '#ffffff');
+  mtnc_get_color_field(__('Login Block Background Color', 'maintenance'), 'controls_bg_color', 'controls_bg_color', isset($mt_option['controls_bg_color']) ? esc_attr($mt_option['controls_bg_color']) : '', '#000000');
 }
 add_action('mtnc_color_fields', 'mtnc_get_color_fileds_action', 10);
 
@@ -2529,7 +2548,7 @@ add_action('mtnc_color_fields', 'mtnc_get_color_fileds_action', 10);
 function mtnc_get_font_fileds_action()
 {
   $mt_option = mtnc_get_plugin_options(true);
-  echo mtnc_get_fonts_field(__('Font family', 'maintenance'), 'body_font_family', 'body_font_family', esc_attr($mt_option['body_font_family'])); // phpcs:ignore WordPress.Security.EscapeOutput
+  echo mtnc_get_fonts_field(__('Font Family', 'maintenance'), 'body_font_family', 'body_font_family', esc_attr($mt_option['body_font_family'])); // phpcs:ignore WordPress.Security.EscapeOutput
   $subset = '';
 
   if (!empty($mt_option['body_font_subset'])) {
