@@ -12,7 +12,7 @@
           <a href="/seminary" target="_blank" class="seminars_link btn btn-success btn-lg">Расписание семинаров</a>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-12 text-center">
-          <img class="chikurov_img" src="<?php bloginfo('template_url'); ?>/img/chi_img.jpg" alt="Чикуров Ю.В.">
+          <img class="chikurov_img" src="<?php bloginfo('template_url'); ?>/img/chi_for_site.jpg" alt="Чикуров Ю.В.">
         </div>
       </div>
     </div>
