@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Plugins - Maintenance - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-05-08 21:56:10+0000\n"
+"PO-Revision-Date: 2020-12-11 05:46:48+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: GlotPress/2.4.0-alpha\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: ru\n"
 "Project-Id-Version: Plugins - Maintenance - Stable (latest release)\n"
 
@@ -225,7 +225,7 @@ msgstr "Исключить страницы"
 
 #: includes/functions.php:188
 msgid "Custom CSS"
-msgstr "Собственный CSS"
+msgstr "Произвольный CSS"
 
 #: includes/functions.php:187
 msgid "General Settings"
@@ -241,7 +241,7 @@ msgstr "Стандартные шрифты"
 
 #: includes/admin.php:88
 msgid "Save changes"
-msgstr "Сохранить"
+msgstr "Сохранить изменения"
 
 #. #-#-#-#-#  tmp-maintenance.pot (Maintenance 2.5)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
