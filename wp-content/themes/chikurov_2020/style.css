@@ -2286,6 +2286,11 @@ h3.pricing span
 {
     cursor: pointer;
 }
+.chain
+{
+    color: #413e66;
+    font-size: 25px;
+}
 
 
 /******************************
