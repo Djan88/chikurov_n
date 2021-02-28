@@ -1215,6 +1215,7 @@ section#seminar
 {
     font-weight: 400;
     font-size: 30px;
+    color: #413e66;
 }
 input.wpcf7-form-control.wpcf7-submit.btn.btn-primary.btn-lg
 {
@@ -3119,6 +3120,7 @@ responsive area
     {
         font-size: 20px !important;
         font-weight: 600;
+        color: #413e66;
     }
     .contact-caption {
         margin-top: 38%;
