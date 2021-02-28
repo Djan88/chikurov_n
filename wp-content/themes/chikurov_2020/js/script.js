@@ -255,12 +255,12 @@ jQuery(document).ready(function () {
   jQuery('.submit_seminar').on('click', function(event) {
     jQuery('.oferta_wrap').addClass('oferta_wrap_styled');
     setTimeout(function(){
-      jQuery('.chain_list').removeClass('hidden');
+      jQuery('.oferta_wrap').removeClass('oferta_wrap_styled');
     },2000);
   });
 
   jQuery('.chain_list_link').on('click', function(event) {
-    jQuery('.oferta_wrap').removeClass('oferta_wrap_styled');
+    jQuery('.chain_list').removeClass('hidden');
   });
 
   jQuery('.consult').on('click', function(event) {
