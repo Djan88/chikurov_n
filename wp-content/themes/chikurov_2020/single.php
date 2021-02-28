@@ -207,8 +207,13 @@
               <?php if (get_field('order_closed')) { ?>
                 <div class="order_closed_text">
                   Сожалеем, но запись на этот семинар уже закрыта.<br>
-                  <div class="seminar_else_text">Клкините по ссылке ниже и ознакомьтесь с расписанием следующих семинаров "<?php the_title(); ?>"</div>
-                  <a href="#seminars_else" class="else_seminars_link">Показать даты</a>
+                  <div class="seminar_else_text">Клкините по <a href="#seminars_chain" class="else_seminars_link">этой ссылке</a> для записи в лист ожидания (если место освободится мы дадим вам знать в первую очередь) или по <a href="#seminars_else" class="else_seminars_link">этой ссылке</a> и ознакомьтесь с расписанием следующих семинаров "<?php the_title(); ?>"</div>
+                  <div id="seminars_chain">
+                    <div class="chain_list">
+                      <h5 class="content_center" id="order">Лист ожидания</h5>
+                      <?php echo do_shortcode('[contact-form-7 id="10184" title="Запись в лист ожидания"]'); ?>
+                    </div>
+                  </div>
                 </div>
               <?php } else { ?>
                 <?php if ($autor == 'Юрий Чикуров' && $city == 'Санкт-Петербург') {?>
