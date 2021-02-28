@@ -2297,7 +2297,14 @@ h3.pricing span
 {
     color: #0094e1;
 }
-
+.wpcf7 form.sent .wpcf7-response-output
+{
+    color: #46b450;
+}
+.order_closed_text .seminar_else_text i 
+{
+    font-weight: 100;
+}
 
 /******************************
 responsive area
@@ -3124,14 +3131,6 @@ responsive area
         font-size: 20px !important;
         font-weight: 600;
         color: #413e66;
-    }
-    .wpcf7 form.sent .wpcf7-response-output
-    {
-        color: #46b450;
-    }
-    .seminar_else_text i 
-    {
-        font-weight: 100;
     }
     .contact-caption {
         margin-top: 38%;
