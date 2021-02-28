@@ -1211,10 +1211,16 @@ section#seminar
 {
     margin-bottom: 0;
 }
-.seminar h4 
+.seminar h4, #chain
 {
     font-weight: 400;
     font-size: 30px;
+}
+input.wpcf7-form-control.wpcf7-submit.btn.btn-primary.btn-lg
+{
+    display: block;
+    width: 140px;
+    margin: auto;
 }
 .seminar_content 
 {
@@ -2286,11 +2292,7 @@ h3.pricing span
 {
     cursor: pointer;
 }
-#chain
-{
-    color: #413e66;
-    font-size: 25px;
-}
+
 
 
 /******************************
@@ -3113,7 +3115,7 @@ responsive area
         font-size: 50px;
         margin-top: 40px;
     }
-    h4, .seminar h4 
+    h4, .seminar h4, #chain
     {
         font-size: 20px !important;
         font-weight: 600;
