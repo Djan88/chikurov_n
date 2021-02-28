@@ -298,24 +298,11 @@ function mtnc_add_review_top() {
   echo $promo_text;
 }
 
-function mtnc_accessibe_side() {
-  $promo_text  = '';
-
-  $promo_text .= '<p><b>20% of people who visit your site can\'t use it properly</b> because they have a disability. Making your site accessible is required by law and you can face heavy fines for not doing it.</p><p>By using the <a href="#" class="open-accessibe-upsell">accessiBe plugin</a> you can make your site accessible. This will not only save you from fines but instantly grow your audience.</p>';
-  $promo_text .= '<p class="textcenter"><a href="#" class="open-accessibe-upsell"><img style="max-width: 80%;" src="' . MTNC_URI . 'images/accessibe-logo.png" alt="Install the accessiBe plugin" title="Install the accessiBe plugin"></a></p>';
-
-  echo $promo_text;
-}
-
 function mtnc_page_create_meta_boxes_widget_support()
 {
   global $mtnc_variable;
 
   add_meta_box('promo-review2', __('Help us keep the plugin free &amp; maintained', 'maintenance'), 'mtnc_review_box', $mtnc_variable->options_page, 'side', 'high');
-
-  if (!is_plugin_active('accessibe/accessiebe.php')) {
-    add_meta_box('accessibe-sidebar', 'Web accessibility is not a luxury in 2021!', 'mtnc_accessibe_side', $mtnc_variable->options_page, 'side', 'high');
-  }
 
   if (!mtnc_is_sn_active()) {
     add_meta_box('promo-sn', __('Protect your site from day one with Security Ninja', 'maintenance'), 'mtnc_promo_sn', $mtnc_variable->options_page, 'side', 'default');
@@ -360,7 +347,6 @@ function mtnc_add_data_fields($object, $box)
         mtnc_generate_input_filed(__('Headline', 'maintenance'), 'heading', 'heading', $heading);
         mtnc_generate_tinymce_filed(__('Description', 'maintenance'), 'description', 'description', $description);
         mtnc_generate_input_filed(__('Footer Text', 'maintenance'), 'footer_text', 'footer_text', $footer_text);
-        mtnc_accessibe_option();
         mtnc_smush_option();
         mtnc_generate_check_filed(__('Show Some Love', 'maintenance'), __('Show a small link in the footer to let others know you\'re using this awesome &amp; free plugin', 'maintenance'), 'show_some_love', 'show_some_love', !empty($mt_option['show_some_love']));
         mtnc_generate_number_filed(__('Set Logo Width', 'maintenance'), 'logo_width', 'logo_width', $logo_width);
@@ -444,24 +430,6 @@ function mtnc_smush_option() {
     echo '</tr>';
   }
 } // mtnc_smush_option
-
-function mtnc_accessibe_option() {
-  if (is_plugin_active('accessibe/accessiebe.php')) {
-    echo '<tr>';
-    echo '<th><label for="accessibe_support">Web Accessibility</label></th>';
-    echo '<td style="line-height: 1.5;">';
-    echo 'Configure <a href="' . admin_url('options-general.php?page=accessiBe') . '">web accessibility options</a>.';
-    echo '</td>';
-    echo '</tr>';
-  } else {
-    echo '<tr>';
-    echo '<th><label for="accessibe_support">Web Accessibility</label></th>';
-    echo '<td style="line-height: 1.5;">';
-    echo '<input type="checkbox" id="accessibe_support" type="checkbox" value="1" class="skip-save">Your maintenance page is currently <b>not fully accessible for over 20% of visitors</b> with dissabilities.<br> Make your site accessible from day one by installing the <a href="#" class="open-accessibe-upsell">accessiBe plugin.</a>';
-    echo '</td>';
-    echo '</tr>';
-  }
-} // mtnc_accessibe_option
 
 function mtnc_is_sn_active() {
     if (!function_exists('is_plugin_active') || !function_exists('get_plugin_data')) {
@@ -2645,7 +2613,7 @@ function mtnc_add_exclude_pages_fields()
   $out_filed .= '<table class="form-table">';
   $out_filed .= '<tbody>';
   $out_filed .= '<tr valign="top">';
-  $out_filed .= '<th colspan="2" scope="row">' . __('Select the page(s) to be displayed normally, excluded by maintenance mode:', 'maintenance') . '</th>';
+  $out_filed .= '<th colspan="2" scope="row">' . __('Select the page(s) to be displayed normally, excluded by maintenance mode.', 'maintenance') . ' Please note that in order to prevent issues on sites with large number of posts we show only the first 200 entries for each post type (post, page, product,...).</th>';
   $out_filed .= '</tr>';
 
   foreach ($post_types as $post_slug => $type) {
@@ -2656,7 +2624,7 @@ function mtnc_add_exclude_pages_fields()
     }
 
     $args = array(
-      'posts_per_page' => -1,
+      'posts_per_page' => 200,
       'orderby'        => 'NAME',
       'order'          => 'ASC',
       'post_type'      => $post_slug,
@@ -2845,7 +2813,8 @@ function mtnc_load_maintenance_page($original_template)
     return MTNC_LOAD . 'index.php';
   }
 
-  if (!is_user_logged_in()) {
+  $not_logged_in = !is_user_logged_in();
+  if (apply_filters('mtnc_load_maintenance_page_for_this_user', $not_logged_in)) {
     if (!empty($mt_options['state'])) {
 
       if (!empty($mt_options['expiry_date_start'])) {
