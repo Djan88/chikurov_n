@@ -177,7 +177,7 @@
                     <span class="fa fa-pencil-square-o"></span> Запись закрыта
                   </div>
                   <a href="#seminars_else" class="seminar_order btn btn-success">Другие даты</a>
-                  <a href="##seminars_chain" class="chain_list_link btn btn-primary">Лист ожидания</a>
+                  <a href="#seminars_chain" class="chain_list_link btn btn-primary">Лист ожидания</a>
                 </div>
               <?php } else { ?>
                 <div class="seminar_params clearfix">
