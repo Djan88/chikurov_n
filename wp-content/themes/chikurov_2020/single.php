@@ -202,14 +202,14 @@
               <h5 class="age">Внимание! Семинар рассчитан на аудиторию достигшую возраста 18 лет</h5>
             </div>
           <?php } ?>
-          <div class="col-md-12 order_seminar">
+          <div class="col-md-12 order_seminar" id="seminars_chain">
             <h4 class="content_center" id="order">Запись на семинар</h4>
             <div class="row">
               <?php if (get_field('order_closed')) { ?>
                 <div class="order_closed_text">
                   Сожалеем, но запись на этот семинар уже закрыта.<br>
                   <div class="seminar_else_text">Кликните по <a href="#seminars_chain" class="else_seminars_link chain_list_link">этой ссылке</a> для записи в лист ожидания (<i>если место освободится мы дадим вам знать в первую очередь</i>) или по <a href="#seminars_else" class="else_seminars_link">этой ссылке</a> и ознакомьтесь с расписанием следующих семинаров "<?php the_title(); ?>"</div>
-                  <div id="seminars_chain">
+                  <div>
                     <div class="chain_list hidden">
                       <h5 class="content_center" id="chain">Лист ожидания</h5>
                       <div class="chain_list_acent">Запись в лист ожидания не является подтверждением записи на семинар и не гарантирует участия в нем</div>
