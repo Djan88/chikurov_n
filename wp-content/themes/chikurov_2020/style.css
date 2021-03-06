@@ -1074,7 +1074,7 @@ section#seminar
     background: #fff;
     color: #413e66!important;
     box-shadow: 0 2px 16px rgba(26,61,107,.16);
-    margin-bottom: 15px;
+    margin: 0 5px 15px 5px;
     border-radius: 6px; 
     overflow: hidden;
     display: block;

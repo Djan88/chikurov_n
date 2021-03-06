@@ -196,7 +196,11 @@ if ($seminar_autor != 'Юрий Чикуров') {
   echo  '</span>';
   echo  '</div>';
 }
-if (get_field('order_closed')) {
+if (get_field('seminar_acent')) {
+  echo '<span class="seminar_closed">';
+  echo 'NEW';
+  echo  '</span>';
+} else if (get_field('order_closed')) {
   echo '<span class="seminar_closed">';
   echo 'Запись закрыта';
   echo  '</span>';
