@@ -207,7 +207,7 @@
             <?php $city = get_field('city');?>
             <?php if ($autor == 'Юрий Чикуров') { ?>
             <div class="col-md-12" style="padding: 0;">
-              <h5 class="age">Внимание! Семинар рассчитан на аудиторию достигшую возраста 18 лет</h5>
+              <h5 class="age" id="seminars_chain">Внимание! Семинар рассчитан на аудиторию достигшую возраста 18 лет</h5>
             </div>
           <?php } ?>
           <div class="col-md-12 order_seminar" id="seminars_chain">
