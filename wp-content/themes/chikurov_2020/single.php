@@ -76,10 +76,6 @@
             <div class="item_wrap">
               <div class="seminar_params clearfix">
                 <div class="params_title_high">Где и когда:</div>
-                <?php
-                  echo $date_now, "\n";
-                  echo $date_formated_end, "\n";
-                ?>
                 <div class="params_content">
                   <span class="date_info"> <span class="fa fa-calendar"></span> 
                     <?php
@@ -176,7 +172,14 @@
                 <a class="email_info" href="mailto:<?php the_field('email'); ?>"><span class="fa fa-envelope"></span> <?php the_field('email'); ?></a>
               </div>
               </div>
-              <?php if (get_field('order_closed')) { ?>
+              <?php if ($date_now > $date_formated_end) { ?>
+                <div class="seminar_params clearfix">
+                  <div class="order_closed">
+                    <span class="fa fa-pencil-square-o"></span> Запись закрыта. Семинар уже прошел.
+                  </div>
+                  <a href="#seminars_else" class="seminar_order btn btn-success">Другие даты</a>
+                </div>
+              <?php } else if (get_field('order_closed')) { ?>
                 <div class="seminar_params clearfix">
                   <div class="order_closed">
                     <span class="fa fa-pencil-square-o"></span> Запись закрыта
