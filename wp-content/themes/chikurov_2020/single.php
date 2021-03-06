@@ -213,7 +213,14 @@
           <div class="col-md-12 order_seminar" id="seminars_chain">
             <h4 class="content_center" id="order">Запись на семинар</h4>
             <div class="row">
-              <?php if (get_field('order_closed')) { ?>
+              <?php if ($date_now > $date_formated_end) { ?>
+                <div class="order_closed_text">
+                  Сожалеем, но запись на этот семинар закрыта так как он уже прошел.<br>
+                  <div class="seminar_else_text">Кликните  по <a href="#seminars_else" class="else_seminars_link">этой ссылке</a>, и ознакомьтесь с расписанием следующих семинаров "<?php the_title(); ?>"</div>
+                  <div>
+                  </div>
+                </div>
+              <?php } else if (get_field('order_closed')) { ?>
                 <div class="order_closed_text">
                   Сожалеем, но запись на этот семинар уже закрыта.<br>
                   <div class="seminar_else_text">Кликните по <a href="#seminars_chain" class="else_seminars_link chain_list_link">этой ссылке</a> для записи в лист ожидания (<i>если место освободится мы дадим вам знать в первую очередь</i>) или по <a href="#seminars_else" class="else_seminars_link">этой ссылке</a> и ознакомьтесь с расписанием следующих семинаров "<?php the_title(); ?>"</div>
