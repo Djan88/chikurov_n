@@ -1417,9 +1417,14 @@ h5.animated_block
 }
 @-webkit-keyframes cvowSz{0%{background-position:0 center;}100%{background-position:100% center;}} 
         @keyframes cvowSz{0%{background-position:0 center;}100%{background-position:100% center;}}
-.seminar_closed 
+.seminar_new 
 {
     padding-left: 15px;
+    color: #ff206d;
+}
+.seminar_closed 
+{
+    font-size: 18px;
     color: #ff206d;
 }
 .styled_form .g-recaptcha div 

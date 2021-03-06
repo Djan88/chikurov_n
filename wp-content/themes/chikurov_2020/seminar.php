@@ -197,7 +197,7 @@ if ($seminar_autor != 'Юрий Чикуров') {
   echo  '</div>';
 }
 if (get_field('seminar_acent')) {
-  echo '<span class="seminar_closed">';
+  echo '<span class="seminar_new">';
   echo 'NEW';
   echo  '</span>';
 }
@@ -218,6 +218,11 @@ echo the_title();
 if (get_field('order_closed')) {
   echo '<div class="seminar_closed">';
   echo 'Запись закрыта';
+  echo '<a target="_blank" class="chain_link" href="';
+  echo the_permalink();
+  echo '/#seminars_chain">';
+  echo 'Лист ожидания'
+  echo '</a>';
   echo  '</div>';
 }
 // echo '</a>';
