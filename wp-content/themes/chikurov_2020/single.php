@@ -192,7 +192,7 @@
                   <div class="order_open">
                     <span class="fa fa-pencil-square-o"></span> Запись открыта
                   </div>
-                  <a href="#order" class="seminar_order btn btn-success">Записаться</a>
+                  <a href="#seminars_chain" class="seminar_order btn btn-success">Записаться</a>
                 </div>
               <?php } ?>
             </div>
