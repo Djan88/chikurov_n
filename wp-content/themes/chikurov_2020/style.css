@@ -1598,13 +1598,27 @@ section#seminars
 {
     content: '';
     background: #ff206d;
-    width: 10px;
+    width: 8px;
     height: 85px;
     position: absolute; 
     left:0;
     right:0;
     top:0;
     bottom:0;
+    z-index: 999;
+}
+.seminar_acent:after
+{
+    content: '';
+    background: #ff206d;
+    width: 8px;
+    height: 85px;
+    position: absolute; 
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index: 999;
 }
 .seminar_online_title
 {
