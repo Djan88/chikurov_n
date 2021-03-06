@@ -218,7 +218,7 @@ echo the_title();
 if (get_field('order_closed')) {
   echo '<div class="seminar_closed">';
   echo 'Запись закрыта ';
-  echo '<span class="chain_link">Лист ожидания</span></div>';
+  echo '<span class="chain_link">(лист ожидания)</span></div>';
 }
 // echo '</a>';
 echo '</div>';
