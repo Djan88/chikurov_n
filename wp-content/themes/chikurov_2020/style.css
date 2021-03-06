@@ -1424,7 +1424,8 @@ h5.animated_block
 }
 .seminar_closed 
 {
-    font-size: 18px;
+    font-size: 17px;
+    font-weight: 600;
     color: #ff206d;
 }
 .chain_link
