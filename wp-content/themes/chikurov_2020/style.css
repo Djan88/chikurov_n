@@ -1427,6 +1427,10 @@ h5.animated_block
     font-size: 18px;
     color: #ff206d;
 }
+.chain_link
+{
+    color: #0094e1;
+}
 .styled_form .g-recaptcha div 
 {
     margin: auto;

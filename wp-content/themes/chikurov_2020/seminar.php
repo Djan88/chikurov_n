@@ -217,7 +217,7 @@ echo '<div class="seminar_head col-md-8 col-sm-7 col-xs-12">';
 echo the_title();
 if (get_field('order_closed')) {
   echo '<div class="seminar_closed">';
-  echo 'Запись закрыта';
+  echo 'Запись закрыта ';
   echo '<span class="chain_link">Лист ожидания</span></div>';
 }
 // echo '</a>';
