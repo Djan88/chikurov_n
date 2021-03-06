@@ -200,10 +200,6 @@ if (get_field('seminar_acent')) {
   echo '<span class="seminar_closed">';
   echo 'NEW';
   echo  '</span>';
-} else if (get_field('order_closed')) {
-  echo '<span class="seminar_closed">';
-  echo 'Запись закрыта';
-  echo  '</span>';
 }
 // echo ' | ';
 // if (get_field('seminar_online')) {
@@ -219,6 +215,11 @@ echo '<div class="seminar_head col-md-8 col-sm-7 col-xs-12">';
 // echo the_permalink();
 // echo '">';
 echo the_title();
+if (get_field('order_closed')) {
+  echo '<div class="seminar_closed">';
+  echo 'Запись закрыта';
+  echo  '</div>';
+}
 // echo '</a>';
 echo '</div>';
 echo '</div>';
