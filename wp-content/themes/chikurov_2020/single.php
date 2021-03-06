@@ -35,6 +35,7 @@
 
     $seminar_end = get_field('seminar_end');
     $date_formated_end = strtotime($seminar_end);
+    $date_now = strtotime('now');
     $seminar_end_d = date('d',$date_formated_end);
     $seminar_end_m = strval(date('m',$date_formated_end));
     $seminar_end_y = date('Y',$date_formated_end);
@@ -75,6 +76,10 @@
             <div class="item_wrap">
               <div class="seminar_params clearfix">
                 <div class="params_title_high">Где и когда:</div>
+                <?php
+                  echo $date_now, "\n";
+                  echo $date_formated_end, "\n";
+                ?>
                 <div class="params_content">
                   <span class="date_info"> <span class="fa fa-calendar"></span> 
                     <?php
