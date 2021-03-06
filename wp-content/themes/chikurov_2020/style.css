@@ -1592,8 +1592,19 @@ section#seminars
 }
 .seminar_acent
 {
-    color: #fce89a;
-    background: #1d355d!important;
+    position: relative;
+}
+.seminar_acent:before
+{
+    content: '';
+    background: #ff206d;
+    width: 10px;
+    height: 85px;
+    position: absolute; 
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
 }
 .seminar_online_title
 {
