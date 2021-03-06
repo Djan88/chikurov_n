@@ -221,7 +221,7 @@ if (get_field('order_closed')) {
   echo '<a target="_blank" class="chain_link" href="';
   echo the_permalink();
   echo '/#seminars_chain">';
-  echo 'Лист ожидания'
+  echo 'Лист ожидания';
   echo '</a>';
   echo  '</div>';
 }
