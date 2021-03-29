@@ -3,7 +3,7 @@
 	Plugin Name: Maintenance
 	Plugin URI: https://wpmaintenancemode.com/
 	Description: Put your site in maintenance mode, away from the public view. Use maintenance plugin if your website is in development or you need to change a few things, run an upgrade. Make it only accessible to logged in users.
-	Version: 4.01
+	Version: 4.02
 	Author: WebFactory Ltd
 	Author URI: https://www.webfactoryltd.com/
 	License: GPL2
@@ -125,6 +125,7 @@ class MTNC
     if (method_exists('LiteSpeed_Cache_API', 'purge_all')) {
       LiteSpeed_Cache_API::purge_all();
     }
+    do_action('litespeed_purge_all');
     if (class_exists('Endurance_Page_Cache')) {
       $epc = new Endurance_Page_Cache;
       $epc->purge_all();
@@ -150,7 +151,7 @@ class MTNC
     if (function_exists('rocket_clean_domain')) {
       rocket_clean_domain();
     }
-    do_action( 'cache_enabler_clear_complete_cache' );
+    do_action('cache_enabler_clear_complete_cache');
   }
 
   public function mtnc_user_logout()

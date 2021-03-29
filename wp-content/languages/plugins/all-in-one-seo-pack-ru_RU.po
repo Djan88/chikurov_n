@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - All in One SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-02-12 06:11:29+0000\n"
+"PO-Revision-Date: 2021-03-09 15:28:54+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,650 +11,638 @@ msgstr ""
 "Language: ru\n"
 "Project-Id-Version: Plugins - All in One SEO - Stable (latest release)\n"
 
-#: app/Common/Utils/Tags.php:310
+#: app/Common/Utils/Tags.php:315
 msgid "The first name of the post author."
 msgstr "Имя автора записи."
 
-#: app/Common/Utils/Tags.php:305
+#: app/Common/Utils/Tags.php:310
 msgid "The display name of the post author."
 msgstr "Отображаемое имя автора публикации."
 
-#: app/init/notices.php:160
+#: app/init/notices.php:165
 msgid "Heads up!"
 msgstr "Внимание!"
 
-#: app/Common/Utils/Tags.php:927
+#: app/Common/Utils/Tags.php:932
 msgid "Sample author biography"
 msgstr "Образец биографии автора"
 
-#: app/Common/Utils/Tags.php:494
+#: app/Common/Utils/Tags.php:499
 msgid "Tagline"
 msgstr "Подзаголовок"
 
-#: app/Common/Utils/Tags.php:458 app/Common/Utils/Tags.php:476
+#: app/Common/Utils/Tags.php:463 app/Common/Utils/Tags.php:481
 msgid "Site Link"
 msgstr "Ссылка сайта"
 
-#: app/Common/Utils/Tags.php:356
+#: app/Common/Utils/Tags.php:361
 msgid "Permalink"
 msgstr "Постоянная ссылка"
 
-#: app/Common/Utils/Tags.php:499
+#: app/Common/Utils/Tags.php:504
 msgid "Custom Field"
 msgstr "Пользовательское поле"
 
-#: app/Common/Utils/Tags.php:304
+#: app/Common/Utils/Tags.php:965
+msgid "Example search string"
+msgstr "Пример поисковой фразы"
+
+#: app/Common/Utils/Tags.php:925
+msgid "Sample Archive Title"
+msgstr "Образец заголовка архива"
+
+#: app/Common/Utils/Tags.php:906
+msgid "Sample taxonomy description"
+msgstr "Образец описания таксономии"
+
+#: app/Common/Utils/Tags.php:888
+msgid "Sample Taxonomy Title"
+msgstr "Образец заголовка таксономии"
+
+#: app/Common/Utils/Tags.php:969
+msgid "Sample Taxonomy Name Value"
+msgstr "Образец наименования таксономии"
+
+#: app/Common/Utils/Tags.php:309
 msgid "Author Name"
 msgstr "Имя автора"
 
-#: app/Common/Utils/Tags.php:294
+#: app/Common/Utils/Tags.php:299
 msgid "Author Link (Alt)"
 msgstr "Ссылка автора (alt)"
 
-#: app/Common/Utils/Tags.php:289
+#: app/Common/Utils/Tags.php:294
 msgid "Author Link"
 msgstr "Ссылка на автора"
 
-#: app/Common/Utils/Options.php:776
+#: app/Common/Utils/Options.php:781
 msgid "Archives for"
 msgstr "Архивы для"
 
-#: app/Common/Api/Sitemaps.php:82 app/Common/Api/Plugins.php:70
+#: app/Common/Api/Sitemaps.php:87 app/Common/Api/Plugins.php:75
 msgid "Deactivation failed. Please check permissions and try again."
 msgstr "Деактивация не удалась. Пожалуйста, проверьте разрешения и попробуйте еще раз."
 
-#: app/Common/Api/Plugins.php:19
+#: app/Common/Api/Plugins.php:24
 msgid "Installation failed. Please check permissions and try again."
 msgstr "Установка не удалась. Пожалуйста, проверьте доступ и попробуйте еще раз."
 
 #. Translators: 1 - The plugin short name ("AIOSEO").
-#: app/Common/Admin/PostSettings.php:112
+#: app/Common/Admin/PostSettings.php:117
 msgid "%1$s Settings"
 msgstr "Настройки %1$s"
 
 #. Translators: 1 - The short plugin name ("AIOSEO").
-#: app/Common/Admin/Admin.php:1008
+#: app/Common/Admin/Admin.php:1028
 msgid "%1$s Score"
 msgstr "Оценка %1$s"
 
 #. Translators: 1 - The short plugin name ("AIOSEO").
-#: app/Common/Admin/Admin.php:890
+#: app/Common/Admin/Admin.php:910
 msgid "%1$s Details"
 msgstr "Информация о %1$s"
 
 #. Translators: 1 - The plugin name ("All in One SEO").
-#: app/Common/Admin/SetupWizard.php:185
+#: app/Common/Admin/SetupWizard.php:190
 msgid "%1$s &rsaquo; Onboarding Wizard"
 msgstr "%1$s &rsaquo; Помощник"
 
-#: languages/aioseo-lite.php:1517 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1797 dist/Lite/assets/js/post-settings.js:1
 msgid "Twitter Description"
 msgstr "Описание Твиттер"
 
-#: languages/aioseo-lite.php:1442 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1666 dist/Lite/assets/js/post-settings.js:1
 msgid "Cornerstone content should be the most important and extensive articles on your site."
 msgstr "Ключевое содержимое должно быть самым важным и объемным контентом на вашем сайте."
 
-#: languages/aioseo-lite.php:1427 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1642 dist/Lite/assets/js/post-settings.js:1
 msgid "Edit Snippet"
 msgstr "Редактировать сниппет"
 
-#: languages/aioseo-lite.php:1421 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1636 dist/Lite/assets/js/post-settings.js:1
 msgid "Snippet Preview"
 msgstr "Предварительный просмотр фрагмента"
 
-#: languages/aioseo-lite.php:1394 dist/Lite/assets/js/post-settings.js:1
-msgid "Use default settings"
-msgstr "Использовать настройки по умолчанию"
-
-#: languages/aioseo-lite.php:1418 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1633 dist/Lite/assets/js/post-settings.js:1
 msgid "General"
 msgstr "Общие"
 
-#. Translators: %s: The type of page (Post, Page, Category, Tag, etc.).
-#: languages/aioseo-lite.php:1470 dist/Lite/assets/js/post-settings.js:1
-msgid "%s Title"
-msgstr "Заголовок: %s"
-
 #. Translators: 1 - The plugin name ("All in One SEO").
-#: app/Lite/Admin/Connect.php:228
+#: app/Lite/Admin/Connect.php:233
 msgid "%1$s &rsaquo; Connect"
 msgstr "%1$s &rsaquo; Подключение"
 
-#: languages/aioseo-lite.php:1430 dist/Lite/assets/js/post-settings.js:1
-msgid "Click on tags below to insert variables into your title."
-msgstr "Нажимайте на теги ниже, чтобы вставить переменные в заголовок."
-
-#: languages/aioseo-lite.php:1505 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1723 dist/Lite/assets/js/post-settings.js:1
 msgid "Image Source"
 msgstr "Источник изображения"
 
-#: languages/aioseo-lite.php:1511 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1791 dist/Lite/assets/js/post-settings.js:1
 msgid "Twitter Image"
 msgstr "Изображение Twitter"
 
-#: languages/aioseo-lite.php:1502 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1788 dist/Lite/assets/js/post-settings.js:1
 msgid "Use Data from Facebook Tab"
 msgstr "Использовать данные из Facebook вкладки"
 
-#: languages/aioseo-lite.php:1473 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1288 dist/Lite/assets/js/post-settings.js:1
 msgid "Modal Content"
 msgstr "Содержание всплывающего окна"
 
-#: languages/aioseo-lite.php:1565 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1753 dist/Lite/assets/js/post-settings.js:1
 msgid "Facebook Description"
 msgstr "Описание Facebook"
 
-#: languages/aioseo-lite.php:1562 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1750 dist/Lite/assets/js/post-settings.js:1
 msgid "Facebook Title"
 msgstr "Заголовок Facebook"
 
-#: languages/aioseo-lite.php:1559 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1747 dist/Lite/assets/js/post-settings.js:1
 msgid "Facebook Image"
 msgstr "Изображение Facebook"
 
-#: languages/aioseo-lite.php:1544 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1719 dist/Lite/assets/js/post-settings.js:1
 msgid "Facebook Preview"
 msgstr "Предварительный просмотр Facebook"
 
-#: languages/aioseo-lite.php:1476 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1291 dist/Lite/assets/js/post-settings.js:1
 msgid "Social"
 msgstr "Социальные сети"
 
 #. Translators: 1 - "Google Tag Manager account".
-#: languages/aioseo-lite.php:4223
+#: languages/aioseo-lite.php:2283
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Get your Google Tag Manager ID in your %1$s."
 msgstr "Получите ваш Google Tag Manager ID в %1$s."
 
-#: languages/aioseo-lite.php:4219
+#: languages/aioseo-lite.php:2279
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Google Tag Manager Container ID"
 msgstr "Идентификатор контейнера Google Tag Manager"
 
-#: languages/aioseo-lite.php:1436 dist/Lite/assets/js/post-settings.js:1
-msgid "Click on tags below to insert variables into your meta description."
-msgstr "Нажимайте на теги ниже, чтобы вставить переменные в мета описание."
-
-#: languages/aioseo-lite.php:1571 dist/Lite/assets/js/post-settings.js:1
-msgid "Click on tags below to insert variables into your site name."
-msgstr "Нажимайте на теги ниже, чтобы вставить переменные в название сайта."
-
 #. Translators: 1 - "Baidu Webmaster Tools".
-#: languages/aioseo-lite.php:4094
+#: languages/aioseo-lite.php:2150
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Get your Baidu verification code in %1$s."
 msgstr "Получите ваш код проверки Baidu в %1$s."
 
 #. Translators: 1 - "Yandex Webmaster Tools".
-#: languages/aioseo-lite.php:4083
+#: languages/aioseo-lite.php:2139
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Get your Yandex verification code in %1$s."
 msgstr "Получите ваш код проверки Яндекса в %1$s."
 
 #. Translators: 1 - "Bing Webmaster Tools".
-#: languages/aioseo-lite.php:4072
+#: languages/aioseo-lite.php:2128
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Get your Bing verification code in %1$s."
 msgstr "Получите ваш код проверки Bing в %1$s."
 
 #. Translators: 1 - "Google Search Console".
-#: languages/aioseo-lite.php:4061
+#: languages/aioseo-lite.php:2117
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Get your Google verification code in %1$s."
 msgstr "Получите ваш код проверки Google в %1$s."
 
-#: languages/aioseo-lite.php:4036
-#: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
-msgid "Google Analytics is now handled by ExactMetrics."
-msgstr "Google Analytics в настоящее время обрабатывается с помощью ExactMetrics."
-
-#: languages/aioseo-lite.php:4122
+#: languages/aioseo-lite.php:2182
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Enable Advanced Analytics Options"
 msgstr "Включить расширенные варианты аналитики"
 
 #. Translators: 1 - "Google Analytics account".
-#: languages/aioseo-lite.php:4119
+#: languages/aioseo-lite.php:2179
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Google Analytics account"
 msgstr "Учетная запись Google Analytics"
 
 #. Translators: 1 - "Google Analytics account".
-#: languages/aioseo-lite.php:4115
+#: languages/aioseo-lite.php:2175
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Get your Google Analytics ID in your %1$s."
 msgstr "Получите ваш идентификатор Google Analytics в %1$s."
 
 #. Translators: 1 - "Pinterest account".
-#: languages/aioseo-lite.php:4105
+#: languages/aioseo-lite.php:2165
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Pinterest account"
 msgstr "Учетная запись Pinterest"
 
 #. Translators: 1 - "Pinterest account".
-#: languages/aioseo-lite.php:4101
+#: languages/aioseo-lite.php:2161
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Get your Pinterest verification code in your %1$s."
 msgstr "Получите ваш код проверки Pinterest в %1$s."
 
-#: languages/aioseo-lite.php:4086
+#: languages/aioseo-lite.php:2142
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Baidu Verification Code"
 msgstr "Код проверки Baidu"
 
-#: languages/aioseo-lite.php:4064
+#: languages/aioseo-lite.php:2120
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Bing Verification Code"
 msgstr "Код проверки Bing"
 
-#: languages/aioseo-lite.php:4053
+#: languages/aioseo-lite.php:2109
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Google Verification Code"
 msgstr "Код проверки Google"
 
-#: languages/aioseo-lite.php:4033
-#: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
-msgid "Google Analytics is now handled by MonsterInsights."
-msgstr "Google Analytics в настоящее время обрабатывается с помощью MonsterInsights."
-
-#: languages/aioseo-lite.php:4030
+#: languages/aioseo-lite.php:2088
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Success!"
 msgstr "Успешно!"
 
-#: languages/aioseo-lite.php:3835 dist/Lite/assets/js/settings-Main-vue.js:1
+#: languages/aioseo-lite.php:724 dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/settings-RssContent-vue.js:1
 msgid "Learn more"
 msgstr "Узнать больше"
 
-#: languages/aioseo-lite.php:3979
+#: languages/aioseo-lite.php:1938
 #: dist/Lite/assets/js/settings-Advanced-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "All (recommended)"
 msgstr "Все (рекомендуется)"
 
-#: languages/aioseo-lite.php:3976
+#: languages/aioseo-lite.php:1935
 #: dist/Lite/assets/js/settings-Advanced-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Automatic Updates"
 msgstr "Автоматическое обновление"
 
-#: languages/aioseo-lite.php:3970
+#: languages/aioseo-lite.php:1929
 #: dist/Lite/assets/js/settings-Advanced-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Announcements"
 msgstr "Объявления"
 
-#: languages/aioseo-lite.php:3964
+#: languages/aioseo-lite.php:1923
 #: dist/Lite/assets/js/settings-Advanced-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Dashboard Widget"
 msgstr "Виджет консоли"
 
-#: languages/aioseo-lite.php:3957
+#: languages/aioseo-lite.php:1916
 #: dist/Lite/assets/js/settings-Advanced-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Admin Bar Menu"
 msgstr "Меню панели администратора"
 
-#: languages/aioseo-lite.php:3954
+#: languages/aioseo-lite.php:1913
 #: dist/Lite/assets/js/settings-Advanced-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Usage Tracking"
 msgstr "Отслеживание использования"
 
-#: languages/aioseo-lite.php:3829 dist/Lite/assets/js/settings-Main-vue.js:1
+#: languages/aioseo-lite.php:718 dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/settings-RssContent-vue.js:1
 msgid "Automatically add content to your site's RSS feed."
 msgstr "Автоматически добавлять контент в RSS-канал вашего сайта."
 
-#: languages/aioseo-lite.php:3938
+#: languages/aioseo-lite.php:2063
 #: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Breadcrumb Templates"
 msgstr "Шаблоны хлебных крошек"
 
-#: languages/aioseo-lite.php:3935
+#: languages/aioseo-lite.php:2060
 #: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Category Name"
 msgstr "Название категории"
 
-#: languages/aioseo-lite.php:3929 app/Common/Utils/Options.php:778
+#: languages/aioseo-lite.php:2054 app/Common/Utils/Options.php:783
 #: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "404 Error: page not found"
 msgstr "Ошибка 404: страница не найдена"
 
-#: languages/aioseo-lite.php:3926 app/Common/Utils/Options.php:777
+#: languages/aioseo-lite.php:2051 app/Common/Utils/Options.php:782
 #: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Search for"
 msgstr "Поиск"
 
-#: languages/aioseo-lite.php:3923
+#: languages/aioseo-lite.php:2048
 #: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Archives of"
 msgstr "Архивы для"
 
-#: languages/aioseo-lite.php:3920
+#: languages/aioseo-lite.php:2045
 #: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Article Title"
 msgstr "Название статьи"
 
-#: languages/aioseo-lite.php:3917
+#: languages/aioseo-lite.php:2042
 #: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Subcategory"
 msgstr "Подкатегория"
 
 #. Translators: This refers to the homepage of the site.
-#: languages/aioseo-lite.php:3914 app/Common/Schema/Breadcrumb.php:295
-#: app/Common/Utils/Options.php:775
+#: languages/aioseo-lite.php:2035 app/Common/Schema/Breadcrumb.php:300
+#: app/Common/Utils/Options.php:780
 #: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Home"
 msgstr "Главная"
 
-#: languages/aioseo-lite.php:3911
+#: languages/aioseo-lite.php:2032
 #: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Current Item"
 msgstr "Текущий элемент"
 
-#: languages/aioseo-lite.php:3908
+#: languages/aioseo-lite.php:2029
 #: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "404 Error Format"
 msgstr "Формат ошибки 404"
 
-#: languages/aioseo-lite.php:3902
+#: languages/aioseo-lite.php:2023
 #: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Archive Format"
 msgstr "Формат архива"
 
-#: languages/aioseo-lite.php:3899
+#: languages/aioseo-lite.php:2020
 #: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Breadcrumb Prefix"
 msgstr "Префикс хлебных крошек"
 
-#: languages/aioseo-lite.php:3896
+#: languages/aioseo-lite.php:2017
 #: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Homepage Link"
 msgstr "Ссылка на домашнюю страницу"
 
-#: languages/aioseo-lite.php:3893 app/Common/Utils/Tags.php:453
+#: languages/aioseo-lite.php:2014 app/Common/Utils/Tags.php:458
 #: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Separator"
 msgstr "Разделитель"
 
-#: languages/aioseo-lite.php:3890
+#: languages/aioseo-lite.php:2011
 #: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Breadcrumb Settings"
 msgstr "Настройки хлебных крошек"
 
-#: languages/aioseo-lite.php:3887
+#: languages/aioseo-lite.php:2008
 #: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "PHP Code"
 msgstr "PHP код"
 
-#: languages/aioseo-lite.php:3884
+#: languages/aioseo-lite.php:2005
 #: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Gutenberg Block"
 msgstr "Блок для Гутенберга"
 
-#: languages/aioseo-lite.php:3881
+#: languages/aioseo-lite.php:2002
 #: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Shortcode"
 msgstr "Шорткод"
 
-#: languages/aioseo-lite.php:3875
+#: languages/aioseo-lite.php:1996
 #: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "Enable Breadcrumbs"
 msgstr "Включить Хлебные крошки"
 
-#: languages/aioseo-lite.php:3868 dist/Lite/assets/js/settings-Main-vue.js:1
+#: languages/aioseo-lite.php:697 dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/settings-GeneralSettings-vue.js:1
 msgid "Setup Wizard"
 msgstr "Мастер установки"
 
-#: languages/aioseo-lite.php:3865 dist/Lite/assets/js/settings-Main-vue.js:1
+#: languages/aioseo-lite.php:674 dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/settings-GeneralSettings-vue.js:1
 msgid "License"
 msgstr "Лицензия"
 
-#: languages/aioseo-lite.php:534 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1060 dist/Lite/assets/js/chunk-common.js:1
 msgid "Preview"
 msgstr "Предпросмотр"
 
-#: languages/aioseo-lite.php:522 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1048 dist/Lite/assets/js/chunk-common.js:1
 msgid "Hide"
 msgstr "Спрятать"
 
-#: languages/aioseo-lite.php:519 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1045 dist/Lite/assets/js/chunk-common.js:1
 msgid "Show"
 msgstr "Показать"
 
-#: languages/aioseo-lite.php:477 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1000 dist/Lite/assets/js/chunk-common.js:1
 msgid "Websites"
 msgstr "Сайты"
 
-#: languages/aioseo-lite.php:429 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:952 dist/Lite/assets/js/chunk-common.js:1
 msgid "Places"
 msgstr "Места"
 
-#: languages/aioseo-lite.php:401 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:924 dist/Lite/assets/js/chunk-common.js:1
 msgid "People"
 msgstr "Люди"
 
-#: languages/aioseo-lite.php:385 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:908 dist/Lite/assets/js/chunk-common.js:1
 msgid "Organizations"
 msgstr "Организации"
 
-#: languages/aioseo-lite.php:372 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:895 dist/Lite/assets/js/chunk-common.js:1
 msgid "Groups"
 msgstr "Группы"
 
-#: languages/aioseo-lite.php:354 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:877 dist/Lite/assets/js/chunk-common.js:1
 msgid "Businesses"
 msgstr "Бизнесы"
 
-#: languages/aioseo-lite.php:345 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:868 dist/Lite/assets/js/chunk-common.js:1
 msgid "Activities"
 msgstr "Активность"
 
-#: languages/aioseo-lite.php:242 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:649 dist/Lite/assets/js/chunk-common.js:1
 msgid "archive"
 msgstr "архив"
 
-#: languages/aioseo-lite.php:2815 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2575 dist/Lite/assets/js/chunk-common.js:1
 msgid "Type"
 msgstr "Тип"
 
-#: languages/aioseo-lite.php:2812 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2572 dist/Lite/assets/js/chunk-common.js:1
 msgid "ID"
 msgstr "ID"
 
-#: languages/aioseo-lite.php:2803 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2550 dist/Lite/assets/js/chunk-common.js:1
 msgid "Click to Copy"
 msgstr "Нажмите, чтобы скопировать"
 
 #. Translators: 1 - An example URL (e.g. https://aioseo.com/example).
-#: languages/aioseo-lite.php:2863 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2540 dist/Lite/assets/js/chunk-common.js:1
 msgid "Enter a page URL, e.g. %1$s"
 msgstr "Введите URL-адрес страницы, например: %1$s"
 
-#: languages/aioseo-lite.php:2859 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2536 dist/Lite/assets/js/chunk-common.js:1
 msgid "Add New"
 msgstr "Добавить"
 
-#: languages/aioseo-lite.php:2170 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2652 dist/Lite/assets/js/chunk-common.js:1
 msgid "Click on the tags below to insert variables into your template."
 msgstr "Нажимайте на теги ниже, чтобы вставить переменные в шаблон."
 
-#: languages/aioseo-lite.php:2173 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2655 dist/Lite/assets/js/chunk-common.js:1
 msgid "View all tags"
 msgstr "Просмотреть все теги"
 
-#: languages/aioseo-lite.php:2225 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2524 dist/Lite/assets/js/chunk-common.js:1
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
-#: languages/aioseo-lite.php:2835 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2618 dist/Lite/assets/js/chunk-common.js:1
 msgid "Launch the Setup Wizard"
 msgstr "Запустить мастер установки"
 
-#: languages/aioseo-lite.php:2130 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2447 dist/Lite/assets/js/chunk-common.js:1
 msgid "Show Less"
 msgstr "Показать меньше"
 
-#: languages/aioseo-lite.php:2127 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2444 dist/Lite/assets/js/chunk-common.js:1
 msgid "Show More"
 msgstr "Показать больше"
 
-#: languages/aioseo-lite.php:2124 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2441 dist/Lite/assets/js/chunk-common.js:1
 msgid "Custom separator:"
 msgstr "Пользовательский разделитель:"
 
-#: languages/aioseo-lite.php:2064 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2520 dist/Lite/assets/js/chunk-common.js:1
 msgid "Your Username:"
 msgstr "Ваш логин:"
 
-#: languages/aioseo-lite.php:2237 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2450 dist/Lite/assets/js/chunk-common.js:1
 msgid "a minute ago"
 msgstr "минуту назад"
 
-#: languages/aioseo-lite.php:2264 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2481 dist/Lite/assets/js/chunk-common.js:1
 msgid "a few seconds ago"
 msgstr "несколько секунд назад"
 
-#: languages/aioseo-lite.php:2258 dist/Lite/assets/js/chunk-common.js:1
+#. Translators: A number will be prepended to this string, e.g. "2 years ago".
+#: languages/aioseo-lite.php:2475 dist/Lite/assets/js/chunk-common.js:1
 msgid "years ago"
 msgstr "лет назад"
 
-#: languages/aioseo-lite.php:2255 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2471 dist/Lite/assets/js/chunk-common.js:1
 msgid "a year ago"
 msgstr "год назад"
 
-#: languages/aioseo-lite.php:2252 dist/Lite/assets/js/chunk-common.js:1
+#. Translators: A number will be prepended to this string, e.g. "2 months ago".
+#: languages/aioseo-lite.php:2468 dist/Lite/assets/js/chunk-common.js:1
 msgid "months ago"
 msgstr "мес. назад"
 
-#: languages/aioseo-lite.php:2249 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2464 dist/Lite/assets/js/chunk-common.js:1
 msgid "a month ago"
 msgstr "месяц назад"
 
-#: languages/aioseo-lite.php:2246 dist/Lite/assets/js/chunk-common.js:1
+#. Translators: A number will be prepended to this string, e.g. "2 days ago".
+#: languages/aioseo-lite.php:2461 dist/Lite/assets/js/chunk-common.js:1
 msgid "days ago"
 msgstr "дней назад"
 
-#: languages/aioseo-lite.php:2243 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2457 dist/Lite/assets/js/chunk-common.js:1
 msgid "a day ago"
 msgstr "день назад"
 
-#: languages/aioseo-lite.php:2240 dist/Lite/assets/js/chunk-common.js:1
+#. Translators: A number will be prepended to this string, e.g. "2 minutes
+#. ago".
+#: languages/aioseo-lite.php:2454 dist/Lite/assets/js/chunk-common.js:1
 msgid "minutes ago"
 msgstr "минут назад"
 
-#: languages/aioseo-lite.php:2824 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2607 dist/Lite/assets/js/chunk-common.js:1
 msgid "How to Get Started"
 msgstr "Как начать работу"
 
-#: languages/aioseo-lite.php:2285 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2405 dist/Lite/assets/js/chunk-common.js:1
 msgid "Dismissed Notifications"
 msgstr "Отклоненные уведомления"
 
-#: languages/aioseo-lite.php:2088 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2304 dist/Lite/assets/js/chunk-common.js:1
 msgid "Max Video Preview"
 msgstr "Предварительный просмотр видео"
 
-#: languages/aioseo-lite.php:2085 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2300 dist/Lite/assets/js/chunk-common.js:1
 msgid "Max Snippet"
 msgstr "Максимальный сниппет"
 
-#: languages/aioseo-lite.php:2121 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2344 dist/Lite/assets/js/chunk-common.js:1
 msgid "No ODP"
 msgstr "Без ODP"
 
-#: languages/aioseo-lite.php:2118 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2340 dist/Lite/assets/js/chunk-common.js:1
 msgid "No Snippet"
 msgstr "Без фрагмента"
 
-#: languages/aioseo-lite.php:2115 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2336 dist/Lite/assets/js/chunk-common.js:1
 msgid "No Image Index"
 msgstr "Без индекса картинок"
 
-#: languages/aioseo-lite.php:2109 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2328 dist/Lite/assets/js/chunk-common.js:1
 msgid "No Archive"
 msgstr "Без архива"
 
-#: languages/aioseo-lite.php:2106 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2324 dist/Lite/assets/js/chunk-common.js:1
 msgid "No Follow"
 msgstr "Игнорировать"
 
-#: languages/aioseo-lite.php:2103 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2320 dist/Lite/assets/js/chunk-common.js:1
 msgid "No Index"
 msgstr "Не индексировать"
 
-#: languages/aioseo-lite.php:2100 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2316 dist/Lite/assets/js/chunk-common.js:1
 msgid "Large"
 msgstr "Большой"
 
-#: languages/aioseo-lite.php:2094 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2312 dist/Lite/assets/js/chunk-common.js:1
 msgid "Standard"
 msgstr "Стандарт"
 
-#: languages/aioseo-lite.php:2091 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2308 dist/Lite/assets/js/chunk-common.js:1
 msgid "Max Image Preview"
 msgstr "Предпросмотр максимальной картинки"
 
-#: languages/aioseo-lite.php:2228 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2286 dist/Lite/assets/js/chunk-common.js:1
 msgid "Great Scott! Where'd they all go?"
 msgstr "О Боги! Куда все делось?"
 
-#: languages/aioseo-lite.php:2270 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2356 dist/Lite/assets/js/chunk-common.js:1
 msgid "Slug:"
 msgstr "Ярлык:"
 
-#: languages/aioseo-lite.php:2267 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2353 dist/Lite/assets/js/chunk-common.js:1
 msgid "Label:"
 msgstr "Метка:"
 
-#: languages/aioseo-lite.php:3401
+#: languages/aioseo-lite.php:1646
 #: dist/Lite/assets/js/search-appearance-partials-TitleDescription-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Media-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Taxonomies-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Archives-vue.js:1
 #: dist/Lite/assets/js/search-appearance-ContentTypes-vue.js:1
+#: dist/Lite/assets/js/post-settings.js:1
 msgid "Click on the tags below to insert variables into your title."
 msgstr "Нажимайте на теги ниже, чтобы вставить переменные в заголовок."
 
-#: languages/aioseo-lite.php:681
-#: dist/Lite/assets/js/monsterinsights-Monsterinsights-vue.js:1
-#: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
-#: dist/Lite/assets/js/monsterinsights-Main-vue.js:1
-msgid "Install Monsterinsights"
-msgstr "Установить MonsterInsights"
-
-#: languages/aioseo-lite.php:1632 dist/Lite/assets/js/settings-Main-vue.js:1
+#: languages/aioseo-lite.php:678 dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/chunk-common.js:1
 #: dist/Lite/assets/js/settings-GeneralSettings-vue.js:1
 msgid "Free"
 msgstr "Бесплатно"
 
-#: languages/aioseo-lite.php:3398
+#: languages/aioseo-lite.php:3721
 #: dist/Lite/assets/js/search-appearance-partials-TitleDescription-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Media-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Taxonomies-vue.js:1
@@ -663,18 +651,18 @@ msgstr "Бесплатно"
 msgid "Show in Search Results"
 msgstr "Показать в результатах поиска"
 
-#: languages/aioseo-lite.php:1814 dist/Lite/assets/js/sitemaps-Main-vue.js:1
+#: languages/aioseo-lite.php:4303 dist/Lite/assets/js/sitemaps-Main-vue.js:1
 #: dist/Lite/assets/js/sitemaps-HtmlSitemap-vue.js:1
 msgid "HTML Sitemap"
 msgstr "HTML карта сайта"
 
-#: languages/aioseo-lite.php:3525
+#: languages/aioseo-lite.php:3849
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
 msgid "Go to Local SEO Settings"
 msgstr "Перейти к настройкам Локального SEO"
 
-#: languages/aioseo-lite.php:3427
+#: languages/aioseo-lite.php:3859
 #: dist/Lite/assets/js/search-appearance-partials-Advanced-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Media-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Taxonomies-vue.js:1
@@ -683,19 +671,19 @@ msgstr "Перейти к настройкам Локального SEO"
 msgid "Robots Meta Settings"
 msgstr "Мета настройки для роботов"
 
-#: languages/aioseo-lite.php:3607 dist/Lite/assets/js/about-AboutUs-vue.js:1
+#: languages/aioseo-lite.php:4416 dist/Lite/assets/js/about-AboutUs-vue.js:1
 msgid "Display completely customizable, responsive and search engine crawlable Twitter feeds on your website."
 msgstr "Отображение полностью настраиваемых, отзывчивых и щебетать каналы на вашем сайте."
 
-#: languages/aioseo-lite.php:3604 dist/Lite/assets/js/about-AboutUs-vue.js:1
+#: languages/aioseo-lite.php:4413 dist/Lite/assets/js/about-AboutUs-vue.js:1
 msgid "Display beautifully clean, customizable, and responsive Instagram feeds from multiple Instagram accounts."
 msgstr "Отображение прекрасных, настраиваемых и отзывчивых лент Instagram из нескольких учетных записей."
 
-#: languages/aioseo-lite.php:3601 dist/Lite/assets/js/about-AboutUs-vue.js:1
+#: languages/aioseo-lite.php:4410 dist/Lite/assets/js/about-AboutUs-vue.js:1
 msgid "Display completely customizable Facebook feeds of any public Facebook page or Group."
 msgstr "Отображение полностью настраиваемых Facebook лент любой общедоступной Facebook страницы или группы."
 
-#: languages/aioseo-lite.php:3436
+#: languages/aioseo-lite.php:3868
 #: dist/Lite/assets/js/search-appearance-partials-Advanced-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Media-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Taxonomies-vue.js:1
@@ -704,7 +692,7 @@ msgstr "Отображение полностью настраиваемых Fac
 msgid "Other Options"
 msgstr "Другие настройки"
 
-#: languages/aioseo-lite.php:3433
+#: languages/aioseo-lite.php:3865
 #: dist/Lite/assets/js/search-appearance-partials-Advanced-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Media-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Taxonomies-vue.js:1
@@ -713,7 +701,7 @@ msgstr "Другие настройки"
 msgid "Read Only"
 msgstr "Только чтение"
 
-#: languages/aioseo-lite.php:3430
+#: languages/aioseo-lite.php:3862
 #: dist/Lite/assets/js/search-appearance-partials-Advanced-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Media-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Taxonomies-vue.js:1
@@ -723,159 +711,158 @@ msgid "Bulk Editing"
 msgstr "Массовое редактирование"
 
 #. Translators: 1 - The type of page (Post, Page, Category, Tag, etc.).
-#. Translators: 1 - The singular name of the current taxonomy.
-#. Translators: 1 - The singular name of the post type.
-#: languages/aioseo-lite.php:3408 app/Common/Utils/Tags.php:331
-#: app/Common/Utils/Tags.php:448
+#: languages/aioseo-lite.php:1700 app/Common/Utils/Tags.php:336
+#: app/Common/Utils/Tags.php:453
 #: dist/Lite/assets/js/search-appearance-partials-Advanced-vue.js:1
 #: dist/Lite/assets/js/search-appearance-partials-TitleDescription-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Media-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Taxonomies-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Archives-vue.js:1
 #: dist/Lite/assets/js/search-appearance-ContentTypes-vue.js:1
+#: dist/Lite/assets/js/post-settings.js:1
 msgid "%1$s Title"
 msgstr "%1$s: заголовок"
 
-#: languages/aioseo-lite.php:3515
+#: languages/aioseo-lite.php:3795
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
 msgid "Knowledge Graph"
 msgstr "Схема знаний"
 
-#: languages/aioseo-lite.php:2140
+#: languages/aioseo-lite.php:2384
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
 #: dist/Lite/assets/js/chunk-common.js:1
 msgid "Home Page"
 msgstr "Главная страница"
 
-#: languages/aioseo-lite.php:3505
+#: languages/aioseo-lite.php:3781
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
 msgid "Separator Character"
 msgstr "Символ разделителя"
 
-#: languages/aioseo-lite.php:3502
+#: languages/aioseo-lite.php:3778
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
 msgid "Title Separator"
 msgstr "Разделитель заголовка"
 
-#: languages/aioseo-lite.php:3499
+#: languages/aioseo-lite.php:3763
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Media-vue.js:1
 #: dist/Lite/assets/js/search-appearance-ContentTypes-vue.js:1
 msgid "Schema Markup"
 msgstr "Схема разметки"
 
-#: languages/aioseo-lite.php:3592 dist/Lite/assets/js/about-AboutUs-vue.js:1
+#: languages/aioseo-lite.php:4401 dist/Lite/assets/js/about-AboutUs-vue.js:1
 msgid "Create a simple Coming Soon Page, Under Construction or Maintenance Mode Page. Work on your site in private while visitors see a “Coming Soon” or “Maintenance Mode” page."
 msgstr "Создайте простую страницу в режиме «Скоро запуск», «Сайт в разработке» или «Режим технического обслуживания». Спокойно работайте на своем сайте, в то время как посетители видят страницу \"Скоро запуск\" или \"Режим обслуживания\"."
 
-#: languages/aioseo-lite.php:3574 dist/Lite/assets/js/about-AboutUs-vue.js:1
+#: languages/aioseo-lite.php:4383 dist/Lite/assets/js/about-AboutUs-vue.js:1
 msgid "Status:"
 msgstr "Статус:"
 
-#: languages/aioseo-lite.php:2853 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2604 dist/Lite/assets/js/chunk-common.js:1
 #: dist/Lite/assets/js/about-AboutUs-vue.js:1
 msgid "Manage"
 msgstr "Управление"
 
-#: languages/aioseo-lite.php:2844 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2589 dist/Lite/assets/js/chunk-common.js:1
 #: dist/Lite/assets/js/about-AboutUs-vue.js:1
 msgid "Deactivated"
 msgstr "Деактивировано"
 
-#: languages/aioseo-lite.php:2954
+#: languages/aioseo-lite.php:195
 #: dist/Lite/assets/js/feature-manager-FeatureManager-vue.js:1
 #: dist/Lite/assets/js/feature-manager-Main-vue.js:1
 msgid "A valid license key is required in order to use our addons."
 msgstr "Для использования наших аддонов требуется действительный лицензионный ключ."
 
-#: languages/aioseo-lite.php:2289 dist/Lite/assets/js/dashboard-Main-vue.js:1
+#: languages/aioseo-lite.php:2409 dist/Lite/assets/js/dashboard-Main-vue.js:1
 #: dist/Lite/assets/js/chunk-common.js:1
 msgid "Dismiss All"
 msgstr "Закрыть все"
 
-#: languages/aioseo-lite.php:2941
+#: languages/aioseo-lite.php:182
 #: dist/Lite/assets/js/feature-manager-FeatureManager-vue.js:1
 #: dist/Lite/assets/js/feature-manager-Main-vue.js:1
 msgid "Deactivate All Features"
 msgstr "Деактивировать весь функционал"
 
-#: languages/aioseo-lite.php:2938
+#: languages/aioseo-lite.php:179
 #: dist/Lite/assets/js/feature-manager-FeatureManager-vue.js:1
 #: dist/Lite/assets/js/feature-manager-Main-vue.js:1
 msgid "Activate All Features"
 msgstr "Активировать все возможности"
 
-#: languages/aioseo-lite.php:3166
+#: languages/aioseo-lite.php:4590
 #: dist/Lite/assets/js/social-networks-Main-vue.js:1
 #: dist/Lite/assets/js/social-networks-Twitter-vue.js:1
 msgid "Home Page Image"
 msgstr "Изображение домашней страницы"
 
-#: languages/aioseo-lite.php:3191
+#: languages/aioseo-lite.php:4621
 #: dist/Lite/assets/js/social-networks-Main-vue.js:1
 #: dist/Lite/assets/js/social-networks-Twitter-vue.js:1
 msgid "Card Type"
 msgstr "Тип карты"
 
 #. Translators: 1 - The plugin name ("All in One SEO").
-#: languages/aioseo-lite.php:3136
+#: languages/aioseo-lite.php:4555
 #: dist/Lite/assets/js/social-networks-Main-vue.js:1
 #: dist/Lite/assets/js/social-networks-Twitter-vue.js:1
 msgid "Enable this feature if you want Twitter to display a preview card with images and a text excerpt when a link to your site is shared."
 msgstr "Включите этот функционал, если вы хотите, чтобы Twitter отображал карточку с изображением и отрывком текста, когда кто-то делится ссылкой на ваш сайт."
 
-#: languages/aioseo-lite.php:3537
+#: languages/aioseo-lite.php:4545
 #: dist/Lite/assets/js/social-networks-Main-vue.js:1
 #: dist/Lite/assets/js/social-networks-Pinterest-vue.js:1
 msgid "Learn how to get your Pinterest Verification Code"
 msgstr "Узнайте, как получить ваш код проверки Pinterest"
 
-#: languages/aioseo-lite.php:3820 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:4046 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "Features:"
 msgstr "Особенности:"
 
-#: languages/aioseo-lite.php:3742
+#: languages/aioseo-lite.php:4219
 #: dist/Lite/assets/js/about-GettingStarted-vue.js:1
 #: dist/Lite/assets/js/about-Main-vue.js:1
 msgid "How to Control Search Results"
 msgstr "Как контролировать результаты поиска"
 
-#: languages/aioseo-lite.php:3739
+#: languages/aioseo-lite.php:4216
 #: dist/Lite/assets/js/about-GettingStarted-vue.js:1
 #: dist/Lite/assets/js/about-Main-vue.js:1
 msgid "Best Practices for Domains and URLs"
 msgstr "Лучшие практики для доменов и URL-адресов"
 
-#: languages/aioseo-lite.php:3736
+#: languages/aioseo-lite.php:4213
 #: dist/Lite/assets/js/about-GettingStarted-vue.js:1
 #: dist/Lite/assets/js/about-Main-vue.js:1
 msgid "Basic Guide to Google Search Console"
 msgstr "Базовое руководство по Google Search Console"
 
-#: languages/aioseo-lite.php:3733
+#: languages/aioseo-lite.php:4210
 #: dist/Lite/assets/js/about-GettingStarted-vue.js:1
 #: dist/Lite/assets/js/about-Main-vue.js:1
 msgid "Basic Guide to Google Analytics"
 msgstr "Базовое руководство по Google Аналитике"
 
-#: languages/aioseo-lite.php:3730
+#: languages/aioseo-lite.php:4207
 #: dist/Lite/assets/js/about-GettingStarted-vue.js:1
 #: dist/Lite/assets/js/about-Main-vue.js:1
 msgid "See our full documentation"
 msgstr "Смотрите нашу полную документацию"
 
-#: languages/aioseo-lite.php:3720
+#: languages/aioseo-lite.php:4197
 #: dist/Lite/assets/js/about-GettingStarted-vue.js:1
 #: dist/Lite/assets/js/about-Main-vue.js:1
 msgid "Video Tutorials"
 msgstr "Видеоуроки"
 
-#: languages/aioseo-lite.php:324 app/Common/Admin/Admin.php:96
+#: languages/aioseo-lite.php:836 app/Common/Admin/Admin.php:101
 #: dist/Lite/assets/js/about-GettingStarted-vue.js:1
 #: dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/dashboard-Main-vue.js:1
@@ -884,32 +871,32 @@ msgstr "Видеоуроки"
 msgid "Local SEO"
 msgstr "Локальное SEO"
 
-#: languages/aioseo-lite.php:1989 dist/Lite/assets/js/tools-Main-vue.js:1
+#: languages/aioseo-lite.php:2547 dist/Lite/assets/js/tools-Main-vue.js:1
 #: dist/Lite/assets/js/chunk-common.js:1
 #: dist/Lite/assets/js/tools-SystemStatus-vue.js:1
 msgid "Copied!"
 msgstr "Скопировано!"
 
-#: languages/aioseo-lite.php:3142
+#: languages/aioseo-lite.php:4561
 #: dist/Lite/assets/js/social-networks-Main-vue.js:1
 #: dist/Lite/assets/js/social-networks-Twitter-vue.js:1
 msgid "Default Card Type"
 msgstr "Тип карты по умолчанию"
 
-#: languages/aioseo-lite.php:3139
+#: languages/aioseo-lite.php:4558
 #: dist/Lite/assets/js/social-networks-Main-vue.js:1
 #: dist/Lite/assets/js/social-networks-Twitter-vue.js:1
 msgid "Enable Twitter Card"
 msgstr "Включить Twitter Card"
 
-#: languages/aioseo-lite.php:3540
+#: languages/aioseo-lite.php:4548
 #: dist/Lite/assets/js/social-networks-Main-vue.js:1
 #: dist/Lite/assets/js/social-networks-Pinterest-vue.js:1
 msgid "If you have already confirmed your website with Pinterest, you can skip the step below."
 msgstr "Если Вы уже подтвердили свой сайт с помощью Pinterest, то вы можете пропустить следующий шаг."
 
 #. Translators: 1 - Opening HTML bold tag, 2 - Closing HTML bold tag.
-#: languages/aioseo-lite.php:1337
+#: languages/aioseo-lite.php:1241
 #: dist/Lite/assets/js/settings-pro-AccessControl-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/settings-AccessControl-vue.js:1
@@ -918,7 +905,7 @@ msgid "By default Authors have access to %1$sSEO settings for individual pages a
 msgstr "По умолчанию, у авторов есть доступ к %1$sSEO настройкам для отдельных страниц и записей, к которым у них уже есть доступ на редактирование.%2$s"
 
 #. Translators: 1 - Opening HTML bold tag, 2 - Closing HTML bold tag.
-#: languages/aioseo-lite.php:1333
+#: languages/aioseo-lite.php:1237
 #: dist/Lite/assets/js/settings-pro-AccessControl-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/settings-AccessControl-vue.js:1
@@ -927,7 +914,7 @@ msgid "By default Editors have access to %1$sSEO settings for General Settings, 
 msgstr "По умолчанию, у редакторов есть доступ к %1$sSEO настройкам на страницах Общих настроек, Внешнего вида поиска и Социальных сетей, а также ко всем настройкам для отдельных страниц и записей.%2$s"
 
 #. Translators: 1 - Opening HTML bold tag, 2 - Closing HTML bold tag.
-#: languages/aioseo-lite.php:1341
+#: languages/aioseo-lite.php:1245
 #: dist/Lite/assets/js/settings-pro-AccessControl-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/settings-AccessControl-vue.js:1
@@ -936,7 +923,7 @@ msgid "By default SEO Managers have access to %1$sSEO settings for General Setti
 msgstr "По умолчанию, у SEO менеджеров есть доступ к %1$sSEO настройкам на страницах Общие настройки, Перенаправления, а также отдельных страниц и записей. %2$s"
 
 #. Translators: 1 - The plugin name ("All in One SEO")
-#: languages/aioseo-lite.php:1307
+#: languages/aioseo-lite.php:1208
 #: dist/Lite/assets/js/settings-pro-AccessControl-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/settings-AccessControl-vue.js:1
@@ -944,7 +931,7 @@ msgstr "По умолчанию, у SEO менеджеров есть досту
 msgid "By default, only users with an Administrator role have permission to manage %1$s within your WordPress admin area. With Access Controls, though, you can easily extend specific access permissions to other user roles."
 msgstr "По умолчанию, только у пользователей с ролью Администратор есть разрешение на управление плагином %1$s в вашей админке WordPress. Однако с помощью управления доступом можно с легкостью распределить определенные возможности и на другие роли пользователей."
 
-#: languages/aioseo-lite.php:3101
+#: languages/aioseo-lite.php:1660
 #: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
@@ -954,10 +941,11 @@ msgstr "По умолчанию, только у пользователей с �
 #: dist/Lite/assets/js/search-appearance-Taxonomies-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Archives-vue.js:1
 #: dist/Lite/assets/js/search-appearance-ContentTypes-vue.js:1
+#: dist/Lite/assets/js/post-settings.js:1
 msgid "Click on the tags below to insert variables into your meta description."
 msgstr "Нажимайте на теги ниже, чтобы вставить переменные в описание мета."
 
-#: languages/aioseo-lite.php:3096
+#: languages/aioseo-lite.php:3792
 #: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
@@ -966,24 +954,24 @@ msgid "Click on the tags below to insert variables into your site title."
 msgstr "Нажимайте на теги ниже, чтобы вставить переменные в заголовок сайта."
 
 #. Translators: 1 - A number, 2 - A number.
-#: languages/aioseo-lite.php:1649 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1186 dist/Lite/assets/js/chunk-common.js:1
 msgid "%1$s out of %2$s max recommended characters."
 msgstr "%1$s из %2$s рекомендуемых символов."
 
-#: languages/aioseo-lite.php:1713 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1192 dist/Lite/assets/js/chunk-common.js:1
 msgid "Your license key is invalid."
 msgstr "Ваш лицензионный ключ недействителен."
 
-#: languages/aioseo-lite.php:1710 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1189 dist/Lite/assets/js/chunk-common.js:1
 msgid "Your license has been disabled."
 msgstr "Ваш лицензионный ключ заблокирован."
 
-#: languages/aioseo-lite.php:1719 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1198 dist/Lite/assets/js/chunk-common.js:1
 msgid "Your license has expired."
 msgstr "Срок действия лицензии истек."
 
 #. Translators: 1 - Opening HTML bold tag, 2 - Closing HTML bold tag.
-#: languages/aioseo-lite.php:1345
+#: languages/aioseo-lite.php:1249
 #: dist/Lite/assets/js/settings-pro-AccessControl-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/settings-AccessControl-vue.js:1
@@ -992,7 +980,7 @@ msgid "By default SEO Editors have access to %1$sSEO settings for individual pag
 msgstr "По умолчанию, у SEO редакторов есть доступ к %1$sSEO настройкам отдельных страниц и записей.%2$s"
 
 #. Translators: 1 - Opening HTML bold tag, 2 - Closing HTML bold tag.
-#: languages/aioseo-lite.php:1329
+#: languages/aioseo-lite.php:1233
 #: dist/Lite/assets/js/settings-pro-AccessControl-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/settings-AccessControl-vue.js:1
@@ -1000,7 +988,7 @@ msgstr "По умолчанию, у SEO редакторов есть досту
 msgid "By default Admins have access to %1$sall SEO site settings%2$s"
 msgstr "По умолчанию, у администраторов есть доступ ко %1$sвсем SEO настройкам сайта%2$s"
 
-#: languages/aioseo-lite.php:1325
+#: languages/aioseo-lite.php:1229
 #: dist/Lite/assets/js/settings-pro-AccessControl-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/settings-AccessControl-vue.js:1
@@ -1008,7 +996,7 @@ msgstr "По умолчанию, у администраторов есть до
 msgid "SEO Editor"
 msgstr "Редактор SEO"
 
-#: languages/aioseo-lite.php:1322
+#: languages/aioseo-lite.php:1226
 #: dist/Lite/assets/js/settings-pro-AccessControl-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/settings-AccessControl-vue.js:1
@@ -1016,7 +1004,7 @@ msgstr "Редактор SEO"
 msgid "SEO Manager"
 msgstr "Менеджер SEO"
 
-#: languages/aioseo-lite.php:1319
+#: languages/aioseo-lite.php:1223
 #: dist/Lite/assets/js/settings-pro-AccessControl-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/settings-AccessControl-vue.js:1
@@ -1024,7 +1012,7 @@ msgstr "Менеджер SEO"
 msgid "Editor"
 msgstr "Редактор"
 
-#: languages/aioseo-lite.php:1313
+#: languages/aioseo-lite.php:1214
 #: dist/Lite/assets/js/settings-pro-AccessControl-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/settings-AccessControl-vue.js:1
@@ -1032,9 +1020,8 @@ msgstr "Редактор"
 msgid "Administrator"
 msgstr "Администратор"
 
-#. Translators: 1 - Opening HTML link and bold tag, 2 - Closing HTML link and
-#. bold tag.
-#: languages/aioseo-lite.php:3068
+#. Translators: 1 - Opening link tag, 2 - Closing link tag.
+#: languages/aioseo-lite.php:1964
 #: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/settings-Advanced-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
@@ -1042,39 +1029,39 @@ msgstr "Администратор"
 msgid "Complete documentation on usage tracking is available %1$shere%2$s."
 msgstr "Полная документация по отслеживанию использования доступна %1$sздесь%2$s."
 
-#: languages/aioseo-lite.php:1692 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1157 dist/Lite/assets/js/chunk-common.js:1
 msgid "Active Notifications"
 msgstr "Активные уведомления"
 
-#: languages/aioseo-lite.php:1689 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1154 dist/Lite/assets/js/chunk-common.js:1
 msgid "New Notifications"
 msgstr "Новые уведомления"
 
-#: languages/aioseo-lite.php:1043 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1097 dist/Lite/assets/js/chunk-common.js:1
 msgid "Default Image Source (Set in Social Networks)"
 msgstr "Источник изображения по умолчанию (устанавливается в социальных сетях)"
 
-#: languages/aioseo-lite.php:1019 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1073 dist/Lite/assets/js/chunk-common.js:1
 msgid "Choose Image"
 msgstr "Выберите изображение"
 
-#: languages/aioseo-lite.php:1022 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1076 dist/Lite/assets/js/chunk-common.js:1
 msgid "Default Image (Set Below)"
 msgstr "Изображение по умолчанию (установите ниже)"
 
-#: languages/aioseo-lite.php:1655 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1131 dist/Lite/assets/js/chunk-common.js:1
 msgid "Excellent!"
 msgstr "Превосходно!"
 
-#: languages/aioseo-lite.php:1652 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1127 dist/Lite/assets/js/chunk-common.js:1
 msgid "Very Good!"
 msgstr "Очень хорошо!"
 
-#: languages/aioseo-lite.php:1670 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1140 dist/Lite/assets/js/chunk-common.js:1
 msgid "Complete Site Audit Checklist"
 msgstr "Чеклист полного аудита сайта"
 
-#: languages/aioseo-lite.php:595
+#: languages/aioseo-lite.php:1981
 #: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1
@@ -1084,35 +1071,35 @@ msgstr "Чеклист полного аудита сайта"
 msgid "Include All Taxonomies"
 msgstr "Включить все таксономии"
 
-#: languages/aioseo-lite.php:583
+#: languages/aioseo-lite.php:4132
 #: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1
 msgid "Author Sitemap"
 msgstr "Карта сайта автора"
 
-#: languages/aioseo-lite.php:577
+#: languages/aioseo-lite.php:4124
 #: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1
 msgid "Date Archive Sitemap"
 msgstr "Карта сайта архива дат"
 
-#: languages/aioseo-lite.php:571
+#: languages/aioseo-lite.php:4120
 #: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1
 msgid "Automatically Ping Search Engines"
 msgstr "Автоматически уведомлять поисковые системы"
 
-#: languages/aioseo-lite.php:556
+#: languages/aioseo-lite.php:4097
 #: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1
 #: dist/Lite/assets/js/sitemaps-pro-VideoSitemap-vue.js:1
 msgid "Links Per Sitemap"
 msgstr "Ссылки в каждой карте сайта"
 
-#: languages/aioseo-lite.php:562
+#: languages/aioseo-lite.php:4109
 #: dist/Lite/assets/js/sitemaps-pro-NewsSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-pro-VideoSitemapActivate-vue.js:1
 #: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
@@ -1127,7 +1114,7 @@ msgstr "Ссылки в каждой карте сайта"
 msgid "Do you get a blank sitemap or 404 error?"
 msgstr "Получаете ли вы пустую карту сайта или ошибку 404?"
 
-#: languages/aioseo-lite.php:544
+#: languages/aioseo-lite.php:4079
 #: dist/Lite/assets/js/sitemaps-pro-NewsSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-pro-VideoSitemapActivate-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
@@ -1144,7 +1131,7 @@ msgstr "Получаете ли вы пустую карту сайта или �
 msgid "Enable Sitemap"
 msgstr "Включить XML карту сайта"
 
-#: languages/aioseo-lite.php:1433
+#: languages/aioseo-lite.php:1653
 #: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
@@ -1159,7 +1146,7 @@ msgstr "Включить XML карту сайта"
 msgid "Meta Description"
 msgstr "Мета описание"
 
-#: languages/aioseo-lite.php:2899
+#: languages/aioseo-lite.php:4451
 #: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-SearchAppearance-vue.js:1
 #: dist/Lite/assets/js/social-networks-Main-vue.js:1
@@ -1168,27 +1155,27 @@ msgstr "Мета описание"
 msgid "Home Page Title"
 msgstr "Заголовок домашней страницы"
 
-#: languages/aioseo-lite.php:832 dist/Lite/assets/js/settings-Main-vue.js:1
+#: languages/aioseo-lite.php:664 dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/settings-AccessControl-vue.js:1
 #: dist/Lite/assets/js/settings-lite-AccessControl-vue.js:1
 msgid "Granular controls per role"
 msgstr "Гибкие настройки для каждой роли"
 
-#: languages/aioseo-lite.php:829 dist/Lite/assets/js/settings-Main-vue.js:1
+#: languages/aioseo-lite.php:661 dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/settings-AccessControl-vue.js:1
 #: dist/Lite/assets/js/settings-lite-AccessControl-vue.js:1
 msgid "Default settings that just work"
 msgstr "Настройки по умолчанию, которые просто работают"
 
 #. Translators: 1 - The plugin name ("All in One SEO").
-#: languages/aioseo-lite.php:1382
+#: languages/aioseo-lite.php:1182
 #: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-LicenseKey-vue.js:1
 #: dist/Lite/assets/js/chunk-common.js:1
 msgid "Already purchased? Simply enter your license key below to connect with %1$s!"
 msgstr "Уже купили? Просто введите свой лицензионный ключ ниже для связи с %1$s!"
 
-#: languages/aioseo-lite.php:1872 app/Common/Admin/Admin.php:76
+#: languages/aioseo-lite.php:3252 app/Common/Admin/Admin.php:81
 #: dist/Lite/assets/js/tools-partials-ExportSettings-vue.js:1
 #: dist/Lite/assets/js/tools-DatabaseTools-vue.js:1
 #: dist/Lite/assets/js/dashboard-Main-vue.js:1
@@ -1198,7 +1185,7 @@ msgstr "Уже купили? Просто введите свой лицензи
 msgid "Social Networks"
 msgstr "Социальные сети"
 
-#: languages/aioseo-lite.php:1595 app/Common/Tools/RobotsTxt.php:362
+#: languages/aioseo-lite.php:1827 app/Common/Tools/RobotsTxt.php:367
 #: dist/Lite/assets/js/tools-partials-BackupSettings-vue.js:1
 #: dist/Lite/assets/js/tools-RobotsEditor-vue.js:1
 #: dist/Lite/assets/js/tools-Main-vue.js:1
@@ -1207,128 +1194,130 @@ msgstr "Социальные сети"
 msgid "Delete"
 msgstr "Удалить"
 
-#: languages/aioseo-lite.php:1659
+#: languages/aioseo-lite.php:142
 #: dist/Lite/assets/js/seo-analysis-SeoAuditChecklist-vue.js:1
 #: dist/Lite/assets/js/chunk-common.js:1
 #: dist/Lite/assets/js/seo-analysis-Main-vue.js:1
 msgid "Critical Issues"
 msgstr "Критические проблемы"
 
-#: languages/aioseo-lite.php:1667
+#: languages/aioseo-lite.php:125
 #: dist/Lite/assets/js/seo-analysis-SeoAuditChecklist-vue.js:1
 #: dist/Lite/assets/js/chunk-common.js:1
 #: dist/Lite/assets/js/seo-analysis-Main-vue.js:1
 msgid "Good Results"
 msgstr "Хорошие результаты"
 
-#: languages/aioseo-lite.php:3300
+#: languages/aioseo-lite.php:3578
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
 msgid "Automatically Add Missing Image Alt / Title Tags"
 msgstr "Автоматически добавлять недостающие атрибуты alt/title для изображений"
 
-#: languages/aioseo-lite.php:3294
+#: languages/aioseo-lite.php:3572
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
 msgid "Remove Stopwords from Permalinks"
 msgstr "Удалить стоп-слова из постоянных ссылок"
 
-#: languages/aioseo-lite.php:3291
+#: languages/aioseo-lite.php:3569
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
 msgid "Noindex Empty Category and Tag Archives"
 msgstr "Добавить в noindex пустые категории и теги"
 
-#: languages/aioseo-lite.php:3288
+#: languages/aioseo-lite.php:3566
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
 msgid "Global Robots Meta"
 msgstr "Global Robots Meta"
 
-#: languages/aioseo-lite.php:3270
+#: languages/aioseo-lite.php:4699
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 msgid "Default Taxonomy Object Types"
 msgstr "Типы объектов таксономии по умолчанию"
 
-#: languages/aioseo-lite.php:3267
+#: languages/aioseo-lite.php:4696
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 msgid "Default Post Type Object Types"
 msgstr "Типы объектов типа записей по умолчанию"
 
-#: languages/aioseo-lite.php:3261
+#: languages/aioseo-lite.php:4690
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 msgid "How to get your Facebook Author URL"
 msgstr "Как получить ваш URL-адрес Facebook автора"
 
-#: languages/aioseo-lite.php:3258
+#: languages/aioseo-lite.php:4687
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 msgid "How to get your Facebook App ID"
 msgstr "Как получить ваш Facebook App ID"
 
-#: languages/aioseo-lite.php:3255
+#: languages/aioseo-lite.php:4684
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 msgid "How to get your Facebook Admin ID"
 msgstr "Как получить ваш Facebook Admin ID"
 
-#: languages/aioseo-lite.php:146 dist/Lite/assets/js/posts-table.js:1
+#: languages/aioseo-lite.php:90 dist/Lite/assets/js/posts-table.js:1
 #: dist/Lite/assets/js/chunk-common.js:1
 msgid "Title:"
 msgstr "Заголовок:"
 
-#: languages/aioseo-lite.php:3246
+#: languages/aioseo-lite.php:4675
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 msgid "Enter your Facebook Admin ID here. You can enter multiple Facebook Admin IDs by separating them with a comma."
 msgstr "Введите свой Facebook Admin ID. Вы можете ввести несколько значений, разделив их с запятой."
 
-#: languages/aioseo-lite.php:3181
+#: languages/aioseo-lite.php:4610
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 #: dist/Lite/assets/js/social-networks-Main-vue.js:1
 #: dist/Lite/assets/js/social-networks-Twitter-vue.js:1
 msgid "Click on the tags below to insert variables into your description."
 msgstr "Нажимайте на теги ниже, чтобы вставить переменные в описание."
 
-#: languages/aioseo-lite.php:3172
+#: languages/aioseo-lite.php:4598
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 #: dist/Lite/assets/js/social-networks-Main-vue.js:1
 #: dist/Lite/assets/js/social-networks-Twitter-vue.js:1
 msgid "Click on the tags below to insert variables into your home page title."
 msgstr "Нажимайте на теги ниже, чтобы вставить переменные в название домашней страницы."
 
-#: languages/aioseo-lite.php:3234
+#: languages/aioseo-lite.php:1760
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
+#: dist/Lite/assets/js/post-settings.js:1
 msgid "Click on the tags below to insert variables into your site name."
 msgstr "Нажимайте на теги ниже, чтобы вставить переменные в название сайта."
 
-#: languages/aioseo-lite.php:3209
+#: languages/aioseo-lite.php:4641
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 msgid "Enable Open Graph Markup"
 msgstr "Включить разметку Open Graph"
 
-#: languages/aioseo-lite.php:2887 dist/Lite/assets/js/connect-pro-Main-vue.js:1
+#: languages/aioseo-lite.php:511 dist/Lite/assets/js/connect-pro-Main-vue.js:1
 #: dist/Lite/assets/js/connect-Main-vue.js:1
 msgid "Connecting..."
 msgstr "Соединение..."
 
-#: languages/aioseo-lite.php:3129
+#: languages/aioseo-lite.php:4329
 #: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-Welcome-vue.js:1
 msgid "Go back to the Dashboard"
 msgstr "Вернуться обратно в консоль"
 
-#: languages/aioseo-lite.php:3126
+#: languages/aioseo-lite.php:4326
 #: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-Welcome-vue.js:1
 msgid "Let's Get Started"
 msgstr "Давайте начнем"
 
-#: languages/aioseo-lite.php:197 dist/Lite/assets/js/setup-wizard-Main-vue.js:1
+#: languages/aioseo-lite.php:3842
+#: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-AdditionalInformation-vue.js:1
 #: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
 msgid "Logo"
 msgstr "Логотип"
 
-#: languages/aioseo-lite.php:179 languages/aioseo-pro.php:363
+#: languages/aioseo-lite.php:3822 languages/aioseo-pro.php:332
 #: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-AdditionalInformation-vue.js:1
@@ -1336,34 +1325,36 @@ msgstr "Логотип"
 msgid "Name"
 msgstr "Имя"
 
-#: languages/aioseo-lite.php:167 dist/Lite/assets/js/setup-wizard-Main-vue.js:1
+#: languages/aioseo-lite.php:3818
+#: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-AdditionalInformation-vue.js:1
 #: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
 msgid "Choose a Person"
 msgstr "Выберите человека"
 
-#: languages/aioseo-lite.php:176 dist/Lite/assets/js/setup-wizard-Main-vue.js:1
+#: languages/aioseo-lite.php:3814
+#: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-AdditionalInformation-vue.js:1
 #: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
 msgid "Choose whether the site represents a person or an organization."
 msgstr "Выберите, представляет ли сайт человека или организацию."
 
-#: languages/aioseo-lite.php:258 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:758 dist/Lite/assets/js/chunk-common.js:1
 msgid "Learn more about all features"
 msgstr "Узнайте больше обо всем функционале"
 
-#: languages/aioseo-lite.php:537 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2066 dist/Lite/assets/js/chunk-common.js:1
 msgid "Close and Exit Wizard Without Saving"
 msgstr "Закрыть и выйти из мастера без сохранения"
 
-#: languages/aioseo-lite.php:3243
+#: languages/aioseo-lite.php:4672
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 msgid "Facebook Author URL"
 msgstr "URL адрес автора в Facebook"
 
-#: languages/aioseo-lite.php:212 dist/Lite/assets/js/setup-wizard-Main-vue.js:1
+#: languages/aioseo-lite.php:330 dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-AdditionalInformation-vue.js:1
 #: dist/Lite/assets/js/local-seo-pro-LocationsPro-vue.js:1
@@ -1380,7 +1371,7 @@ msgstr "URL адрес автора в Facebook"
 msgid "Remove"
 msgstr "Удалить"
 
-#: languages/aioseo-lite.php:1553
+#: languages/aioseo-lite.php:1740
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 #: dist/Lite/assets/js/social-networks-Main-vue.js:1
 #: dist/Lite/assets/js/post-settings.js:1
@@ -1388,7 +1379,7 @@ msgstr "Удалить"
 msgid "Height"
 msgstr "Высота"
 
-#: languages/aioseo-lite.php:1550
+#: languages/aioseo-lite.php:1735
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 #: dist/Lite/assets/js/social-networks-Main-vue.js:1
 #: dist/Lite/assets/js/post-settings.js:1
@@ -1396,47 +1387,48 @@ msgstr "Высота"
 msgid "Width"
 msgstr "Ширина"
 
-#: languages/aioseo-lite.php:3206
+#: languages/aioseo-lite.php:4638
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 msgid "Enable this feature if you want Facebook and other social media to display a preview with images and a text excerpt when a link to your site is shared."
 msgstr "Включите эту функцию, если вы хотите, чтобы Facebook и другие социальные сети отображали превью с изображением и фрагментом текста при публикации ссылки на ваш сайт."
 
-#: languages/aioseo-lite.php:3203
+#: languages/aioseo-lite.php:4635
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 msgid "General Facebook Settings"
 msgstr "Общие Facebook настройки"
 
-#: languages/aioseo-lite.php:84 dist/Lite/assets/js/search-appearance.js:1
+#: languages/aioseo-lite.php:3439 dist/Lite/assets/js/search-appearance.js:1
 msgid "Archives"
 msgstr "Архивы"
 
-#: languages/aioseo-lite.php:81 dist/Lite/assets/js/search-appearance.js:1
+#: languages/aioseo-lite.php:3436 dist/Lite/assets/js/search-appearance.js:1
 msgid "Media"
 msgstr "Медиа"
 
-#: languages/aioseo-lite.php:75 dist/Lite/assets/js/search-appearance.js:1
+#: languages/aioseo-lite.php:3433 dist/Lite/assets/js/search-appearance.js:1
 msgid "Content Types"
 msgstr "Типы контента"
 
-#: languages/aioseo-lite.php:72 dist/Lite/assets/js/search-appearance.js:1
+#: languages/aioseo-lite.php:3430 dist/Lite/assets/js/search-appearance.js:1
 msgid "Global Settings"
 msgstr "Глобальные настройки"
 
-#: languages/aioseo-lite.php:69
+#: languages/aioseo-lite.php:3939
 #: dist/Lite/assets/js/social-networks-Main-vue.js:1
 #: dist/Lite/assets/js/social-networks.js:1
 #: dist/Lite/assets/js/social-networks-Pinterest-vue.js:1
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: languages/aioseo-lite.php:60
+#. Translators: This refers to social media profiles.
+#: languages/aioseo-lite.php:3935
 #: dist/Lite/assets/js/social-networks-SocialProfiles-vue.js:1
 #: dist/Lite/assets/js/social-networks-Main-vue.js:1
 #: dist/Lite/assets/js/social-networks.js:1
 msgid "Social Profiles"
 msgstr "Социальные профили"
 
-#: languages/aioseo-lite.php:3414 languages/aioseo-pro.php:38
+#: languages/aioseo-lite.php:3649 languages/aioseo-pro.php:156
 #: dist/Lite/assets/js/search-appearance-partials-lite-CustomFields-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Media-vue.js:1
 #: dist/Lite/assets/js/search-appearance-partials-CustomFields-vue.js:1
@@ -1446,12 +1438,12 @@ msgid "List of custom field names to include in the SEO Page Analysis. Add one p
 msgstr "Список имен пользовательских полей для включения в SEO Анализ страницы. Добавьте по одному на каждой строке."
 
 #. Translators: 1 - The plugin short name ("AIOSEO").
-#: languages/aioseo-lite.php:12 dist/Lite/assets/js/connect.js:1
+#: languages/aioseo-lite.php:28 dist/Lite/assets/js/connect.js:1
 #: dist/Lite/assets/js/chunk-common.js:1 dist/Lite/assets/js/connect-pro.js:1
 msgid "Connect with %1$s"
 msgstr "Подключиться к %1$s"
 
-#: languages/aioseo-lite.php:1488 languages/aioseo-pro.php:77
+#: languages/aioseo-lite.php:1716 languages/aioseo-pro.php:195
 #: dist/Lite/assets/js/search-appearance-partials-pro-Schema-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Media-vue.js:1
 #: dist/Lite/assets/js/search-appearance-partials-lite-Schema-vue.js:1
@@ -1461,7 +1453,7 @@ msgstr "Подключиться к %1$s"
 msgid "News Article"
 msgstr "Новостная статья"
 
-#: languages/aioseo-lite.php:1485 languages/aioseo-pro.php:74
+#: languages/aioseo-lite.php:1712 languages/aioseo-pro.php:192
 #: dist/Lite/assets/js/search-appearance-partials-pro-Schema-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Media-vue.js:1
 #: dist/Lite/assets/js/search-appearance-partials-lite-Schema-vue.js:1
@@ -1471,7 +1463,7 @@ msgstr "Новостная статья"
 msgid "Blog Post"
 msgstr "Запись блога"
 
-#: languages/aioseo-lite.php:1482 languages/aioseo-pro.php:68
+#: languages/aioseo-lite.php:1708 languages/aioseo-pro.php:186
 #: dist/Lite/assets/js/search-appearance-partials-pro-Schema-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Media-vue.js:1
 #: dist/Lite/assets/js/search-appearance-partials-lite-Schema-vue.js:1
@@ -1481,7 +1473,7 @@ msgstr "Запись блога"
 msgid "Article Type"
 msgstr "Тип архива"
 
-#: languages/aioseo-lite.php:1479 languages/aioseo-pro.php:65
+#: languages/aioseo-lite.php:1704 languages/aioseo-pro.php:183
 #: dist/Lite/assets/js/search-appearance-partials-pro-Schema-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Media-vue.js:1
 #: dist/Lite/assets/js/search-appearance-partials-lite-Schema-vue.js:1
@@ -1491,7 +1483,7 @@ msgstr "Тип архива"
 msgid "Schema Type"
 msgstr "Тип схемы"
 
-#: languages/aioseo-lite.php:2097 languages/aioseo-pro.php:80
+#: languages/aioseo-lite.php:1953 languages/aioseo-pro.php:198
 #: dist/Lite/assets/js/settings-Advanced-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-partials-pro-Schema-vue.js:1
@@ -1503,7 +1495,7 @@ msgstr "Тип схемы"
 msgid "None"
 msgstr "Нет"
 
-#: languages/aioseo-lite.php:3411 languages/aioseo-pro.php:35
+#: languages/aioseo-lite.php:3646 languages/aioseo-pro.php:153
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-partials-lite-CustomFields-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Media-vue.js:1
@@ -1513,7 +1505,7 @@ msgstr "Нет"
 msgid "Custom Fields"
 msgstr "Настраиваемые поля"
 
-#: languages/aioseo-lite.php:3496 languages/aioseo-pro.php:251
+#: languages/aioseo-lite.php:3759 languages/aioseo-pro.php:147
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Media-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Taxonomies-vue.js:1
@@ -1522,7 +1514,7 @@ msgstr "Настраиваемые поля"
 msgid "Title & Description"
 msgstr "Заголовок и описание"
 
-#: languages/aioseo-lite.php:27 languages/aioseo-pro.php:254
+#: languages/aioseo-lite.php:52 languages/aioseo-pro.php:150
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance.js:1
 #: dist/Lite/assets/js/tools-partials-ExportSettings-vue.js:1
@@ -1537,7 +1529,7 @@ msgstr "Заголовок и описание"
 msgid "Advanced"
 msgstr "Дополнительно"
 
-#: languages/aioseo-lite.php:24
+#: languages/aioseo-lite.php:43
 #: dist/Lite/assets/js/tools-partials-ExportSettings-vue.js:1
 #: dist/Lite/assets/js/tools-DatabaseTools-vue.js:1
 #: dist/Lite/assets/js/settings.js:1 dist/Lite/assets/js/tools-Main-vue.js:1
@@ -1545,7 +1537,7 @@ msgstr "Дополнительно"
 msgid "Access Control"
 msgstr "Контроль доступа"
 
-#: languages/aioseo-lite.php:18
+#: languages/aioseo-lite.php:35
 #: dist/Lite/assets/js/tools-partials-ExportSettings-vue.js:1
 #: dist/Lite/assets/js/tools-DatabaseTools-vue.js:1
 #: dist/Lite/assets/js/settings.js:1 dist/Lite/assets/js/tools-Main-vue.js:1
@@ -1553,32 +1545,32 @@ msgstr "Контроль доступа"
 msgid "Webmaster Tools"
 msgstr "Инструменты вебмастера"
 
-#: languages/aioseo-lite.php:106
+#: languages/aioseo-lite.php:3968
 #: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1 dist/Lite/assets/js/sitemaps.js:1
 msgid "General Sitemap"
 msgstr "Общая карта сайта"
 
-#: languages/aioseo-lite.php:57 app/Common/Admin/Admin.php:61
+#: languages/aioseo-lite.php:19 app/Common/Admin/Admin.php:66
 #: dist/Lite/assets/js/dashboard-Main-vue.js:1
 #: dist/Lite/assets/js/dashboard.js:1
 msgid "Dashboard"
 msgstr "Консоль"
 
-#: languages/aioseo-lite.php:93 dist/Lite/assets/js/about.js:1
+#: languages/aioseo-lite.php:3948 dist/Lite/assets/js/about.js:1
 msgid "Lite vs. Pro"
 msgstr "Lite vs Pro"
 
-#: languages/aioseo-lite.php:90 dist/Lite/assets/js/about.js:1
+#: languages/aioseo-lite.php:3945 dist/Lite/assets/js/about.js:1
 msgid "Getting Started"
 msgstr "Начало работы"
 
-#: languages/aioseo-lite.php:30 dist/Lite/assets/js/setup-wizard.js:1
+#: languages/aioseo-lite.php:3951 dist/Lite/assets/js/setup-wizard.js:1
 msgid "Welcome"
 msgstr "Добро пожаловать"
 
-#: languages/aioseo-lite.php:1726 languages/aioseo-pro.php:302
-#: app/Common/Admin/Admin.php:106
+#: languages/aioseo-lite.php:3260 languages/aioseo-pro.php:92
+#: app/Common/Admin/Admin.php:111
 #: dist/Lite/assets/js/tools-partials-ExportSettings-vue.js:1
 #: dist/Lite/assets/js/dashboard-Main-vue.js:1
 #: dist/Lite/assets/js/tools-Main-vue.js:1
@@ -1586,35 +1578,34 @@ msgstr "Добро пожаловать"
 msgid "Tools"
 msgstr "Инструменты"
 
-#: languages/aioseo-lite.php:3671 languages/aioseo-pro.php:299
-#: app/Common/Admin/Admin.php:101 dist/Lite/assets/js/dashboard-Main-vue.js:1
+#: languages/aioseo-lite.php:85 languages/aioseo-pro.php:89
+#: app/Common/Admin/Admin.php:106 dist/Lite/assets/js/dashboard-Main-vue.js:1
 #: dist/Lite/assets/js/settings-Advanced-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/seo-analysis-Main-vue.js:1
 msgid "SEO Analysis"
 msgstr "SEO анализ"
 
-#: languages/aioseo-lite.php:1364 languages/aioseo-pro.php:329
+#: languages/aioseo-lite.php:1172 languages/aioseo-pro.php:122
 #: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-LicenseKey-vue.js:1
 #: dist/Lite/assets/js/chunk-common.js:1
 msgid "Connect"
 msgstr "Подключить"
 
-#: languages/aioseo-lite.php:1360 languages/aioseo-pro.php:326
+#: languages/aioseo-lite.php:1168 languages/aioseo-pro.php:119
 #: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-LicenseKey-vue.js:1
 #: dist/Lite/assets/js/chunk-common.js:1
 msgid "Paste your license key here"
 msgstr "Вставьте здесь ваш лицензионный ключ"
 
-#: languages/aioseo-lite.php:1356 languages/aioseo-pro.php:323
+#: languages/aioseo-lite.php:1164 languages/aioseo-pro.php:116
 #: dist/Lite/assets/js/chunk-common.js:1
 msgid "Your license key provides access to updates and addons."
 msgstr "Ваш лицензионный ключ обеспечивает доступ к обновлениям и аддонам."
 
-#. Translators: 1 - "Pro" string, 2 - "Learn more link".
-#: languages/aioseo-lite.php:1496 languages/aioseo-pro.php:317
+#: languages/aioseo-lite.php:683 languages/aioseo-pro.php:110
 #: dist/Lite/assets/js/about-GettingStarted-vue.js:1
 #: dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
@@ -1623,17 +1614,18 @@ msgstr "Ваш лицензионный ключ обеспечивает дос
 msgid "Pro"
 msgstr "Pro"
 
-#: languages/aioseo-lite.php:1316 languages/aioseo-pro.php:278
+#: languages/aioseo-lite.php:1220 languages/aioseo-pro.php:68
 #: dist/Lite/assets/js/settings-pro-AccessControl-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/chunk-common.js:1
 #: dist/Lite/assets/js/settings-AccessControl-vue.js:1
 #: dist/Lite/assets/js/settings-lite-AccessControl-vue.js:1
+#: dist/Lite/assets/js/post-settings.js:1
 msgid "Use Default Settings"
 msgstr "Использовать настройки по умолчанию"
 
-#: languages/aioseo-lite.php:880 languages/aioseo-pro.php:196
-#: app/Common/Utils/Options.php:767
+#: languages/aioseo-lite.php:346 languages/aioseo-pro.php:287
+#: app/Common/Utils/Options.php:772
 #: dist/Lite/assets/js/local-seo-pro-LocationsPro-vue.js:1
 #: dist/Lite/assets/js/local-seo-lite-Locations-vue.js:1
 #: dist/Lite/assets/js/local-seo-Main-vue.js:1
@@ -1646,21 +1638,21 @@ msgstr "Использовать настройки по умолчанию"
 msgid "default"
 msgstr "по умолчанию"
 
-#: languages/aioseo-lite.php:547 languages/aioseo-pro.php:290
+#: languages/aioseo-lite.php:4083 languages/aioseo-pro.php:80
 #: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1
 msgid "Sitemap Settings"
 msgstr "Настройки карты сайта"
 
-#: languages/aioseo-lite.php:637 languages/aioseo-pro.php:155
+#: languages/aioseo-lite.php:4172 languages/aioseo-pro.php:246
 #: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1
 #: dist/Lite/assets/js/sitemaps-pro-VideoSitemap-vue.js:1
 msgid "Dynamically Generate"
 msgstr "Динамическая генерация"
 
-#: languages/aioseo-lite.php:2809 languages/aioseo-pro.php:119
+#: languages/aioseo-lite.php:2569 languages/aioseo-pro.php:243
 #: dist/Lite/assets/js/sitemaps-pro-NewsSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-NewsSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1
@@ -1670,7 +1662,7 @@ msgstr "Динамическая генерация"
 msgid "Clear"
 msgstr "Очистить"
 
-#: languages/aioseo-lite.php:2818 languages/aioseo-pro.php:110
+#: languages/aioseo-lite.php:2578 languages/aioseo-pro.php:234
 #: dist/Lite/assets/js/sitemaps-pro-NewsSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-NewsSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1
@@ -1680,7 +1672,7 @@ msgstr "Очистить"
 msgid "Type to search..."
 msgstr "Вводите для поиска..."
 
-#: languages/aioseo-lite.php:610 languages/aioseo-pro.php:104
+#: languages/aioseo-lite.php:3627 languages/aioseo-pro.php:228
 #: dist/Lite/assets/js/sitemaps-pro-NewsSitemap-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/sitemaps-NewsSitemap-vue.js:1
@@ -1692,7 +1684,7 @@ msgstr "Вводите для поиска..."
 msgid "Exclude Posts / Pages"
 msgstr "Исключить записи / страницы"
 
-#: languages/aioseo-lite.php:589 languages/aioseo-pro.php:95
+#: languages/aioseo-lite.php:1906 languages/aioseo-pro.php:216
 #: dist/Lite/assets/js/sitemaps-pro-NewsSitemap-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
@@ -1707,7 +1699,7 @@ msgstr "Исключить записи / страницы"
 msgid "Include All Post Types"
 msgstr "Включить все типы записей"
 
-#: languages/aioseo-lite.php:3462 languages/aioseo-pro.php:17
+#: languages/aioseo-lite.php:3739 languages/aioseo-pro.php:20
 #: dist/Lite/assets/js/search-appearance-pro-ImageSeoActivate-vue.js:1
 #: dist/Lite/assets/js/search-appearance-pro-ImageSeo-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Media-vue.js:1
@@ -1715,7 +1707,7 @@ msgstr "Включить все типы записей"
 msgid "Click on the tags below to insert variables into your alt tag attribute."
 msgstr "Нажимайте на теги ниже, чтобы вставить переменные в атрибут alt."
 
-#: languages/aioseo-lite.php:3456 languages/aioseo-pro.php:11
+#: languages/aioseo-lite.php:3733 languages/aioseo-pro.php:14
 #: dist/Lite/assets/js/search-appearance-pro-ImageSeoActivate-vue.js:1
 #: dist/Lite/assets/js/search-appearance-pro-ImageSeo-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Media-vue.js:1
@@ -1723,7 +1715,7 @@ msgstr "Нажимайте на теги ниже, чтобы вставить �
 msgid "Click on the tags below to insert variables into your title attribute."
 msgstr "Нажимайте на теги ниже, чтобы вставить переменные в атрибут заголовка."
 
-#: languages/aioseo-lite.php:3459 languages/aioseo-pro.php:14
+#: languages/aioseo-lite.php:3736 languages/aioseo-pro.php:17
 #: dist/Lite/assets/js/search-appearance-pro-ImageSeoActivate-vue.js:1
 #: dist/Lite/assets/js/search-appearance-pro-ImageSeo-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Media-vue.js:1
@@ -1731,166 +1723,165 @@ msgstr "Нажимайте на теги ниже, чтобы вставить �
 msgid "Alt Tag Attribute Format"
 msgstr "Формат атрибута alt"
 
-#: app/Common/Admin/SiteHealth.php:318 app/Common/Admin/SiteHealth.php:384
+#: app/Common/Admin/SiteHealth.php:323 app/Common/Admin/SiteHealth.php:389
 msgid "Search Page"
 msgstr "Страница поиска"
 
-#: app/Common/Utils/Tags.php:526
+#: app/Common/Utils/Tags.php:531
 msgid "Categories"
 msgstr "Рубрики"
 
-#: app/Common/Admin/SiteHealth.php:312 app/Common/Admin/SiteHealth.php:378
+#: app/Common/Admin/SiteHealth.php:317 app/Common/Admin/SiteHealth.php:383
 msgid "Paginated Content"
 msgstr "Страничное содержимое"
 
-#: app/Common/Admin/SiteHealth.php:316 app/Common/Admin/SiteHealth.php:382
+#: app/Common/Admin/SiteHealth.php:321 app/Common/Admin/SiteHealth.php:387
 msgid "Author Archives"
 msgstr "Архивы автора"
 
-#: app/Common/Admin/SiteHealth.php:317 app/Common/Admin/SiteHealth.php:383
+#: app/Common/Admin/SiteHealth.php:322 app/Common/Admin/SiteHealth.php:388
 msgid "Date Archives"
 msgstr "Архивы по дате"
 
-#: app/Common/Admin/SiteHealth.php:113
+#: app/Common/Admin/SiteHealth.php:118
 msgid "Your site does not appear in search results"
 msgstr "Ваш сайт не отображается в результатах поиска"
 
-#: app/Common/Admin/SiteHealth.php:121
+#: app/Common/Admin/SiteHealth.php:126
 msgid "Your site appears in search results"
 msgstr "Ваш сайт появляется в результатах поиска"
 
-#: app/Common/Admin/SiteHealth.php:141
+#: app/Common/Admin/SiteHealth.php:146
 msgid "Your Site Title and/or Tagline are blank"
 msgstr "Название вашего сайта и/или слоган пусты"
 
-#: app/Common/Admin/SiteHealth.php:186
+#: app/Common/Admin/SiteHealth.php:191
 msgid "Your Organization Name and/or Logo are blank"
 msgstr "Название вашей организации и/или логотип пусты"
 
-#: app/Common/Admin/SiteHealth.php:198
+#: app/Common/Admin/SiteHealth.php:203
 msgid "Your Organization Name and Logo are set"
 msgstr "Название и логотип вашей организации установлены"
 
-#: app/Common/Admin/SiteHealth.php:273
+#: app/Common/Admin/SiteHealth.php:278
 msgid "Go to Plugins"
 msgstr "Перейти к плагинам"
 
-#: app/Common/Admin/SiteHealth.php:115
+#: app/Common/Admin/SiteHealth.php:120
 msgid "Go to Settings > Reading"
 msgstr "Перейдите в Настройки > Чтение"
 
-#: app/Common/Admin/SiteHealth.php:156
+#: app/Common/Admin/SiteHealth.php:161
 msgid "Your Site Title and Tagline are set"
 msgstr "Название и слоган вашего сайта установлены"
 
-#: app/Common/Admin/SiteHealth.php:220
+#: app/Common/Admin/SiteHealth.php:225
 msgid "Your Person Name and/or Image are blank"
 msgstr "Ваше имя и/или изображение пусты"
 
-#: app/Common/Admin/SiteHealth.php:232
+#: app/Common/Admin/SiteHealth.php:237
 msgid "Your Person Name and Image are set"
 msgstr "Ваше имя и изображение установлены"
 
-#: app/Common/Admin/SiteHealth.php:68
+#: app/Common/Admin/SiteHealth.php:73
 msgid "Noindexed content"
 msgstr "Содержимое с Noindex"
 
-#: app/Common/Admin/SiteHealth.php:76
+#: app/Common/Admin/SiteHealth.php:81
 msgid "Nofollowed content"
 msgstr "Содержимое с Nofollow"
 
 #. Translators: 1 - The plugin short name ("AIOSEO").
-#: app/Common/Admin/SiteHealth.php:144
+#: app/Common/Admin/SiteHealth.php:149
 msgid "Your Site Title and/or Tagline are blank. We recommend setting both of these values as %1$s requires these for various features, including our schema markup"
 msgstr "Заголовок и/или слоган вашего сайта пусты. Мы рекомендуем установить оба этих значения, поскольку %1$s требует их для различных функций, включая нашу разметку схемы"
 
 #. Translators: 1 - The plugin short name ("AIOSEO").
-#: app/Common/Admin/SiteHealth.php:270
+#: app/Common/Admin/SiteHealth.php:275
 msgid "An update is available for %1$s. Upgrade to the latest version to receive all the latest features, bug fixes and security improvements."
 msgstr "Для %1$s доступно обновление. Обновитесь до последней версии, чтобы получить все свежие возможности, исправления ошибок и улучшения безопасности."
 
 #. Translators: 1 - The plugin short name ("AIOSEO").
-#: app/Common/Admin/SiteHealth.php:89
+#: app/Common/Admin/SiteHealth.php:94
 msgid "The fields below contain important SEO information from %1$s that may effect your site."
 msgstr "Поля ниже содержат важную SEO-информацию от %1$s, которая может повлиять на ваш сайт."
 
-#: app/Common/Admin/SiteHealth.php:284
+#: app/Common/Admin/SiteHealth.php:289
 msgid "Fantastic! By updating to the latest version, you have access to all the latest features, bug fixes and security improvements."
 msgstr "Замечательно! Обновившись до последней версии, вы получаете доступ ко всем последним функциям, исправлениям ошибок и улучшениям безопасности."
 
 #. Translators: 1 - The plugin short name ("AIOSEO").
-#: app/Common/Admin/SiteHealth.php:201
+#: app/Common/Admin/SiteHealth.php:206
 msgid "Awesome! These are required for %1$s's Organization schema markup."
 msgstr "Потрясающе! Они необходимы для разметки схемы организации AIOSEO."
 
 #. Translators: 1 - The plugin short name ("AIOSEO").
-#: app/Common/Admin/SiteHealth.php:235
+#: app/Common/Admin/SiteHealth.php:240
 msgid "Awesome! These are required for %1$s's Person schema markup."
 msgstr "Потрясающе! Они необходимы для разметки схемы персоны AIOSEO."
 
 #. Translators: 1 - The plugin short name ("AIOSEO").
-#: app/Common/Admin/SiteHealth.php:223
+#: app/Common/Admin/SiteHealth.php:228
 msgid "Your Person Name and/or Image are blank. These values are required for %1$s's Person schema markup."
 msgstr "Ваше имя персоны и/или изображение пустое. Эти значения необходимы для разметки схемы персоны AIOSEO."
 
 #. Translators: 1 - The plugin short name ("AIOSEO").
-#: app/Common/Admin/SiteHealth.php:189
+#: app/Common/Admin/SiteHealth.php:194
 msgid "Your Organization Name and/or Logo are blank. These values are required for %1$s's Organization schema markup."
 msgstr "Название Вашей организации и/или логотип пустой. Эти значения необходимы для разметки схемы организации AIOSEO."
 
 #. Translators: 1 - The plugin short name ("AIOSEO").
-#: app/Common/Admin/SiteHealth.php:159
+#: app/Common/Admin/SiteHealth.php:164
 msgid "Great! These are required for %1$s's schema markup and are often used as fallback values for various other features."
 msgstr "Отлично! Они необходимы для разметки схемы AIOSEO и часто используются в качестве резервных значений для различных других функций."
 
-#: app/Common/Admin/SiteHealth.php:122
+#: app/Common/Admin/SiteHealth.php:127
 msgid "Your site is set to public. Search engines will index your website and it will appear in search results."
 msgstr "Ваш сайт настроен на публичный доступ. Поисковые системы будут индексировать Ваш сайт, и он появится в результатах поиска."
 
-#: app/Common/Admin/SiteHealth.php:114
+#: app/Common/Admin/SiteHealth.php:119
 msgid "Your site is set to private. This means WordPress asks search engines to exclude your website from search results."
 msgstr "Ваш сайт настроен на приватный доступ. Это означает, что WordPress попросит поисковые системы исключить Ваш сайт из поисковых запросов."
 
-#: languages/aioseo-lite.php:678
+#: languages/aioseo-lite.php:2080
 #: dist/Lite/assets/js/monsterinsights-Monsterinsights-vue.js:1
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 #: dist/Lite/assets/js/monsterinsights-Main-vue.js:1
 msgid "Click here"
 msgstr "Нажмите здесь"
 
-#: languages/aioseo-lite.php:3838 dist/Lite/assets/js/settings-Main-vue.js:1
+#: languages/aioseo-lite.php:727 dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/settings-RssContent-vue.js:1
 msgid "RSS Content Settings"
 msgstr "Настройки содержимого RSS"
 
-#: app/Common/Utils/Tags.php:315
+#: app/Common/Utils/Tags.php:320
 msgid "The last name of the post author."
 msgstr "Фамилия автора записи."
 
-#: languages/aioseo-lite.php:525 app/Common/Migration/GeneralSettings.php:463
-#: app/Common/Migration/SocialMeta.php:106
+#: languages/aioseo-lite.php:1051 app/Common/Migration/GeneralSettings.php:469
+#: app/Common/Migration/SocialMeta.php:111
 #: dist/Lite/assets/js/chunk-common.js:1
 msgid "Learn More"
 msgstr "Узнать больше"
 
-#: languages/aioseo-lite.php:3994
+#: languages/aioseo-lite.php:1959
 #: dist/Lite/assets/js/settings-Advanced-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "By allowing us to track usage data we can better help you because we know with which WordPress configurations, themes and plugins we should test."
 msgstr "Позволив нам отслеживать данные об использовании, мы можем лучше помочь вам, потому что мы знаем, с какими конфигурациями WordPress, темами и плагинами мы должны тестировать."
 
-#: languages/aioseo-lite.php:3791 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:4017 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "Control The Title & Alt Tag Attribute of Your Images (Business & Agency tier only)"
 msgstr "Управляйте атрибутами названия и alt ваших изображений (только бизнес-планы и планы агентств)"
 
-#: languages/aioseo-lite.php:1686 app/Common/Admin/Admin.php:307
+#: languages/aioseo-lite.php:1151 app/Common/Admin/Admin.php:327
 #: dist/Lite/assets/js/chunk-common.js:1
 msgid "Notifications"
 msgstr "Уведомления"
 
-#: languages/aioseo-lite.php:1878
-#: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
+#: languages/aioseo-lite.php:162 dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/tools-partials-ExportSettings-vue.js:1
 #: dist/Lite/assets/js/tools-DatabaseTools-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-Success-vue.js:1
@@ -1901,42 +1892,42 @@ msgstr "Уведомления"
 msgid "Local Business SEO"
 msgstr "SEO для местного бизнеса"
 
-#: app/Common/Admin/SiteHealth.php:150
+#: app/Common/Admin/SiteHealth.php:155
 msgid "Go to Settings > General"
 msgstr "Перейти в Настройки > Общие"
 
-#: app/Common/Admin/Admin.php:406
+#: app/Common/Admin/Admin.php:426
 msgid "LinkedIn Post Inspector"
 msgstr "Инспектор записей LinkedIn"
 
-#: languages/aioseo-lite.php:1605 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1252 dist/Lite/assets/js/chunk-common.js:1
 msgid "Street address:"
 msgstr "Адрес (улица):"
 
-#: languages/aioseo-lite.php:1617 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1264 dist/Lite/assets/js/chunk-common.js:1
 msgid "State:"
 msgstr "Округ/Область:"
 
-#: languages/aioseo-lite.php:1611 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1258 dist/Lite/assets/js/chunk-common.js:1
 msgid "Zip code:"
 msgstr "Почтовый индекс:"
 
-#: languages/aioseo-lite.php:115
+#: languages/aioseo-lite.php:3972
 #: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1 dist/Lite/assets/js/sitemaps.js:1
 msgid "RSS Sitemap"
 msgstr "Карта сайта RSS"
 
-#: languages/aioseo-lite.php:3650 dist/Lite/assets/js/dashboard-Main-vue.js:1
+#: languages/aioseo-lite.php:3214 dist/Lite/assets/js/dashboard-Main-vue.js:1
 msgid "Access our Premium Support"
 msgstr "Доступ к премиум-поддержке"
 
-#: languages/aioseo-lite.php:3785 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:4011 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "Submit Your Latest News Stories to Google News (Business & Agency tier only)"
 msgstr "Публикуйте свои последние события в Новости Google (только для тарифов Business и Agency)"
 
-#: languages/aioseo-lite.php:112
+#: languages/aioseo-lite.php:853
 #: dist/Lite/assets/js/sitemaps-pro-NewsSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-pro-VideoSitemapActivate-vue.js:1
 #: dist/Lite/assets/js/about-Main-vue.js:1
@@ -1953,40 +1944,40 @@ msgid "News Sitemap"
 msgstr "Карта сайта"
 
 #. Translators: 1 - The plugin name ("All in One SEO").
-#: app/Common/Admin/Notices/Review.php:83
+#: app/Common/Admin/Notices/Review.php:88
 msgid "Yes I love it"
 msgstr "Да, мне очень нравится"
 
-#: app/Common/Admin/Notices/Review.php:84
+#: app/Common/Admin/Notices/Review.php:89
 msgid "Not Really..."
 msgstr "Не особенно..."
 
-#: languages/aioseo-lite.php:3580 dist/Lite/assets/js/about-AboutUs-vue.js:1
+#: languages/aioseo-lite.php:4389 dist/Lite/assets/js/about-AboutUs-vue.js:1
 msgid "WPForms allows you to create beautiful contact forms for your site in minutes, not hours!"
 msgstr "WPForms позволяет вам создавать превосходные контактные формы за считанные минуты!"
 
-#: languages/aioseo-lite.php:3598 dist/Lite/assets/js/about-AboutUs-vue.js:1
+#: languages/aioseo-lite.php:4407 dist/Lite/assets/js/about-AboutUs-vue.js:1
 msgid "Turn your visitors into brand ambassadors! Easily grow your email list, website traffic, and social media followers with powerful viral giveaways & contests."
 msgstr "Сделайте так, чтобы ваши посетители продвигали вашу марку. Увеличивайте количество подписчиков по emai и в соцсетях, а также трафик сайта с помощью \"вирусных\" раздач и конкурсов."
 
-#: languages/aioseo-lite.php:3589 dist/Lite/assets/js/about-AboutUs-vue.js:1
+#: languages/aioseo-lite.php:4398 dist/Lite/assets/js/about-AboutUs-vue.js:1
 msgid "Make sure your website's emails reach the inbox. Our goal is to make email deliverability easy and reliable. Trusted by over 1 million websites."
 msgstr "Убедитесь что письма с вашего сайта доходят до адресата. Наша цель сделать почтовые доставки простыми и надежными. Нам доверяют более миллиона сайтов."
 
-#: languages/aioseo-lite.php:3577 dist/Lite/assets/js/about-AboutUs-vue.js:1
+#: languages/aioseo-lite.php:4386 dist/Lite/assets/js/about-AboutUs-vue.js:1
 msgid "Our high-converting optin forms like Exit-Intent® popups, Fullscreen Welcome Mats, and Scroll boxes help you dramatically boost conversions and get more email subscribers."
 msgstr "Наши высоко конвертируемые анкеты, такие как всплывающие окна Exit-Intent®, полноэкранные приветствия и поля прокрутки, помогут вам значительно повысить конверсию и получить больше подписчиков электронной почты."
 
-#: languages/aioseo-lite.php:3583 dist/Lite/assets/js/about-AboutUs-vue.js:1
+#: languages/aioseo-lite.php:4392 dist/Lite/assets/js/about-AboutUs-vue.js:1
 msgid "MonsterInsights makes it “effortless” to properly connect your WordPress site with Google Analytics, so you can start making data-driven decisions to grow your business."
 msgstr "MonsterInsights делает ”легким” правильное подключение сайта WordPress к Google Аналитике, так что вы можете начать принимать решения, основанные на данных, чтобы развивать свой бизнес."
 
-#: languages/aioseo-lite.php:149 dist/Lite/assets/js/posts-table.js:1
+#: languages/aioseo-lite.php:95 dist/Lite/assets/js/posts-table.js:1
 #: dist/Lite/assets/js/chunk-common.js:1
 msgid "Description:"
 msgstr "Описание:"
 
-#: languages/aioseo-lite.php:1412 languages/aioseo-pro.php:430
+#: languages/aioseo-lite.php:1334 languages/aioseo-pro.php:389
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
 #: dist/Lite/assets/js/search-appearance-partials-Advanced-vue.js:1
@@ -1998,261 +1989,261 @@ msgstr "Описание:"
 msgid "Keywords"
 msgstr "Ключевые слова"
 
-#: languages/aioseo-lite.php:2847 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2593 dist/Lite/assets/js/chunk-common.js:1
 #: dist/Lite/assets/js/about-AboutUs-vue.js:1
 msgid "Not Installed"
 msgstr "Не установлено"
 
-#: languages/aioseo-lite.php:3806 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:4032 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "Limited Support"
 msgstr "Ограниченная поддержка"
 
-#: languages/aioseo-lite.php:3809 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:4035 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "Priority Support"
 msgstr "Приоритетная техническая поддержка"
 
-#: languages/aioseo-lite.php:3797 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:4023 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "Posts, Pages, Categories and Tags Only"
 msgstr "Только записи, страницы, рубрики и метки"
 
-#: languages/aioseo-lite.php:3803 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:4029 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "Posts, Pages, Categories, Tags + Breadcrumb Navigation"
 msgstr "Только записи, страницы, рубрики, метки и хлебные крошки"
 
-#: languages/aioseo-lite.php:3788 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:4014 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "Not Available"
 msgstr "Недоступно"
 
-#: languages/aioseo-lite.php:3782 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:4008 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "Submit Your Videos to Search Engines"
 msgstr "Отправляйте поисковым системам свои видео"
 
-#: languages/aioseo-lite.php:3767 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:3993 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "WooCommerce Products, Product Categories, Product Tags and Other Product Attributes"
 msgstr "WooCommerce Товары, Категории Товара, Метки Товара, Другие Атрибуты Товара"
 
-#: languages/aioseo-lite.php:3773 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:3999 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "Basic Control of Sitemap Priority & Frequency"
 msgstr "Основное управление приоритетом и частотой для опросов карты сайта"
 
-#: languages/aioseo-lite.php:3764 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:3990 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "WooCommerce Products Only"
 msgstr "Только товары WooCommerce"
 
-#: languages/aioseo-lite.php:3826 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:4068 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "Search Engine Optimization (SEO)"
 msgstr "Поисковая оптимизация (SEO)"
 
-#: languages/aioseo-lite.php:3752 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:3978 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "Social Meta (Open Graph Markup)"
 msgstr "Социальные Мета (Open Graph разметка)"
 
-#: languages/aioseo-lite.php:3779 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:4005 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "Video XML Sitemap"
 msgstr "Видео XML-карта сайта"
 
-#: languages/aioseo-lite.php:3755 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:3981 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "Posts, Pages and Custom Post Types Only"
 msgstr "Только записи, страницы и пользовательские типы записей"
 
-#: languages/aioseo-lite.php:3800 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:4026 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "Complete Support"
 msgstr "Полная поддержка"
 
-#: languages/aioseo-lite.php:3758 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:3984 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "Posts, Pages, Custom Post Types + Categories, Tags and Custom Taxonomies"
 msgstr "Записи, страницы, пользовательские типы записей + рубрики, метки и пользовательские таксономии"
 
 #. Translators: 1 - The plugin name ("All in One SEO").
-#: languages/aioseo-lite.php:3817 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:4043 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "Get the most out of %1$s by upgrading to Pro and unlocking all of the powerful features."
 msgstr "Получите максимальную отдачу от %1$s, обновившись до Pro и разблокировав все мощные функции."
 
-#: languages/aioseo-lite.php:3561 dist/Lite/assets/js/about-AboutUs-vue.js:1
+#: languages/aioseo-lite.php:4370 dist/Lite/assets/js/about-AboutUs-vue.js:1
 msgid "Yup, we know a thing or two about building awesome products that customers love."
 msgstr "Да, мы знаем кое-что о создании потрясающих продуктов, которые любят клиенты."
 
-#: languages/aioseo-lite.php:3776 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:4002 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "Granular Control of Sitemap Priority & Frequency for Each Post, Page, Category, Tag, etc."
 msgstr "Гибкий контроль приоритетов и частота для каждой записи, страницы, категории, тегов и т.д. в карте сайта."
 
-#: languages/aioseo-lite.php:3761 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:3987 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "WooCommerce Integration"
 msgstr "Интеграция WooCommerce"
 
 #. Translators: 1 - The plugin short name ("AIOSEO"), 2 - "Pro" string.
-#: languages/aioseo-lite.php:3714
+#: languages/aioseo-lite.php:4191
 #: dist/Lite/assets/js/about-GettingStarted-vue.js:1
 #: dist/Lite/assets/js/about-Main-vue.js:1
 msgid "Get %1$s %2$s and Unlock all the Powerful Features."
 msgstr "Получите %s сегодня и разблокируйте все продвинутые возможности"
 
 #. Translators: 1 - The marketing site anchor name ("aioseo.com").
-#: app/Lite/Admin/Connect.php:349
+#: app/Lite/Admin/Connect.php:354
 msgid "Plugin installed & activated."
 msgstr "Плагин установлен и активирован."
 
-#: app/Common/Admin/Admin.php:228
+#: app/Common/Admin/Admin.php:248
 msgid "No results found."
 msgstr "Результаты не найдены."
 
-#: app/Common/Admin/Admin.php:225
+#: app/Common/Admin/Admin.php:245
 msgid "Add Link"
 msgstr "Добавить ссылку"
 
-#: app/Common/Admin/Admin.php:224
+#: app/Common/Admin/Admin.php:244
 msgid "Update"
 msgstr "Обновить"
 
-#: app/Common/Admin/Admin.php:391
+#: app/Common/Admin/Admin.php:411
 msgid "CSS Validator"
 msgstr "Валидатор CSS"
 
-#: app/Common/Admin/Admin.php:386
+#: app/Common/Admin/Admin.php:406
 msgid "HTML Validator"
 msgstr "Валидатор HTML"
 
-#: app/Common/Admin/Admin.php:353
+#: app/Common/Admin/Admin.php:373
 msgid "Analyze this page"
 msgstr "Анализировать эту страницу"
 
-#: languages/aioseo-lite.php:3571 dist/Lite/assets/js/about-AboutUs-vue.js:1
+#: languages/aioseo-lite.php:4380 dist/Lite/assets/js/about-AboutUs-vue.js:1
 msgid "Activate"
 msgstr "Активировать"
 
-#: languages/aioseo-lite.php:3568 dist/Lite/assets/js/about-AboutUs-vue.js:1
+#: languages/aioseo-lite.php:4377 dist/Lite/assets/js/about-AboutUs-vue.js:1
 msgid "Install Plugin"
 msgstr "Установить плагин"
 
-#: languages/aioseo-lite.php:2841 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2585 dist/Lite/assets/js/chunk-common.js:1
 #: dist/Lite/assets/js/about-AboutUs-vue.js:1
 msgid "Activated"
 msgstr "Активировано"
 
-#: languages/aioseo-lite.php:2999
+#: languages/aioseo-lite.php:4281
 #: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-Success-vue.js:1
 msgid "Join our Community"
 msgstr "Вступите в сообщество"
 
-#: app/Common/Admin/Admin.php:376
+#: app/Common/Admin/Admin.php:396
 msgid "Facebook Debugger"
 msgstr "Отладчик Facebook"
 
-#: app/Common/Admin/Admin.php:226
+#: app/Common/Admin/Admin.php:246
 msgid "(no title)"
 msgstr "(без названия)"
 
-#: app/Common/Admin/Admin.php:229
+#: app/Common/Admin/Admin.php:249
 msgid "Link has been inserted."
 msgstr "Ссылка вставлена."
 
-#: app/Common/Admin/Admin.php:401
+#: app/Common/Admin/Admin.php:421
 msgid "Mobile-Friendly Test"
 msgstr "Тест для мобильных устройств"
 
-#: app/Common/Admin/Admin.php:381
+#: app/Common/Admin/Admin.php:401
 msgid "Pinterest Rich Pins Validator"
 msgstr "Валидатор Pinterest Rich Pins"
 
-#: app/Common/Admin/Admin.php:371
+#: app/Common/Admin/Admin.php:391
 msgid "Google Structured Data Test"
 msgstr "Google тест структурированных данных"
 
-#: app/Common/Admin/Admin.php:361
+#: app/Common/Admin/Admin.php:381
 msgid "Check links to this URL"
 msgstr "Проверьте ссылки на этот URL"
 
-#: app/Common/Admin/Admin.php:366
+#: app/Common/Admin/Admin.php:386
 msgid "Check Google Cache"
 msgstr "Проверка кеша Google"
 
-#: app/Common/Admin/Admin.php:396
+#: app/Common/Admin/Admin.php:416
 msgid "Google Page Speed Test"
 msgstr "Тест Google PageSpeed"
 
-#: app/Common/Admin/Admin.php:745
+#: app/Common/Admin/Admin.php:765
 msgid "Give us a 5-star rating!"
 msgstr "Оцените нас на 5 звёзд!"
 
-#: app/Common/Admin/Notices/Review.php:94
+#: app/Common/Admin/Notices/Review.php:99
 msgid "I already did"
 msgstr "Уже сделано!"
 
-#: app/Common/Admin/Notices/Review.php:93
+#: app/Common/Admin/Notices/Review.php:98
 msgid "Nope, maybe later"
 msgstr "Не сейчас, возможно позже"
 
 #. Translators: The plugin name ("All in One SEO").
-#: app/Common/Admin/Notices/Review.php:92
+#: app/Common/Admin/Notices/Review.php:97
 msgid "Ok, you deserve it"
 msgstr "OK, вы заслужили это"
 
 #. Translators: 1 - The plugin name ("All in One SEO").
-#: app/Common/Admin/Notices/Review.php:82
+#: app/Common/Admin/Notices/Review.php:87
 msgid "Are you enjoying %1$s?"
 msgstr "Вам нравится %1$s?"
 
 #. Translators: The plugin name ("All in One SEO").
-#: app/Common/Admin/Notices/Review.php:87
+#: app/Common/Admin/Notices/Review.php:92
 msgid "Give feedback"
 msgstr "Оставьте отзыв"
 
-#: languages/aioseo-lite.php:87 app/Common/Admin/Admin.php:121
+#: languages/aioseo-lite.php:3942 app/Common/Admin/Admin.php:126
 #: dist/Lite/assets/js/about.js:1
 msgid "About Us"
 msgstr "О нас"
 
 #. Translators: 1 - "Pro".
-#: languages/aioseo-lite.php:246 app/Lite/Admin/Notices/Notices.php:78
+#: languages/aioseo-lite.php:751 app/Lite/Admin/Notices/Notices.php:83
 #: dist/Lite/assets/js/chunk-common.js:1
 msgid "Upgrade to %1$s"
 msgstr "Улучшить до %1$s"
 
 #. Translators: 1 - "50% off".
-#: languages/aioseo-lite.php:1372 dist/Lite/assets/js/settings-Main-vue.js:1
+#: languages/aioseo-lite.php:715 dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/chunk-common.js:1
 #: dist/Lite/assets/js/settings-GeneralSettings-vue.js:1
 msgid "As a valued user you receive %1$s, automatically applied at checkout!"
 msgstr "Как ценный пользователь вы получаете скидку %1$s, которая автоматически применяется при оформлении заказа!"
 
-#: languages/aioseo-lite.php:504 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1030 dist/Lite/assets/js/chunk-common.js:1
 msgid "never"
 msgstr "никогда"
 
-#: languages/aioseo-lite.php:501 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1027 dist/Lite/assets/js/chunk-common.js:1
 msgid "yearly"
 msgstr "ежегодно"
 
-#: languages/aioseo-lite.php:489 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1015 dist/Lite/assets/js/chunk-common.js:1
 msgid "hourly"
 msgstr "ежечасно"
 
-#: languages/aioseo-lite.php:486 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1012 dist/Lite/assets/js/chunk-common.js:1
 msgid "always"
 msgstr "всегда"
 
 #. Translators: This is an action link users can click to open a feature
 #. request.
-#: app/Lite/Main/Filters.php:25
+#: app/Lite/Main/Filters.php:30
 msgid "Suggest a Feature"
 msgstr "Предложить функцию"
 
@@ -2260,34 +2251,34 @@ msgstr "Предложить функцию"
 msgid "All in One SEO Team"
 msgstr "Команда All in One SEO"
 
-#: languages/aioseo-lite.php:3717
+#: languages/aioseo-lite.php:4194
 #: dist/Lite/assets/js/about-GettingStarted-vue.js:1
 #: dist/Lite/assets/js/about-Main-vue.js:1
 msgid "Social Meta for Categories, Tags and Custom Taxonomies"
 msgstr "Социальные мета-теги для рубрик, меток и пользовательских таксономий"
 
-#: languages/aioseo-lite.php:3619
+#: languages/aioseo-lite.php:3180
 #: dist/Lite/assets/js/about-GettingStarted-vue.js:1
 #: dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/dashboard-Main-vue.js:1
 msgid "Advanced Google Analytics tracking"
 msgstr "Включить отслеживание Google Analytics"
 
-#: languages/aioseo-lite.php:3631
+#: languages/aioseo-lite.php:3195
 #: dist/Lite/assets/js/about-GettingStarted-vue.js:1
 #: dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/dashboard-Main-vue.js:1
 msgid "Ad free (no banner adverts)"
 msgstr "Без рекламы (баннеров)"
 
-#: languages/aioseo-lite.php:3625
+#: languages/aioseo-lite.php:3188
 #: dist/Lite/assets/js/about-GettingStarted-vue.js:1
 #: dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/dashboard-Main-vue.js:1
 msgid "Greater control over display settings"
 msgstr "Улучшенный контроль над настройками экрана"
 
-#: languages/aioseo-lite.php:553
+#: languages/aioseo-lite.php:4093
 #: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1
@@ -2295,136 +2286,138 @@ msgstr "Улучшенный контроль над настройками эк
 msgid "Organize sitemap entries into distinct files in your sitemap. We recommend you enable this setting if your sitemap contains more than 1,000 URLs."
 msgstr "Организуйте записи карты сайта в отдельных файлах. Мы рекомендуем включить этот параметр, если карта сайта содержит более 1000 URL-адресов."
 
-#: languages/aioseo-pro.php:311
+#: languages/aioseo-pro.php:104
 msgid "Schema Settings"
 msgstr "Настройки Schema"
 
-#: languages/aioseo-lite.php:297 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:798 dist/Lite/assets/js/chunk-common.js:1
 msgid "Package Tracking"
 msgstr "Отслеживание пакетов"
 
-#: languages/aioseo-lite.php:294 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:795 dist/Lite/assets/js/chunk-common.js:1
 msgid "Roadside Assistance"
 msgstr "Помощь в пути"
 
-#: languages/aioseo-lite.php:291 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:792 dist/Lite/assets/js/chunk-common.js:1
 msgid "Bagage Tracking"
 msgstr "Отслеживание багажа"
 
-#: languages/aioseo-lite.php:288 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:789 dist/Lite/assets/js/chunk-common.js:1
 msgid "Emergency"
 msgstr "Экстренная ситуация"
 
-#: languages/aioseo-lite.php:285 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:786 dist/Lite/assets/js/chunk-common.js:1
 msgid "Credit Card Support"
 msgstr "Помощь с банковскими картами"
 
-#: languages/aioseo-lite.php:282 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:783 dist/Lite/assets/js/chunk-common.js:1
 msgid "Reservations"
 msgstr "Бронирование"
 
-#: languages/aioseo-lite.php:279 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:780 dist/Lite/assets/js/chunk-common.js:1
 msgid "Sales"
 msgstr "Продажи"
 
-#: languages/aioseo-lite.php:276 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:777 dist/Lite/assets/js/chunk-common.js:1
 msgid "Bill Payment"
 msgstr "Оплата счетов"
 
-#: languages/aioseo-lite.php:273 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:774 dist/Lite/assets/js/chunk-common.js:1
 msgid "Billing Support"
 msgstr "Помощь при оплате"
 
-#: languages/aioseo-lite.php:270 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:771 dist/Lite/assets/js/chunk-common.js:1
 msgid "Technical Support"
 msgstr "Техническая поддержка"
 
-#: languages/aioseo-lite.php:267 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:768 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/chunk-common.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "Customer Support"
 msgstr "Поддержка пользователей"
 
-#: languages/aioseo-lite.php:185 dist/Lite/assets/js/setup-wizard-Main-vue.js:1
+#: languages/aioseo-lite.php:3826
+#: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-AdditionalInformation-vue.js:1
 #: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
 msgid "Phone Number"
 msgstr "Номер телефона"
 
-#: languages/aioseo-lite.php:182 dist/Lite/assets/js/setup-wizard-Main-vue.js:1
+#: languages/aioseo-lite.php:4332
+#: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-AdditionalInformation-vue.js:1
 msgid "Organization Name"
 msgstr "Название организации"
 
-#: languages/aioseo-lite.php:36 languages/aioseo-pro.php:457
-#: app/Common/Utils/Tags.php:324
+#: languages/aioseo-lite.php:2039 languages/aioseo-pro.php:416
+#: app/Common/Utils/Tags.php:329
 #: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard.js:1
 msgid "Category"
 msgstr "Рубрика"
 
-#: languages/aioseo-lite.php:239 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:646 dist/Lite/assets/js/chunk-common.js:1
 msgid "Archive"
 msgstr "Архив"
 
-#: app/Common/Api/Wizard.php:254
-#: app/Common/ImportExport/RankMath/TitleMeta.php:371
-#: app/Common/Admin/Notices/Notices.php:406
-#: app/Common/Admin/Notices/Notices.php:453
-#: app/Common/Admin/Notices/Notices.php:527
-#: app/Common/Admin/Notices/Notices.php:581
-#: app/Common/Migration/GeneralSettings.php:739
-#: app/Common/Migration/Helpers.php:164
+#: app/Common/Api/Wizard.php:259
+#: app/Common/ImportExport/RankMath/TitleMeta.php:413
+#: app/Common/Admin/Notices/Notices.php:411
+#: app/Common/Admin/Notices/Notices.php:458
+#: app/Common/Admin/Notices/Notices.php:532
+#: app/Common/Admin/Notices/Notices.php:586
+#: app/Common/Migration/GeneralSettings.php:745
+#: app/Common/Migration/Helpers.php:169
 msgid "Remind Me Later"
 msgstr "Напомнить позже"
 
-#: app/Common/Admin/Dashboard.php:73
+#: app/Common/Admin/Dashboard.php:78
 msgid "Temporarily unable to load feed."
 msgstr "{Временно невозможно загрузить канал.}"
 
-#: app/Common/Admin/Notices/Review.php:88
+#: app/Common/Admin/Notices/Review.php:93
 msgid "No thanks"
 msgstr "Нет, спасибо"
 
 #. Translators: 1 - The plugin name ("All in One SEO").
-#: languages/aioseo-lite.php:3647 dist/Lite/assets/js/dashboard-Main-vue.js:1
+#: languages/aioseo-lite.php:3211 dist/Lite/assets/js/dashboard-Main-vue.js:1
 msgid "Read the %1$s user guide"
 msgstr "Прочтите руководство пользователя %1$s"
 
 #. Translators: 1 - The plugin short name ("AIOSEO").
-#: app/Common/Admin/Notices/Notices.php:399
+#: app/Common/Admin/Notices/Notices.php:404
 msgid "Warning: %1$s has detected that you are blocking access to search engines. You can change this in Settings > Reading if this was unintended."
 msgstr "Внимание: %1$s обнаружил блокировку доступа поисковых систем к сайту. Вы можете это изменить в разделе Настройки > Чтение."
 
-#: languages/aioseo-lite.php:2261 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2478 dist/Lite/assets/js/chunk-common.js:1
 msgid "Dismiss"
 msgstr "Закрыть"
 
 #. Translators: 1 - The plugin name ("All in One SEO").
-#: languages/aioseo-lite.php:2828 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2611 dist/Lite/assets/js/chunk-common.js:1
 msgid "Welcome to %1$s"
 msgstr "Вас приветствует %1$s"
 
 #. Translators: 1 - "WooCommerce", 2 - The plugin short name ("AIOSEO").
-#: app/Lite/Admin/Notices/Notices.php:74
+#: app/Lite/Admin/Notices/Notices.php:79
 msgid "We have detected you are running %1$s. Upgrade to %2$s to unlock our advanced eCommerce SEO features, including SEO for Product Categories and more."
 msgstr "Было обнаружено использование %1$s. Улучшите до %2$s, чтобы разблокировать расширенный функционал для электронной коммерции, включая SEO для категорий товаров и не только."
 
-#: languages/aioseo-lite.php:1983 app/Common/Tools/SystemStatus.php:302
+#: languages/aioseo-lite.php:3497 app/Common/Tools/SystemStatus.php:307
 #: dist/Lite/assets/js/tools-Main-vue.js:1
 #: dist/Lite/assets/js/tools-SystemStatus-vue.js:1
 msgid "Active Plugins"
 msgstr "Активные плагины"
 
-#: languages/aioseo-lite.php:1986 app/Common/Tools/SystemStatus.php:334
+#: languages/aioseo-lite.php:3500 app/Common/Tools/SystemStatus.php:339
 #: dist/Lite/assets/js/tools-Main-vue.js:1
 #: dist/Lite/assets/js/tools-SystemStatus-vue.js:1
 msgid "Inactive Plugins"
 msgstr "Неактивные плагины"
 
-#: languages/aioseo-lite.php:613
+#: languages/aioseo-lite.php:3632
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1
@@ -2434,52 +2427,52 @@ msgid "Exclude Terms"
 msgstr "Исключённые выражения"
 
 #. Translators: 1 - The plugin name ("All in One SEO).
-#: app/Common/Api/Tools.php:117
+#: app/Common/Api/Tools.php:122
 msgid "%1$s Debug Info"
 msgstr "%1$s информация отладки"
 
 #. Translators: 1 - "Yandex Webmaster Tools".
-#: languages/aioseo-lite.php:4079
+#: languages/aioseo-lite.php:2135
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Yandex Webmaster Tools"
 msgstr "Инструменты для веб-мастеров Yandex"
 
 #. Translators: 1 - "Baidu Webmaster Tools".
-#: languages/aioseo-lite.php:4090
+#: languages/aioseo-lite.php:2146
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Baidu Webmaster Tools"
 msgstr "Инструменты вебмастера Baidu"
 
-#: languages/aioseo-pro.php:149
+#: languages/aioseo-pro.php:222
 #: dist/Lite/assets/js/sitemaps-pro-VideoSitemap-vue.js:1
 msgid "Include Custom Fields"
 msgstr "Включить произвольные поля"
 
-#: languages/aioseo-lite.php:2143 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2387 dist/Lite/assets/js/chunk-common.js:1
 msgid "Archive Pages"
 msgstr "Страницы архивов"
 
-#: languages/aioseo-lite.php:2146 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2390 dist/Lite/assets/js/chunk-common.js:1
 msgid "Author Pages"
 msgstr "Страницы автора"
 
-#: app/Common/Utils/Tags.php:471 app/Common/Utils/Tags.php:483
+#: app/Common/Utils/Tags.php:476 app/Common/Utils/Tags.php:488
 msgid "Your site title."
 msgstr "Заголовок сайта"
 
-#: app/Common/Views/sitemap/xsl/default.php:89
+#: app/Common/Views/sitemap/xsl/default.php:95
 msgid "Generated by"
 msgstr "Сгенерировано"
 
-#: app/Common/Views/sitemap/xsl/default.php:89
+#: app/Common/Views/sitemap/xsl/default.php:95
 msgid "this is an XML Sitemap, meant to be consumed by search engines like Google or Bing."
 msgstr "это XML-карта сайта, предназначенная для использования поисковыми системами, как Google или Яндекс."
 
-#: app/Common/Views/sitemap/xsl/default.php:98
+#: app/Common/Views/sitemap/xsl/default.php:104
 msgid "This sitemap contains"
 msgstr "Эта карта сайта содержит"
 
-#: languages/aioseo-lite.php:859 app/Common/Views/sitemap/xsl/default.php:98
+#: languages/aioseo-lite.php:262 app/Common/Views/sitemap/xsl/default.php:104
 #: dist/Lite/assets/js/local-seo-pro-LocationsPro-vue.js:1
 #: dist/Lite/assets/js/local-seo-lite-Locations-vue.js:1
 #: dist/Lite/assets/js/local-seo-Main-vue.js:1
@@ -2489,130 +2482,129 @@ msgstr "Эта карта сайта содержит"
 msgid "URLs"
 msgstr "URLы"
 
-#: app/Common/Views/sitemap/xsl/default.php:99
+#: app/Common/Views/sitemap/xsl/default.php:105
 msgid "This sitemap index contains"
 msgstr "Индекс этой карты сайта содержит"
 
-#: app/Common/Views/sitemap/xsl/default.php:99
+#: app/Common/Views/sitemap/xsl/default.php:105
 msgid "sitemaps"
 msgstr "карты сайта"
 
-#: languages/aioseo-pro.php:152
+#: languages/aioseo-pro.php:225
 #: dist/Lite/assets/js/sitemaps-pro-VideoSitemap-vue.js:1
 msgid "Enable this option to look for videos in custom fields as well."
 msgstr "Включить этот параметр для использования видео в произвольных полях."
 
 #. Translators: 1 - "Bing Webmaster Tools".
-#: languages/aioseo-lite.php:4068
+#: languages/aioseo-lite.php:2124
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Bing Webmaster Tools"
 msgstr "Инструменты веб-мастера Bing"
 
 #. Translators: 1 - "Google Search Console".
-#: languages/aioseo-lite.php:4057
+#: languages/aioseo-lite.php:2113
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Google Search Console"
 msgstr "Google Search Console"
 
-#: languages/aioseo-lite.php:1775
+#: languages/aioseo-lite.php:3529
 #: dist/Lite/assets/js/tools-RobotsEditor-vue.js:1
 #: dist/Lite/assets/js/tools-Main-vue.js:1
 msgid "Disallow"
 msgstr "Запретить"
 
-#: languages/aioseo-lite.php:1772
+#: languages/aioseo-lite.php:3526
 #: dist/Lite/assets/js/tools-RobotsEditor-vue.js:1
 #: dist/Lite/assets/js/tools-Main-vue.js:1
 msgid "Allow"
 msgstr "Разрешить"
 
-#: languages/aioseo-lite.php:1766
+#: languages/aioseo-lite.php:3520
 #: dist/Lite/assets/js/tools-RobotsEditor-vue.js:1
 #: dist/Lite/assets/js/tools-Main-vue.js:1
 msgid "Rule"
 msgstr "Правило"
 
-#: languages/aioseo-lite.php:631
+#: languages/aioseo-lite.php:4166
 #: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1
 msgid "Exclude Images"
 msgstr "Исключить изображения"
 
-#: languages/aioseo-lite.php:634
+#: languages/aioseo-lite.php:4169
 #: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1
 msgid "Exclude Images from your sitemap."
 msgstr "Исключить изображения из карты сайта."
 
-#: languages/aioseo-lite.php:4192
+#: languages/aioseo-lite.php:2252
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Track Outbound Forms"
 msgstr "Отслеживание исходящих форм"
 
-#: languages/aioseo-lite.php:4195
+#: languages/aioseo-lite.php:2255
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Track Events"
 msgstr "Отслеживание событий"
 
-#: languages/aioseo-lite.php:4201
+#: languages/aioseo-lite.php:2261
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Track Page Visibility"
 msgstr "Отслеживание видимости страниц"
 
-#: languages/aioseo-lite.php:4204
+#: languages/aioseo-lite.php:2264
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Track Media Queries"
 msgstr "Отслеживание медиа запросов"
 
-#: languages/aioseo-lite.php:4207
+#: languages/aioseo-lite.php:2267
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Track Elements Visibility"
 msgstr "Отслеживание видимости элементов"
 
-#: languages/aioseo-lite.php:4210
+#: languages/aioseo-lite.php:2270
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Track Page Scrolling"
 msgstr "Отслеживание прокрутки страниц"
 
-#: languages/aioseo-lite.php:4213
+#: languages/aioseo-lite.php:2273
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Track Facebook and Twitter"
 msgstr "Отслеживание Facebook и Twitter"
 
-#: languages/aioseo-lite.php:4198
+#: languages/aioseo-lite.php:2258
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Track URL Changes"
 msgstr "Отслеживание изменений URL"
 
-#: languages/aioseo-lite.php:4216
+#: languages/aioseo-lite.php:2276
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Ensure URL Consistency"
 msgstr "Убедиться в целостности URL"
 
-#: app/Common/Tools/SystemStatus.php:92
+#: app/Common/Tools/SystemStatus.php:97
 msgid "Search Engine Visibility"
 msgstr "Видимость сайта для поисковых машин"
 
-#: app/Common/Tools/SystemStatus.php:52
+#: app/Common/Tools/SystemStatus.php:57
 msgid "Site Language"
 msgstr "Язык сайта"
 
-#: languages/aioseo-lite.php:3512 app/Common/Tools/SystemStatus.php:48
-#: app/Common/Utils/Tags.php:470 app/Common/Utils/Tags.php:482
+#: languages/aioseo-lite.php:3788 app/Common/Tools/SystemStatus.php:53
+#: app/Common/Utils/Tags.php:475 app/Common/Utils/Tags.php:487
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
 msgid "Site Title"
 msgstr "Название сайта"
 
-#: languages/aioseo-lite.php:3622
+#: languages/aioseo-lite.php:3184
 #: dist/Lite/assets/js/about-GettingStarted-vue.js:1
 #: dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/dashboard-Main-vue.js:1
 msgid "Video SEO Module"
 msgstr "Видео модуль SEO"
 
-#: languages/aioseo-lite.php:2932
-#: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
+#: languages/aioseo-lite.php:172 dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/about-GettingStarted-vue.js:1
 #: dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-Success-vue.js:1
@@ -2622,45 +2614,45 @@ msgstr "Видео модуль SEO"
 msgid "SEO for Categories, Tags and Custom Taxonomies"
 msgstr "SEO для рубрик, меток и пользовательских таксономий"
 
-#: languages/aioseo-lite.php:1623 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1270 dist/Lite/assets/js/chunk-common.js:1
 msgid "Email address:"
 msgstr "Адрес Email:"
 
-#: languages/aioseo-lite.php:3616
+#: languages/aioseo-lite.php:3176
 #: dist/Lite/assets/js/about-GettingStarted-vue.js:1
 #: dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/dashboard-Main-vue.js:1
 msgid "Advanced support for e-commerce"
 msgstr "Расширенная e-commerce поддержка"
 
-#: languages/aioseo-lite.php:3306 app/Common/Migration/SocialMeta.php:71
+#: languages/aioseo-lite.php:3584 app/Common/Migration/SocialMeta.php:76
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
 msgid "Use Content for Autogenerated Descriptions"
 msgstr "Использовать содержание для генерирования описания"
 
-#: languages/aioseo-lite.php:3967
+#: languages/aioseo-lite.php:1926
 #: dist/Lite/assets/js/settings-Advanced-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 msgid "This displays an SEO News widget on the dashboard."
 msgstr "Это отображает виджет SEO-новостей в консоли."
 
-#: app/Common/Admin/Dashboard.php:28
+#: app/Common/Admin/Dashboard.php:33
 msgid "SEO News"
 msgstr "SEO-новости"
 
-#: languages/aioseo-lite.php:4042
+#: languages/aioseo-lite.php:2098
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Get Started"
 msgstr "Начнем"
 
-#: languages/aioseo-lite.php:640
+#: languages/aioseo-lite.php:4175
 #: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1
 msgid "Dynamically creates the XML Sitemap instead of using a static file."
 msgstr "Динамически создаёт XML-карту сайта вместо использования статического файла."
 
-#: languages/aioseo-lite.php:2881
+#: languages/aioseo-lite.php:615
 #: dist/Lite/assets/js/seo-analysis-AnalyzeCompetitorSite-vue.js:1
 #: dist/Lite/assets/js/seo-analysis-Main-vue.js:1
 msgid "Analyze"
@@ -2670,22 +2662,22 @@ msgstr "Анализировать"
 msgid "SEO for WordPress. Features like XML Sitemaps, SEO for custom post types, SEO for blogs, business sites, ecommerce sites, and much more. More than 65 million downloads since 2007."
 msgstr "SEO из коробки для вашего сайта на WordPress. Такой функционал, как XML карта сайта, SEO для пользовательских типов публикаций, SEO для блогов и бизнес-сайтов, SEO для интернет-магазинов, и многое другое. Почти 65 миллионов загрузок с 2007 г."
 
-#: languages/aioseo-lite.php:662 dist/Lite/assets/js/tools-Main-vue.js:1
+#: languages/aioseo-lite.php:3454 dist/Lite/assets/js/tools-Main-vue.js:1
 #: dist/Lite/assets/js/tools-BadBotBlocker-vue.js:1
 msgid "Use Custom Blocklists"
 msgstr "Использовать свой черный список"
 
-#: languages/aioseo-lite.php:653 dist/Lite/assets/js/tools-Main-vue.js:1
+#: languages/aioseo-lite.php:3445 dist/Lite/assets/js/tools-Main-vue.js:1
 #: dist/Lite/assets/js/tools-BadBotBlocker-vue.js:1
 msgid "Block Bad Bots using HTTP"
 msgstr "Блокировка вредных ботов, используя HTTP"
 
-#: languages/aioseo-lite.php:656 dist/Lite/assets/js/tools-Main-vue.js:1
+#: languages/aioseo-lite.php:3448 dist/Lite/assets/js/tools-Main-vue.js:1
 #: dist/Lite/assets/js/tools-BadBotBlocker-vue.js:1
 msgid "Block Referral Spam using HTTP"
 msgstr "Блокировать реферальный спам, используя HTTP "
 
-#: languages/aioseo-lite.php:318 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:827 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/tools-partials-ExportSettings-vue.js:1
 #: dist/Lite/assets/js/tools-DatabaseTools-vue.js:1
 #: dist/Lite/assets/js/tools-Main-vue.js:1
@@ -2698,62 +2690,62 @@ msgstr "SEO для изображений"
 
 #. Translators: This is an action link users can click to purchase a license
 #. for All in One SEO Pro.
-#: languages/aioseo-lite.php:2222 app/Lite/Admin/Admin.php:37
-#: app/Lite/Admin/Admin.php:61 app/Lite/Main/Filters.php:59
+#: languages/aioseo-lite.php:2597 app/Lite/Admin/Admin.php:42
+#: app/Lite/Admin/Admin.php:66 app/Lite/Main/Filters.php:64
 #: dist/Lite/assets/js/chunk-common.js:1
 msgid "Upgrade to Pro"
 msgstr "Улучшить до Pro"
 
 #. Translators: This is an action link users can click to open our general
 #. documentation page.
-#: app/Lite/Main/Filters.php:54
+#: app/Lite/Main/Filters.php:59
 msgid "Documentation"
 msgstr "Документацию к плагину"
 
 #. Translators: This is an action link users can click to open the General
 #. Settings menu.
-#: languages/aioseo-lite.php:1935 app/Lite/Main/Filters.php:44
-#: app/Common/Admin/Admin.php:459
+#: languages/aioseo-lite.php:3362 app/Lite/Main/Filters.php:49
+#: app/Common/Admin/Admin.php:479
 #: dist/Lite/assets/js/tools-partials-ImportOthers-vue.js:1
 #: dist/Lite/assets/js/tools-ImportExport-vue.js:1
 msgid "SEO Settings"
 msgstr "Настройки SEO"
 
-#: languages/aioseo-lite.php:3703 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:3975 dist/Lite/assets/js/about-Main-vue.js:1
 msgid "About"
 msgstr "О нас"
 
-#: languages/aioseo-lite.php:51 languages/aioseo-pro.php:320
+#: languages/aioseo-lite.php:1161 languages/aioseo-pro.php:113
 #: dist/Lite/assets/js/chunk-common.js:1 dist/Lite/assets/js/setup-wizard.js:1
 msgid "License Key"
 msgstr "Лицензионный ключ"
 
-#: languages/aioseo-lite.php:3240
+#: languages/aioseo-lite.php:4669
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 msgid "Facebook App ID"
 msgstr "Facebook App ID"
 
-#: languages/aioseo-lite.php:3237
+#: languages/aioseo-lite.php:4666
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 msgid "Facebook Admin ID"
 msgstr "Facebook Admin ID"
 
-#: languages/aioseo-lite.php:601 languages/aioseo-pro.php:140
+#: languages/aioseo-lite.php:4147 languages/aioseo-pro.php:204
 #: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1
 #: dist/Lite/assets/js/sitemaps-pro-VideoSitemap-vue.js:1
 msgid "Additional Pages"
 msgstr "Дополнительные страницы"
 
-#: languages/aioseo-lite.php:2856 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2533 dist/Lite/assets/js/chunk-common.js:1
 msgid "Last Modified"
 msgstr "Последнее изменение"
 
-#: languages/aioseo-lite.php:2866 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2543 dist/Lite/assets/js/chunk-common.js:1
 msgid "Page URL"
 msgstr "URL страницы"
 
-#: languages/aioseo-lite.php:574 languages/aioseo-pro.php:92
+#: languages/aioseo-lite.php:2373 languages/aioseo-pro.php:213
 #: dist/Lite/assets/js/sitemaps-pro-NewsSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-NewsSitemap-vue.js:1
@@ -2765,7 +2757,7 @@ msgstr "URL страницы"
 msgid "Post Types"
 msgstr "Типы записей"
 
-#: languages/aioseo-lite.php:78
+#: languages/aioseo-lite.php:2380
 #: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
 #: dist/Lite/assets/js/search-appearance.js:1
 #: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
@@ -2775,33 +2767,33 @@ msgstr "Типы записей"
 msgid "Taxonomies"
 msgstr "Таксономии"
 
-#: app/Common/Sitemap/Output.php:28
+#: app/Common/Sitemap/Output.php:33
 msgid "dynamically"
 msgstr "динамически"
 
-#: languages/aioseo-lite.php:492 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1018 dist/Lite/assets/js/chunk-common.js:1
 msgid "daily"
 msgstr "Ежедневно"
 
-#: languages/aioseo-lite.php:498 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1024 dist/Lite/assets/js/chunk-common.js:1
 msgid "monthly"
 msgstr "ежемесячно"
 
-#: languages/aioseo-lite.php:495 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1021 dist/Lite/assets/js/chunk-common.js:1
 msgid "weekly"
 msgstr "еженедельно"
 
-#: languages/aioseo-lite.php:1406 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1322 dist/Lite/assets/js/chunk-common.js:1
 #: dist/Lite/assets/js/post-settings.js:1
 msgid "Frequency"
 msgstr "Частота"
 
-#: languages/aioseo-lite.php:1403 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1317 dist/Lite/assets/js/chunk-common.js:1
 #: dist/Lite/assets/js/post-settings.js:1
 msgid "Priority"
 msgstr "Приоритет"
 
-#: languages/aioseo-lite.php:550
+#: languages/aioseo-lite.php:4088
 #: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1
@@ -2809,65 +2801,65 @@ msgstr "Приоритет"
 msgid "Enable Sitemap Indexes"
 msgstr "Включить карту сайта"
 
-#: languages/aioseo-lite.php:1977 app/Common/Tools/SystemStatus.php:240
+#: languages/aioseo-lite.php:3491 app/Common/Tools/SystemStatus.php:245
 #: dist/Lite/assets/js/tools-Main-vue.js:1
 #: dist/Lite/assets/js/tools-SystemStatus-vue.js:1
 msgid "Active Theme"
 msgstr "Активная тема"
 
-#: languages/aioseo-lite.php:1778
+#: languages/aioseo-lite.php:3532
 #: dist/Lite/assets/js/tools-RobotsEditor-vue.js:1
 #: dist/Lite/assets/js/tools-Main-vue.js:1
 msgid "Add Rule"
 msgstr "Добавить правило"
 
-#: languages/aioseo-lite.php:1769
+#: languages/aioseo-lite.php:3523
 #: dist/Lite/assets/js/tools-RobotsEditor-vue.js:1
 #: dist/Lite/assets/js/tools-Main-vue.js:1
 msgid "Directory Path"
 msgstr "Путь к каталогу"
 
-#: app/Common/Tools/SystemStatus.php:64
+#: app/Common/Tools/SystemStatus.php:69
 msgid "Home URL"
 msgstr "URL домашней страницы"
 
-#: app/Common/Tools/SystemStatus.php:76
+#: app/Common/Tools/SystemStatus.php:81
 msgid "Multisite"
 msgstr "Мультисайт"
 
-#: app/Common/Tools/SystemStatus.php:219
+#: app/Common/Tools/SystemStatus.php:224
 msgid "PHP IPTC Support"
 msgstr "Поддержка PHP IPTC"
 
-#: app/Common/Tools/SystemStatus.php:223
+#: app/Common/Tools/SystemStatus.php:228
 msgid "PHP XML Support"
 msgstr "Поддержка PHP XML"
 
-#: app/Common/Tools/SystemStatus.php:68
+#: app/Common/Tools/SystemStatus.php:73
 msgid "Site URL"
 msgstr "URL сайта"
 
-#: languages/aioseo-lite.php:1968 dist/Lite/assets/js/link-format-block.js:6
+#: languages/aioseo-lite.php:3482 dist/Lite/assets/js/link-format-block.js:6
 #: dist/Lite/assets/js/tools-Main-vue.js:1
 #: dist/Lite/assets/js/tools-SystemStatus-vue.js:1
 msgid "Submit"
 msgstr "Отправить"
 
-#: languages/aioseo-lite.php:121
+#: languages/aioseo-lite.php:61
 #: dist/Lite/assets/js/tools-HtaccessEditor-vue.js:1
 #: dist/Lite/assets/js/tools-Main-vue.js:1 dist/Lite/assets/js/tools.js:1
 msgid ".htaccess Editor"
 msgstr "Редактор .htaccess"
 
-#: languages/aioseo-lite.php:348 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:871 dist/Lite/assets/js/chunk-common.js:1
 msgid "Activity"
 msgstr "Активность"
 
-#: languages/aioseo-lite.php:404 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:927 dist/Lite/assets/js/chunk-common.js:1
 msgid "Actor"
 msgstr "Актер"
 
-#: languages/aioseo-lite.php:607 languages/aioseo-pro.php:101
+#: languages/aioseo-lite.php:1891 languages/aioseo-pro.php:101
 #: dist/Lite/assets/js/sitemaps-pro-NewsSitemap-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/sitemaps-NewsSitemap-vue.js:1
@@ -2882,7 +2874,7 @@ msgstr "Актер"
 msgid "Advanced Settings"
 msgstr "Расширенные настройки"
 
-#: languages/aioseo-lite.php:447 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:970 dist/Lite/assets/js/chunk-common.js:1
 msgid "Album"
 msgstr "Альбом"
 
@@ -2890,7 +2882,7 @@ msgstr "Альбом"
 msgid "All in One SEO"
 msgstr "All in One SEO"
 
-#: languages/aioseo-lite.php:480 languages/aioseo-pro.php:71
+#: languages/aioseo-lite.php:1005 languages/aioseo-pro.php:189
 #: dist/Lite/assets/js/search-appearance-partials-pro-Schema-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Media-vue.js:1
 #: dist/Lite/assets/js/chunk-common.js:1
@@ -2901,15 +2893,15 @@ msgstr "All in One SEO"
 msgid "Article"
 msgstr "Статья"
 
-#: languages/aioseo-lite.php:1574 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1763 dist/Lite/assets/js/post-settings.js:1
 msgid "Article Section"
 msgstr "Раздел статьи"
 
-#: languages/aioseo-lite.php:1577 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1766 dist/Lite/assets/js/post-settings.js:1
 msgid "Article Tags"
 msgstr "Теги статьи"
 
-#: languages/aioseo-lite.php:411 languages/aioseo-pro.php:385
+#: languages/aioseo-lite.php:934 languages/aioseo-pro.php:344
 #: dist/Lite/assets/js/settings-pro-AccessControl-vue.js:1
 #: dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/chunk-common.js:1
@@ -2919,110 +2911,110 @@ msgid "Author"
 msgstr "Автор"
 
 #. Translators: This refers to a music group.
-#: languages/aioseo-lite.php:389 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:912 dist/Lite/assets/js/chunk-common.js:1
 msgid "Band"
 msgstr "Группа"
 
-#: languages/aioseo-lite.php:357 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:880 dist/Lite/assets/js/chunk-common.js:1
 msgid "Bar"
 msgstr "Бар"
 
-#: languages/aioseo-lite.php:2902
+#: languages/aioseo-lite.php:4454
 #: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-Category-vue.js:1
 msgid "Blog"
 msgstr "Блог"
 
-#: languages/aioseo-lite.php:450 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:973 dist/Lite/assets/js/chunk-common.js:1
 msgid "Book"
 msgstr "Книга"
 
-#: languages/aioseo-lite.php:363 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:886 dist/Lite/assets/js/chunk-common.js:1
 msgid "Cafe"
 msgstr "Кафе"
 
-#: languages/aioseo-lite.php:158 dist/Lite/assets/js/posts-table.js:1
+#: languages/aioseo-lite.php:107 dist/Lite/assets/js/posts-table.js:1
 msgid "Cancel"
 msgstr "Отменить"
 
-#: languages/aioseo-lite.php:432 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:955 dist/Lite/assets/js/chunk-common.js:1
 msgid "City"
 msgstr "Город"
 
-#: languages/aioseo-lite.php:360 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:883 dist/Lite/assets/js/chunk-common.js:1
 msgid "Company"
 msgstr "Компания"
 
-#: languages/aioseo-lite.php:435 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:958 dist/Lite/assets/js/chunk-common.js:1
 msgid "Country"
 msgstr "Страна"
 
-#: languages/aioseo-lite.php:1046 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1100 dist/Lite/assets/js/chunk-common.js:1
 msgid "Custom Image"
 msgstr "Пользовательское изображение"
 
-#: languages/aioseo-lite.php:1583 app/Common/Tools/SystemStatus.php:73
+#: languages/aioseo-lite.php:1772 app/Common/Tools/SystemStatus.php:78
 #: dist/Lite/assets/js/post-settings.js:1
 msgid "Default"
 msgstr "По умолчанию"
 
-#: languages/aioseo-lite.php:152 dist/Lite/assets/js/link-format-block.js:6
+#: languages/aioseo-lite.php:99 dist/Lite/assets/js/link-format-block.js:6
 #: dist/Lite/assets/js/posts-table.js:1
 msgid "Edit"
 msgstr "Изменить"
 
-#: languages/aioseo-lite.php:1881
+#: languages/aioseo-lite.php:3281
 #: dist/Lite/assets/js/tools-HtaccessEditor-vue.js:1
 #: dist/Lite/assets/js/tools-Main-vue.js:1
 msgid "Edit .htaccess"
 msgstr "Изменить .htaccess"
 
-#: app/Common/Admin/Admin.php:440
+#: app/Common/Admin/Admin.php:460
 msgid "Edit SEO"
 msgstr "Править SEO"
 
-#: languages/aioseo-lite.php:474 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:997 dist/Lite/assets/js/chunk-common.js:1
 msgid "Episode"
 msgstr "Эпизод"
 
-#: languages/aioseo-lite.php:1911
+#: languages/aioseo-lite.php:3310
 #: dist/Lite/assets/js/tools-partials-ExportSettings-vue.js:1
 #: dist/Lite/assets/js/tools-ImportExport-vue.js:1
 msgid "Export Settings"
 msgstr "Настройки экспорта"
 
-#: languages/aioseo-lite.php:63 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1295 dist/Lite/assets/js/post-settings.js:1
 #: dist/Lite/assets/js/social-networks.js:1
 msgid "Facebook"
 msgstr "Facebook"
 
-#: languages/aioseo-lite.php:1040 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1094 dist/Lite/assets/js/chunk-common.js:1
 msgid "First Available Image"
 msgstr "Первое доступное изображение"
 
-#: languages/aioseo-lite.php:456 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:979 dist/Lite/assets/js/chunk-common.js:1
 msgid "Food"
 msgstr "Еда"
 
-#: languages/aioseo-lite.php:459 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:982 dist/Lite/assets/js/chunk-common.js:1
 msgid "Game"
 msgstr "Игра"
 
-#: languages/aioseo-lite.php:4108
+#: languages/aioseo-lite.php:2168
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Google Analytics"
 msgstr "Google Analytics"
 
-#: languages/aioseo-lite.php:366 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:889 dist/Lite/assets/js/chunk-common.js:1
 msgid "Hotel"
 msgstr "Отель"
 
-#: languages/aioseo-lite.php:3228
+#: languages/aioseo-lite.php:4660
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 msgid "Image"
 msgstr "Изображение"
 
-#: languages/aioseo-lite.php:33
+#: languages/aioseo-lite.php:3334
 #: dist/Lite/assets/js/tools-partials-ImportOthers-vue.js:1
 #: dist/Lite/assets/js/tools-partials-ImportAioseo-vue.js:1
 #: dist/Lite/assets/js/tools-ImportExport-vue.js:1
@@ -3030,169 +3022,168 @@ msgstr "Изображение"
 msgid "Import"
 msgstr "Импорт"
 
-#: app/Common/Tools/SystemStatus.php:183
+#: app/Common/Tools/SystemStatus.php:188
 msgid "MySQL Version"
 msgstr "Версия MYSQL"
 
-#: app/Common/Tools/SystemStatus.php:179
+#: app/Common/Tools/SystemStatus.php:184
 msgid "Memory Usage"
 msgstr "Использование памяти"
 
-#: languages/aioseo-lite.php:417 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:940 dist/Lite/assets/js/chunk-common.js:1
 msgid "Musician"
 msgstr "Музыкант"
 
-#: languages/aioseo-lite.php:102 app/Common/Tools/SystemStatus.php:180
+#: languages/aioseo-lite.php:55 app/Common/Tools/SystemStatus.php:185
 #: dist/Lite/assets/js/post-settings.js:1
 msgid "N/A"
 msgstr "Нет данных"
 
-#: languages/aioseo-lite.php:507 app/Common/Tools/SystemStatus.php:77
-#: app/Common/Tools/SystemStatus.php:81 app/Common/Tools/SystemStatus.php:200
-#: app/Common/Tools/SystemStatus.php:216 app/Common/Tools/SystemStatus.php:220
-#: app/Common/Tools/SystemStatus.php:224 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1033 app/Common/Tools/SystemStatus.php:82
+#: app/Common/Tools/SystemStatus.php:86 app/Common/Tools/SystemStatus.php:205
+#: app/Common/Tools/SystemStatus.php:221 app/Common/Tools/SystemStatus.php:225
+#: app/Common/Tools/SystemStatus.php:229 dist/Lite/assets/js/chunk-common.js:1
 msgid "No"
 msgstr "Нет"
 
-#: app/Common/Tools/SystemStatus.php:124 app/Common/Tools/SystemStatus.php:128
-#: app/Common/Tools/SystemStatus.php:132 app/Common/Tools/SystemStatus.php:136
-#: app/Common/Tools/SystemStatus.php:140 app/Common/Tools/SystemStatus.php:144
-#: app/Common/Tools/SystemStatus.php:148
+#: app/Common/Tools/SystemStatus.php:129 app/Common/Tools/SystemStatus.php:133
+#: app/Common/Tools/SystemStatus.php:137 app/Common/Tools/SystemStatus.php:141
+#: app/Common/Tools/SystemStatus.php:145 app/Common/Tools/SystemStatus.php:149
+#: app/Common/Tools/SystemStatus.php:153
 msgid "Not set"
 msgstr "Не установлено"
 
-#: languages/aioseo-lite.php:1556
+#: languages/aioseo-lite.php:1744
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 #: dist/Lite/assets/js/post-settings.js:1
 msgid "Object Type"
 msgstr "Тип данных"
 
-#: languages/aioseo-lite.php:513 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1039 dist/Lite/assets/js/chunk-common.js:1
 msgid "Off"
 msgstr "Выкл."
 
-#: languages/aioseo-lite.php:516 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1042 dist/Lite/assets/js/chunk-common.js:1
 msgid "On"
 msgstr "Вкл."
 
-#: languages/aioseo-pro.php:451 app/Common/Tools/SystemStatus.php:171
+#: languages/aioseo-pro.php:410 app/Common/Tools/SystemStatus.php:176
 msgid "Operating System"
 msgstr "Операционная система"
 
-#: app/Common/Tools/SystemStatus.php:215
+#: app/Common/Tools/SystemStatus.php:220
 msgid "PHP Exif Support"
 msgstr "Поддержка PHP Exif"
 
-#: app/Common/Tools/SystemStatus.php:207
+#: app/Common/Tools/SystemStatus.php:212
 msgid "PHP Max Post Size"
 msgstr "PHP макс. размер статьи"
 
-#: app/Common/Tools/SystemStatus.php:211
+#: app/Common/Tools/SystemStatus.php:216
 msgid "PHP Max Script Execution Time"
 msgstr "PHP макс. время выполнения скрипта"
 
-#: app/Common/Tools/SystemStatus.php:203
+#: app/Common/Tools/SystemStatus.php:208
 msgid "PHP Max Upload Size"
 msgstr "PHP макс. размер загрузки"
 
-#: app/Common/Tools/SystemStatus.php:195
+#: app/Common/Tools/SystemStatus.php:200
 msgid "PHP Memory Limit"
 msgstr "PHP лимит памяти"
 
-#: app/Common/Tools/SystemStatus.php:191
+#: app/Common/Tools/SystemStatus.php:196
 msgid "PHP Version"
 msgstr "PHP версия"
 
-#: languages/aioseo-lite.php:2073 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:2396 dist/Lite/assets/js/chunk-common.js:1
 msgid "Performance"
 msgstr "Производительность"
 
-#: languages/aioseo-lite.php:161 dist/Lite/assets/js/posts-table.js:1
+#: languages/aioseo-lite.php:111 dist/Lite/assets/js/posts-table.js:1
 msgid "Please wait..."
 msgstr "Пожалуйста, подождите..."
 
-#: languages/aioseo-lite.php:420 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:943 dist/Lite/assets/js/chunk-common.js:1
 msgid "Politician"
 msgstr "Политик"
 
-#: languages/aioseo-lite.php:1037 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1091 dist/Lite/assets/js/chunk-common.js:1
 msgid "Post Author Image"
 msgstr "Изображение автора статьи"
 
-#: languages/aioseo-lite.php:465 languages/aioseo-pro.php:83
+#: languages/aioseo-lite.php:988 languages/aioseo-pro.php:201
 #: dist/Lite/assets/js/search-appearance-partials-pro-Schema-vue.js:1
 #: dist/Lite/assets/js/chunk-common.js:1
 msgid "Product"
 msgstr "Продукт"
 
-#: languages/aioseo-lite.php:423 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:946 dist/Lite/assets/js/chunk-common.js:1
 msgid "Profile"
 msgstr "Профиль"
 
-#: languages/aioseo-lite.php:426 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:949 dist/Lite/assets/js/chunk-common.js:1
 msgid "Public Figure"
 msgstr "Публичная личность"
 
-#: languages/aioseo-lite.php:369 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:892 dist/Lite/assets/js/chunk-common.js:1
 msgid "Restaurant"
 msgstr "Ресторан"
 
-#: languages/aioseo-lite.php:1875
+#: languages/aioseo-lite.php:3427
 #: dist/Lite/assets/js/tools-DatabaseTools-vue.js:1
 #: dist/Lite/assets/js/tools-Main-vue.js:1
 msgid "Robots.txt"
 msgstr "Robots.txt"
 
-#: languages/aioseo-lite.php:118
-#: dist/Lite/assets/js/tools-RobotsEditor-vue.js:1
+#: languages/aioseo-lite.php:58 dist/Lite/assets/js/tools-RobotsEditor-vue.js:1
 #: dist/Lite/assets/js/tools-Main-vue.js:1 dist/Lite/assets/js/tools.js:1
 msgid "Robots.txt Editor"
 msgstr "Редактор robots.txt"
 
-#: app/Common/Admin/Admin.php:299 app/Common/Admin/SiteHealth.php:86
+#: app/Common/Admin/Admin.php:319 app/Common/Admin/SiteHealth.php:91
 msgid "SEO"
 msgstr "SEO"
 
-#: languages/aioseo-lite.php:155 dist/Lite/assets/js/posts-table.js:1
+#: languages/aioseo-lite.php:103 dist/Lite/assets/js/posts-table.js:1
 msgid "Save"
 msgstr "Сохранить"
 
-#: languages/aioseo-lite.php:395 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:918 dist/Lite/assets/js/chunk-common.js:1
 msgid "School"
 msgstr "Школа"
 
-#: languages/aioseo-lite.php:3184
+#: languages/aioseo-lite.php:4613
 #: dist/Lite/assets/js/social-networks-Main-vue.js:1
 #: dist/Lite/assets/js/social-networks-Twitter-vue.js:1
 msgid "Show Twitter Author"
 msgstr "Показывать Twitter автора"
 
-#: languages/aioseo-lite.php:3231
+#: languages/aioseo-lite.php:4663
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 msgid "Site Name"
 msgstr "Название сайта"
 
-#: languages/aioseo-pro.php:314
+#: languages/aioseo-pro.php:107
 msgid "Social Settings"
 msgstr "Социальные настройки"
 
-#: languages/aioseo-lite.php:468 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:991 dist/Lite/assets/js/chunk-common.js:1
 msgid "Song"
 msgstr "Песня"
 
-#: languages/aioseo-lite.php:351 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:874 dist/Lite/assets/js/chunk-common.js:1
 msgid "Sport"
 msgstr "Спорт"
 
-#: languages/aioseo-lite.php:379 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:902 dist/Lite/assets/js/chunk-common.js:1
 msgid "Sports League"
 msgstr "Спортивная лига"
 
-#: languages/aioseo-lite.php:382 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:905 dist/Lite/assets/js/chunk-common.js:1
 msgid "Sports Team"
 msgstr "Спортивная команда"
 
-#: languages/aioseo-lite.php:1532
+#: languages/aioseo-lite.php:1815
 #: dist/Lite/assets/js/social-networks-Main-vue.js:1
 #: dist/Lite/assets/js/post-settings.js:1
 #: dist/Lite/assets/js/social-networks-Twitter-vue.js:1
@@ -3201,42 +3192,42 @@ msgstr "Стандартно (кратко)"
 
 #. Translators: This is an action link users can click to open our premium
 #. support.
-#: languages/aioseo-lite.php:3643 app/Lite/Main/Filters.php:49
+#: languages/aioseo-lite.php:3207 app/Lite/Main/Filters.php:54
 #: dist/Lite/assets/js/dashboard-Main-vue.js:1
 msgid "Support"
 msgstr "Поддержка"
 
-#: languages/aioseo-lite.php:133 dist/Lite/assets/js/tools.js:1
+#: languages/aioseo-lite.php:74 dist/Lite/assets/js/tools.js:1
 msgid "System Status"
 msgstr "О системе"
 
-#: languages/aioseo-lite.php:471 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:994 dist/Lite/assets/js/chunk-common.js:1
 msgid "TV Show"
 msgstr "ТВ шоу"
 
-#: languages/aioseo-lite.php:66 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1299 dist/Lite/assets/js/post-settings.js:1
 #: dist/Lite/assets/js/social-networks.js:1
 msgid "Twitter"
 msgstr "Twitter"
 
-#: languages/aioseo-lite.php:1520 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1800 dist/Lite/assets/js/post-settings.js:1
 msgid "Twitter Card Type"
 msgstr "Тип Twitter Card"
 
-#: languages/aioseo-lite.php:398 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:921 dist/Lite/assets/js/chunk-common.js:1
 msgid "University"
 msgstr "Университет"
 
-#: languages/aioseo-lite.php:3279
+#: languages/aioseo-lite.php:4709
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 msgid "Use Keywords in Article Tags"
 msgstr "Использовать кл. слова в тегах к статьям"
 
-#: app/Common/Tools/SystemStatus.php:44
+#: app/Common/Tools/SystemStatus.php:49
 msgid "Version"
 msgstr "Версия"
 
-#: languages/aioseo-lite.php:109
+#: languages/aioseo-lite.php:844
 #: dist/Lite/assets/js/sitemaps-pro-NewsSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-pro-VideoSitemapActivate-vue.js:1
 #: dist/Lite/assets/js/sitemaps-NewsSitemap-vue.js:1
@@ -3250,60 +3241,62 @@ msgstr "Версия"
 msgid "Video Sitemap"
 msgstr "Видео карта сайта"
 
-#: languages/aioseo-lite.php:3653 dist/Lite/assets/js/dashboard-Main-vue.js:1
+#: languages/aioseo-lite.php:3217 dist/Lite/assets/js/dashboard-Main-vue.js:1
 msgid "View the Changelog"
 msgstr "Посмотреть список"
 
-#: languages/aioseo-lite.php:3656 dist/Lite/assets/js/dashboard-Main-vue.js:1
+#: languages/aioseo-lite.php:3220 dist/Lite/assets/js/dashboard-Main-vue.js:1
 msgid "Watch video tutorials"
 msgstr "Смотреть видео-уроки"
 
-#: languages/aioseo-lite.php:483 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1008 dist/Lite/assets/js/chunk-common.js:1
 msgid "Website"
 msgstr "Веб сайт"
 
-#: languages/aioseo-lite.php:510 app/Common/Tools/SystemStatus.php:77
-#: app/Common/Tools/SystemStatus.php:81 app/Common/Tools/SystemStatus.php:200
-#: app/Common/Tools/SystemStatus.php:216 app/Common/Tools/SystemStatus.php:220
-#: app/Common/Tools/SystemStatus.php:224 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1036 app/Common/Tools/SystemStatus.php:82
+#: app/Common/Tools/SystemStatus.php:86 app/Common/Tools/SystemStatus.php:205
+#: app/Common/Tools/SystemStatus.php:221 app/Common/Tools/SystemStatus.php:225
+#: app/Common/Tools/SystemStatus.php:229 dist/Lite/assets/js/chunk-common.js:1
 msgid "Yes"
 msgstr "Да"
 
-#: languages/aioseo-lite.php:173 dist/Lite/assets/js/setup-wizard-Main-vue.js:1
+#: languages/aioseo-lite.php:3810
+#: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-AdditionalInformation-vue.js:1
 #: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
 msgid "Organization"
 msgstr "Организация"
 
-#: languages/aioseo-lite.php:170 dist/Lite/assets/js/setup-wizard-Main-vue.js:1
+#: languages/aioseo-lite.php:3806
+#: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-AdditionalInformation-vue.js:1
 #: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
 msgid "Person"
 msgstr "Личность"
 
-#: languages/aioseo-lite.php:3285
+#: languages/aioseo-lite.php:4715
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 msgid "Use Post Tags in Article Tags"
 msgstr "Использовать метки публикаций в метках статьи"
 
-#: languages/aioseo-lite.php:3309 app/Common/Migration/SocialMeta.php:75
+#: languages/aioseo-lite.php:3587 app/Common/Migration/SocialMeta.php:80
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
 msgid "Run Shortcodes in Description"
 msgstr "Использовать шорткоды в описании"
 
-#: app/Common/Migration/SocialMeta.php:79
+#: app/Common/Migration/SocialMeta.php:84
 msgid "Run Shortcodes in Title"
 msgstr "Включить шорткоды в заголовке"
 
-#: languages/aioseo-lite.php:3770 dist/Lite/assets/js/about-Main-vue.js:1
+#: languages/aioseo-lite.php:3996 dist/Lite/assets/js/about-Main-vue.js:1
 #: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
 msgid "XML Sitemap"
 msgstr "XML карта сайта"
 
-#: languages/aioseo-lite.php:592 languages/aioseo-pro.php:98
+#: languages/aioseo-lite.php:4140 languages/aioseo-pro.php:219
 #: dist/Lite/assets/js/sitemaps-pro-NewsSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-NewsSitemap-vue.js:1
@@ -3314,354 +3307,355 @@ msgstr "XML карта сайта"
 msgid "Select which Post Types appear in your sitemap."
 msgstr "Укажите типы публикаций для вывода на карте сайта."
 
-#: languages/aioseo-lite.php:598
+#: languages/aioseo-lite.php:4144
 #: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1
 msgid "Select which Taxonomies appear in your sitemap."
 msgstr "Укажите архивы таксономий для вывода на карте сайта."
 
-#: app/Common/Tools/SystemStatus.php:199
+#: app/Common/Tools/SystemStatus.php:204
 msgid "PHP Allow Url fopen"
 msgstr "PHP разрешить fopen() для URL (allow_url_fopen)"
 
-#: languages/aioseo-lite.php:164 dist/Lite/assets/js/setup-wizard-Main-vue.js:1
+#: languages/aioseo-lite.php:3802
+#: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-AdditionalInformation-vue.js:1
 #: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
 msgid "Person or Organization"
 msgstr "Частное лицо или организация"
 
-#: languages/aioseo-lite.php:1763
+#: languages/aioseo-lite.php:3517
 #: dist/Lite/assets/js/tools-RobotsEditor-vue.js:1
 #: dist/Lite/assets/js/tools-Main-vue.js:1
 msgid "User Agent"
 msgstr "User Agent"
 
-#: languages/aioseo-lite.php:1514 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1794 dist/Lite/assets/js/post-settings.js:1
 msgid "Twitter Title"
 msgstr "Заголовок Twitter"
 
-#: languages/aioseo-lite.php:1034 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1088 dist/Lite/assets/js/chunk-common.js:1
 msgid "Image from Custom Field"
 msgstr "Изображение из пользовательского поля"
 
-#: languages/aioseo-lite.php:1031 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1085 dist/Lite/assets/js/chunk-common.js:1
 msgid "First Image in Content"
 msgstr "Первое изображение в контенте"
 
-#: languages/aioseo-lite.php:1025 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1079 dist/Lite/assets/js/chunk-common.js:1
 msgid "Featured Image"
 msgstr "Основное изображение"
 
-#: languages/aioseo-lite.php:586
+#: languages/aioseo-lite.php:4136
 #: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1
 msgid "Include Author Archives in your sitemap."
 msgstr "Добавить архивы автора в вашу карту сайта."
 
-#: languages/aioseo-lite.php:580
+#: languages/aioseo-lite.php:4128
 #: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1
 msgid "Include Date Archives in your sitemap."
 msgstr "Добавить архивы по датам в вашу карту сайта."
 
-#: languages/aioseo-lite.php:568
+#: languages/aioseo-lite.php:4116
 #: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
 #: dist/Lite/assets/js/sitemaps-Main-vue.js:1
 #: dist/Lite/assets/js/sitemaps-pro-VideoSitemap-vue.js:1
 msgid "Allows you to specify the maximum number of posts in a sitemap (up to 50,000)."
 msgstr "Позволяет указать максимальное число публикаций в карте сайта (до 50 000)."
 
-#: languages/aioseo-lite.php:462 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:985 dist/Lite/assets/js/chunk-common.js:1
 msgid "Movie"
 msgstr "Видео"
 
-#: languages/aioseo-lite.php:453 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:976 dist/Lite/assets/js/chunk-common.js:1
 msgid "Drink"
 msgstr "Напитки"
 
-#: languages/aioseo-lite.php:441 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:964 dist/Lite/assets/js/chunk-common.js:1
 msgid "State/Province"
 msgstr "Область"
 
-#: languages/aioseo-lite.php:438 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:961 dist/Lite/assets/js/chunk-common.js:1
 msgid "Landmark"
 msgstr "Достопримечательность"
 
-#: languages/aioseo-lite.php:414 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:937 dist/Lite/assets/js/chunk-common.js:1
 msgid "Director"
 msgstr "Режиссер"
 
-#: languages/aioseo-lite.php:407 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:930 dist/Lite/assets/js/chunk-common.js:1
 msgid "Athlete"
 msgstr "Атлет"
 
-#: languages/aioseo-lite.php:392 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:915 dist/Lite/assets/js/chunk-common.js:1
 msgid "Non-Profit"
 msgstr "Некоммерческая организация"
 
 #. Translators: This refers to a charity/non-profit organization.
-#: languages/aioseo-lite.php:376 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:899 dist/Lite/assets/js/chunk-common.js:1
 msgid "Cause"
 msgstr "Дело"
 
-#: languages/aioseo-lite.php:3276
+#: languages/aioseo-lite.php:4706
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 msgid "Automatically Generate Article Tags"
 msgstr "Автоматически генерировать теги статьи"
 
-#: languages/aioseo-lite.php:96 app/Common/Admin/Admin.php:111
+#: languages/aioseo-lite.php:77 app/Common/Admin/Admin.php:116
 #: dist/Lite/assets/js/feature-manager.js:1
 #: dist/Lite/assets/js/feature-manager-Main-vue.js:1
 msgid "Feature Manager"
 msgstr "Менеджер возможностей"
 
-#: languages/aioseo-lite.php:3659 dist/Lite/assets/js/dashboard-Main-vue.js:1
+#: languages/aioseo-lite.php:3223 dist/Lite/assets/js/dashboard-Main-vue.js:1
 msgid "Getting started? Read the Beginners Guide"
 msgstr "Новичок? Читайте руководство для начинающих"
 
-#: languages/aioseo-lite.php:3005
+#: languages/aioseo-lite.php:4287
 #: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
 #: dist/Lite/assets/js/setup-wizard-Success-vue.js:1
 msgid "Follow on Twitter"
 msgstr "Следите за нами в Twitter"
 
-#: app/Common/Utils/Tags.php:488
+#: app/Common/Utils/Tags.php:493
 msgid "Site Description"
 msgstr "Описание сайта"
 
-#: languages/aioseo-lite.php:1965 dist/Lite/assets/js/tools-Main-vue.js:1
+#: languages/aioseo-lite.php:3479 dist/Lite/assets/js/tools-Main-vue.js:1
 #: dist/Lite/assets/js/tools-SystemStatus-vue.js:1
 msgid "Email Debug Information"
 msgstr "Отправить отладочную информацию на почту"
 
-#: languages/aioseo-lite.php:3282
+#: languages/aioseo-lite.php:4712
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 msgid "Use Categories in Article Tags"
 msgstr "Использовать рубрики в метках статьи"
 
-#: languages/aioseo-lite.php:1838
+#: languages/aioseo-lite.php:3392
 #: dist/Lite/assets/js/tools-DatabaseTools-vue.js:1
 #: dist/Lite/assets/js/tools-Main-vue.js:1
 msgid "Reset Selected Settings to Default"
 msgstr "Сбросить выбранные настройки"
 
-#: languages/aioseo-lite.php:3175 languages/aioseo-pro.php:367
-#: app/Common/Utils/Tags.php:516
+#: languages/aioseo-lite.php:4602 languages/aioseo-pro.php:335
+#: app/Common/Utils/Tags.php:521
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 #: dist/Lite/assets/js/social-networks-Main-vue.js:1
 #: dist/Lite/assets/js/social-networks-Twitter-vue.js:1
 msgid "Description"
 msgstr "Описание"
 
-#: languages/aioseo-lite.php:3345
+#: languages/aioseo-lite.php:3623
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
 msgid "Description Format"
 msgstr "Формат описания"
 
-#: languages/aioseo-lite.php:3163
+#: languages/aioseo-lite.php:4587
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 #: dist/Lite/assets/js/social-networks-Main-vue.js:1
 #: dist/Lite/assets/js/social-networks-Twitter-vue.js:1
 msgid "Home Page Settings"
 msgstr "Настройки главной страницы"
 
-#: languages/aioseo-lite.php:1459 app/Common/Admin/Admin.php:227
+#: languages/aioseo-lite.php:1687 app/Common/Admin/Admin.php:247
 #: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
 #: dist/Lite/assets/js/post-settings.js:1
 msgid "Title"
 msgstr "Заголовок"
 
-#: languages/aioseo-lite.php:4143
+#: languages/aioseo-lite.php:2203
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Additional Domains"
 msgstr "Дополнительные домены"
 
-#: languages/aioseo-lite.php:4150
+#: languages/aioseo-lite.php:2210
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Anonymize IP Addresses"
 msgstr "Анонимизация IP-адресов"
 
-#: languages/aioseo-lite.php:3303
+#: languages/aioseo-lite.php:3581
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
 msgid "Autogenerate Descriptions"
 msgstr "Авто-генерируемые описания"
 
-#: languages/aioseo-lite.php:4157
+#: languages/aioseo-lite.php:2217
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Display Advertiser Tracking"
 msgstr "Показывать отслеживание рекламодателей"
 
-#: languages/aioseo-lite.php:4185
+#: languages/aioseo-lite.php:2245
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Enhanced Ecommerce"
 msgstr "Улучшенная Ecommerce"
 
-#: languages/aioseo-lite.php:4171
+#: languages/aioseo-lite.php:2231
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Enhanced Link Attribution"
 msgstr "Улучшенная атрибуция ссылки"
 
-#: languages/aioseo-lite.php:4111
+#: languages/aioseo-lite.php:2171
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Google Analytics ID"
 msgstr "Google Analytics ID"
 
-#: languages/aioseo-lite.php:3312
+#: languages/aioseo-lite.php:3590
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
 msgid "No Pagination for Canonical URLs"
 msgstr "Запретить разбивку страниц для канонических URL'ов"
 
-#: languages/aioseo-lite.php:3339
+#: languages/aioseo-lite.php:3617
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
 msgid "Paged Format"
 msgstr "Формат разбивки на страницы"
 
-#: languages/aioseo-lite.php:4097
+#: languages/aioseo-lite.php:2153
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Pinterest Site Verification"
 msgstr "Верификация на Pinterest"
 
-#: languages/aioseo-lite.php:4136
+#: languages/aioseo-lite.php:2196
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Track Multiple Domains"
 msgstr "Отслеживать несколько доменов"
 
-#: languages/aioseo-lite.php:4178
+#: languages/aioseo-lite.php:2238
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Track Outbound Links"
 msgstr "Отслеживать исходящие ссылки"
 
-#: languages/aioseo-lite.php:3321
+#: languages/aioseo-lite.php:3599
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
 msgid "Use Categories for Meta Keywords"
 msgstr "Использовать рубрики как ключевые слова"
 
-#: languages/aioseo-lite.php:3327
+#: languages/aioseo-lite.php:3605
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
 msgid "Use Tags for Meta Keywords"
 msgstr "Использовать метки как ключевые слова"
 
-#: languages/aioseo-lite.php:1397 dist/Lite/assets/js/post-settings.js:1
+#: languages/aioseo-lite.php:1305 dist/Lite/assets/js/post-settings.js:1
 msgid "Canonical URL"
 msgstr "Канонические URL"
 
 #. Translators: 1 - A link to our documentation, 2 - HTML line break tag.
-#: languages/aioseo-lite.php:4168
+#: languages/aioseo-lite.php:2228
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Exclude logged-in users from Google Analytics tracking by role.%1$s%2$s"
 msgstr "Исключить авторизованных пользователей на основании ролей из отчетов Google Analytics.%1$s%2$s"
 
-#: languages/aioseo-lite.php:4164
+#: languages/aioseo-lite.php:2224
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Exclude Users from Tracking"
 msgstr "Исключить пользователей из отслеживания"
 
 #. Translators: 1 - A link to our documentation, 2 - HTML line break tag.
-#: languages/aioseo-lite.php:4147
+#: languages/aioseo-lite.php:2207
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Add a list of additional domains to track here. Enter one domain name per line without the http://.%1$s%2$s"
 msgstr "Добавьте здесь дополнительные домены для отслеживания. Введите одно доменное имя на строку без http://.%1$s%2$s"
 
 #. Translators: 1 - "http://", 2 - A link to our documentation, 3 - HTML line
 #. break tag.
-#: languages/aioseo-lite.php:4133
+#: languages/aioseo-lite.php:2193
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Enter your domain name without the %1$s to set your cookie domain.%2$s%3$s"
 msgstr "Введите доменное имя без %1$s для установки cookie домена. %2$s%3$s"
 
-#: languages/aioseo-lite.php:4129
+#: languages/aioseo-lite.php:2189
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Tracking Domain"
 msgstr "Отслеживаемый домен"
 
-#: languages/aioseo-lite.php:4039
+#: languages/aioseo-lite.php:2095
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Manage Google Analytics"
 msgstr "Управление Google Analytics"
 
-#: languages/aioseo-lite.php:531 dist/Lite/assets/js/chunk-common.js:1
+#: languages/aioseo-lite.php:1057 dist/Lite/assets/js/chunk-common.js:1
 msgid "Enabled"
 msgstr "Включено"
 
-#: languages/aioseo-lite.php:528 app/Common/Tools/SystemStatus.php:124
-#: app/Common/Tools/SystemStatus.php:128 app/Common/Tools/SystemStatus.php:132
-#: app/Common/Tools/SystemStatus.php:136 app/Common/Tools/SystemStatus.php:140
-#: app/Common/Tools/SystemStatus.php:144 app/Common/Tools/SystemStatus.php:148
+#: languages/aioseo-lite.php:1054 app/Common/Tools/SystemStatus.php:129
+#: app/Common/Tools/SystemStatus.php:133 app/Common/Tools/SystemStatus.php:137
+#: app/Common/Tools/SystemStatus.php:141 app/Common/Tools/SystemStatus.php:145
+#: app/Common/Tools/SystemStatus.php:149 app/Common/Tools/SystemStatus.php:153
 #: dist/Lite/assets/js/chunk-common.js:1
 msgid "Disabled"
 msgstr "Отключено"
 
 #. Translators: 1 - A link to our documentation, 2 - HTML line break tag.
-#: languages/aioseo-lite.php:4154
+#: languages/aioseo-lite.php:2214
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "This enables support for IP Anonymization in Google Analytics.%1$s%2$s"
 msgstr "Это включает поддержку для IP анонимизации в Google Analytics.%1$s%2$s"
 
 #. Translators: 1 - A link to our documentation, 2 - HTML line break tag.
-#: languages/aioseo-lite.php:4161
+#: languages/aioseo-lite.php:2221
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "This enables support for the Display Advertiser Features in Google Analytics.%1$s%2$s"
 msgstr "Это включает поддержку отображение функций рекламодателя в Google Analytics.%1$s%2$s"
 
 #. Translators: 1 - A link to our documentation, 2 - HTML line break tag.
-#: languages/aioseo-lite.php:4189
+#: languages/aioseo-lite.php:2249
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "This enables support for the Enhanced Ecommerce in Google Analytics.%1$s%2$s"
 msgstr "Это включает поддержку улучшенной Ecommerce в Google Analytics.%1$s%2$s"
 
 #. Translators: 1 - A link to our documentation, 2 - HTML line break tag.
-#: languages/aioseo-lite.php:4175
+#: languages/aioseo-lite.php:2235
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "This enables support for the Enhanced Link Attribution in Google Analytics.%1$s%2$s"
 msgstr "Это включает поддержку улучшенной ссылки авторства в Google Analytics.%1$s%2$s"
 
 #. Translators: 1 - A link to our documentation, 2 - HTML line break tag.
-#: languages/aioseo-lite.php:4140
+#: languages/aioseo-lite.php:2200
 #: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
 msgid "Use this option to enable tracking of multiple or additional domains.%1$s%2$s"
 msgstr "Используйте эту опцию, чтобы включить отслеживание нескольких или дополнительных доменов.%1$s%2$s"
 
-#: languages/aioseo-lite.php:3342
+#: languages/aioseo-lite.php:3620
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
 msgid "This string gets appended to the titles and descriptions of paginated pages (like term or archive pages)."
 msgstr "Эта строка добавлется к названиям и описаниям страниц пагинации (таких как страницы архивов или терминов)."
 
-#: languages/aioseo-lite.php:3318
+#: languages/aioseo-lite.php:3596
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
 msgid "This option allows you to toggle the use of Meta Keywords throughout the whole of the site."
 msgstr "Поддержка ключевых слов для всех записей и страниц на Вашем блоге."
 
-#: languages/aioseo-lite.php:3324
+#: languages/aioseo-lite.php:3602
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
 msgid "Check this if you want your categories for a given post used as the Meta Keywords for this post (in addition to any keywords you specify on the Edit Post screen)."
 msgstr "Отметьте, чтобы категории для данной записи использовались как ключевые слова для нее же (в дополнение к любым ключевым словам, указанным на экране редактирования записи)."
 
-#: languages/aioseo-lite.php:3330
+#: languages/aioseo-lite.php:3608
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
 msgid "Check this if you want your tags for a given post used as the Meta Keywords for this post (in addition to any keywords you specify on the Edit Post screen)."
 msgstr "Отметьте, чтобы теги для данной записи использовались как ключевые слова для нее же (в дополнение к любым ключевым словам, указанным на экране редактирования записи)."
 
-#: languages/aioseo-lite.php:3336
+#: languages/aioseo-lite.php:3614
 #: dist/Lite/assets/js/search-appearance-Main-vue.js:1
 #: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
 msgid "Check this if you want your keywords on your Posts page (set in WordPress under Settings, Reading, Front Page Displays) and your archive pages to be dynamically generated from the keywords of the posts showing on that page. If unchecked, it will use the keywords set in the edit page screen for the posts page."
 msgstr "Отметьте это, если вы хотите, чтобы ключевые слова на странице с публикациями (устанавливается в настройках WordPress, в разделе Чтение, отображение страницы) и архивных страницах динамически генерировались из ключевых слов, показанных на той странице. Если не отмечено, будут использованы ключевые слова, заданные на экране редактирования страницы для страницы сообщений."
 
-#: languages/aioseo-lite.php:124
+#: languages/aioseo-lite.php:65
 #: dist/Lite/assets/js/tools-DatabaseTools-vue.js:1
 #: dist/Lite/assets/js/tools-Main-vue.js:1
 #: dist/Lite/assets/js/tools-BadBotBlocker-vue.js:1
@@ -3669,33 +3663,33 @@ msgstr "Отметьте это, если вы хотите, чтобы ключ
 msgid "Bad Bot Blocker"
 msgstr "Блокировщик вредных ботов"
 
-#: languages/aioseo-lite.php:659 dist/Lite/assets/js/tools-Main-vue.js:1
+#: languages/aioseo-lite.php:3451 dist/Lite/assets/js/tools-Main-vue.js:1
 #: dist/Lite/assets/js/tools-BadBotBlocker-vue.js:1
 msgid "Track Blocked Bots"
 msgstr "Отслеживание блокированных ботов"
 
-#: languages/aioseo-lite.php:668 dist/Lite/assets/js/tools-Main-vue.js:1
+#: languages/aioseo-lite.php:3460 dist/Lite/assets/js/tools-Main-vue.js:1
 #: dist/Lite/assets/js/tools-BadBotBlocker-vue.js:1
 msgid "Referer Blocklist"
 msgstr "Чёрный список рефереров"
 
-#: languages/aioseo-lite.php:665 dist/Lite/assets/js/tools-Main-vue.js:1
+#: languages/aioseo-lite.php:3457 dist/Lite/assets/js/tools-Main-vue.js:1
 #: dist/Lite/assets/js/tools-BadBotBlocker-vue.js:1
 msgid "User Agent Blocklist"
 msgstr "Чёрный список пользовательских агентов"
 
-#: languages/aioseo-lite.php:15 languages/aioseo-pro.php:281
-#: app/Common/Admin/Admin.php:66 dist/Lite/assets/js/settings-Main-vue.js:1
+#: languages/aioseo-lite.php:31 languages/aioseo-pro.php:71
+#: app/Common/Admin/Admin.php:71 dist/Lite/assets/js/settings-Main-vue.js:1
 #: dist/Lite/assets/js/settings.js:1
 msgid "General Settings"
 msgstr "Общие настройки"
 
 #. Translators: 1 - The IP address. 2 - The user agent.
-#: app/Common/Tools/BadBotBlocker.php:226
+#: app/Common/Tools/BadBotBlocker.php:231
 msgid "Blocked bot with IP %1$s -- matched user agent %2$s found in blocklist."
 msgstr "Заблокированный бот с IP %1$s - соответствует агенту пользователя %2$s, найденному в чёрном списке."
 
 #. Translators: 1 - The IP address. 2 - The referer.
-#: app/Common/Tools/BadBotBlocker.php:235
+#: app/Common/Tools/BadBotBlocker.php:240
 msgid "Blocked bot with IP %1$s -- matched referer %2$s found in blocklist."
 msgstr "Заблокированный бот с IP %1$s - соответствует рефереру %2$s, найденному в чёрном списке."

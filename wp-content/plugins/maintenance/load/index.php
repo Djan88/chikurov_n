@@ -1,6 +1,6 @@
 <?php
 $mess_arr    = array();
-$ebody_class = null;
+$ebody_class = '';
 $mess_arr    = mtnc_get_custom_login_code();
 if ( ! empty( $mess_arr[0] ) ) {
 	$ebody_class = 'error';
@@ -83,7 +83,7 @@ $google_fonts = mtnc_add_google_fonts();
 	?>
 </head>
 
-<body <?php body_class( 'maintenance ' . $ebody_class ); ?>>
+<body class="maintenance <?php echo $ebody_class; ?>">
 
 <?php do_action( 'before_main_container' ); ?>
 <div class="main-container">
