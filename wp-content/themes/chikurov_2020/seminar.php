@@ -130,7 +130,7 @@ if ($seminar_autor == 'Юрий Чикуров') {
 } else if ($seminar_autor == 'Вячеслав Павленок') {
   $seminar_filter_a = 'seminar_item__pa';
 } else if ($seminar_autor == 'Семён Доля') {
-  $seminar_filter_a = 'seminar_item__da';
+  $seminar_filter_a = 'seminar_item__dl';
 }
 
 global $cur_month;
