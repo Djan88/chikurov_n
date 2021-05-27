@@ -71,6 +71,7 @@
               <button type="button" data-filter_s="an" class="btn btn-warning btn_seminar_filter">Оксана Антонова</button>
               <button type="button" data-filter_s="zk" class="btn btn-warning btn_seminar_filter">Елена Зукуле</button>
               <button type="button" data-filter_s="sh" class="btn btn-warning btn_seminar_filter">Марина Салехова</button>
+              <button type="button" data-filter_s="dl" class="btn btn-warning btn_seminar_filter">Семён Доля</button>
               <button type="button" data-filter_s="pl" class="btn btn-warning btn_seminar_filter">Олег Плотников</button>
               <button type="button" data-filter_s="st" class="btn btn-warning btn_seminar_filter">Сергей Стеканов</button>
               <button type="button" data-filter_s="ms" class="btn btn-warning btn_seminar_filter">Галина Москаленко</button>
