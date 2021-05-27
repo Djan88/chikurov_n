@@ -88,6 +88,9 @@ jQuery(document).ready(function () {
     } else if (filter_param == 'ks') {
       jQuery('.seminar_in').addClass('hidden');
       jQuery('.seminar_item__ks').removeClass('hidden');
+    } else if (filter_param == 'dl') {
+      jQuery('.seminar_in').addClass('hidden');
+      jQuery('.seminar_item__dl').removeClass('hidden');
     } else if (filter_param == 'zk') {
       jQuery('.seminar_in').addClass('hidden');
       jQuery('.seminar_item__zk').removeClass('hidden');

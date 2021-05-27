@@ -152,6 +152,9 @@
                   <?php } else if ($autor == 'Олег Плотников') { ?>
                     <img src="<?php bloginfo('template_url'); ?>/img/plotnikov.jpg" alt="">
                     <div class="params_author"><a target="_blank" href="http://www.yuchikurov.info/members/plotnikov/"><?php the_field('autor'); ?></a></div>
+                  <?php } else if ($autor == 'Семён Доля') { ?>
+                    <img src="<?php bloginfo('template_url'); ?>/img/dolya.jpeg" alt="">
+                    <div class="params_author"><a target="_blank" href="https://semendolia.ru"><?php the_field('autor'); ?></a></div>
                   <?php } else if ($autor == 'Галина Москаленко') { ?>
                     <img src="<?php bloginfo('template_url'); ?>/img/moskalenko.png" alt="">
                     <div class="params_author"><a target="_blank" href="http://www.yuchikurov.info/members/galina-63/"><?php the_field('autor'); ?></a></div>
@@ -261,6 +264,8 @@
                   <?php echo do_shortcode('[contact-form-7 id="4918" title="Запись на семинар_Плотников_Москва"]'); ?>
                 <?php } else if ($autor == 'Галина Москаленко') { ?>
                   <?php echo do_shortcode('[contact-form-7 id="4978" title="Запись на семинар_Москаленко"]'); ?>
+                <?php } else if ($autor == 'Семён Доля') { ?>
+                  <?php echo do_shortcode('[contact-form-7 id="11251" title="Запись на семинар_Доля"]'); ?>
                 <?php } else if ($autor == 'Вячеслав Павленок') { ?>
                   <?php echo do_shortcode('[contact-form-7 id="5968" title="Запись на семинар_Павленок_Москва"]'); ?>
                 <?php } ?>
