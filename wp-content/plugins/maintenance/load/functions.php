@@ -182,6 +182,7 @@ function mtnc_get_options_style()
   $mt_options    = mtnc_get_plugin_options(true);
   $options_style = '';
   if (!empty($mt_options['body_bg_color'])) {
+    $mt_options['body_bg_color'] = strip_tags($mt_options['body_bg_color']);
     $options_style .= 'body {background-color: ' . esc_attr($mt_options['body_bg_color']) . '}';
     $options_style .= '.preloader {background-color: ' . esc_attr($mt_options['body_bg_color']) . '}';
   }
@@ -206,7 +207,7 @@ function mtnc_get_options_style()
   }
 
   if (!empty($mt_options['font_color'])) {
-    $font_color     = esc_attr($mt_options['font_color']);
+    $font_color     = strip_tags($mt_options['font_color']);
     $options_style .= '.site-title, .preloader i, .login-form, .login-form a.lost-pass, .btn-open-login-form, .site-content, .user-content-wrapper, .user-content, footer, .maintenance a{color: ' . $font_color . ';} ';
     $options_style .= 'a.close-user-content, #mailchimp-box form input[type="submit"], .login-form input#submit.button  {border-color:' . $font_color . '} ';
     $options_style .= 'input[type="submit"]:hover{background-color:' . $font_color . '} ';
@@ -214,6 +215,7 @@ function mtnc_get_options_style()
   }
 
   if (!empty($mt_options['controls_bg_color'])) {
+    $mt_options['controls_bg_color'] = strip_tags($mt_options['controls_bg_color']);
     $options_style .= "body > .login-form-container{background-color:{$mt_options['controls_bg_color']}}";
     $options_style .= ".btn-open-login-form{background-color:{$mt_options['controls_bg_color']}}";
     $options_style .= "input:-webkit-autofill, input:-webkit-autofill:focus{-webkit-box-shadow:0 0 0 50px {$mt_options['controls_bg_color']} inset}";
@@ -222,7 +224,7 @@ function mtnc_get_options_style()
   }
 
   if (!empty($mt_options['custom_css'])) {
-    $options_style .= wp_kses_stripslashes($mt_options['custom_css']);
+    $options_style .= strip_tags(wp_kses_stripslashes($mt_options['custom_css']));
   }
 
   echo '<style type="text/css">';

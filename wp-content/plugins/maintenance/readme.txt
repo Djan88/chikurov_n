@@ -2,8 +2,8 @@
 Contributors: WebFactory
 Tags: maintenance, maintenance mode, maintenance page, coming soon, coming soon page, under construction, under construction page
 Requires at least: 4.0
-Tested up to: 5.7
-Stable tag: 4.02
+Tested up to: 5.8
+Stable tag: 4.03
 Requires PHP: 5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -87,6 +87,11 @@ Please post the question on the <a href="http://wordpress.org/support/plugin/mai
 
 
 == Changelog ==
+
+= v4.03 =
+- 2021/07/18
+- security fixes
+- checked WP 5.8 compatibility
 
 = v4.02 =
 - 2021/03/06

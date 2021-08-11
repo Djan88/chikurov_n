@@ -304,7 +304,7 @@ function mtnc_page_create_meta_boxes_widget_support()
 
   add_meta_box('promo-review2', __('Help us keep the plugin free &amp; maintained', 'maintenance'), 'mtnc_review_box', $mtnc_variable->options_page, 'side', 'high');
 
-  if (!mtnc_is_sn_active()) {
+  if (false && !mtnc_is_sn_active()) {
     add_meta_box('promo-sn', __('Protect your site from day one with Security Ninja', 'maintenance'), 'mtnc_promo_sn', $mtnc_variable->options_page, 'side', 'default');
   }
   add_meta_box('promo-content2', __('Something is not working? Do you need our help?', 'maintenance'), 'mtnc_contact_support', $mtnc_variable->options_page, 'side', 'default');
@@ -449,6 +449,7 @@ function mtnc_add_css_fields()
   echo '<table class="form-table">';
   echo '<tbody>';
   mtnc_generate_textarea_filed(__('CSS Code', 'maintenance'), 'custom_css', 'custom_css', wp_kses_stripslashes($mt_option['custom_css']));
+  echo '<tr><td>&nbsp;</td><td>Enter only the CSS code, without the <i>&lt;style&gt; tags.</i></td></tr>';
   echo '<tr><td colspan="2"><p><input type="submit" name="submit" id="submit" class="button button-primary" value="Save Changes"></p></td></tr>';
   echo '</tbody>';
   echo '</table>';
@@ -2655,7 +2656,7 @@ function mtnc_add_exclude_pages_fields()
           $current = $post_values->ID;
         }
         $selected   = selected($current, $post_values->ID, false);
-        $out_filed .= '<option value="' . $post_values->ID . '" ' . $selected . '>' . $post_values->post_title . '</option>';
+        $out_filed .= '<option value="' . $post_values->ID . '" ' . $selected . '>' . esc_html($post_values->post_title) . '</option>';
       }
 
       $out_filed .= '</select>';
@@ -2683,9 +2684,9 @@ add_action('mtnc_background_field', 'mtnc_get_background_fileds_action', 10);
 function mtnc_get_color_fileds_action()
 {
   $mt_option = mtnc_get_plugin_options(true);
-  mtnc_get_color_field(__('Background Color', 'maintenance'), 'body_bg_color', 'body_bg_color', esc_attr($mt_option['body_bg_color']), '#111111');
-  mtnc_get_color_field(__('Font Color', 'maintenance'), 'font_color', 'font_color', esc_attr($mt_option['font_color']), '#ffffff');
-  mtnc_get_color_field(__('Login Block Background Color', 'maintenance'), 'controls_bg_color', 'controls_bg_color', isset($mt_option['controls_bg_color']) ? esc_attr($mt_option['controls_bg_color']) : '', '#000000');
+  mtnc_get_color_field(__('Background Color', 'maintenance'), 'body_bg_color', 'body_bg_color', esc_attr(strip_tags($mt_option['body_bg_color'])), '#111111');
+  mtnc_get_color_field(__('Font Color', 'maintenance'), 'font_color', 'font_color', esc_attr(strip_tags($mt_option['font_color'])), '#ffffff');
+  mtnc_get_color_field(__('Login Block Background Color', 'maintenance'), 'controls_bg_color', 'controls_bg_color', isset($mt_option['controls_bg_color']) ? esc_attr(strip_tags($mt_option['controls_bg_color'])) : '', '#000000');
 }
 add_action('mtnc_color_fields', 'mtnc_get_color_fileds_action', 10);
 
