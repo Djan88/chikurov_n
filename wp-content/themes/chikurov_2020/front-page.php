@@ -25,10 +25,10 @@
           <h3 class="pricing">Стоимость обучения от <span>20 000 руб.</span></h3>
         </div>
         <div class="col-md-12">
-          <h5 class="animated_block">После прохождения указанных сертификационных семинаров (всего 6 тем, 112 академических часов) и квалификационного экзамена слушателю школы выдается официальное свидетельство о подготовке в сфере оздоровления, которое дает право официально заниматься практикой - открыть ИП по ОКВЭДу 96.04 и вести оздоровительную деятельность.</h5>
+          <h5 class="animated_block">После прохождения указанных аккредитованных семинаров (всего 6 тем, 112 академических часов) и квалификационного экзамена слушателю школы выдается свидетельство Мастера Школы</h5>
         </div>
         <div class="col-md-12 programm_menu">
-          <div class="programm_menu_item programm_menu_item_1 active">Сертификационные</div>
+          <div class="programm_menu_item programm_menu_item_1 active">Аккредитованные</div>
           <div class="programm_menu_item programm_menu_item_2">Дополнительные</div>
           <div class="programm_menu_item programm_menu_item_3">Мастер - классы</div>
           <div class="programm_menu_item programm_menu_item_4">Онлайн курсы</div>
@@ -194,9 +194,9 @@
         </div>
         <div class="col-md-12">
           <div class="row">
-            <a href="/wp-content/uploads/2020/04/acreditation-scaled.jpg" class="cboxElement col-xs-4 docs_item"><img class="alignnone size-thumbnail wp-image-6438 colorbox-6340" src="/wp-content/uploads/2020/04/acreditation-400x400.jpg" alt="" width="400" height="400"></a>
-            <a href="/wp-content/uploads/2020/04/school_bc.png" class="cboxElement col-xs-4 docs_item"><img class="alignnone size-thumbnail wp-image-6439 colorbox-6340" src="/wp-content/uploads/2020/04/school_bc-400x400.png" alt="" width="400" height="400"></a>
-            <a href="/wp-content/uploads/2020/04/narod.png" class="cboxElement col-xs-4 docs_item"><img class="alignnone size-thumbnail wp-image-6440 colorbox-6340" src="/wp-content/uploads/2020/04/narod-400x400.png" alt="" width="400" height="400"></a>
+            <a href="/wp-content/uploads/2020/04/acreditation-scaled.jpg" class="cboxElement col-xs-6 docs_item"><img class="alignnone size-thumbnail wp-image-6438 colorbox-6340" src="/wp-content/uploads/2020/04/acreditation-400x400.jpg" alt="" width="400" height="400"></a>
+            <a href="/wp-content/uploads/2020/04/school_bc.png" class="cboxElement col-xs-6 docs_item"><img class="alignnone size-thumbnail wp-image-6439 colorbox-6340" src="/wp-content/uploads/2020/04/school_bc-400x400.png" alt="" width="400" height="400"></a>
+            <!-- <a href="/wp-content/uploads/2020/04/narod.png" class="cboxElement col-xs-4 docs_item"><img class="alignnone size-thumbnail wp-image-6440 colorbox-6340" src="/wp-content/uploads/2020/04/narod-400x400.png" alt="" width="400" height="400"></a> -->
           </div>
         </div>
       </div>
@@ -206,13 +206,13 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2>Специалисты по оздоровлению</h2>
+          <h2>Мастера Школы</h2>
         </div>
         <div class="col-md-5 col-sm-5 text-center specilists_cover">
           <i class="fa fa-user-md"></i>
         </div>
         <div class="col-md-7 col-sm-7">
-          <h3>Реестр специалистов по оздоровлению, прошедших обучение в <b>"Школе Доктора Чикурова"</b> по программе согласованной с НАНМ <span class="blue_text nanm_popover" data-toggle="popover" data-placement="left" title="НАНМ" data-content="Национальная профессиональная ассоциация специалистов народной медицины и оздоровительных практик"><i class="fa fa-question-circle"></i></span></h3>
+          <h3>Реестр Мастеров прошедших обучение по программе Аккредитованных Семинаров Школы Доктора Чикурова</h3>
           <div style="text-align: center;">
             <a target="_blank" href="/reestr/" class="btn btn-pink btn-lg">Перейти в Реестр</a>
           </div>
