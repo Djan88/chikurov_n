@@ -154,9 +154,30 @@
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
           </a>
+          <a href="https://chikurov.com/biologicheskoe-c…vanie-prodvinuti/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
+            <span class="programm_item_inner">
+              <span class="parogramm_item_heading">Биологическое Центрирование. Продвинутый</span></br>
+              <div class="parogramm_item_content">30 календарных дней<span class="pull-right online_event">Онлайн курс</span></div></br>
+              <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
+            </span>
+          </a>
           <a href="/prakticheskaya-psixosomatika-page/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
             <span class="programm_item_inner">
               <span class="parogramm_item_heading">Практическая Психосоматика</span></br>
+              <div class="parogramm_item_content">30 календарных дней<span class="pull-right online_event">Онлайн курс</span></div></br>
+              <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
+            </span>
+          </a>
+          <a href="https://chikurov.com/estetika-online/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
+            <span class="programm_item_inner">
+              <span class="parogramm_item_heading">Эстетическое мануальное моделирование лица</span></br>
+              <div class="parogramm_item_content">30 календарных дней<span class="pull-right online_event">Онлайн курс</span></div></br>
+              <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
+            </span>
+          </a>
+          <a href="https://chikurov.com/?page_id=12215&preview=true" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
+            <span class="programm_item_inner">
+              <span class="parogramm_item_heading">ЛЕЧЕБНОЕ TAROT. Старт</span></br>
               <div class="parogramm_item_content">30 календарных дней<span class="pull-right online_event">Онлайн курс</span></div></br>
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
@@ -168,13 +189,13 @@
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
           </a>
-          <a href="/lechebnoe-tarot-prodvinutyj-kurs/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
+          <!-- <a href="/lechebnoe-tarot-prodvinutyj-kurs/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
             <span class="programm_item_inner">
               <span class="parogramm_item_heading">ЛЕЧЕБНОЕ TAROT. Продвинутый курс</span></br>
               <div class="parogramm_item_content">30 календарных дней<span class="pull-right online_event">Онлайн курс</span></div></br>
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
-          </a>
+          </a> -->
           <a href="/vizrdterapiya-page/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
             <span class="programm_item_inner">
               <span class="parogramm_item_heading">Визардтерапия</span></br>
