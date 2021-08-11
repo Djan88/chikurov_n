@@ -154,7 +154,7 @@
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
           </a>
-          <a href="https://chikurov.com/biologicheskoe-c…vanie-prodvinuti/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
+          <a href="https://chikurov.com/biologicheskoe-centrirovanie-prodvinuti/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
             <span class="programm_item_inner">
               <span class="parogramm_item_heading">Биологическое Центрирование. Продвинутый</span></br>
               <div class="parogramm_item_content">30 календарных дней<span class="pull-right online_event">Онлайн курс</span></div></br>
