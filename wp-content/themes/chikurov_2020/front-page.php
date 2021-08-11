@@ -209,7 +209,7 @@
           <h2>Мастера Школы</h2>
         </div>
         <div class="col-md-5 col-sm-5 text-center specilists_cover">
-          <i class="fa fa-address-book-o"></i>
+          <i class="fa fa-address-card"></i>
         </div>
         <div class="col-md-7 col-sm-7">
           <h3>Реестр Мастеров прошедших обучение по программе Аккредитованных Семинаров Школы Доктора Чикурова</h3>
