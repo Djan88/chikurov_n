@@ -202,7 +202,7 @@
       </div>
     </div>
   </section>
-  <section class="seminars seminars_dark specilists" id="specilists">
+  <section class="seminars seminars_dark specilists hidden" id="specilists">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -221,7 +221,7 @@
       </div>
     </div>
   </section>
-  <section class="seminars seminars_light wizard" id="wizard">
+  <section class="seminars seminars_dark wizard" id="wizard">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -290,7 +290,7 @@
       </div>
     </div>
   </section>
-  <section class="seminars seminars_dark books" id="books">
+  <section class="seminars seminars_light books" id="books">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -313,7 +313,7 @@
       </div>
     </div>
   </section>
-  <section class="seminars seminars_light reviews" id="reviews">
+  <section class="seminars seminars_dark reviews" id="reviews">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -363,7 +363,7 @@
       </div>
     </div>
   </section>
-  <section class="seminars seminars_dark students" id="students">
+  <section class="seminars seminars_light students" id="students">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
