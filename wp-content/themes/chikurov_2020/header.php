@@ -119,7 +119,8 @@
                       </li> -->
                       <!-- <li><a class="menu" href="/kniga">Книги</a></li> -->
                       <li><a target="_blank" class="menu" href="https://shop-bc.com/">Магазин БЦ</a></li>
-                      <li><span class="menu consult">Консультации Ю.Чикурова</span></li>
+					  <li><a target="_blank" class="menu" href="https://t.me/chikurov_studio">Мы в Telegram <i class="fa fa-telegram"></i></a></li>
+                      <li><span class="menu consult hidden">Консультации Ю.Чикурова</span></li>
                     </ul>
                   </div><!-- /navbar-collapse -->
                 </div><!-- / .container-fluid -->

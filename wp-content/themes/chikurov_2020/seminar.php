@@ -43,6 +43,7 @@ if ($seminar_start_m == 1) {
   $seminar_start_m = ' декабря ';
 }
 
+$seminar_price = get_field('seminar_price');
 $seminar_end = get_field('seminar_end');
 $date_formated_end = strtotime($seminar_end);
 $seminar_end_d = date('d',$date_formated_end);
@@ -188,6 +189,11 @@ if (get_field('seminar_online')) {
   echo ' <span class="fa fa-map-marker"></span>Город: ';
   echo '<span class="seminar_city_name">';
   echo $seminar_city;
+  if(current_user_can('administrator')){
+    echo ' <span class="adm_price" style="color: #ddd"> ';
+    echo $seminar_price;
+    echo '</span>';
+  }
   echo '</span>';
 }
 if ($seminar_autor != 'Юрий Чикуров') {

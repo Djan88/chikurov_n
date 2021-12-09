@@ -72,6 +72,61 @@ class Admin {
 			return;
 		}
 
+		add_action( 'sanitize_comment_cookies', [ $this, 'init' ], 20 );
+
+		add_filter( 'admin_body_class', [ $this, 'bodyClass' ] );
+
+		$this->setupWizard = new SetupWizard();
+	}
+
+	/**
+	 * Initialize the admin.
+	 *
+	 * @since 4.0.0
+	 *
+	 * @return void
+	 */
+	public function init() {
+		// Add the admin bar menu.
+		if ( is_user_logged_in() && ( ! is_multisite() || ! is_network_admin() ) ) {
+			add_action( 'admin_bar_menu', [ $this, 'adminBarMenu' ], 1000 );
+		}
+
+		if ( is_admin() ) {
+			// Add the menu to the sidebar.
+			add_action( 'admin_menu', [ $this, 'addMenu' ] );
+			add_action( 'admin_menu', [ $this, 'hideScheduledActionsMenu' ], 99999 );
+			if ( is_multisite() ) {
+				add_action( 'network_admin_menu', [ $this, 'addRobotsMenu' ] );
+			}
+
+			// Add the columns to page/posts.
+			add_action( 'current_screen', [ $this, 'addPostColumns' ], 1 );
+
+			// Add Score to Publish metabox.
+			add_action( 'post_submitbox_misc_actions', [ $this, 'addPublishScore' ] );
+
+			add_action( 'admin_init', [ $this, 'addPluginScripts' ] );
+
+			// Add redirects messages to trashed posts.
+			add_filter( 'bulk_post_updated_messages', [ $this, 'appendTrashedMessage' ], 10, 2 );
+
+			$this->registerLinkFormatHooks();
+		}
+
+		$this->loadTextDomain();
+		$this->setPages();
+	}
+
+	/**
+	 * Sets our menu pages.
+	 * It is important this runs AFTER we've loaded the text domain.
+	 *
+	 * @since 4.1.4
+	 *
+	 * @return void
+	 */
+	private function setPages() {
 		$this->pages = [
 			$this->pageSlug            => [
 				'menu_title' => esc_html__( 'Dashboard', 'all-in-one-seo-pack' ),
@@ -126,46 +181,6 @@ class Admin {
 				'parent'     => $this->pageSlug
 			]
 		];
-
-		add_action( 'sanitize_comment_cookies', [ $this, 'init' ], 20 );
-
-		$this->setupWizard = new SetupWizard();
-	}
-
-	/**
-	 * Initialize the admin.
-	 *
-	 * @since 4.0.0
-	 *
-	 * @return void
-	 */
-	public function init() {
-		// Add the admin bar menu.
-		if ( is_user_logged_in() && ( ! is_multisite() || ! is_network_admin() ) ) {
-			add_action( 'admin_bar_menu', [ $this, 'adminBarMenu' ], 1000 );
-		}
-
-		if ( is_admin() ) {
-			// Add the menu to the sidebar.
-			add_action( 'admin_menu', [ $this, 'addMenu' ] );
-			add_action( 'admin_menu', [ $this, 'hideScheduledActionsMenu' ], 99999 );
-			if ( is_multisite() ) {
-				add_action( 'network_admin_menu', [ $this, 'addRobotsMenu' ] );
-			}
-
-			// Add the columns to page/posts.
-			add_action( 'current_screen', [ $this, 'addPostColumns' ], 1 );
-
-			// Add Score to Publish metabox.
-			add_action( 'post_submitbox_misc_actions', [ $this, 'addPublishScore' ] );
-
-			add_action( 'admin_init', [ $this, 'addPluginScripts' ] );
-
-			// Add redirects messages to trashed posts.
-			add_filter( 'bulk_post_updated_messages', [ $this, 'appendTrashedMessage' ], 10, 2 );
-
-			$this->registerLinkFormatHooks();
-		}
 	}
 
 	/**
@@ -549,6 +564,8 @@ class Admin {
 				}
 			}
 		}
+
+		return [];
 	}
 
 	/**
@@ -622,15 +639,16 @@ class Admin {
 	 * @return void
 	 */
 	public function addRobotsMenu() {
-		$this->addMainMenu( 'aioseo-tools' );
+		$slug = 'aioseo-tools';
+		$this->addMainMenu( $slug );
 
-		$page = $this->pages['aioseo-tools'];
+		$page = $this->pages[ $slug ];
 		$hook = add_submenu_page(
-			$page['parent'],
+			$slug,
 			! empty( $page['page_title'] ) ? $page['page_title'] : $page['menu_title'],
 			$page['menu_title'],
-			$page['capability'],
-			'aioseo-tools',
+			$this->getPageRequiredCapability( $slug ),
+			$slug,
 			[ $this, 'page' ]
 		);
 		add_action( "load-{$hook}", [ $this, 'hooks' ] );
@@ -691,6 +709,21 @@ class Admin {
 	 */
 	public function page() {
 		echo '<div id="aioseo-app"></div>';
+
+		if ( $this->isFlyoutMenuEnabled() ) {
+			echo '<div id="aioseo-flyout-menu"></div>';
+		}
+	}
+
+	/**
+	 * Returns if the Flyout menu is enabled or not.
+	 *
+	 * @since 4.1.5
+	 *
+	 * @return bool Whether or not the Flyout menu is enabled.
+	 */
+	public function isFlyoutMenuEnabled() {
+		return apply_filters( 'aioseo_flyout_menu_enable', true );
 	}
 
 	/**
@@ -845,10 +878,34 @@ class Admin {
 		//  'css/chunk-' . $this->currentPage . $rtl . '-vendors.css'
 		// );
 
+		if ( ! apply_filters( 'aioseo_flyout_menu_disable', false ) ) {
+			$this->enqueueFlyoutMenu();
+		}
+
 		wp_localize_script(
 			'aioseo-' . $this->currentPage . '-script',
 			'aioseo',
 			aioseo()->helpers->getVueData( $this->currentPage )
+		);
+	}
+
+	/**
+	 * Enqueues the JS/CSS for the Flyout Menu.
+	 *
+	 * @since 4.1.5
+	 *
+	 * @return void
+	 */
+	private function enqueueFlyoutMenu() {
+		aioseo()->helpers->enqueueScript(
+			'aioseo-flyout-menu',
+			'js/flyout-menu.js'
+		);
+
+		$rtl = is_rtl() ? '.rtl' : '';
+		aioseo()->helpers->enqueueStyle(
+			'aioseo-flyout-menu',
+			"css/flyout-menu$rtl.css"
 		);
 	}
 
@@ -995,11 +1052,13 @@ class Admin {
 	 * @return array          The modified columns.
 	 */
 	public function postColumns( $columns ) {
-		$pageAnalysisCapability    = aioseo()->access->hasCapability( 'aioseo_page_analysis' );
-		$generalSettingsCapability = aioseo()->access->hasCapability( 'aioseo_page_general_settings' );
+		$canManageSeo = apply_filters( 'aioseo_manage_seo', 'aioseo_manage_seo' );
 		if (
-			! current_user_can( 'aioseo_manage_seo' ) ||
-			( empty( $pageAnalysisCapability ) && empty( $generalSettingsCapability ) )
+			! current_user_can( $canManageSeo ) &&
+			(
+				! current_user_can( 'aioseo_page_general_settings' ) &&
+				! current_user_can( 'aioseo_page_analysis' )
+			)
 		) {
 			return $columns;
 		}
@@ -1023,6 +1082,7 @@ class Admin {
 		if ( ! current_user_can( 'edit_post', $postId ) && ! current_user_can( 'aioseo_manage_seo' ) ) {
 			return;
 		}
+
 		if ( 'aioseo-details' === $columnName ) {
 			// Add this column/post to the localized array.
 			global $wp_scripts;
@@ -1105,7 +1165,7 @@ class Admin {
 		$postTypes     = aioseo()->helpers->getPublicPostTypes();
 		$showTruSeo    = aioseo()->options->advanced->truSeo;
 		$isSpecialPage = aioseo()->helpers->isSpecialPage( $post->ID );
-		$showMetabox   = aioseo()->options->searchAppearance->dynamic->postTypes->{$post->post_type}->advanced->showMetaBox;
+		$showMetabox   = aioseo()->dynamicOptions->searchAppearance->postTypes->{$post->post_type}->advanced->showMetaBox;
 
 		$postTypesMB = [];
 		foreach ( $postTypes as $pt ) {
@@ -1139,7 +1199,7 @@ class Admin {
 						echo sprintf( esc_html__( '%1$s Score', 'all-in-one-seo-pack' ), esc_html( AIOSEO_PLUGIN_SHORT_NAME ) );
 					?>
 				</span>
-				<div id="aioseo-post-settings-sidebar-button" class="aioseo-score-button classic-editor <?php echo esc_attr( aioseo()->helpers->getScoreClass( $score ) ); ?>">
+				<div id="aioseo-post-settings-sidebar-button" class="aioseo-score-button classic-editor <?php echo esc_attr( $this->getScoreClass( $score ) ); ?>">
 					<span id="aioseo-post-score"><?php echo esc_attr( $score . '/100' ); ?></span>
 				</div>
 			</div>
@@ -1160,9 +1220,9 @@ class Admin {
 			Migration\Helpers::redoMigration();
 		}
 
-		// Remove all AIOSEO transients.
+		// Remove all AIOSEO cache.
 		if ( isset( $_GET['aioseo-clear-cache'] ) ) {
-			aioseo()->transients->clearCache();
+			aioseo()->cache->clear();
 		}
 
 		if ( isset( $_GET['aioseo-remove-duplicates'] ) ) {
@@ -1188,7 +1248,7 @@ class Admin {
 	 * @return void
 	 */
 	public function scheduleUnescapeData() {
-		aioseo()->transients->update( 'unslash_escaped_data_posts', time(), WEEK_IN_SECONDS );
+		aioseo()->cache->update( 'unslash_escaped_data_posts', time(), WEEK_IN_SECONDS );
 		aioseo()->helpers->scheduleSingleAction( 'aioseo_unslash_escaped_data_posts', 120 );
 	}
 
@@ -1201,7 +1261,7 @@ class Admin {
 	 */
 	public function unslashEscapedDataPosts() {
 		$postsToUnslash = 200;
-		$timeStarted    = gmdate( 'Y-m-d H:i:s', aioseo()->transients->get( 'unslash_escaped_data_posts' ) );
+		$timeStarted    = gmdate( 'Y-m-d H:i:s', aioseo()->cache->get( 'unslash_escaped_data_posts' ) );
 
 		$posts = aioseo()->db->start( 'aioseo_posts' )
 			->select( '*' )
@@ -1212,7 +1272,7 @@ class Admin {
 			->result();
 
 		if ( empty( $posts ) ) {
-			aioseo()->transients->delete( 'unslash_escaped_data_posts' );
+			aioseo()->cache->delete( 'unslash_escaped_data_posts' );
 			return;
 		}
 
@@ -1333,10 +1393,15 @@ class Admin {
 	 *
 	 * @since 4.1.2
 	 *
-	 * @param  string $messages The original messages.
-	 * @return string           The modified messages.
+	 * @param  array $messages The original messages.
+	 * @return array           The modified messages.
 	 */
 	public function appendTrashedMessage( $messages, $counts ) {
+		// Let advanced users override this.
+		if ( apply_filters( 'aioseo_redirects_disable_trashed_posts_suggestions', false ) ) {
+			return $messages;
+		}
+
 		if ( function_exists( 'aioseoRedirects' ) && aioseoRedirects()->options->monitor->trash ) {
 			return $messages;
 		}
@@ -1374,5 +1439,54 @@ class Admin {
 		$messages['post']['trashed'] = $messages['post']['trashed'] . '&nbsp;<a href="' . $url . '">' . $addRedirect . '</a> |';
 		$messages['page']['trashed'] = $messages['page']['trashed'] . '&nbsp;<a href="' . $url . '">' . $addRedirect . '</a> |';
 		return $messages;
+	}
+
+	/**
+	* Get the class name for the Score button.
+	* Depending on the score the button should have different color.
+	*
+	* @since 4.0.0
+	*
+	* @param int $score The content to retrieve from the remote URL.
+	*
+	* @return string The class name for Score button.
+	*/
+	private function getScoreClass( $score ) {
+		$scoreClass = 50 < $score ? 'score-orange' : 'score-red';
+		if ( 0 === $score ) {
+			$scoreClass = 'score-none';
+		}
+		if ( $score >= 80 ) {
+			$scoreClass = 'score-green';
+		}
+		return $scoreClass;
+	}
+
+	/**
+	 * Loads the plugin text domain.
+	 *
+	 * @since 4.1.4
+	 *
+	 * @return void
+	 */
+	public function loadTextDomain() {
+		aioseo()->helpers->loadTextDomain( 'all-in-one-seo-pack' );
+	}
+
+	/**
+	 * Filters the CSS classes for the body tag in the admin.
+	 *
+	 * @since 4.1.5
+	 *
+	 * @param  string $classes Space-separated list of CSS classes.
+	 * @return string          Space-separated list of CSS classes.
+	 */
+	public function bodyClass( $classes ) {
+		if ( $this->isFlyoutMenuEnabled() ) {
+			// This adds a bottom margin to our menu so that we push the footer down and prevent the flyout menu from overlapping the "Save Changes" button.
+			$classes .= ' aioseo-flyout-menu-enabled ';
+		}
+
+		return $classes;
 	}
 }

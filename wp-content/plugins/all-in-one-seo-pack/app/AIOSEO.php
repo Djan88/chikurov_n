@@ -58,6 +58,15 @@ namespace AIOSEO\Plugin {
 		public $options = [];
 
 		/**
+		 * The AIOSEO dynamic options.
+		 *
+		 * @since 4.1.4
+		 *
+		 * @var array
+		 */
+		public $dynamicOptions = [];
+
+		/**
 		 * The WordPress filters to run.
 		 *
 		 * @since 4.0.0
@@ -110,6 +119,15 @@ namespace AIOSEO\Plugin {
 		 * @var Common\Utils\Templates
 		 */
 		public $templates;
+
+		/**
+		 * Holds our cache helper.
+		 *
+		 * @since 4.1.5
+		 *
+		 * @var Common\Utils\Cache
+		 */
+		public $cache;
 
 		/**
 		 * Main AIOSEO Instance.
@@ -240,7 +258,13 @@ namespace AIOSEO\Plugin {
 		 * @return void
 		 */
 		private function preLoad() {
-			$this->db = new Common\Utils\Database();
+			$this->db         = new Common\Utils\Database();
+			$this->cache      = new Common\Utils\Cache();
+
+			// Backwards compatibility with addons. TODO: Remove this in the future.
+			$this->transients = $this->cache;
+
+			$this->preUpdates = $this->pro ? new Pro\Main\PreUpdates() : new Common\Main\PreUpdates();
 		}
 
 		/**
@@ -268,16 +292,17 @@ namespace AIOSEO\Plugin {
 				$translations->init();
 			}
 
-			$this->transients         = new Common\Utils\Transients();
 			$this->helpers            = $this->pro ? new Pro\Utils\Helpers() : new Common\Utils\Helpers();
 			$this->addons             = $this->pro ? new Pro\Utils\Addons() : new Common\Utils\Addons();
 			$this->tags               = $this->pro ? new Pro\Utils\Tags() : new Common\Utils\Tags();
 			$this->badBotBlocker      = new Common\Tools\BadBotBlocker();
 			$this->headlineAnalyzer   = new Common\HeadlineAnalyzer\HeadlineAnalyzer();
 			$this->breadcrumbs        = $this->pro ? new Pro\Breadcrumbs\Breadcrumbs() : new Common\Breadcrumbs\Breadcrumbs();
-			$this->dynamicBackup      = $this->pro ? new Pro\Utils\DynamicBackup() : new Common\Utils\DynamicBackup();
-			$this->internalOptions    = $this->pro ? new Pro\Utils\InternalOptions() : new Lite\Utils\InternalOptions();
-			$this->options            = $this->pro ? new Pro\Utils\Options() : new Lite\Utils\Options();
+			$this->dynamicBackup      = $this->pro ? new Pro\Options\DynamicBackup() : new Common\Options\DynamicBackup();
+			$this->optionsCache       = new Common\Options\Cache();
+			$this->internalOptions    = $this->pro ? new Pro\Options\InternalOptions() : new Lite\Options\InternalOptions();
+			$this->options            = $this->pro ? new Pro\Options\Options() : new Lite\Options\Options();
+			$this->dynamicOptions     = $this->pro ? new Pro\Options\DynamicOptions() : new Common\Options\DynamicOptions();
 			$this->backup             = new Common\Utils\Backup();
 			$this->access             = $this->pro ? new Pro\Utils\Access() : new Common\Utils\Access();
 			$this->usage              = $this->pro ? new Pro\Admin\Usage() : new Lite\Admin\Usage();
@@ -335,7 +360,7 @@ namespace AIOSEO\Plugin {
 			$this->badBotBlocker->init();
 
 			// We call this again to reset any post types/taxonomies that have not yet been set up.
-			$this->options->refresh();
+			$this->dynamicOptions->refresh();
 		}
 
 		/**

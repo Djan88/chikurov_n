@@ -32,6 +32,11 @@ class Image {
 			return;
 		}
 
+		// Don't schedule a scan if an importer is running.
+		if ( aioseo()->importExport->isImportRunning() ) {
+			return;
+		}
+
 		add_action( $this->imageScanAction, [ $this, 'scanPosts' ] );
 
 		if ( wp_doing_ajax() || wp_doing_cron() ) {
@@ -105,7 +110,7 @@ class Image {
 	 * @since 4.0.0
 	 *
 	 * @param  WP_Post|int $post The post object or ID.
-	 * @return array             The image entries.
+	 * @return void
 	 */
 	public function scanPost( $post ) {
 		if ( is_numeric( $post ) ) {

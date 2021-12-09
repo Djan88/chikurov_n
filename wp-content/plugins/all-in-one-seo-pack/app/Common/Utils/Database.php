@@ -107,6 +107,15 @@ class Database {
 	private $set = [];
 
 	/**
+	 * Duplicate clause for the INSERT query.
+	 *
+	 * @since 4.1.5
+	 *
+	 * @var array
+	 */
+	private $onDuplicate = [];
+
+	/**
 	 * The where clause for the sql query.
 	 *
 	 * @since 4.0.0
@@ -273,7 +282,7 @@ class Database {
 	 * @return boolean        Whether or not the table exists.
 	 */
 	public function tableExists( $table ) {
-		$results = $this->db->get_results( 'SHOW TABLES LIKE "' . $this->prefix . $table . '"' );
+		$results = $this->db->get_results( "SHOW TABLES LIKE '" . $this->prefix . $table . "'" );
 		return ! ( empty( $results ) );
 	}
 
@@ -335,6 +344,9 @@ class Database {
 				$clauses   = [];
 				$clauses[] = "INSERT INTO $this->table";
 				$clauses[] = 'SET ' . implode( ', ', $this->set );
+				if ( ! empty( $this->onDuplicate ) ) {
+					$clauses[] = 'ON DUPLICATE KEY UPDATE ' . implode( ', ', $this->onDuplicate );
+				}
 
 				break;
 			case 'REPLACE':
@@ -495,6 +507,8 @@ class Database {
 	 * @return Database                Returns the Database class which can then be method chained for building the query.
 	 */
 	public function start( $table = null, $includesPrefix = false, $statement = 'SELECT' ) {
+		// Always reset everything when starting a new query.
+		$this->reset();
 		$this->table = $includesPrefix ? $table : $this->prefix . $table;
 		$this->statement = $statement;
 		return $this;
@@ -696,7 +710,8 @@ class Database {
 			}
 
 			foreach ( $values as &$value ) {
-				if ( is_numeric( $value ) ) {
+				// Note: We can no longer check for `is_numeric` because a value like `61021e6242255` returns true and breaks the query.
+				if ( is_integer( $value ) || is_float( $value ) ) {
 					// No change.
 				} elseif ( is_null( $value ) || false !== stristr( $value, 'NULL' ) ) {
 					// Change to a true NULL value.
@@ -865,27 +880,54 @@ class Database {
 	}
 
 	/**
+	 * Converts associative arrays to a SET argument.
+	 *
+	 * @since 4.1.5
+	 *
+	 * @param  array $args        The arguments.
+	 * @return array $preparedSet The prepared arguments.
+	 */
+	private function prepareSet( $args ) {
+		$args = $this->prepArgs( $args );
+
+		$preparedSet = [];
+		foreach ( (array) $args as $field => $value ) {
+			if ( is_null( $value ) ) {
+				$preparedSet[] = "`$field` = NULL";
+			} elseif ( is_array( $value ) ) {
+				throw new \Exception( 'Cannot save an unserialized array in the database. Data passed was: ' . wp_json_encode( $value ) );
+			} elseif ( is_object( $value ) ) {
+				throw new \Exception( 'Cannot save an unserialized object in the database. Data passed was: ' . $value );
+			} else {
+				$preparedSet[] = sprintf( "`$field` = %s", $this->escape( $value, $this->getEscapeOptions() | self::ESCAPE_QUOTE ) );
+			}
+		}
+
+		return $preparedSet;
+	}
+
+	/**
 	 * Adds a SET clause.
 	 *
 	 * @since 4.0.0
 	 *
-	 * @param mixed     $limit A string or array that is added to the set clause.
-	 * @return Database        Returns the Database class which can be method chained for more query building.
+	 * @return Database Returns the Database class which can be method chained for more query building.
 	 */
 	public function set() {
-		$values = $this->prepArgs( func_get_args() );
+		$this->set = array_merge( $this->set, $this->prepareSet( func_get_args() ) );
 
-		foreach ( (array) $values as $field => $value ) {
-			if ( is_null( $value ) ) {
-				$this->set[] = "`$field` = NULL";
-			} elseif ( is_array( $value ) ) {
-				throw new \Exception( 'Cannot save an unserialized array in the database. Data passed was: ' . wp_json_encode( $values ) );
-			} elseif ( is_object( $value ) ) {
-				throw new \Exception( 'Cannot save an unserialized object in the database. Data passed was: ' . $value );
-			} else {
-				$this->set[] = sprintf( "`$field` = %s", $this->escape( $value, $this->getEscapeOptions() | self::ESCAPE_QUOTE ) );
-			}
-		}
+		return $this;
+	}
+
+	/**
+	 * Adds an ON DUPLICATE clause.
+	 *
+	 * @since 4.1.5
+	 *
+	 * @return Database Returns the Database class which can be method chained for more query building.
+	 */
+	public function onDuplicate() {
+		$this->onDuplicate = array_merge( $this->onDuplicate, $this->prepareSet( func_get_args() ) );
 
 		return $this;
 	}
@@ -1227,6 +1269,7 @@ class Database {
 			'order',
 			'select',
 			'set',
+			'onDuplicate',
 			'where',
 			'union',
 			'distinct',
@@ -1244,6 +1287,7 @@ class Database {
 				case 'order':
 				case 'select':
 				case 'set':
+				case 'onDuplicate':
 				case 'where':
 				case 'union':
 				case 'join':
@@ -1278,7 +1322,25 @@ class Database {
 	 * @param string|array  $what You can pass in an array of options to retrieve. By default it selects all if them.
 	 * @return string|array       Returns the value of whichever variables are passed in.
 	 */
-	public function getQueryProperty( $what = [ 'table', 'statement', 'limit', 'group', 'order', 'select', 'set', 'where', 'union', 'distinct', 'orderDirection', 'query', 'output', 'result' ] ) {
+	public function getQueryProperty(
+		$what = [
+			'table',
+			'statement',
+			'limit',
+			'group',
+			'order',
+			'select',
+			'set',
+			'onDuplicate',
+			'where',
+			'union',
+			'distinct',
+			'orderDirection',
+			'query',
+			'output',
+			'result'
+		]
+	) {
 		if ( is_array( $what ) ) {
 			$return = [];
 			foreach ( (array) $what as $which ) {

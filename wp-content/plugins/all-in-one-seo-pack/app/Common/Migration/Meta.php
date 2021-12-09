@@ -52,14 +52,14 @@ class Meta {
 	 * @return void
 	 */
 	public function migratePostMeta() {
-		if ( aioseo()->transients->get( 'v3_migration_in_progress_settings' ) ) {
+		if ( aioseo()->cache->get( 'v3_migration_in_progress_settings' ) ) {
 			aioseo()->helpers->scheduleSingleAction( 'aioseo_migrate_post_meta', 30 );
 			return;
 		}
 
 		$postsPerAction  = 50;
 		$publicPostTypes = implode( "', '", aioseo()->helpers->getPublicPostTypes( true ) );
-		$timeStarted     = gmdate( 'Y-m-d H:i:s', aioseo()->transients->get( 'v3_migration_in_progress_posts' ) );
+		$timeStarted     = gmdate( 'Y-m-d H:i:s', aioseo()->cache->get( 'v3_migration_in_progress_posts' ) );
 
 		$postsToMigrate = aioseo()->db
 			->start( 'posts' . ' as p' )
@@ -67,13 +67,14 @@ class Meta {
 			->leftJoin( 'aioseo_posts as ap', '`p`.`ID` = `ap`.`post_id`' )
 			->whereRaw( "( ap.post_id IS NULL OR ap.updated < '$timeStarted' )" )
 			->whereRaw( "( p.post_type IN ( '$publicPostTypes' ) )" )
+			->whereRaw( 'p.post_status NOT IN( \'auto-draft\' )' )
 			->orderBy( 'p.ID DESC' )
 			->limit( $postsPerAction )
 			->run()
 			->result();
 
 		if ( ! $postsToMigrate || ! count( $postsToMigrate ) ) {
-			aioseo()->transients->delete( 'v3_migration_in_progress_posts' );
+			aioseo()->cache->delete( 'v3_migration_in_progress_posts' );
 			return;
 		}
 
@@ -95,7 +96,7 @@ class Meta {
 				// Do nothing.
 			}
 		} else {
-			aioseo()->transients->delete( 'v3_migration_in_progress_posts' );
+			aioseo()->cache->delete( 'v3_migration_in_progress_posts' );
 		}
 	}
 
@@ -327,8 +328,23 @@ class Meta {
 	 * @param  int  $postId The post ID.
 	 * @return void
 	 */
-	protected function migrateAdditionalPostMeta( $postId ) {
-		return $postId;
+	public function migrateAdditionalPostMeta( $postId ) {
+		static $disabled = null;
+
+		if ( null === $disabled ) {
+			$disabled = (
+				! aioseo()->options->sitemap->general->enable ||
+				(
+					aioseo()->options->sitemap->general->advancedSettings->enable &&
+					aioseo()->options->sitemap->general->advancedSettings->excludeImages
+				)
+			);
+		}
+		if ( $disabled ) {
+			return;
+		}
+
+		aioseo()->sitemap->image->scanPost( $postId );
 	}
 
 	/**

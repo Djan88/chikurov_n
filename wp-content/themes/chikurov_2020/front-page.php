@@ -22,7 +22,7 @@
       <div class="row">
         <div class="col-md-12" style="text-align: center">
           <h2>Программа обучения в школе</h2>
-          <h3 class="pricing">Стоимость обучения от <span>20 000 руб.</span></h3>
+          <h3 class="pricing">Стоимость обучения от <span>25 000 руб.</span></h3>
         </div>
         <div class="col-md-12">
           <h5 class="animated_block">После прохождения указанных аккредитованных семинаров (всего 6 тем, 112 академических часов) и квалификационного экзамена слушателю школы выдается свидетельство Мастера Школы</h5>
@@ -87,7 +87,7 @@
           <a href="/marakata-master-realnosti-page/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_2 hidden">
             <span class="programm_item_inner">
               <span class="parogramm_item_heading">MARAKATA – Мастер реальности</span></br>
-              <span class="parogramm_item_content">24 учебных часа</span></br>
+              <span class="parogramm_item_content">16 учебных часов</span></br>
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
           </a>
@@ -396,11 +396,11 @@
               <img src="<?php bloginfo('template_url'); ?>/img/ivanova.jpg" alt="">
               <div class="lector_name">Ирина Иванова</div>
             </a>
-            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/oks331/">
+            <a class="col-sm-2 col-xs-4 school-master hidden" target="_blank" href="http://www.yuchikurov.info/members/oks331/">
               <img src="<?php bloginfo('template_url'); ?>/img/antonova.png" alt="">
               <div class="lector_name">Оксана Антонова</div>
             </a>
-            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/e1e7e/">
+            <a class="col-sm-2 col-xs-4 school-master hidden" target="_blank" href="http://www.yuchikurov.info/members/e1e7e/">
               <img src="<?php bloginfo('template_url'); ?>/img/stekanov.png" alt="">
               <div class="lector_name">Сергей Стеканов</div>
             </a>
@@ -408,7 +408,7 @@
               <img src="<?php bloginfo('template_url'); ?>/img/salechova.jpg" alt="">
               <div class="lector_name">Марина Салехова</div>
             </a>
-            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="/seminary-masterov/">
+            <a class="col-sm-2 col-xs-4 school-master hidden" target="_blank" href="/seminary-masterov/">
               <img src="<?php bloginfo('template_url'); ?>/img/plotnikov.jpg" alt="">
               <div class="lector_name">Олег Плотников</div>
             </a>
@@ -428,7 +428,7 @@
               <img src="<?php bloginfo('template_url'); ?>/img/moskalenko.png" alt="">
               <div class="lector_name">Галина Москаленко</div>
             </a>
-            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/zukule-elena/">
+            <a class="col-sm-2 col-xs-4 school-master hidden" target="_blank" href="http://www.yuchikurov.info/members/zukule-elena/">
               <img src="<?php bloginfo('template_url'); ?>/img/zukule.jpeg" alt="">
               <div class="lector_name">Елена Зукуле</div>
             </a>

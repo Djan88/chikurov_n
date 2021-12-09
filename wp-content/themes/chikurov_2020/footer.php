@@ -5,7 +5,7 @@
           <p>&copy; Юрий Чикуров <?php echo date('Y'); ?></p>
         </div>
         <div class="col-xs-6 col-sm-3 pull-right text-right footer-social">
-          <a target="_blank" href="https://vk.com/id139677998"><i class="fa fa-vk" aria-hidden="true"></i></a>
+          <a target="_blank" href="t.me/chikurov_studio"><i class="fa fa-telegram" aria-hidden="true"></i></a>
           <a target="_blank" href="https://www.facebook.com/profile.php?id=100012253260685&pnref"><i class="fa fa-facebook" aria-hidden="true"></i></a>
           <a target="_blank" href="https://www.youtube.com/user/ThePractik01/"><i class="fa fa-youtube" aria-hidden="true"></i></a>
           <a target="_blank" href="https://www.instagram.com/dr.chikurov/"><i class="fa fa-instagram" aria-hidden="true"></i></a>

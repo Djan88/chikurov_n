@@ -33,6 +33,10 @@ class HeadlineAnalyzer {
 			return;
 		}
 
+		if ( ! aioseo()->access->hasCapability( 'aioseo_page_analysis' ) ) {
+			return;
+		}
+
 		if (
 			( defined( 'MONSTERINSIGHTS_VERSION' ) && ! monsterinsights_get_option( 'disable_headline_analyzer' ) ) ||
 			( defined( 'EXACTMETRICS_VERSION' ) && ! exactmetrics_get_option( 'disable_headline_analyzer' ) ) ||
@@ -55,7 +59,8 @@ class HeadlineAnalyzer {
 
 		aioseo()->helpers->enqueueStyle(
 			'aioseo-headline-analyzer',
-			'css/headline-analyzer.css'
+			'css/headline-analyzer.css',
+			false
 		);
 	}
 
