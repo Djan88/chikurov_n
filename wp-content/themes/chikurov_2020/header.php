@@ -97,7 +97,7 @@
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <div class="close_menu">×</div>
-                    <a class="menu_logo" href="/"><img src="<?php bloginfo('template_url'); ?>/img/school_logo_new.png" alt="" class="img-responsive logo"></a>
+                    <a class="menu_logo" href="/"><img src="<?php bloginfo('template_url'); ?>/img/chi_logo_studio.png" alt="" class="img-responsive logo"></a>
                   <!-- <div id="bs-example-navbar-collapse-1"> -->
                     
                     <ul class="nav navbar-nav navbar-left">
