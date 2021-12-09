@@ -278,7 +278,7 @@ li a.active {
 /*about area*/
 .main_heading
 {
-    font-size: 50px;
+    font-size: 36px;
     color: #26364b;
 }
 .chikurov_img
@@ -1894,11 +1894,12 @@ ul#myTab
 .menu_logo
 {
     display: none;
-    width: 80px;
-    height: 80px;
+    width: 200px;
+    height: auto;
     position: absolute;
     left: 30px;
     top: 30px;
+    border-bottom: 1px solid;
 }
 .params_title
 {
@@ -2501,7 +2502,7 @@ responsive area
     }
     .main_heading
     {
-        font-size: 40px;
+        font-size: 29px;
     }
     .chikurov_img
     {
@@ -2735,7 +2736,7 @@ responsive area
     }
     .main_heading
     {
-        font-size: 40px;
+        font-size: 29px;
         text-align: center;
     }
     .chikurov_info
@@ -2915,7 +2916,7 @@ responsive area
     }
     .main_heading
     {
-        font-size: 30px;
+        font-size: 29px;
         text-align: center;
     }
     .chikurov_info
