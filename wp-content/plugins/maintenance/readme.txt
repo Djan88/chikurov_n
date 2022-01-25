@@ -3,7 +3,7 @@ Contributors: WebFactory
 Tags: maintenance, maintenance mode, maintenance page, coming soon, coming soon page, under construction, under construction page
 Requires at least: 4.0
 Tested up to: 5.8
-Stable tag: 4.03
+Stable tag: 4.05
 Requires PHP: 5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,8 +15,6 @@ Great looking maintenance, coming soon & under construction pages. Put your site
 Maintenance plugin allows the WordPress site administrator to close the website for maintenance, enable "503 Service temporarily unavailable”, set a temporary page with authorization, which can be edited via the plugin settings. Easy customize the good look on all devices. Add your logo, background image, select the desired color, add text.
 
 Need **200+ pre-made themes** to build coming soon & landing pages faster? Have a look at our <a href="https://comingsoonwp.com/">Coming Soon & Maintenance Mode</a> plugin.
-
-Let <a href="https://wordpress.org/plugins/security-ninja/">Security Ninja</a> take care of your site's security from day one! Run over 50 security tests with one click. Get a detailed report and automatically fix security issues.
 
 
 <h3>Features</h3>
@@ -87,6 +85,12 @@ Please post the question on the <a href="http://wordpress.org/support/plugin/mai
 
 
 == Changelog ==
+
+= v4.05 =
+- 2022/01/04
+- bug fix for retina image
+- security fixes
+- ad for our free WP Force SSL plugin
 
 = v4.03 =
 - 2021/07/18

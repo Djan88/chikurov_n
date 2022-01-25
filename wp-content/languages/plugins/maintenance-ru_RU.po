@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Maintenance - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-12-11 05:46:48+0000\n"
+"PO-Revision-Date: 2022-01-08 11:11:49+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -57,7 +57,7 @@ msgstr "Вы ввели некорректный пароль!"
 
 #: load/functions.php:45
 msgid "You entered your login are incorrect!"
-msgstr "Вы ввели некорректный логин! "
+msgstr "Вы ввели некорректный логин!"
 
 #: load/functions.php:37
 msgid "Permission access denied!"
@@ -81,7 +81,7 @@ msgstr "Демо-сайт"
 
 #: includes/functions.php:405
 msgid "Purchase <a href=\"http://codecanyon.net/item/maintenance-wordpress-plugin/2781350?ref=fruitfulcode\" target=\"_blank\">PRO</a> version  with extended functionality. %1$s If you like our plugin please <a target=\"_blank\" href=\"http://wordpress.org/support/view/plugin-reviews/maintenance?filter=5\">rate it</a>, <a title=\"leave feedbacks\" href=\"%2$s\" target=\"_blank\">leave feedbacks</a>."
-msgstr "Купите <a href=\"http://codecanyon.net/item/maintenance-wordpress-plugin/2781350?ref=fruitfulcode\" target=\"_blank\">PRO</a> версию с расширенной функциональностью. %1$s если вам нравится наш плагин, пожалуйста, <a target=\"_blank\" href=\"http://wordpress.org/support/view/plugin-reviews/maintenance?filter=5\">оцените его</a>, <a title=\"оставить отзыв\" href=\"%2$s\" target=\"_blank\">оставьте отзыв</a>"
+msgstr "Купите <a href=\"http://codecanyon.net/item/maintenance-wordpress-plugin/2781350?ref=fruitfulcode\" target=\"_blank\">PRO</a> версию с расширенной функциональностью. %1$s если вам нравится наш плагин, пожалуйста, <a target=\"_blank\" href=\"http://wordpress.org/support/view/plugin-reviews/maintenance?filter=5\">оцените его</a>, <a title=\"оставить отзыв\" href=\"%2$s\" target=\"_blank\">оставьте отзыв</a>."
 
 #: includes/functions.php:404
 msgid "Extended functionality"

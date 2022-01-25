@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Flamingo - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-09 09:47:10+0000\n"
+"PO-Revision-Date: 2022-01-08 11:21:22+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,8 +14,10 @@ msgstr ""
 #: includes/class-contact.php:168 includes/class-inbound-message.php:234
 #: includes/class-outbound-message.php:112
 msgid "Flamingo 2.2"
-msgstr "Flamingo 2.2 "
+msgstr "Flamingo 2.2"
 
+#. translators: 1: Property, 2: Version, 3: Class, 4: Method.
+#. translators: 1: Property, 2: Version, 3: Class, 4: Method.
 #. translators: 1: Property, 2: Version, 3: Class, 4: Method.
 #: includes/class-contact.php:161 includes/class-inbound-message.php:227
 #: includes/class-outbound-message.php:105
@@ -40,12 +42,16 @@ msgid "M j, Y"
 msgstr "d.m.Y"
 
 #. translators: time format, see https://www.php.net/date
+#. translators: time format, see https://www.php.net/date
+#. translators: time format, see https://www.php.net/date
 #: admin/includes/class-contacts-list-table.php:353
 #: admin/includes/class-inbound-messages-list-table.php:456
 #: admin/includes/class-outbound-messages-list-table.php:250
 msgid "g:i a"
 msgstr "H:i"
 
+#. translators: 1: date, 2: time
+#. translators: 1: date, 2: time
 #. translators: 1: date, 2: time
 #. translators: Publish box date string. 1: Date, 2: Time.
 #: admin/includes/class-contacts-list-table.php:349
@@ -208,7 +214,7 @@ msgstr "Спам "
 #: admin/includes/class-inbound-messages-list-table.php:268
 #: admin/includes/class-outbound-messages-list-table.php:177
 msgid "Empty trash"
-msgstr "Очистить корзину "
+msgstr "Очистить корзину"
 
 #: admin/includes/class-inbound-messages-list-table.php:248
 msgid "View all channels"
@@ -216,7 +222,7 @@ msgstr "Просмотреть все каналы "
 
 #: admin/includes/class-inbound-messages-list-table.php:211
 msgid "Mark as spam"
-msgstr "Пометить как спам "
+msgstr "Пометить как спам"
 
 #: admin/includes/class-inbound-messages-list-table.php:209
 #: admin/includes/class-inbound-messages-list-table.php:358
@@ -271,6 +277,8 @@ msgstr[2] "Входящих <span class=\"count\">(%s)</span>"
 msgid "Channel"
 msgstr "Канал"
 
+#. translators: date format, see https://www.php.net/date
+#. translators: date format, see https://www.php.net/date
 #. translators: date format, see https://www.php.net/date
 #: admin/includes/class-contacts-list-table.php:351
 #: admin/includes/class-inbound-messages-list-table.php:454
@@ -333,7 +341,7 @@ msgstr "Последний контакт "
 
 #: admin/includes/class-contacts-list-table.php:15
 msgid "History"
-msgstr "История "
+msgstr "История"
 
 #: admin/edit-outbound-form.php:60
 msgid "Body"
@@ -349,7 +357,7 @@ msgstr "Исходящее сообщение "
 
 #: admin/edit-outbound-form.php:19
 msgid "Compose a Message"
-msgstr "Составить сообщение "
+msgstr "Составить сообщение"
 
 #: admin/edit-inbound-form.php:41 admin/edit-outbound-form.php:50
 #: admin/includes/class-inbound-messages-list-table.php:16
