@@ -1576,7 +1576,7 @@ section#lectors
 }
 .order_seminar p 
 {
-    display: none;
+    /*display: none;*/
 }
 .order_seminar .online_school_text p 
 {
