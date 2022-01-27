@@ -3,7 +3,7 @@
     <div class="container chikurov_info">
       <div class="row">
         <div class="col-md-8 col-sm-8 col-xs-12">
-          <h1 class="main_heading hidden">Школа и творческая мастерская Доктора Чикурова</h1>
+          <h1 class="main_heading">Школа Доктора Чикурова</h1>
           <div class="doctor_about">
             <p>Доктор <b>Ю. Чикуров</b>, канд.мед.наук, специалист в области неврологии, остеопатии и психологии, профессор РАНМ, Doctor Holistic Medicine EHO (PhD).</p>
             <p>Автор книг: "Краниосакральная терапия", "Мягкие мануальные техники", "Висцеральная остеопатия", "Остеопатическое лечение внутрикостных дисфункций", "Эстетическое мануальное моделирование лица и тела", "Биологическое центрирование», «Практическая психосоматика», «Лечебное Tarot».</p>
@@ -21,14 +21,14 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12" style="text-align: center">
-          <h2>Программа обучения</h2>
+          <h2>Программа обучения в школе</h2>
           <h3 class="pricing">Стоимость обучения от <span>25 000 руб.</span></h3>
         </div>
         <div class="col-md-12">
-          <h5 class="animated_block">После прохождения указанных аккредитованных семинаров (всего 6 тем, 112 академических часов) и квалификационного экзамена слушателю выдается свидетельство Мастера Школы</h5>
+          <h5 class="animated_block">После прохождения указанных сертификационных семинаров (всего 6 тем, 112 академических часов) и квалификационного экзамена слушателю школы выдается официальное свидетельство о подготовке в сфере оздоровления, которое дает право официально заниматься практикой - открыть ИП по ОКВЭДу 96.04 и вести оздоровительную деятельность.</h5>
         </div>
         <div class="col-md-12 programm_menu">
-          <div class="programm_menu_item programm_menu_item_1 active">Аккредитованные</div>
+          <div class="programm_menu_item programm_menu_item_1 active">Сертификационные</div>
           <div class="programm_menu_item programm_menu_item_2">Дополнительные</div>
           <div class="programm_menu_item programm_menu_item_3">Мастер - классы</div>
           <div class="programm_menu_item programm_menu_item_4">Онлайн курсы</div>
@@ -87,7 +87,7 @@
           <a href="/marakata-master-realnosti-page/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_2 hidden">
             <span class="programm_item_inner">
               <span class="parogramm_item_heading">MARAKATA – Мастер реальности</span></br>
-              <span class="parogramm_item_content">16 учебных часов</span></br>
+              <span class="parogramm_item_content">24 учебных часа</span></br>
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
           </a>
@@ -154,30 +154,9 @@
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
           </a>
-          <a href="https://chikurov.com/biologicheskoe-centrirovanie-prodvinuti/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
-            <span class="programm_item_inner">
-              <span class="parogramm_item_heading">Биологическое Центрирование. Продвинутый</span></br>
-              <div class="parogramm_item_content">30 календарных дней<span class="pull-right online_event">Онлайн курс</span></div></br>
-              <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
-            </span>
-          </a>
           <a href="/prakticheskaya-psixosomatika-page/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
             <span class="programm_item_inner">
               <span class="parogramm_item_heading">Практическая Психосоматика</span></br>
-              <div class="parogramm_item_content">30 календарных дней<span class="pull-right online_event">Онлайн курс</span></div></br>
-              <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
-            </span>
-          </a>
-          <a href="https://chikurov.com/estetika-online/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
-            <span class="programm_item_inner">
-              <span class="parogramm_item_heading">Эстетическое мануальное моделирование лица</span></br>
-              <div class="parogramm_item_content">30 календарных дней<span class="pull-right online_event">Онлайн курс</span></div></br>
-              <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
-            </span>
-          </a>
-          <a href="https://chikurov.com/?page_id=12215&preview=true" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
-            <span class="programm_item_inner">
-              <span class="parogramm_item_heading">ЛЕЧЕБНОЕ TAROT. Старт</span></br>
               <div class="parogramm_item_content">30 календарных дней<span class="pull-right online_event">Онлайн курс</span></div></br>
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
@@ -189,13 +168,13 @@
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
           </a>
-          <!-- <a href="/lechebnoe-tarot-prodvinutyj-kurs/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
+          <a href="/lechebnoe-tarot-prodvinutyj-kurs/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
             <span class="programm_item_inner">
               <span class="parogramm_item_heading">ЛЕЧЕБНОЕ TAROT. Продвинутый курс</span></br>
               <div class="parogramm_item_content">30 календарных дней<span class="pull-right online_event">Онлайн курс</span></div></br>
               <span class="parogramm_item_link btn btn-success btn-sm">Узнать подробнее</span>
             </span>
-          </a> -->
+          </a>
           <a href="/vizrdterapiya-page/" class="col-md-4 col-sm-6 col-xs-12 programm_item programm_item_4 hidden">
             <span class="programm_item_inner">
               <span class="parogramm_item_heading">Визардтерапия</span></br>
@@ -215,25 +194,25 @@
         </div>
         <div class="col-md-12">
           <div class="row">
-            <a href="/wp-content/uploads/2020/04/acreditation-scaled.jpg" class="cboxElement col-xs-6 docs_item"><img class="alignnone size-thumbnail wp-image-6438 colorbox-6340" src="/wp-content/uploads/2020/04/acreditation-400x400.jpg" alt="" width="400" height="400"></a>
-            <a href="/wp-content/uploads/2020/04/school_bc.png" class="cboxElement col-xs-6 docs_item"><img class="alignnone size-thumbnail wp-image-6439 colorbox-6340" src="/wp-content/uploads/2020/04/school_bc-400x400.png" alt="" width="400" height="400"></a>
-            <!-- <a href="/wp-content/uploads/2020/04/narod.png" class="cboxElement col-xs-4 docs_item"><img class="alignnone size-thumbnail wp-image-6440 colorbox-6340" src="/wp-content/uploads/2020/04/narod-400x400.png" alt="" width="400" height="400"></a> -->
+            <a href="/wp-content/uploads/2020/04/acreditation-scaled.jpg" class="cboxElement col-xs-4 docs_item"><img class="alignnone size-thumbnail wp-image-6438 colorbox-6340" src="/wp-content/uploads/2020/04/acreditation-400x400.jpg" alt="" width="400" height="400"></a>
+            <a href="/wp-content/uploads/2020/04/school_bc.png" class="cboxElement col-xs-4 docs_item"><img class="alignnone size-thumbnail wp-image-6439 colorbox-6340" src="/wp-content/uploads/2020/04/school_bc-400x400.png" alt="" width="400" height="400"></a>
+            <a href="/wp-content/uploads/2020/04/narod.png" class="cboxElement col-xs-4 docs_item"><img class="alignnone size-thumbnail wp-image-6440 colorbox-6340" src="/wp-content/uploads/2020/04/narod-400x400.png" alt="" width="400" height="400"></a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="seminars seminars_dark specilists hidden" id="specilists">
+  <section class="seminars seminars_dark specilists" id="specilists">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2>Мастера Школы</h2>
+          <h2>Специалисты по оздоровлению</h2>
         </div>
         <div class="col-md-5 col-sm-5 text-center specilists_cover">
-          <i class="fa fa-address-card"></i>
+          <i class="fa fa-user-md"></i>
         </div>
         <div class="col-md-7 col-sm-7">
-          <h3>Реестр Мастеров прошедших обучение по программе Аккредитованных Семинаров Школы Доктора Чикурова</h3>
+          <h3>Реестр специалистов по оздоровлению, прошедших обучение в <b>"Школе Доктора Чикурова"</b> по программе согласованной с НАНМ <span class="blue_text nanm_popover" data-toggle="popover" data-placement="left" title="НАНМ" data-content="Национальная профессиональная ассоциация специалистов народной медицины и оздоровительных практик"><i class="fa fa-question-circle"></i></span></h3>
           <div style="text-align: center;">
             <a target="_blank" href="/reestr/" class="btn btn-pink btn-lg">Перейти в Реестр</a>
           </div>
@@ -242,7 +221,7 @@
       </div>
     </div>
   </section>
-  <section class="seminars seminars_dark wizard" id="wizard">
+  <section class="seminars seminars_light wizard" id="wizard">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -311,7 +290,7 @@
       </div>
     </div>
   </section>
-  <section class="seminars seminars_light books" id="books">
+  <section class="seminars seminars_dark books" id="books">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -334,7 +313,7 @@
       </div>
     </div>
   </section>
-  <section class="seminars seminars_dark reviews" id="reviews">
+  <section class="seminars seminars_light reviews" id="reviews">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -384,7 +363,7 @@
       </div>
     </div>
   </section>
-  <section class="seminars seminars_light students" id="students">
+  <section class="seminars seminars_dark students" id="students">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -396,11 +375,11 @@
               <img src="<?php bloginfo('template_url'); ?>/img/ivanova.jpg" alt="">
               <div class="lector_name">Ирина Иванова</div>
             </a>
-            <a class="col-sm-2 col-xs-4 school-master hidden" target="_blank" href="http://www.yuchikurov.info/members/oks331/">
+            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/oks331/">
               <img src="<?php bloginfo('template_url'); ?>/img/antonova.png" alt="">
               <div class="lector_name">Оксана Антонова</div>
             </a>
-            <a class="col-sm-2 col-xs-4 school-master hidden" target="_blank" href="http://www.yuchikurov.info/members/e1e7e/">
+            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/e1e7e/">
               <img src="<?php bloginfo('template_url'); ?>/img/stekanov.png" alt="">
               <div class="lector_name">Сергей Стеканов</div>
             </a>
@@ -408,7 +387,7 @@
               <img src="<?php bloginfo('template_url'); ?>/img/salechova.jpg" alt="">
               <div class="lector_name">Марина Салехова</div>
             </a>
-            <a class="col-sm-2 col-xs-4 school-master hidden" target="_blank" href="/seminary-masterov/">
+            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="/seminary-masterov/">
               <img src="<?php bloginfo('template_url'); ?>/img/plotnikov.jpg" alt="">
               <div class="lector_name">Олег Плотников</div>
             </a>
@@ -428,7 +407,7 @@
               <img src="<?php bloginfo('template_url'); ?>/img/moskalenko.png" alt="">
               <div class="lector_name">Галина Москаленко</div>
             </a>
-            <a class="col-sm-2 col-xs-4 school-master hidden" target="_blank" href="http://www.yuchikurov.info/members/zukule-elena/">
+            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/zukule-elena/">
               <img src="<?php bloginfo('template_url'); ?>/img/zukule.jpeg" alt="">
               <div class="lector_name">Елена Зукуле</div>
             </a>
