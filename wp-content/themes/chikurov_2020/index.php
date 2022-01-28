@@ -147,7 +147,27 @@
       </div>
     </div>
   </section>
-<?php } else if (is_page('reestr')) { ?>
+  <?php } else if (is_page(25228)) { ?>
+    <section class="seminars text-center" id="seminars">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <h2>Лицензированные преподаватели</h2>
+            <h4>Кликните по блоку специалиста чтоб открыть подробную информацию о нем</h4>
+        </div>
+        <div class="col-md-12">
+           <?php 
+            $wp_query_spec = new WP_Query('cat=27');
+            while ($wp_query_spec->have_posts()) : $wp_query_spec->the_post();
+                get_template_part( 'specialist');
+            endwhile;
+            wp_reset_postdata();
+           ?> 
+        </div>
+      </div>
+    </div>
+  </section>
+<?php } else if (is_page(8258)) { ?>
     <section class="seminars text-center" id="seminars">
     <div class="container">
       <div class="row">
