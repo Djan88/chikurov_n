@@ -147,7 +147,7 @@
       </div>
     </div>
   </section>
-<?php } else if (is_page('reestr')) { ?>
+<?php } else if (is_page(8258)) { ?>
     <section class="seminars text-center" id="seminars">
     <div class="container">
       <div class="row">
