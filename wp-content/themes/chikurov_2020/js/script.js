@@ -258,7 +258,7 @@ jQuery(document).ready(function () {
         breakpoint: 768,
         settings: {
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '140px',
           slidesToShow: 2
         }
       },
@@ -266,7 +266,7 @@ jQuery(document).ready(function () {
         breakpoint: 480,
         settings: {
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '140px',
           slidesToShow: 2
         }
       }
