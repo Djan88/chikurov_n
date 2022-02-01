@@ -366,7 +366,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2>Семинары мастеров школы</h2>
+          <h2>Семинары лицензированных мастеров</h2>
         </div>
         <div class="col-xs-10 col-xs-offset-1">
           <div class="row chi_masters">
@@ -374,42 +374,42 @@
               <img src="<?php bloginfo('template_url'); ?>/img/ivanova.jpg" alt="">
               <div class="lector_name">Ирина Иванова</div>
             </a>
-            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/oks331/">
-              <img src="<?php bloginfo('template_url'); ?>/img/antonova.png" alt="">
+            <!-- <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/oks331/">
+              <img src="<?php //bloginfo('template_url'); ?>/img/antonova.png" alt="">
               <div class="lector_name">Оксана Антонова</div>
-            </a>
-            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/e1e7e/">
-              <img src="<?php bloginfo('template_url'); ?>/img/stekanov.png" alt="">
+            </a> -->
+            <!-- <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/e1e7e/">
+              <img src="<?php //bloginfo('template_url'); ?>/img/stekanov.png" alt="">
               <div class="lector_name">Сергей Стеканов</div>
             </a>
             <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="/seminary-masterov/">
-              <img src="<?php bloginfo('template_url'); ?>/img/salechova.jpg" alt="">
+              <img src="<?php //bloginfo('template_url'); ?>/img/salechova.jpg" alt="">
               <div class="lector_name">Марина Салехова</div>
             </a>
             <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="/seminary-masterov/">
-              <img src="<?php bloginfo('template_url'); ?>/img/plotnikov.jpg" alt="">
+              <img src="<?php //bloginfo('template_url'); ?>/img/plotnikov.jpg" alt="">
               <div class="lector_name">Олег Плотников</div>
             </a>
             <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="/seminary-masterov/">
-              <img src="<?php bloginfo('template_url'); ?>/img/pavlenok.jpg" alt="">
+              <img src="<?php //bloginfo('template_url'); ?>/img/pavlenok.jpg" alt="">
               <div class="lector_name">Вячеслав Павленок</div>
             </a>
             <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="/seminary-masterov/">
-              <img src="<?php bloginfo('template_url'); ?>/img/dolya.jpeg" alt="">
+              <img src="<?php //bloginfo('template_url'); ?>/img/dolya.jpeg" alt="">
               <div class="lector_name">Семён Доля</div>
             </a>
             <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/Bazilevs/">
-              <img src="<?php bloginfo('template_url'); ?>/img/kiselev.jpg" alt="">
+              <img src="<?php //bloginfo('template_url'); ?>/img/kiselev.jpg" alt="">
               <div class="lector_name">Василий Киселев</div>
-            </a>
+            </a> -->
             <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="/seminary-masterov/">
               <img src="<?php bloginfo('template_url'); ?>/img/moskalenko.png" alt="">
               <div class="lector_name">Галина Москаленко</div>
             </a>
-            <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/zukule-elena/">
-              <img src="<?php bloginfo('template_url'); ?>/img/zukule.jpeg" alt="">
+            <!-- <a class="col-sm-2 col-xs-4 school-master" target="_blank" href="http://www.yuchikurov.info/members/zukule-elena/">
+              <img src="<?php //bloginfo('template_url'); ?>/img/zukule.jpeg" alt="">
               <div class="lector_name">Елена Зукуле</div>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
