@@ -34,28 +34,6 @@ jQuery(document).ready(function () {
   jQuery('.online_school_logo').css('height', online_block_h+'px');
   jQuery('.online_school').css('height', online_block_h/4+'px');
   jQuery('.online_school').css('marginTop', online_block_h/4+'px');
-  // Фильтрация по городам
-  // jQuery('.btn_siminar_filter').on('click', function(event) {
-  //   jQuery('.btn_siminar_filter').removeClass('active');
-  //   jQuery(this).addClass('active');
-  //   var filter_param_city = jQuery(this).data('filter');
-
-  //   if (filter_param_city == 'all') {
-  //     jQuery('.seminar_in').removeClass('hidden');
-  //   } else if (filter_param_city == 'msk') {
-  //     jQuery('.seminar_in').addClass('hidden');
-  //     jQuery('.seminar_item__msk').removeClass('hidden');
-  //   } else if (filter_param_city == 'spb') {
-  //     jQuery('.seminar_in').addClass('hidden');
-  //     jQuery('.seminar_item__spb').removeClass('hidden');
-  //   } else if (filter_param_city == 'kiev') {
-  //     jQuery('.seminar_in').addClass('hidden');
-  //     jQuery('.seminar_item__kiev').removeClass('hidden');
-  //   } else if (filter_param_city == 'riga') {
-  //     jQuery('.seminar_in').addClass('hidden');
-  //     jQuery('.seminar_item__riga').removeClass('hidden');
-  //   }
-  // });
 
   jQuery('.btn_seminar_filter').on('click', function(event) {
     jQuery('.btn_seminar_filter').removeClass('active');
@@ -273,7 +251,7 @@ jQuery(document).ready(function () {
   jQuery('.chi_masters').slick({
     centerMode: true,
     centerPadding: '60px',
-    slidesToShow: 5,
+    slidesToShow: 2,
     arrows: true,
     responsive: [
       {
@@ -281,7 +259,7 @@ jQuery(document).ready(function () {
         settings: {
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 5
+          slidesToShow: 2
         }
       },
       {
