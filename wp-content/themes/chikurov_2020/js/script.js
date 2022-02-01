@@ -250,7 +250,7 @@ jQuery(document).ready(function () {
   
   jQuery('.chi_masters').slick({
     centerMode: true,
-    centerPadding: '160px',
+    centerPadding: '200px',
     slidesToShow: 2,
     arrows: true,
     responsive: [
