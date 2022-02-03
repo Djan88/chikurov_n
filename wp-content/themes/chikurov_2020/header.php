@@ -82,7 +82,7 @@
               <a class="menu menu_tel" href="tel:+79855381468">+7 (985) 538-14-68</a>
               <a class="menu menu_email" href="mailto:info@chikurov.com">info@chikurov.com</a>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-4">
+            <div class="col-xs-12 col-sm-4 col-md-4 socials_wrap">
               <div class="socials">
                 <a href="https://telegram.me/name_of_domain" class="socials_link socials_link_tg"><i class="fa fa-telegram"></i></a>
                 <a href="https://api.whatsapp.com/send?phone=79855381468" target="_blank" class="socials_link socials_link_wh"><i class="fa fa-whatsapp"></i></a>

@@ -2327,12 +2327,20 @@ h3.pricing span
 {
     font-weight: 100;
 }
+.socials_wrap
+{
+    padding-left: 0;
+}
 .socials a 
 {
-    font-size: 18px;
-    padding: 3px;
+    font-size: 20px;
+    padding: 3px 5px;
     border: 1px solid transparent;
     border-radius: 3px;
+}
+.socials a.socials_link_tg:hover, .socials a.socials_link_tg:active
+{
+    border-color: #0094e1;
 }
 .socials a.socials_link_wh
 {
