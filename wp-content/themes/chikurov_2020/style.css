@@ -2327,7 +2327,37 @@ h3.pricing span
 {
     font-weight: 100;
 }
-
+.socials a 
+{
+    font-size: 18px;
+    padding: 3px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+.socials a.socials_link_wh
+{
+    color: #48c756;
+}
+.socials a.socials_link_wh:hover, .socials a.socials_link_wh:active
+{
+    border-color: #48c756;
+}
+.socials a.socials_link_vb
+{
+    color: #675da9;
+}
+.socials a.socials_link_vb:hover, .socials a.socials_link_vb:active
+{
+    border-color: #675da9;
+}
+.socials a.socials_link_mail
+{
+    color: #f9b232;
+}
+.socials a.socials_link_mail:hover, .socials a.socials_link_mail:active
+{
+    border-color: #f9b232;
+}
 /******************************
 responsive area
 ********************************/
