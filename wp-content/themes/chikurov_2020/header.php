@@ -85,12 +85,11 @@
             <div class="col-xs-12 col-sm-2 col-md-2">
               <div class="socials">
                 <a href="https://telegram.me/name_of_domain" class="socials_link socials_link_tg"><i class="fa fa-telegram"></i></a>
-              </div>
-              <div class="socials">
                 <a href="https://api.whatsapp.com/send?phone=79855381468" target="_blank" class="socials_link socials_link_wh"><i class="fa fa-whatsapp"></i></a>
               </div>
               <div class="socials">
-                <a href="viber://chat?number=+79855381468" class="socials_link socials_link_vb"><i class="fa fa-viber"></i></a>
+                <a href="viber://chat?number=+79855381468" class="socials_link socials_link_vb"><i class="fab fa-viber"></i></a>
+                <a href="mailto:info@chikurov.com" class="socials_link socials_link_mail"><i class="fa fa-envelope"></i></a>
               </div>
             </div>
           </div>
