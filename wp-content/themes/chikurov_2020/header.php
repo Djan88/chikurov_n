@@ -78,7 +78,7 @@
         </div>
         <div class="col-xs-12 col-sm-3 col-md-3 header_contacts pull-right">
           <div class="row">
-            <div class="col-xs-12 col-sm-8 col-md-8">
+            <div class="col-xs-12 col-sm-8 col-md-8 header_contacts_first">
               <a class="menu menu_tel" href="tel:+79855381468">+7 (985) 538-14-68</a>
               <a class="menu menu_email" href="mailto:info@chikurov.com">info@chikurov.com</a>
             </div>
@@ -89,7 +89,7 @@
               </div>
               <div class="socials">
                 <a href="viber://chat?number=+79855381468" class="socials_link socials_link_vb"><i class="fab fa-viber"></i></a>
-                <a href="mailto:info@chikurov.com" class="socials_link socials_link_mail"><i class="fa fa-envelope"></i></a>
+                <a href="mailto:info@chikurov.com" target="_blank" class="socials_link socials_link_mail"><i class="fa fa-envelope"></i></a>
               </div>
             </div>
           </div>

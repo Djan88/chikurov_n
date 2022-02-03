@@ -2330,6 +2330,7 @@ h3.pricing span
 .socials_wrap
 {
     padding-left: 0;
+    white-space: nowrap;
 }
 .socials a 
 {
@@ -2366,6 +2367,10 @@ h3.pricing span
 {
     border-color: #f9b232;
 }
+.header_contacts_first
+{
+    margin-top: 5px;
+}
 /******************************
 responsive area
 ********************************/
@@ -2387,8 +2392,9 @@ responsive area
         font-size: 16px;
         padding: 14px 4px;
     }
-    .header_contacts {
-        margin-top: 20px;
+    .header_contacts 
+    {
+        margin-top: 15px;
     }
     .header_contacts a.menu.menu_email, .header_contacts a.menu.menu_tel {
         font-size: 14px;
