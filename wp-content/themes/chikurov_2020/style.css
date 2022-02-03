@@ -2331,11 +2331,12 @@ h3.pricing span
 {
     padding-left: 0;
     white-space: nowrap;
+    margin-top: -8px;
 }
 .socials a 
 {
-    font-size: 20px;
-    padding: 3px 5px;
+    font-size: 25px;
+    padding: 3px;
     border: 1px solid transparent;
     border-radius: 3px;
 }
@@ -2385,7 +2386,7 @@ responsive area
 @media (min-width: 992px) and (max-width: 1199px) {
     .socials_wrap
     {
-        margin-top: -5px;
+        margin-top: -11px;
     }
     .contacts_email, .contacts_phone 
     {
