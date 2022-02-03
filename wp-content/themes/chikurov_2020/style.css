@@ -3366,6 +3366,10 @@ responsive area
         top: 0;
         z-index: 999;
     }
+    .socials a 
+    {
+        padding: 3px 2px;
+    }
     .close_menu, .menu_logo
     {
         display: block
