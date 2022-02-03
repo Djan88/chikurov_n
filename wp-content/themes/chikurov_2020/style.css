@@ -2369,7 +2369,7 @@ h3.pricing span
 }
 .header_contacts_first
 {
-    margin-top: 5px;
+    /*margin-top: 5px;*/
 }
 /******************************
 responsive area
@@ -2379,6 +2379,10 @@ responsive area
 /* md */
 
 @media (min-width: 992px) and (max-width: 1199px) {
+    .socials_wrap
+    {
+        margin-top: -5px;
+    }
     .contacts_email, .contacts_phone 
     {
         font-size: 13px;
@@ -2495,8 +2499,12 @@ responsive area
         padding: 14px 3px;
     }
     .header_contacts a.menu.menu_email, .header_contacts a.menu.menu_tel {
-        font-size: 13px;
+        font-size: 10px;
         padding: 0;
+    }
+    .header_contacts_first 
+    {
+        margin-top: 10px; 
     }
     .container-fluid, .navbar-collapse, .main-menu
     {
@@ -2598,6 +2606,11 @@ responsive area
         left: 20px;
         top: 0;
         z-index: 999;
+    }
+    .socials 
+    {
+        display: inline-block;
+        margin-top: 5px;
     }
     .close_menu, .menu_logo
     {
@@ -2853,6 +2866,11 @@ responsive area
         top: 0;
         z-index: 999;
     }
+    .socials 
+    {
+        display: inline-block;
+        margin-top: 5px;
+    }
     .close_menu, .menu_logo
     {
         display: block
@@ -3039,6 +3057,11 @@ responsive area
         left: 20px;
         top: 0;
         z-index: 999;
+    }
+    .socials 
+    {
+        display: inline-block;
+        margin-top: 5px;
     }
     .close_menu, .menu_logo
     {
