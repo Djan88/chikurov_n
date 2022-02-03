@@ -2371,6 +2371,10 @@ h3.pricing span
 {
     /*margin-top: 5px;*/
 }
+.pre_block
+{
+    display: none;
+}
 /******************************
 responsive area
 ********************************/
@@ -2606,6 +2610,10 @@ responsive area
         left: 20px;
         top: 0;
         z-index: 999;
+    }
+    .pre_block
+    {
+        display: block;
     }
     .close_menu, .menu_logo
     {
@@ -2865,6 +2873,10 @@ responsive area
     {
         display: block
     }
+    .pre_block
+    {
+        display: block;
+    }
     .navbar-default .navbar-collapse
     {
         position: fixed;
@@ -3051,6 +3063,10 @@ responsive area
     .close_menu, .menu_logo
     {
         display: block
+    }
+    .pre_block
+    {
+        display: block;
     }
     .navbar-default .navbar-collapse
     {
