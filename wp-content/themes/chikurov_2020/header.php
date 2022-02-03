@@ -75,11 +75,26 @@
           <br>
           <a href="/"><img src="<?php bloginfo('template_url'); ?>/img/chi_logo_studio.png" alt="" class="img-responsive logo"></a>
         </div>
-        <div class="col-xs-12 col-sm-3 col-md-2 header_contacts pull-right">
-          <a class="menu menu_tel" href="tel:+79855381468">+7 (985) 538-14-68</a>
-          <a class="menu menu_email" href="mailto:info@chikurov.com">info@chikurov.com</a>
+        <div class="col-xs-12 col-sm-3 col-md-3 header_contacts pull-right">
+          <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+              <a class="menu menu_tel" href="tel:+79855381468">+7 (985) 538-14-68</a>
+              <a class="menu menu_email" href="mailto:info@chikurov.com">info@chikurov.com</a>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2">
+              <div class="socials">
+                <a href="https://telegram.me/name_of_domain" class="socials_link socials_link_tg"><i class="fa fa-telegram"></i></a>
+              </div>
+              <div class="socials">
+                <a href="https://api.whatsapp.com/send?phone=79855381468" target="_blank" class="socials_link socials_link_wh"><i class="fa fa-whatsapp"></i></a>
+              </div>
+              <div class="socials">
+                <a href="viber://chat?number=+79855381468" class="socials_link socials_link_vb"><i class="fa fa-viber"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-8 col-sm-7 col-xs-12 main-menu">
+        <div class="col-md-7 col-sm-7 col-xs-12 main-menu">
           <div class="row">
             <div class="col-md-12">
               <nav class="navbar navbar-default">
@@ -93,31 +108,13 @@
                       <span class="icon-bar"></span>
                     </button>
                   </div>
-
-                  <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <div class="close_menu">×</div>
                     <a class="menu_logo" href="/"><img src="<?php bloginfo('template_url'); ?>/img/chi_logo_studio.png" alt="" class="img-responsive logo"></a>
-                  <!-- <div id="bs-example-navbar-collapse-1"> -->
                     
                     <ul class="nav navbar-nav navbar-left">
                       <li><a class="menu" href="/seminary">Семинары</a></li>
-                      <!-- <li><a class="menu" href="#about">Биологическое центрирование</a></li> -->
                       <li><a class="menu" href="http://school-bc.ru/" target="_blank">Онлайн Школа</a></li>
-                      <!-- <li><a class="menu" target="_blank" href="http://www.yuchikurov.info/reestr/">Реестр специалистов</a></li> -->
-                      <!-- <li class="dropdown_menu">Визардтерапия <i class="fa fa-caret-down"></i>
-                        <ul class="submenu_wrap">
-                          <li><a class="submenu" target="_blank" href="https://wizardmachine.ru/">Wizard Machine</a></li>
-                          <li><a class="submenu" target="_blank" href="https://wizardduos.ru/">Wizard Duos</a></li>
-                          <li><a class="submenu" target="_blank" href="https://wizard-lovushka.ru/">Wizard Ловушка</a></li>
-                          <li><a class="submenu" target="_blank" href="https://tarotmachine.ru/">Tarot Machine</a></li>
-                          <li><a class="submenu" target="_blank" href="https://deviatochka.ru/">Игра Девяточка</a></li>
-                          <li><a class="submenu" target="_blank" href="http://marakata.ru/">Marakata</a></li>
-                          <li><a class="submenu" target="_blank" href="http://braincleaner.ru/">Brain Cleaner</a></li>
-                          <li><a class="submenu" target="_blank" href="https://school-bc.ru/wizardtherapy">Wizard Therapy</a></li>
-                        </ul>
-                      </li> -->
-                      <!-- <li><a class="menu" href="/kniga">Книги</a></li> -->
                       <li><a target="_blank" class="menu" href="https://shop-bc.com/">Магазин БЦ</a></li>
 					  <li><a target="_blank" class="menu" href="https://t.me/chikurov_studio">Мы в Telegram <i class="fa fa-telegram"></i></a></li>
                       <li><span class="menu consult hidden">Консультации Ю.Чикурова</span></li>
