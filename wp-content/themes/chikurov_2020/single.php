@@ -172,7 +172,16 @@
                 <div class="params_title_high">Записаться:</div>
                 <a href="tel:<?php the_field('phone'); ?>" class="params_content phone_info"><span class="fa fa-phone"></span> <?php the_field('phone'); ?></a>
                 <div class="params_content" style="padding-top: 10px;">
-                <a class="email_info" href="mailto:<?php the_field('email'); ?>"><span class="fa fa-envelope"></span> <?php the_field('email'); ?></a>
+                <?php if ($autor == 'Юрий Чикуров') { ?>
+                  <div class="socials">
+                    <a href="https://telegram.me/name_of_domain" class="socials_link socials_link_tg"><i class="fa fa-telegram"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=79855381468" target="_blank" class="socials_link socials_link_wh"><i class="fa fa-whatsapp"></i></a>
+                    <a href="viber://chat?number=+79855381468" class="socials_link socials_link_vb"><i class="fab fa-viber"></i></a>
+                    <a href="mailto:orders@chikurov.com" target="_blank" class="socials_link socials_link_mail"><i class="fa fa-envelope"></i></a>
+                  </div>
+                <?php } else { ?>
+                  <a class="email_info" href="mailto:<?php the_field('email'); ?>"><span class="fa fa-envelope"></span> <?php the_field('email'); ?></a>
+                <?php } ?>
               </div>
               </div>
               <?php if ($date_now > $date_formated_end) { ?>
