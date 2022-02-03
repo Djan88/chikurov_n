@@ -2607,11 +2607,6 @@ responsive area
         top: 0;
         z-index: 999;
     }
-    .socials 
-    {
-        display: inline-block;
-        margin-top: 5px;
-    }
     .close_menu, .menu_logo
     {
         display: block
@@ -2866,11 +2861,6 @@ responsive area
         top: 0;
         z-index: 999;
     }
-    .socials 
-    {
-        display: inline-block;
-        margin-top: 5px;
-    }
     .close_menu, .menu_logo
     {
         display: block
@@ -3057,11 +3047,6 @@ responsive area
         left: 20px;
         top: 0;
         z-index: 999;
-    }
-    .socials 
-    {
-        display: inline-block;
-        margin-top: 5px;
     }
     .close_menu, .menu_logo
     {
