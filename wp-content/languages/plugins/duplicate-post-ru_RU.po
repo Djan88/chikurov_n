@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast Duplicate Post - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-12-14 20:33:34+0000\n"
+"PO-Revision-Date: 2022-02-23 17:50:59+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,26 +11,30 @@ msgstr ""
 "Language: ru\n"
 "Project-Id-Version: Plugins - Yoast Duplicate Post - Stable (latest release)\n"
 
-#: src/ui/newsletter.php:124
+#: src/admin/views/options.php:236
+msgid "Welcome notice"
+msgstr "Приветственное уведомление"
+
+#: src/admin/options.php:262
+msgid "Show welcome notice"
+msgstr "Показать приветственное уведомление"
+
+#. translators: %s: Yoast Duplicate Post.
+#: admin-functions.php:224
+msgid "You've successfully installed %s!"
+msgstr "Вы успешно установили %s!"
+
+#: src/ui/newsletter.php:137
 msgid "You have successfully subscribed to the newsletter. Please check your inbox."
 msgstr "Вы успешно подписались на рассылку новостей. Пожалуйста, проверьте свой почтовый ящик."
 
-#: src/ui/newsletter.php:84
+#: src/ui/newsletter.php:97
 msgid "Please enter valid e-mail address."
 msgstr "Введите действительный e-mail-адрес."
 
-#: src/ui/newsletter.php:68 src/ui/newsletter.php:118
+#: src/ui/newsletter.php:81 src/ui/newsletter.php:131
 msgid "Something went wrong. Please try again later."
 msgstr "Что-то пошло не так. Попробуйте позже."
-
-#. translators: %s: Yoast Duplicate Post version.
-#: admin-functions.php:235
-msgid "Read the changelog"
-msgstr "Читать изменения"
-
-#: admin-functions.php:229
-msgid "improved compatibility with PHP 8.0 and fixes for some bugs regarding translations and the Rewrite & Republish feature."
-msgstr "улучшена совместимость с PHP 8.0 и исправлены некоторые ошибки, связанные с переводами и функцией перезаписи и повторной публикации."
 
 #: src/handlers/check-changes-handler.php:134
 msgid "Added"
@@ -40,7 +44,7 @@ msgstr "Добавлено"
 msgid "Removed"
 msgstr "Удаленный"
 
-#: src/post-republisher.php:222
+#: src/post-republisher.php:224
 msgid "An error occurred while deleting the Rewrite & Republish copy."
 msgstr "Произошла ошибка при удалении копии Переписать и переиздать."
 
@@ -50,30 +54,30 @@ msgstr "Надежный инструмент для клонирования з
 
 #. translators: 1: The page title with a link to the frontend page, 2: The
 #. scheduled date and time.
-#: src/ui/classic-editor.php:266
+#: src/ui/classic-editor.php:271
 msgid "This rewritten page %1$s is now scheduled to replace the original page. It will be published on %2$s."
 msgstr "Эта переписанная страница %1$s теперь запланирована для замены исходной страницы. Она будет опубликована на %2$s."
 
 #. translators: 1: The post title with a link to the frontend page, 2: The
 #. scheduled date and time.
-#: src/ui/classic-editor.php:253
+#: src/ui/classic-editor.php:258
 msgid "This rewritten post %1$s is now scheduled to replace the original post. It will be published on %2$s."
 msgstr "Эта перезаписанная запись %1$s теперь запланирована для замены исходной. Она будет опубликована в %2$s."
 
-#: src/ui/classic-editor.php:227 js/dist/duplicate-post-strings-430.js:1
+#: src/ui/classic-editor.php:232 js/dist/duplicate-post-strings-440.js:1
 msgid "Schedule republish"
 msgstr "Запланировать повторную публикацию"
 
 #. translators: %s: Date on which the post is to be republished.
-#: src/ui/classic-editor.php:210
+#: src/ui/classic-editor.php:215
 msgid "Republish on: %s"
 msgstr "Повторно опубликовать в: %s"
 
-#: src/ui/classic-editor.php:187
+#: src/ui/classic-editor.php:192
 msgid "Compare"
 msgstr "Сравнить"
 
-#: src/ui/classic-editor.php:184
+#: src/ui/classic-editor.php:189
 msgid "Do you want to compare your changes with the original version before merging? Please save any changes first."
 msgstr "Сравнить изменения с исходной версией перед объединением? Сначала сохраните все изменения."
 
@@ -101,8 +105,8 @@ msgid "Warning: users will be able to copy, rewrite and republish all posts, eve
 msgstr "Внимание: пользователи смогут копировать, переписывать и переиздавать все сообщения, даже сообщения других пользователей."
 
 #: src/admin/options.php:281 src/ui/admin-bar.php:105 src/ui/admin-bar.php:125
-#: src/ui/bulk-actions.php:74 src/ui/classic-editor.php:159
-#: js/dist/duplicate-post-edit-430.js:1
+#: src/ui/bulk-actions.php:74 src/ui/classic-editor.php:164
+#: js/dist/duplicate-post-edit-440.js:1
 msgid "Rewrite & Republish"
 msgstr "Переписать и переиздать"
 
@@ -128,12 +132,12 @@ msgstr "Был создан дубликат этой записи, которы
 msgid "A duplicate of this post was made. Please note that any changes you make to this post will be replaced when the duplicated version is republished."
 msgstr "Сделан дубликат этой записи. Обратите внимание, что любые изменения, которые вы вносите в эту запись, будут заменены при повторной публикации дублированной версии."
 
-#: src/post-republisher.php:330
+#: src/post-republisher.php:332
 msgid "An error occurred while republishing the post."
 msgstr "Произошла ошибка при повторной публикации записи."
 
-#: src/post-republisher.php:83 src/ui/classic-editor.php:205
-#: js/dist/duplicate-post-strings-430.js:1
+#: src/post-republisher.php:83 src/ui/classic-editor.php:210
+#: js/dist/duplicate-post-strings-440.js:1
 msgid "Republish"
 msgstr "Повторная публикация"
 
@@ -172,17 +176,13 @@ msgstr "Не удалось выполнить обзор изменений, н
 msgid "No post has been supplied!"
 msgstr "Не выбрана запись!"
 
-#: admin-functions.php:620
+#: admin-functions.php:597
 msgid "You aren't allowed to duplicate this post"
 msgstr "Вам не разрешено дублировать эту запись"
 
-#: src/ui/newsletter.php:47
+#: src/ui/newsletter.php:58
 msgid "Subscribe"
 msgstr "Подписаться"
-
-#: src/admin/views/options.php:236
-msgid "Update notice"
-msgstr "Уведомление об обновлении"
 
 #. translators: 1: Code start tag, 2: Code closing tag, 3: Link start tag to
 #. the template tag documentation, 4: Link closing tag.
@@ -212,10 +212,6 @@ msgstr "Исходный элемент, из которого он был ск�
 #: src/ui/column.php:130 src/ui/metabox.php:89
 msgid "Delete reference to original item."
 msgstr "Удалить ссылку на исходный элемент."
-
-#: src/ui/newsletter.php:29
-msgid "Email Address"
-msgstr "E-mail адрес"
 
 #. translators: 1: Yoast
 #: src/ui/newsletter.php:22
@@ -295,11 +291,6 @@ msgstr "Просмотреть &#8220;%s&#8221;"
 msgid "Edit &#8220;%s&#8221;"
 msgstr "Редактировать &#8220;%s&#8221;"
 
-#. translators: %s: Yoast Duplicate Post version.
-#: admin-functions.php:226
-msgid "What's new in Yoast Duplicate Post version %s:"
-msgstr "Новое в Duplicate Post версии %s:"
-
 #: src/handlers/link-handler.php:58 src/handlers/link-handler.php:114
 #: src/handlers/link-handler.php:188
 msgid "Current user is not allowed to copy posts."
@@ -309,13 +300,9 @@ msgstr "Этому пользователю не разрешено копиро
 msgid "you probably want this unchecked, unless you have very special requirements"
 msgstr "скорее всего вам не нужно отмечать это, если только у вас нет особых требований"
 
-#: admin-functions.php:773
+#: admin-functions.php:750
 msgid "Documentation"
 msgstr "Документация"
-
-#: src/admin/options.php:262
-msgid "Show update notice"
-msgstr "Показать уведомление об обновлении"
 
 #: src/admin/options.php:307
 msgid "Bulk Actions"
@@ -341,7 +328,6 @@ msgstr "Шаблон"
 msgid "Featured Image"
 msgstr "Изображение записи"
 
-#. translators: %s: Number of posts copied.
 #. translators: %s: Number of posts copied.
 #: src/watchers/bulk-actions-watcher.php:55
 #: src/watchers/link-actions-watcher.php:73
@@ -439,7 +425,7 @@ msgstr "Разрешения"
 msgid "What to copy"
 msgstr "Что копировать"
 
-#: admin-functions.php:626
+#: admin-functions.php:603
 msgid "Copy features for this post type are not enabled in options page"
 msgstr "Опция копирования не включена на странице настроек для записей этого типа"
 
@@ -522,7 +508,7 @@ msgid "New Draft"
 msgstr "Новый черновик"
 
 #: common-functions.php:79 src/ui/admin-bar.php:97 src/ui/admin-bar.php:115
-#: src/ui/classic-editor.php:130 js/dist/duplicate-post-edit-430.js:1
+#: src/ui/classic-editor.php:135 js/dist/duplicate-post-edit-440.js:1
 msgid "Copy to a new draft"
 msgstr "Копировать в новый черновик"
 
